@@ -1,0 +1,43 @@
+Game assigns weights to characters based on slots, then picks a random number from 1 to sum of weights to choose a target:
+
+> Targetting Mode A (Priority left)
+
+- 60 slot 1
+- 30 slot 2
+- 10 slot 3
+-  3 slot 4
+
+Full party:
+- 58.25% / 29.13% / 9.71% / 2.91%
+
+Only slots 1 and 4:
+- 95.24% / 0% / 0% / 4.76%
+
+> Targetting Mode B (Equal chance)
+
+- 20 for all slots
+
+> Targetting Mode C (Priority right)
+
+- 10 slot 1
+- 20 slot 2
+- 30 slot 3
+- 40 slot 4
+
+Full party:
+- 10% / 20% / 30% / 40%
+
+Only slots 1 and 4:
+- 20% / 0% / 0% / 80%
+
+> Targetting Mode D (Always left)
+
+- Attacks first character alive, starting from the left
+
+> Targetting Mode E (Random enemy)
+
+- 20 for all enemy slots
+
+> Targetting Mode F (Random other enemy)
+
+- 20 for all enemy slots that is not the caster

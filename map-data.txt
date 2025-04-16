@@ -1,0 +1,13 @@
+Map files come in 4 variants: B, G, H and M files. The OD files are all zeroed out until you save your game, and then they contain your game's data. It's weird how the OD files behave like that, you'd expect them to have the static data the exe uses, like the other 4 files, but oh well. Maybe by release all 5 files will be baked into the exe.
+
+Maps are organized in a 150x150 grid, with the OD file having 1 byte per tile, and the remainder being CSVs with 150 rows and columns. Here are how each file works:
+
+OD files - 2 means a tile is walkable, 1 means a tile is visible, 0 means a tile is invisible
+
+B files - Unknown what these numbers mean, any ideas are welcome
+
+G files - Each number represents which graphic is associated with that tile's floor. In the img1.dxa archive, you'll find corresponding graphics for each ID in the Dungeon directory, per stratum
+
+H files - 1 means a tile is a hidden path, 0 means a tile behaves normally according to OD file
+
+M files - Each number represents which decorator graphic is associated what that tile. Decorators are places on top of the regular graphics, kinda like how some floors on Forest of Oblivion have flowers on them. Much like G files, each number corresponds to a graphic in the img1.dxa archive

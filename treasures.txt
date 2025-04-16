@@ -1,0 +1,176 @@
+===== Oblivion Forest - 1F =====
+
+> Pre-Meiling
+
+(Tanned Beast Leather x2) (88, 70)
+(Treasure-Bound Manuscript x1) (109, 70)
+(Power Bracer x1) (95, 71)
+(Nature's Green Beryl x2) (95, 83)
+(Jaggy Leaf x1) (95, 87)
+
+> Pre-Alice
+
+(Frozen Frog x1) (95, 37)
+(Liko Flower Hair Ornament x1) (104, 43)
+(Cold Sapphire x2) (110, 53)
+(Cold Sapphire x2) (89, 56)
+(Heavy Leather Armor x1) (109, 59)
+(Illegally Modified Stun Gun x1) (109, 65)
+(Frozen Frog x1) (88, 73)
+
+> Pre-Cirno
+
+(Steel Shield x1) (95, 63)
+
+> Pre-Nightmare
+
+[Locked] (
+  Imitation Ootengu Masaie x1,
+  Steel Shield x1,
+  Principal First Edition x1,
+  Inharmonious Gearset x1,
+  Counter Scarf x1,
+) (76, 38)
+(Ominous Gemstone x1) (57, 37)
+(Songstress' Apron x1) (57, 41)
+(Book of Guidance x1) (76, 46)
+(Aldebaran Gemstone x1) (63, 56)
+(Lockbox Key x1) (33, 62)
+(Shabby Katashiro x2) (45, 62)
+(Demon Core x1) (56, 62)
+(Taikan's Pine Sugar x1) (55, 69)
+(Dream of Vitality x1) (73, 75)
+(Sunstone x1) (70, 78)
+(Moonstone x1) (57, 83)
+(Moonstone x1) (81, 83)
+(Old Coin Purse x2) (57, 87)
+
+===== Oblivion Forest - 2F =====
+
+> Pre-Nightmare
+
+[Locked] (
+  Dream of Vitality x2,
+  Dream of Sorcery x2,
+  Dream of Energy x2,
+) (66, 60)
+(Farie Walnut x1) (74, 83)
+(Moonstone x1) (67, 73)
+(Tough Shell x2) (67, 71)
+(Sunstone x1) (76, 60)
+(Lockbox Key x1) (83, 60)
+(Nightmare Incisor x2) (77, 56)
+(Book of Guidance x1) (71, 48)
+(Ominous Gemstone x1) (49, 50)
+(Cup of Coffee x1) (56, 57)
+(Demon Core x1) (47, 72)
+(Songstress's Apron x1) (57, 74)
+(Moonstone x1) (65, 90)
+(120 Sen) (86, 82)
+(Dream of Wisdom x1) (92, 93)
+(Phantasmagoria Pouch x1) (89, 90)
+(Sunstone x1) (95, 72)
+(Mana Flower x1) (71, 72)
+(Aldebaran Gemstone x1) (90, 61)
+(Dream of Affection x1) (82, 53)
+(Hunting Know-How x1) (71, 96)
+
+===== Oblivion Forest - 3F =====
+
+> Pre-Koishi
+
+[Locked] (
+  Aldebaram Gemstone x1,
+  Bangle of the Star Realm x1,
+  Spirit Barrier Sign x1,
+  Yin-Yang Shift Stone x1,
+  Ominous Gemstone x1,
+  Coagulated Blood Gem x1,
+) (65, 43)
+(Ancient Wooden Letterpress x1) (70, 54)
+(Sticky Aubergine Dream x1) (65, 35)
+(Aldebaran Gemstone x1) (54, 38)
+(Sunstone x1) (35, 43)
+(Deep Ring x1) (43, 37)
+(Inharmonious Gearset x1) (38, 54)
+(Book of Guidance x1) (35, 65)
+(Dream of Carnage x1) (43, 57)
+(Moonstone x1) (54, 70)
+
+> Pre-Ran
+
+[Locked] (
+  Liko Flower Hair Ornament x1,
+  Mana Flower x1,
+  Hunting Know-How x1,
+  Shabby Katashiro x1,
+  Sticky Aubergine Dream x1,
+  Forgetting Dayflowers x1,
+) (54, 76)
+(Sunstone x1) (76, 54)
+(Moonstone x1) (100, 76)
+(Ominous Gemstone x1) (88, 55)
+(Shabby Katashiro x1) (95, 57)
+(Thief Gloves x1) (84, 70)
+(Ancient Wooden Letterpress x1) (94, 81)
+(Lockbox Key x1) (96, 90)
+(Liko Flower Hair Ornament x1) (76, 100)
+(Dream of Protection x1) (61, 91)
+(Extra Atelier Tools x1) (57, 95)
+(Forgetting Dayflowers x1) (70, 84)
+
+===== Dream Path to the Occult Balls - 1F =====
+
+> Pre-Horde
+
+[Locked] (
+  Spire-Illuminating Lantern x1,
+  CatClaw x1,
+  Moon of the Eyeball x1,
+  Huscarl's Round Shield x1,
+) (66, 56)
+[Locked] (
+  Single-Minded Studier's Set x3,
+  Money Tree Koban x3,
+  Itemfinders Weekly x3,
+) (78, 84)
+(Mmm, So Tasty! Well-Done Steak x1) (88, 56)
+(880 Sen) (90, 54)
+(Sticky Aubergine Dream x1) (92, 72)
+(Spire-Illuminating Lantern x1) (88, 78)
+(Dream of Swiftness x1) (82, 72)
+(Occultic Cube x2) (72, 62)
+(Sunstone x2) (52, 73)
+(Moonstone x2) (72, 72)
+(Cup of Coffee x1) (64, 80)
+(Bright Powder x1) (58, 68)
+(Counter Scarf x1) (61, 87)
+(Club of Hill Giant Strength x1) (91, 91)
+(Lockbox Key x1) (53, 91)
+(Book of Guidance x1) (58, 81)
+
+===== Dream Path to the Occult Balls - 2F =====
+
+> Pre-Sumireko
+
+[Locked] (Coveted Ice Sword x1) (45, 45)
+[Locked] (
+  Deep Ring x1,
+  Environmental Puzzle Hallucination x1,
+  Bone Scrap x1,
+  Bangle of the Star Realm x1,
+) (92, 68)
+(Imitation Ootengu Masaie x1) (82, 82)
+(Sunstone x2) (92, 99)
+(Moonstone x2) (99, 92)
+(Momijihime x1) (96, 96)
+(Book of Guidance x1) (73, 60)
+(Principia First Edition x1) (74, 56)
+(Eyetrack Orbitars x1) (74, 48)
+(Cloak of the Bat x1) (69, 52)
+(Dream of Sorcery x1) (52, 69)
+(Moon of the Eyeball x1) (72, 72)
+(Strange Metal Fragment x3) (85, 61)
+(Lockbox Key x1) (52, 82)
+(Faerie Walnut x1) (52, 116)
+(Spirit Barrier Sign x1) (116, 52)

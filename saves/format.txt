@@ -1,0 +1,589 @@
+todo
+- character main equip slot
+
+gave up, no results on breakpoints
+- character flag that is always 3
+
+===== OVERALL =====
+
+1F starting position is (76, 74)
+All files are BIG endian!
+
+===== OD FILES =====
+
+XXYY_OD.txt
+XX - Stratum / Dungeon
+YY - Floor
+Both start at 01
+
+Map is a 150x150 grid, each tile is 1 byte:
+00 - not visible
+01 - visible
+02 - stepped on
+
+===== C FILES =====
+
+C0XX.ngd
+XX - Character index, starts at 01
+
+01 - Reimu
+02 - Renko
+03 - Mary
+04 - Meiling
+05 - Alice
+06 - Nitori
+07 - Aya
+08 - Patchy
+09 - Cirno
+10 - Keine
+11 - Doremy
+12 - Yukari
+13 - Marisa
+14 - Koishi
+15 - Sumireko
+16 - Ran
+17 - Chen
+18 - Sanae
+19 - Kanako
+20 - Suwako
+21 - Remilia
+22 - Sakuya
+23 - Junko
+24 - Hecatia
+25 to 35 - ???
+36 - Byakuren (has no skills in demo)
+37 to 47 - ???
+48 - Miko (has no skills in demo)
+
+Character level overflows into the negatives past 2^31 - 1
+EXP to next level caps at 900 billion
+EXP held overflows into the negatives past 2^63 - 1
+
+Library cost caps at 1 trillion - 1
+Library level overflows into the negatives past 2^31 - 1
+
+Level bonus percents don't actually have to add up to 100%, you can go over. However, loading the save and reducing any of the values makes it impossible to raise them back up until you make them add up to 100% again.
+Level bonus percents overflow into the negatives past 2^31 - 1
+
+Skills are arranged into a 12x8 grid, with a character's spells and skills ocupying some slots in that grid. Unused slots are left empty in the save, and skills/spells learned will have a value of 1. If a slot is empty, its value is discarded.
+
+0x0 ~ 0x3 - Current level (4 bytes)
+0x4 ~ 0x7 - Max level achieved (4 bytes)
+0x8 ~ 0xf - EXP held (8 bytes)
+0x10 ~ 0x13 - Library HP level (4 bytes)
+0x14 ~ 0x17 - Library ATK level (4 bytes)
+0x18 ~ 0x1b - Library DEF level (4 bytes)
+0x1c ~ 0x1f - Library MAG level (4 bytes)
+0x20 ~ 0x23 - Library MND level (4 bytes)
+0x24 ~ 0x27 - Library SPD level (4 bytes)
+0x28 ~ 0x47 - unused, placeholder for library element level (32 bytes)
+0x48 ~ 0x4b - Level bonus HP percentage (4 bytes)
+0x4c ~ 0x4f - Level bonus ATK percentage (4 bytes)
+0x50 ~ 0x53 - Level bonus DEF percentage (4 bytes)
+0x54 ~ 0x57 - Level bonus MAG percentage (4 bytes)
+0x58 ~ 0x5b - Level bonus MND percentage (4 bytes)
+0x5c ~ 0x5f - Level bonus SPD percentage (4 bytes)
+0x60 ~ 0x63 - Number of HP Boosts used (4 bytes)
+0x64 ~ 0x63 - Number of MP Boosts used (4 bytes)
+0x68 ~ 0x63 - Number of TP Boosts used (4 bytes)
+0x6c ~ 0x6f - Number of ATK Boosts used (4 bytes)
+0x70 ~ 0x73 - Number of DEF Boosts used (4 bytes)
+0x74 ~ 0x77 - Number of MAG Boosts used (4 bytes)
+0x78 ~ 0x7b - Number of MND Boosts used (4 bytes)
+0x7c ~ 0x7f - Number of SPD Boosts used (4 bytes)
+0x80 ~ 0x83 - Number of ACC Boosts used (4 bytes)
+0x84 ~ 0x87 - Number of EVA Boosts used (4 bytes)
+0x88 ~ 0x8b - Number of Guidance Books used (4 bytes)
+0x8c ~ 0xbb - unused, likely placeholder for 12 common skills? (48 bytes)
+0xbc ~ 0x23b - Skills learned (4 bytes per skill, 96 skills) (384 bytes)
+0x23c ~ 0x47b - unused, placeholder for 12 more skill rows (576 bytes)
+0x47c ~ 0x86b - unused, reads data for 21 skill rows again? (1008 bytes)
+0x86c ~ 0x86f - Unused skill points (4 bytes)
+0x870 ~ 0x873 - unknown, seems to always be 3? (4 bytes)
+0x874 ~ 0x877 - Battle points (4 bytes)
+0x878 ~ 0x87b - Main Equipment level (4 bytes)
+0x87c ~ 0x87f - Subequip slot 1, uses same number as shown in game (4 bytes)
+0x880 ~ 0x883 - Subequip slot 2, uses same number as shown in game (4 bytes)
+0x884 ~ 0x887 - Subequip slot 3, uses same number as shown in game (4 bytes)
+0x888 ~ 0x893 - unused, placeholder for 3 more equip slots? (12 bytes)
+0x894 ~ 0x8bb - unused, placeholder for 10 slots of things? (40 bytes) [likely 5 slots for awakening items, and 5 extra]
+0x8bc ~ 0xbdc - unused
+
+===== EEF FILE =====
+
+Inventory unlock flags
+
+00 - Locked
+01 - Unlocked
+
+1 byte per item, 1201 item slots total
+Offsets likely correspond to item IDs:
+- Subequips from 1 to 140
+- Materials from 501 to 580
+- Break items from 701 to 780
+- Special items from 801 to 860
+- Awakening items from 1001 to 1120
+
+0x0 - unused
+0x1 ~ 0x8c - subequips
+0x1f5 ~ 0x244 - materials
+0x2bd ~ 0x30c - break items
+0x321 ~ 0x35c - special items
+0x3e9 ~ 0x460 - awakening items
+
+===== EEH FILE =====
+
+Subequip upgrade levels
+
+4 bytes per item, game caps at +10 but scales "fine" past it if you edit a higher value
+141 item slots total
+
+0x0 ~ 0x3 - unused
+0x4 ~ 0x233 - subequips
+0x234 ~ 0x7d3 - unused
+
+===== EEN FILE =====
+
+Inventory amounts
+
+4 bytes per item, same deal with the offsets from EEF, 1201 item slots
+There doesn't seem to be a soft cap to the number of copies you can hold of an item
+
+0x0 ~ 0x3 - unused
+0x4 ~ 0x233 - subequips
+0x7d4 ~ 0x913 - materials
+0xaf4 ~ 0xc33 - break items
+0xc84 ~ 0xd73 - special items
+0xfa4 ~ 0x1183 - awakening items
+
+===== EVF FILE =====
+
+Event flags (1 usually means available, 2 means seen/opened/activated/etc)
+
+4 bytes per flag, for some reason (That's 20k + 10k flags for a 120kb file)
+
+> Generic Flags
+
+FLAGS 1 to 100: set to 1 after prologue, usually tied to generic dungeon events like stairs and shortcuts
+
+> Facility/Town Cutscene Flags
+
+FLAG 101: unused
+FLAG 102: Hakurei Shrine first tutorial
+FLAG 103: Magic Library first tutorial
+FLAG 104: Archives first tutorial
+FLAG 105: Atelier first tutorial
+FLAG 106: Lounge first tutorial
+FLAG 107: Akyuu's Study first tutorial
+FLAG 108: Archive rewards tutorial (set to 1 after 2f relay circle)
+FLAG 109: Alice recruit cutscene (set to 1 after FLAG 1036)
+FLAG 110: Cirno recruit cutscene (automatic after beating her)
+FLAG 111: Town cutscene post first battle (2 after first dungeon battle)
+FLAG 112: Meiling recruit cutscene (set to 1 after FLAG 1035)
+FLAG 113: Shikigami at base explanation cutscene (unlocked after 1113 is seen)
+FLAG 114: Cirno shop tutorial (set to 1 after recruiting her)
+FLAG 115: Akyuu eavesdropping on Renko and Mary cutscene (set to 1 after watching 118) (set to 100 after watched)
+FLAG 116: Akyuu cutscene that unlocks character recruits (value 100 after 1f explore?)
+FLAG 117: Weird note memo cutscene in lounge area (set to 1 after using 2f relay)
+FLAG 118: Post-avatar cutscene where characters regain some memories
+FLAG 119: Renko and Mary pre-2F nightmare cutscene (set to 1 after entering 2f) (set to 2 after 2f inner relay)
+FLAG 120: Post-2F Nightmare boss memory cutscene
+FLAG 121: Hakurei Shrine level up points tutorial (set to 1 after 2F Nightmare)
+FLAG 122: Keine recruit cutscene + Archive Rewards tutorial (set to 1 after 2F Nightmare)
+FLAG 123: Koishi introduction cutscene
+FLAG 124: Lounge recruit Marisa and Remilia (set to 1 after Ran fight)
+FLAG 125: ???
+FLAG 126: Exploration cutscene post lounge recruit (set to 1 after 124)
+FLAG 127: Shrine cutscene post lounge recruit (set to 1 after 124)
+FLAG 128: One of the cutscenes post Cirno fight (1 available, 100 after Cirno explores)
+FLAG 129: Nitori recruit cutscene
+FLAG 130: Aya recruit cutscene
+FLAG 131: Patchouli recruit cutscene
+FLAG 132: Back from 2F cutscene
+FLAG 133: Back from Ran fight cutscene
+FLAG 134: Akyuu cutscene after first exploration of Dream Path
+FLAG 135: Renko and Maribel cutscene (set to 1 after horde boss)
+FLAG 136: Renko and Doremy cutscene (set to 1 after 135)
+
+[...]
+
+FLAG 143: Suwako and Kanako recruit cutscene (set to 1 after 2111)
+
+[...]
+
+FLAG 160: Yukari cutscene before entering dungeon (set to 1 after 136)
+
+[...]
+
+> Unknown Flags
+
+FLAGS 902 to 930: set to 1 after prologue
+
+[...]
+
+> Forest of Oblivion 1F Map Flags
+
+FLAG 1011: Shortcut before Alice (2 = opened) (109, 62)
+FLAG 1012: Shortcut midway west (2 = opened) (70, 62)
+FLAG 1013: Shortcut before Nightmare (2 = opened) (82, 76)
+FLAG 1014: Shortcut before Meiling (2 = opened) (88, 67)
+
+[...]
+
+> Forest of Oblivion 1F Event Flags
+
+FLAG 1026: Tutorial Sumireko fight
+FLAG 1027: First Sumireko event
+FLAG 1028: Sumireko boss event
+FLAG 1029: Tutorial Reimu fight
+FLAG 1030: Intro cutscene with Renko and Mary
+FLAG 1031: Dungeon tutorial (1 after prologue, 2 first dungeon dive)
+FLAG 1032: Dungeon post-battle tutorial (2 after first dungeon battle)
+FLAG 1033: In-dungeon large ice chunk cutscene (set to 1 after prologue)
+FLAG 1034: In-dungeon small ice chunk cutscene (set to 1 after prologue)
+FLAG 1035: Event to unlock Meiling (88, 67)
+FLAG 1036: Event to unlock Alice (114, 62)
+FLAG 1037: Cirno boss fight (82, 43)
+FLAG 1038: Nightmare boss fight (76, 82)
+FLAG 1039: Post-Cirno cutscene that forces back to town (set to 1 after Alice recruit) (82, 42)
+FLAG 1040: Interactions with Cirno's ice rocks (set to 2 after prologue)
+FLAG 1041: Pre-boss Cirno event (set to 1 after Alice recruit) (82, 45)
+
+[...]
+
+> Forest of Oblivion 1F Treasure Flags
+
+FLAG 1074: Locked Treasure (
+  Imitation Ootengu Masaie x1,
+  Steel Shield x1,
+  Principal First Edition x1,
+  Inharmonious Gearset x1,
+  Counter Scarf x1,
+) (76, 38)
+FLAG 1075: Treasure before Nightmare (?)
+FLAG 1076: Treasure before Nightmare (?)
+FLAG 1077: Treasure before Nightmare (?)
+FLAG 1078: Treasure before Nightmare (?)
+FLAG 1079: Treasure before Nightmare (?)
+FLAG 1080: Treasure before Nightmare (?)
+FLAG 1081: Treasure before Nightmare (?)
+FLAG 1082: Treasure before Nightmare (?)
+FLAG 1083: Treasure before Nightmare (?)
+FLAG 1084: Treasure before Nightmare (?)
+FLAG 1085: Treasure before Nightmare (?)
+FLAG 1086: Treasure before Nightmare (?)
+FLAG 1087: Treasure before Alice (?)
+FLAG 1088: Treasure before Nightmare (?)
+FLAG 1089: Treasure before Alice (?)
+FLAG 1090: Treasure before Alice (?)
+FLAG 1091: Treasure before Alice (?)
+FLAG 1092: Treasure before Alice (?)
+FLAG 1093: Treasure before Alice (?)
+FLAG 1094: Treasure before Alice (?)
+FLAG 1095: Treasure before Meiling (?)
+FLAG 1096: Treasure before Meiling (?)
+FLAG 1097: Treasure before Meiling (?)
+FLAG 1098: Treasure before Meiling (?)
+FLAG 1099: Treasure before Meiling (?)
+FLAG 1100: Treasure before Cirno (Steel Shield x1) (95, 63)
+
+> Forest of Oblivion 2F Relay Circles
+
+FLAG 1101: 2F Relay unlock
+FLAG 1102: 2F Inner Relay unlock
+
+[...]
+
+> Forest of Oblivion 2F Event Flags
+
+FLAG 1111: 2F intro cutscene (set to 1 after nightmare, 2 after entering 2f)
+FLAG 1112: Relay circle tutorial cutscene
+FLAG 1113: Memo left on 2F northwest event (set to 1 after entering 2f) (52, 53)
+FLAG 1114: First relay circle use cutscene (set to 1 after 2f relay circle)
+FLAG 1115: Nightmare boss fight (set to 1 after entering 2f) (57, 86)
+FLAG 1116: Relay circle tutorial event that forces back to town
+FLAG 1117: Post-Nightmare cutscene that forces you back to town
+
+[...]
+
+> Forest of Oblivion 2F Treasure Flags
+
+FLAG 1180: Treasure (?)
+FLAG 1181: Treasure (?)
+FLAG 1182: Treasure (?)
+FLAG 1183: Treasure (?)
+FLAG 1184: Treasure (?)
+FLAG 1185: Treasure (?)
+FLAG 1186: Treasure (?)
+FLAG 1187: Treasure (?)
+FLAG 1188: Treasure (?)
+FLAG 1189: Treasure (?)
+FLAG 1190: Treasure (?)
+FLAG 1191: Treasure (?)
+FLAG 1192: Treasure (?)
+FLAG 1193: Locked Treasure (
+  Dream of Vitality x2,
+  Dream of Sorcery x2,
+  Dream of Energy x2,
+) (66, 60)
+FLAG 1194: Treasure (?)
+FLAG 1195: Treasure (?)
+FLAG 1196: Treasure (?)
+FLAG 1197: Treasure (?)
+FLAG 1198: Treasure (?)
+FLAG 1199: Treasure (?)
+FLAG 1200: Treasure (?)
+
+> Forest of Oblivion 3F Relay Circles
+
+FLAG 1201: 3F Relay unlock
+
+> Forest of Oblivion 3F Event Flags
+
+FLAG 1212: 3F relay cutscene that triggers on use (set to 1 after entering 2f)
+FLAG 1213: Cutscene in 3F rocks when Avatar wasn't killed (set to 1 after entering 2f)
+FLAG 1214: Koishi recruit event (set to 1 after entering 2f) (58, 60)
+FLAG 1215: Pre-orb event that shows Shikigami (set to 1 after entering 2f) (98, 98)
+FLAG 1216: Ran boss fight (set to 1 after entering 2f) (73, 73)
+FLAG 1217: 3F Orb pressed status (set to 1 after interacting) (96, 96)
+
+[...]
+
+> Forest of Oblivion 3F Treasure Flags
+
+FLAG 1279: Treasure before Koishi (?)
+FLAG 1280: Treasure before Koishi (?)
+FLAG 1281: Treasure before Koishi (?)
+FLAG 1282: Treasure before Koishi (?)
+FLAG 1283: Treasure before Koishi (?)
+FLAG 1284: Treasure before Koishi (?)
+FLAG 1285: Treasure before Koishi (?)
+FLAG 1286: Locked Treasure before Koishi (
+  Aldebaram Gemstone x1,
+  Bangle of the Star Realm x1,
+  Spirit Barrier Sign x1,
+  Yin-Yang Shift Stone x1,
+  Ominous Gemstone x1,
+  Coagulated Blood Gem x1,
+) (65, 43)
+FLAG 1287: Treasure before Koishi (?)
+FLAG 1288: Treasure before Koishi (?)
+FLAG 1289: Treasure before Ran (?)
+FLAG 1290: Treasure before Ran (?)
+FLAG 1291: Treasure before Ran (?)
+FLAG 1292: Treasure before Ran (?)
+FLAG 1293: Treasure before Ran (?)
+FLAG 1294: Treasure before Ran (?)
+FLAG 1295: Treasure before Ran (?)
+FLAG 1296: Treasure before Ran (?)
+FLAG 1297: Treasure before Ran (?)
+FLAG 1298: Treasure before Ran (?)
+FLAG 1299: Treasure before Ran (?)
+FLAG 1300: Treasure before Ran (?)
+
+[...]
+
+> Dream Path to the Occult Balls 1F Relay Circles
+
+> FLAG 2001: 1F Inner Relay unlock
+
+[...]
+
+> Dream Path to the Occult Balls 1F Event Flags
+
+FLAG 2011: First visit to Dream Path cutscene (set to 1 after 124)
+FLAG 2012: Horde boss fight (set to 1 after 2011) (53, 53)
+
+[...]
+
+> Dream Path to the Occult Balls 1F Treasure Flags
+
+FLAG 2085: Treasure (?)
+FLAG 2086: Treasure (?)
+FLAG 2087: Treasure (?)
+FLAG 2088: Treasure (?)
+FLAG 2089: Treasure (?)
+FLAG 2090: Treasure (?)
+FLAG 2091: Treasure (?)
+FLAG 2092: Treasure (?)
+FLAG 2093: Treasure (?)
+FLAG 2094: Treasure (?)
+FLAG 2095: Treasure (?)
+FLAG 2096: Treasure (?)
+FLAG 2097: Treasure (?)
+FLAG 2098: Treasure (?)
+FLAG 2099: Treasure (?)
+FLAG 2100: Treasure (?)
+
+> Dream Path to the Occult Balls 2F Relay Circles
+
+> FLAG 2101: 2F Relay unlock
+> FLAG 2102: 2F Inner Relay unlock
+
+[...]
+
+> Dream Path to the Occult Balls 2F Event Flags
+
+FLAG 2111: First visit to 2F cutscene (set to 1 after 2011)
+FLAG 2112: Sumireko Protector boss fight (set to 1 after 2111) (83, 52)
+FLAG 2113: Post Sumireko Protector cutscene (set to 1 after 2111) (80, 52)
+
+[...]
+
+> Dream Path to the Occult Balls 2F Treasure Flags
+
+FLAF 2185: Treasure (?)
+FLAF 2186: Treasure (?)
+FLAF 2187: Treasure (?)
+FLAF 2188: Treasure (?)
+FLAF 2189: Treasure (?)
+FLAF 2190: Treasure (?)
+FLAF 2191: Treasure (?)
+FLAF 2192: Treasure (?)
+FLAF 2193: Treasure (?)
+FLAF 2194: Treasure (?)
+FLAF 2195: Treasure (?)
+FLAF 2196: Treasure (?)
+FLAF 2197: Treasure (?)
+FLAF 2198: Treasure (?)
+FLAF 2199: Treasure (?)
+FLAF 2200: Treasure (?)
+
+[...]
+
+> ??? 1F Event Flags
+
+FLAG 3012: End of demo cutscene, can't save to confirm flag number
+
+===== PGD FILE =====
+
+Misc game data
+
+Each value seems to be 4 bytes long, but there are exceptions (as noted)
+Money held caps at 100 quadrillion - 1
+
+0x0 ~ 0x3 - unused
+0x4 ~ 0xc3 - character unlock flags, see C files for character order (4 bytes per character)
+0xc4 ~ 0x18f - unused, placeholder for total of 100 character unlocks (204 bytes)
+0x190 ~ 0x1bf - characters in party (4 bytes per character)
+0x1c0 ~ 0x1c7 - play time, in seconds (8 bytes)
+0x1c8 ~ 0x1cf - total exp acquired (8 bytes)
+0x1d0 ~ 0x1d7 - total money acquired (8 bytes)
+0x1d8 ~ 0x1df - money held (8 bytes)
+0x1e0 ~ 0x1e3 - battle count (4 bytes)
+0x1e4 ~ 0x1e7 - number of steps in dungeon (4 bytes)
+0x1e8 ~ 0x1eb - number of party wipes (4 bytes)
+0x1ec ~ 0x1ef - number of nitori crafts (4 bytes)
+0x1f0 ~ 0x1f3 - ??? (4 bytes)
+0x1f4 ~ 0x1fb - money acquired from selling items (8 bytes)
+0x1fc ~ 0x1ff - number of treasures opened (4 bytes)
+0x200 ~ 0x203 - number of locked treasures found (4 bytes)
+0x204 ~ 0x843 - ??? 400 slots of something (4 bytes each, 1600 total)
+0x844 ~ 0x8e3 - regular enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
+0x8e4 ~ 0x983 - large enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
+0x984 ~ 0xa23 - rare enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
+0xa24 ~ 0xac3 - achievement rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
+0xac4 ~ 0x1103 - dungeon mapping rewards (4 bytes each, 400 slots, 1600 total) (0 = unclaimed, 2 = claimed)
+  0xaef - 1f half
+  0xaf3 - 1f full
+  0xaf7 - 2f half
+  0xafb - 2f full
+  0xaff - 3f half
+  0xb03 - 3f full
+  0xb07 - oblivion full
+  0xb17 - 1f half
+  0xb1b - 1f full
+  0xb1f - 2f half
+  0xb23 - 2f full
+  0xb27 - dream path full
+0x1104 ~ 0x1107 - ??? (4 bytes)
+0x1108 ~ 0x110b - ??? (4 bytes)
+0x110c ~ 0x110f - ??? (4 bytes)
+0x1110 ~ 0x1113 - unused (4 bytes)
+0x1114 ~ 0x1433 - achievement data (4 bytes per achievement, 200 slots) (800 bytes) (0 = locked, 2 = acquired)
+0x1434 ~ 0x15c3 - treasure id list on lounge (4 bytes per id, 100 slots) (400 bytes)
+0x15c4 ~ 0x16b3 - ??? 12x5 matrix slots of something (4 bytes each, 240 total)
+0x16b4 ~ 0x4d63 - ??? 100x7x5 matrix slots of something (4 bytes each, 14000 total)
+0x4d64 ~ 0x4d87 - alice subequip craft slots [id, timer, ???] (4 bytes each, 3 slots, 36 total)
+0x4d88 ~ 0x4e27 - cirno shop slots [item id, price factor] (4 bytes each, 20 slots, 160 total)
+0x4e28 ~ 0x4e77 - equipped break items (4 bytes per item, 20 slots, 80 total) (uses some weird id?)
+0x4e78 ~ 0x4f17 - ??? 40 slots of something (4 bytes each, 160 total)
+0x4f18 ~ 0x5237 - ??? 200 slots of something (4 bytes each, 800 total)
+0x5238 ~ 0x525f - ??? 10 slots of something (4 bytes each, 40 total)
+0x5260 ~ 0x5263 - number of break item crafts (4 bytes)
+0x5264 ~ 0x5267 - number of times fled from battle (4 bytes)
+0x5268 ~ 0x526b - unused (4 bytes)
+0x526c ~ 0x526f - number of cirno purchases (4 bytes)
+0x5270 ~ 0x527f - break items auto use flags (4 bytes per item, ?? slots, ?? total) (0 = not auto, 1 = auto)
+0x5280 ~ 0x7537 - unused
+
+===== PKO FILE =====
+
+Bestiary data
+
+4 bytes per monster, 10000 enemy slots, stores death count - possibly aligns with enemy ID:
+- 101 is Weakling Kedama
+- 102 is Seed of Forgetfulness
+- 103 is Giant Walnut-Cracking Squirrel
+- 104 is Forest Flower Fairy
+- 105 is Fairytale Flower Girl
+- 106 is Sea of Trees Kedama
+- 107 is Nightmare Chrysalis
+- 108 is Juvenile Great Tree
+- 109 is Fairytale Man-Eating Wolf
+- 110 is Emerald Elemental
+- 111 is Bomb Fruit
+- 112 is Nightmare Disciple
+- 113 is Gluttonous Memorytrap
+- 201 is Magic Circle Kedama
+- 202 is Glaring Magic Doll
+- 203 is Mind Sphere
+- 204 is Amethyst Elemental
+- 205 is Shadowcat
+- 206 is Nightmare Foot Soldier
+- 301 is ?????
+- 302 is ????????
+- 5011 is Golden Seed
+- 5012 is Giant Gold-Cracking Squirrel
+- 5013 is Storybook Assassin Girl
+- 5014 is Guardian Great Tree
+- 5021 is Hexagonal Mind
+- 6011 is Forest Team
+- 6012 is Forest Band
+- 6013 is Forest Squad
+- 6021 is Dream Path Team
+- 6022 is Dream Path Band
+- 7001 is Cirno
+- 7003 is Nightmare Avatar
+- 7005 is Nightmare Shikigami Master
+- 7006 is Exploding Katashiro
+- 7008 is Ran
+- 7009 is Black Nightmare Shikigami
+- 7015 is Protector of Sumireko
+
+0x194 ~ 0x1c7 - Oblivion Forest regular enemies
+0x324 ~ 0x33b - Dream Path regular enemies
+0x4b4 ~ 0x4bb - Unused regular enemies
+0x4e4c ~ 0x4e5b - Oblivion Forest rare enemies
+0x4e74 ~ 0x4e77 - Dream Path rare enemies
+0x5dec ~ 0x5df7 - Oblivion Forest large enemies
+0x5e14 ~ 0x5e1b - Dream Path large enemies
+0x6d64 ~ 0x6d9f - Boss enemies
+
+===== SHD FILE =====
+
+Summary data for the save screen
+
+Changing these doesn't actually change anything in the save, just the displayed data on the save select screens
+
+0x0 - always 0x01 to indicate save is used
+0x1 ~ 0x8 - play time, in seconds (8 bytes)
+0x9 ~ 0xc - average party level (4 bytes)
+0xd ~ 0x10 - number of allies (4 bytes)
+0x11 ~ 0x14 - unused? (4 bytes)
+0x15 ~ 0x18 - money held (4 bytes)
+0x19 ~ 0x1c - battle count (4 bytes)
+0x1d ~ 0x20 - achievement count (4 bytes)
+0x21 ~ 0x50 - characters in party (4 bytes per character id, see C files for character order)
+
+Rest of file seems unused?
