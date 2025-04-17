@@ -65,6 +65,12 @@ A list of treasures available in each floor, along with their coordinates. Mainl
 
 This file documents the existing targetting modes the enemy AI can use. Not to be confused with the targetting mode of spells (single target, row target, etc), which are assigned to a spell instead of the AI. It follows the same idea from previous games, with a mode to target left slot more frequently, one to target the leftmost character always, etc.
 
+## Break Item Recipes
+
+### Filenames: break-items/names.txt, break-items/recipe-edges.csv, break-items/chart.md
+
+These files just hold the static data found in-game, in different formats. A list of names, a CSV containing the edges of the recipe graph, and a mermaid chart showing how the recipes chain together. By themselves they are really hard to parse through to reach a meaningful conclusion, so I'll probably make some script to generate easier-to-read charts and other useful info.
+
 ## DxEncrypt key generator from password
 
 ### Filename: dxkey.py
@@ -83,6 +89,7 @@ Here's a non-exhaustive list of things I still want to look for, in no particula
 
 - Map out treasure chest event flags so we know which is which
   - Currently I only know which flags exist
+- Make a script to better analyze break item recipes, like how many base items are needed for each other item, in total, etc
 - Figure out how the game decides which enemies spawn on a random encounter, map out the rare enemy spots and any horde spots / odds
 - Fix the script that renders a fully graphical map of each floor, as seen in-game
 - Figure out how Cirno adds items to her shop and how the heck she decides to price them
