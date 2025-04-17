@@ -35,6 +35,8 @@
 
 # The full recipe chart, GL reading it
 
+Highly recommend just copying the source and pasting it on Mermaid Live playground, then choose Adaptive display
+
 ```mermaid
 ---
 config:
