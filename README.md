@@ -83,20 +83,15 @@ Here's a non-exhaustive list of things I still want to look for, in no particula
 
 - Map out treasure chest event flags so we know which is which
   - Currently I only know which flags exist
-- Figure out how the game decides which enemies spawn on a random encounter, map out the rare enemy spots
-  - Will require some reverse engineering in Ghidra, might wait until demo patches settle down
+- Figure out how the game decides which enemies spawn on a random encounter, map out the rare enemy spots and any horde spots / odds
 - Fix the script that renders a fully graphical map of each floor, as seen in-game
 - Figure out how Cirno adds items to her shop and how the heck she decides to price them
-  - Will require some reverse engineering in Ghidra, might wait until demo patches settle down
+- Figure out how Alice's workshop timer works, how it's decreased with battles and steps
 - Map out skill and spell IDs to ease code analysis
 - Map out enemy AI to figure out targetting patterns and quirks with the random encounters
 - Patch out damage variance to ease testing reliability of skills
-  - Will require some reverse engineering in Ghidra, might wait until demo patches settle down
 - Figure out the accuracy formula, is it the same from 2?
-  - Will require some reverse engineering in Ghidra, might wait until demo patches settle down
 - Map out details of the item drop system, specifically if the hidden bonus from 2 still exists in some way
-  - Will require some reverse engineering in Ghidra, might wait until demo patches settle down
 - The game lists Mersenne Twister in the licenses, the same PRNG used in Pokemon Gen 4+. Can RNG be manipulated in some way like it can be in those games?
-  - Will require some reverse engineering in Ghidra, might wait until demo patches settle down
 - Write a save editor similar to the existing one for 2
   - I should probably finish the backlog for that before porting it over to Tri lol
