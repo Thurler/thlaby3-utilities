@@ -1,7 +1,7 @@
 target_dir = "unlock-target" # The dir that contains the save file
 max_upgrade_main = False # Whether characters will have main equip at +5
 max_upgrade_sub = False # Whether sub equips will be at +10
-lots_money = False # WANNA DOUBLE YOUR COINS?
+lots_money = True # WANNA DOUBLE YOUR COINS?
 
 # Fully unlock map data
 for i in range(1, 11):
