@@ -37,6 +37,10 @@ This is another little script that will take a save file and max out some data i
 
 ## Map data analysis and Map generation
 
+### Filename: encounter-data.txt
+
+This file explains how enemy encounters are generated and handled, accounting for the map data, your current chain, and which break items are active. It thoroughly details how the mechanics inteact with one another, and the details for making specific enemies spawn.
+
 ### Filename: map-data.txt
 
 This file explains how the maps are structured in the game, and what each file means. The B file still contains unknown data, any help in understanding what things mean is appareciated.
@@ -90,7 +94,7 @@ Here's a non-exhaustive list of things I still want to look for, in no particula
 - Map out treasure chest event flags so we know which is which
   - Currently I only know which flags exist
 - Make a script to better analyze break item recipes, like how many base items are needed for each other item, in total, etc
-- Figure out how the game decides which enemies spawn on a random encounter, map out the rare enemy spots and any horde spots / odds
+- Make a script that tells you the encounter chance for each enemy in a given tile, and plug that into a heatmap to easily identify what can be found where with the highest odds
 - Fix the script that renders a fully graphical map of each floor, as seen in-game
 - Figure out how Cirno adds items to her shop and how the heck she decides to price them
 - Figure out how Alice's workshop timer works, how it's decreased with battles and steps
@@ -102,3 +106,10 @@ Here's a non-exhaustive list of things I still want to look for, in no particula
 - The game lists Mersenne Twister in the licenses, the same PRNG used in Pokemon Gen 4+. Can RNG be manipulated in some way like it can be in those games?
 - Write a save editor similar to the existing one for 2
   - I should probably finish the backlog for that before porting it over to Tri lol
+
+## TODO but I tried and failed
+
+Here's a non-exhaustive list of things I did try looking for, but found no answers to, in no particular order:
+
+- What the heck is up with the way Forest of Oblivion 3F handles map tiles?
+- Where in the code does the game take the enemy weights and adds them together like in the previous game?

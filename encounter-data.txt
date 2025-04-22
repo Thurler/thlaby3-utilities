@@ -1,0 +1,334 @@
+=== Enemy Count ===
+
+The number of enemies that will be spawned is decided as follows:
+
+If floor == 1:
+  1/3 chance for 1 enemy
+  1/3 chance for 2 enemies
+  1/3 chance for 3 enemies
+Else, if floor == 2:
+  1/4 chance for 1 enemy
+  1/4 chance for 2 enemies
+  1/4 chance for 3 enemies
+  1/4 chance for 4 enemies
+Else, if floor == 3:
+  1/5 chance for 1 enemy
+  1/5 chance for 2 enemies
+  1/5 chance for 3 enemies
+  1/5 chance for 4 enemies
+  1/5 chance for 5 enemies
+Else:
+  1/4 chance for 2 enemies
+  1/4 chance for 3 enemies
+  1/4 chance for 4 enemies
+  1/4 chance for 5 enemies
+
+If Pulpy Berry Juice active:
+  Reduce enemy_count by 1
+If Fresh Veggie & Berry Yogurt Smoothie active:
+  Increase enemy_count by 1
+
+If enemy_count under 1:
+  enemy_count = 1
+If enemy_count over 5:
+  enemy_count = 5
+
+=== Horde and Chain Checks ===
+
+Special triggers are checked before looking at the general encounter data, to force a horde encounter or a rare enemy spawn at specific chains. The TL;DR is:
+
+(If the chain is a multiple of 10)
+- Guaranteed to face a horde on the 30th battle in a chain
+- Guaranteed to NOT face a horde, if specific break item is on
+  - This also negates the one on the 30th chain
+- Guaranteed to face a horde, if specific break item is on
+  - This takes priority over the other break items
+  - This is wasted on the 30th battle in a chain since it was already guaranteed
+- 50% chance to face a horde on every 10th battle in a chain
+  - The remaining 50% chance spawns the rare enemy for that floor
+
+(If the chain is a multiple of 5, but not 10)
+- (10 * chain / 5)% chance to spawn the rare enemy for that floor
+  - This is not affected by break items
+
+(Otherwise)
+- Break items that increase horde chance give 1% chance each to face a horde at any time
+
+And the code, as presented in the x86 assembly. The tangle of ifs and elses is so insane that Ghidra messed up the decompilation and I had to run this by hand:
+
+If chain is a multiple of 10 AND larger than 0 AND Horde boss cleared:
+  horde_chance = 50
+  If chain is 30:
+    horde_chance = 100
+  If Orange Marmalade Jam active:
+    horde_chance = 0
+  If Vanilla Lemon Curd active:
+    horde_chance = 0
+  If Fruit Basket active:
+    horde_chance = 100
+    Decrement break item counter by 1
+  If Mango Bouquet active:
+    horde_chance = 100
+    Decrement break item counter by 1
+  If (horde_chance)% check passes:
+    Spawns the horde for this floor
+    Skips every other check in the function
+  Else:
+    Spawns the rare enemy for this floor
+Else:
+  If (Fruit Basket OR Mango Bouquet active) AND chain is not a multiple of 5 AND Horde boss cleared:
+    horde_chance = 0
+    If Fruit Basket active:
+      horde_chance = horde_chance + 1
+    If Mango Bouquet active:
+      horde_chance = horde_chance + 1
+    If (horde_chance)% check passes:
+      Spawns the horde for this floor
+      Skips every other check in the function
+  If chain is a multiple of 5 AND larger than 0 AND Horde boss cleared AND didn't spawn a horde:
+    rare_chance = 10 * chain / 5
+    If (rare_chance)% check passes:
+      Spawns the rare enemy for this floor
+
+=== ???????? ===
+
+This seems to be unused right now, since the chain requirement is massive and the enemy IDs don't correspond to anything in the available enemy portraits in the game data. It's some weird code that might attempt to spawn some ultra rare enemy and force you to face against 5 enemies. The enemy IDs have dummy stats associated with them.
+
+chain_factor = min(chain * 10 + 100, 2500)
+event_chance = chain_factor / 100
+If (event_chance)% check passes:
+  Try 100 times to:
+    Generate random enemy slot 1-5 (20% chance each)
+    If it's vacant:
+      Spawn dummy enemy ID 5997 / 5998 (50% chance each)
+      enemy_count = 5
+      Stop trying to do this
+
+=== Tile Proximity Checks ===
+
+The game forces an enemy to spawn if you are close enough to specific tiles in the map. Each tile is associated with an enemy (or no enemy at all), and the game runs a random check to see if the enemy related to that tile gets spawned or not, following the steps below:
+
+For each tile up to 3 distance away:
+  If any proximity check passes:
+    spawn_chance = weight / (distance + 1)
+    If (spawn_chance)% check passes:
+      Spawn the enemy associated with tile
+  If number of spawned enemies >= enemy_count:
+    Skips every other check in the function
+
+Distance here means adding up your absolute X and Y offsets, so that only the cardinals are 1 tile away, and diagonals are 2 tiles away. Makes sense since you can't walk diagonally in this game. The order tiles are checked in goes as follows:
+
+[Distance 0]
+- Tile you are stepping on
+
+[Distance 1]
+- Tile to your right (X + 1)
+- Tile to your left (X - 1)
+- Tile under you (Y + 1)
+- Tile above you (Y - 1)
+
+[Distance 2]
+- Cardinal tiles in the same order as distance 1 (East -> West -> South -> North)
+- Bottom-right diagonal
+- Top-left diagonal
+- Top-right diagonal
+- Bottom-left diagonal
+
+[Distance 3]
+- Cardinal tiles in the same order as distance 1 (East -> West -> South -> North)
+- Just follow the diagram:
+   -
+  4-8
+ 2---5
+---#---
+ 6---1
+  7-3
+   -
+
+Below are the associated weights, tiles and enemies for each floor. Each tile has a different triggering distance, with some triggering only if you're above them, and some going up to 3 tiles away:
+
+> Forest of Oblivion 1F / 2F
+
+Tile 4 (regular tree) up to 2 distance:
+  Seed of Forgetfulness - 100
+Tile 5 (elevated grass pink lavenders) up to 1 distance:
+  Forest Flower Fairy - 200
+Tile 7 (discolorated cliff) up to 1 distance:
+  Fairytale Man-Eating Wolf - 100
+Tile 8 (walkable white chrysanthemum) up to 0 distance:
+  Giant Walnut-Cracking Squirrel - 100
+Tile 9 (walkable white tiles) up to 0 distance:
+  Fairytale Flower Girl - 100
+Tile 10 (elevated grass white chrysanthemum) up to 1 distance:
+  Giant Walnut-Cracking Squirrel - 100
+Tile 11 (elevated grass lavenders) up to 1 distance:
+  Juvenile Great Tree - 200
+Tile 12 (pink lavender tree) up to 2 distance:
+  Storybook Assassin Girl - 50
+Tile 13 (elevated grass purple chrysanthemum) up to 1 distance:
+  Juvenile Great Tree - 100
+Tile 14 (walkable purple chrysanthemum) up to 0 distance:
+  Juvenile Great Tree - 100
+Tile 15 (purple/poisoned tree) up to 3 distance:
+  Guardian Great Tree - 50
+Tile 16 (purple chrysanthemum cliff) up to 1 distance:
+  Fairytale Man-Eating Wolf - 200
+Tile 18 (elevated grass blue lavenders) up to 1 distance:
+  Gluttonous Memorytrap - 200
+Tile 19 (elevated grass blue chrysanthemum) up to 1 distance:
+  Gluttonous Memorytrap - 200
+Tile 20 (walkable blue chrysanthemum) up to 0 distance:
+  Gluttonous Memorytrap - 100
+Tile 23 (golden tree) up to 3 distance:
+  Golden Seed - 100
+Tile 24 (pale pink lavender tree) up to 2 distance:
+  Storybook Assassin Girl - 50
+
+Checking for tiles 11, 12, 13, 14, 15, 16, 18, 19, 20, 23 and 24 in 1F is pointless as it does not have them in the map
+Checking for tiles 18, 19, 20, 23 and 24 in 2F is pointless as it does not have them in the map
+
+> Forest of Oblivion 3F
+
+For some unknown reason, some tile IDs in this floor are completely whack. I have no idea why, and am referencing the raw map data to extract the data below. Blessed shall be the one that tries to defy this unholy curse.
+
+Tile 5 (elevated grass pink lavenders) up to 1 distance:
+  Forest Flower Fairy - 200
+Tile 7 (discolorated cliff) up to 1 distance:
+  Fairytale Man-Eating Wolf - 100
+Tile 9 (walkable white tiles) up to 0 distance:
+  Fairytale Flower Girl - 100
+Tile 10 (elevated grass white chrysanthemum) up to 1 distance:
+  Giant Walnut-Cracking Squirrel - 100
+Tile 11 (pink lavender tree) up to 2 distance:
+  Storybook Assassin Girl - 50
+Tile 12 (elevated grass purple chrysanthemum) up to 1 distance:
+  Juvenile Great Tree - 100
+Tile 13 (walkable purple chrysanthemum) up to 0 distance:
+  Juvenile Great Tree - 100
+Tile 14 (purple/poisoned tree) up to 3 distance:
+  Guardian Great Tree - 50
+Tile 15 (purple chrysanthemum cliff) up to 1 distance:
+  Fairytale Man-Eating Wolf - 100
+Tile 18 (some elevated grass blue lavenders) up to 1 distance:
+  Gluttonous Memorytrap - 200
+Tile 19 (elevated grass blue chrysanthemum) up to 1 distance:
+  Gluttonous Memorytrap - 100
+Tile 20 (walkable blue chrysanthemum) up to 0 distance:
+  Gluttonous Memorytrap - 100
+Tile 21 (regular tree) up to 2 distance:
+  Seed of Forgetfulness - 100
+
+> Dream Path to the Occult Balls 1F / 2F
+
+Tile 8 (large purple spheres vertical stream) up to 3 distance:
+  Mind Sphere - 200
+Tile 14 (small purple spheres vertical stream) up to 3 distance:
+  Mind Sphere - 200
+Tile 11 (medium crystal) up to 3 distance:
+  Amethyst Elemental - 200
+Tile 12 (small crystal) up to 3 distance:
+  Amethyst Elemental - 200
+Tile 13 (large crystal) up to 3 distance:
+  Amethyst Elemental - 200
+Tile 17 (dark gray cement floor) up to 0 distance:
+  Shadowcat - 100
+Tile 2 (very light purple floor) up to 0 distance:
+  Nightmare Foot Soldier - 25
+Tile 3 (light purple floor) up to 0 distance:
+  Nightmare Foot Soldier - 50
+Tile 16 (purple floor) up to 0 distance:
+  Nightmare Foot Soldier - 100
+Tile 18 (dark purple floor) up to 0 distance:
+  Nightmare Foot Soldier - 100
+
+=== Global Encounter Weights ===
+
+The break items that boost rare enemy encounter chances only apply to the weights below, not to the boosts described above. They are also currently bugged since they do not check the correct enemy IDs when assessing if a monster is rare or not: it currently checks if ID is between 600 and 700, when it should be 5000 and 6000.
+
+Those items also stack additively, not multiplicatively - they work by adding the weights a second time (or two times, for the one that triples the odds), and so when both are active, you just add the weight 3 times more to the base one, 4x'ing the weight rather than 6x'ing it.
+
+These weights should be added together, and then odds of any given enemy spawning is the ratio between its weight and the sum of all applicable weights. That's how it went with the second game, but I didn't see this particular code this time around. The structure is the same so it's likely how it's done, but I couldn't find confirmation:
+
+> Forest of Oblivion 1F
+
+If X > 83 OR (71 < X < 84 AND 47 < Y < 76):
+  Weakling Kedama - 100
+  Seed of Forgetfulness - 75
+  Giant Walnut-Cracking Squirrel - 50
+  If X < 87 AND Y > 55:
+    Forest Flower Fairy - 66
+Otherwise:
+  Seed of Forgetfulness - 80
+  Giant Walnut-Cracking Squirrel - 100
+  Forest Flower Fairy - 100
+  Fairytale Flower Girl - 80
+  Sea of Trees Kedama - 50
+  Golden Seed - 5
+
+Rare enemy for chain bonus: Golden Seed
+
+> Forest of Oblivion 2F
+
+Forest Flower Fairy - 80
+Fairytale Flower Girl - 100
+Sea of Trees Kedama - 100
+Nightmare Chrysalis - 100
+Juvenile Great Tree - 40
+Golden Seed - 3
+Giant Gold-Cracking Squirrel - 3
+Storybook Assassin Girl - 3
+
+Rare enemy for chain bonus: Giant Gold-Cracking Squirrel
+
+> Forest of Oblivion 3F
+
+If X < 71 AND Y < 71:
+  Sea of Trees Kedama - 40
+  Nightmare Chrysalis - 60
+  Juvenile Great Tree - 80
+  Fairytale Man-Eating Wolf - 100
+  Emerald Elemental - 100
+  Bomb Fruit - 100
+  Golden Seed - 3
+  Giant Gold-Cracking Squirrel - 3
+  Storybook Assassin Girl - 3
+  Guardian Great Tree - 3
+Otherwise:
+  Juvenile Great Tree - 40
+  Fairytale Man-Eating Wolf - 60
+  Emerald Elemental - 80
+  Bomb Fruit - 100
+  Nightmare Disciple - 120
+  Gluttonous Memorytrap - 80
+  Golden Seed - 4
+  Giant Gold-Cracking Squirrel - 4
+  Storybook Assassin Girl - 4
+  Guardian Great Tree - 4
+
+Rare enemy for chain bonus: Storybook Assassin Girl
+
+> Dream Path to the Occult Balls 1F
+
+Nightmare Chrysalis - 40
+Nightmare Disciple - 70
+Magic Circle Kedama - 100
+Glaring Magic Doll - 100
+Mind Sphere - 75
+Amethyst Elemental - 50
+Hexagonal Mind - 1
+
+Rare enemy for chain bonus: Hexagonal Mind
+
+> Dream Path to the Occult Balls 2F
+
+Nightmare Chrysalis - 20
+Nightmare Disciple - 40
+Magic Circle Kedama - 60
+Glaring Magic Doll - 80
+Mind Sphere - 100
+Amethyst Elemental - 100
+Shadowcat - 50
+Nightmare Foot Soldier - 25
+Hexagonal Mind - 3
+
+Rare enemy for chain bonus: Hexagonal Mind
