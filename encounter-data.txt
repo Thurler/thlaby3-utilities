@@ -35,6 +35,8 @@ If enemy_count over 5:
 
 === Horde and Chain Checks ===
 
+This section only applies if you have already unlocked Horde fights. All of the bonuses described here are only active when the boss event in Dream Path 1F has been cleared, even the parts pertaining to rare encounters.
+
 Special triggers are checked before looking at the general encounter data, to force a horde encounter or a rare enemy spawn at specific chains. The TL;DR is:
 
 (If the chain is a multiple of 10)
@@ -145,7 +147,7 @@ Distance here means adding up your absolute X and Y offsets, so that only the ca
   7-3
    -
 
-Below are the associated weights, tiles and enemies for each floor. Each tile has a different triggering distance, with some triggering only if you're above them, and some going up to 3 tiles away:
+Funny trivia, the game actually checks all 25 possible tiles manually in the order described instead of writing a loop. Below are the associated weights, tiles and enemies for each floor. Each tile has a different triggering distance, with some triggering only if you're above them, and some going up to 3 tiles away:
 
 > Forest of Oblivion 1F / 2F
 
