@@ -1,5 +1,7 @@
-backup-saves/*
+backup-saves
 character-ids.txt
-maps/assets/tiles/*
+maps/assets/tiles
+maps/*.csv
+maps/*.txt
 saves/*/*
 unlock-target
