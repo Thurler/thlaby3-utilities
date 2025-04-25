@@ -263,6 +263,8 @@ class Floor:
     # boolean check
     results = []
     for name, probability in weights.items():
+      if probability == 0:
+        continue
       results += self.compute_encounters(
         remaining - 1,
         base_prob * probability,
@@ -293,6 +295,7 @@ class Floor:
     # with missing squares for tile logic - the game doesn't use valid data in
     # those tiles anyway and is likely to crash, so why bother
     for row in range(2, grid_dim - 2):
+      print(f"Row {row}...")
       for col in range(2, grid_dim - 2):
         cell = self.grid[row][col]
         # We only care about cells the player can step on
@@ -482,8 +485,39 @@ class Oblivion1F(Floor):
     super().__init__(1, 1, self.enemies, self.tiles)
 
 class Oblivion2F(Floor):
-  enemies = []
-  tiles = []
+  enemies = [
+    Enemy("Seed of Forgetfulness", False, [EnemyWeight(0)]),
+    Enemy("Giant Walnut-Cracking Squirrel", False, [EnemyWeight(0)]),
+    Enemy("Forest Flower Fairy", False, [EnemyWeight(80)]),
+    Enemy("Fairytale Flower Girl", False, [EnemyWeight(100)]),
+    Enemy("Sea of Trees Kedama", False, [EnemyWeight(100)]),
+    Enemy("Nightmare Chrysalis", False, [EnemyWeight(100)]),
+    Enemy("Juvenile Great Tree", False, [EnemyWeight(40)]),
+    Enemy("Fairytale Man-Eating Wolf", False, [EnemyWeight(0)]),
+    Enemy("Golden Seed", True, [EnemyWeight(3)]),
+    Enemy("Giant Gold-Cracking Squirrel", True, [EnemyWeight(3)]),
+    Enemy("Storybook Assassin Girl", True, [EnemyWeight(3)]),
+    Enemy("Guardian Great Tree", True, [EnemyWeight(0)]),
+  ]
+  tiles = [
+    TileProximity("Seed of Forgetfulness", 4, 2, 100),
+    TileProximity("Forest Flower Fairy", 5, 1, 200),
+    TileProximity("Fairytale Man-Eating Wolf", 7, 1, 100),
+    TileProximity("Giant Walnut-Cracking Squirrel", 8, 0, 100),
+    TileProximity("Fairytale Flower Girl", 9, 0, 100),
+    TileProximity("Giant Walnut-Cracking Squirrel", 10, 1, 100),
+    TileProximity("Juvenile Great Tree", 11, 1, 200),
+    TileProximity("Storybook Assassin Girl", 12, 2, 50),
+    TileProximity("Juvenile Great Tree", 13, 1, 100),
+    TileProximity("Juvenile Great Tree", 14, 0, 100),
+    TileProximity("Guardian Great Tree", 15, 3, 50),
+    TileProximity("Fairytale Man-Eating Wolf", 16, 1, 200),
+    TileProximity("Gluttonous Memorytrap", 18, 1, 200),
+    TileProximity("Gluttonous Memorytrap", 19, 1, 200),
+    TileProximity("Gluttonous Memorytrap", 20, 0, 100),
+    TileProximity("Golden Seed", 23, 3, 100),
+    TileProximity("Storybook Assassin Girl", 24, 2, 50),
+  ]
 
   def __init__(self):
     super().__init__(1, 2, self.enemies, self.tiles)
@@ -510,8 +544,8 @@ class DreamPath2F(Floor):
     super().__init__(2, 2, self.enemies, self.tiles)
 
 # Instantiate floor data for analysis
-floor = Oblivion1F()
-# floor = Oblivion2F()
+# floor = Oblivion1F()
+floor = Oblivion2F()
 # floor = Oblivion3F()
 # floor = DreamPath1F()
 # floor = DreamPath2F()
