@@ -58,7 +58,7 @@ class TileProximity:
     self.weight = weight
 
   def value(self, distance):
-    return self.weight / (distance + 1)
+    return min(1, self.weight / (100 * (distance + 1)))
 
 # A cell that is filled in in the grid, at position (X, Y)
 class Cell:
@@ -231,60 +231,51 @@ class Floor:
       probs[enemy.name] = enemy.weight_at_coord(row, col) / weight_sum
     return probs
 
-  def compute_spread(self, remaining, base_prob, proximity, weights):
+  def compute_encounters(
+    self, remaining, base_prob, proximity, weights, spawned,
+  ):
     # If there are no remaining slots, there is nothing to do, so just return
     if remaining == 0:
-      return {}
+      return [(spawned, base_prob)]
     # If we have remaining proximity checks, we perform those
     if len(proximity) > 0:
-      # Proximity probability comes as percentage, so we divide by 100
-      check_name, check_prob = proximity[0][0], (proximity[0][1] / 100)
+      check_name, check_prob = proximity[0]
       # Success spawns an enemy, so it reduces the remaining slots by 1
-      success_result = self.compute_spread(
-        remaining - 1, base_prob * check_prob, proximity[1:], weights,
+      success_result = self.compute_encounters(
+        remaining - 1,
+        base_prob * check_prob,
+        proximity[1:],
+        weights,
+        spawned + [check_name],
       )
       # Failure does not, so it keeps the remaining slots
-      failure_result = self.compute_spread(
-        remaining, base_prob * (1 - check_prob), proximity[1:], weights,
+      failure_result = self.compute_encounters(
+        remaining,
+        base_prob * (1 - check_prob),
+        proximity[1:],
+        weights,
+        spawned,
       )
-      # We add the compunded probability to the success result, as it spawned
-      # the enemy
-      if check_name not in success_result:
-        success_result[check_name] = 0
-      success_result[check_name] += base_prob * check_prob
-      # And finally merge the results to return them
-      for name, probability in failure_result.items():
-        if name not in success_result:
-          success_result[name] = 0
-        success_result[name] += probability
-      return success_result
+      # We simply return the possible outcomes from either branch
+      return success_result + failure_result
     # Otherwise, we just follow the global weights - we iterate on each
     # outcome recursively, following the same logic as we did for proximity's
     # boolean check
     results = []
     for name, probability in weights.items():
-      result = self.compute_spread(
-        remaining - 1, base_prob * probability, proximity, weights,
+      results += self.compute_encounters(
+        remaining - 1,
+        base_prob * probability,
+        proximity,
+        weights,
+        spawned + [name],
       )
-      # We add the compunded probability to the success result, as it spawned
-      # the enemy
-      if name not in result:
-        result[name] = 0
-      result[name] += base_prob * probability
-      results.append(result)
-    # And finally, we merge the independent and mutually exclusive results to
-    # get the final spread
-    spread = {}
-    for result in results:
-      for name, probability in result.items():
-        if name not in spread:
-          spread[name] = 0
-        spread[name] += probability
-    return spread
+    return results
 
   def compute_odds(self, export_txt, export_csv):
     text_file = open("encounter_data.txt", 'w') if export_txt else None
-    csv_file = open("encounter_data.csv", 'w') if export_csv else None
+    csv_expected = open("encounter_expected.csv", 'w') if export_csv else None
+    csv_prob = open("encounter_probability.csv", 'w') if export_csv else None
     # Enemy counts are global for the floor
     enemy_counts = self.enemy_count_probabilities()
     if export_txt:
@@ -296,7 +287,8 @@ class Floor:
       text_file.write('\n')
     enemy_names = [e.name for e in self.enemies]
     if export_csv:
-      csv_file.write(f"X,Y,{','.join(enemy_names)}\n")
+      csv_expected.write(f"X,Y,{','.join(enemy_names)}\n")
+      csv_prob.write(f"X,Y,{','.join(enemy_names)}\n")
     # When iterating, we skip the first and last 2 rows/cols to avoid dealing
     # with missing squares for tile logic - the game doesn't use valid data in
     # those tiles anyway and is likely to crash, so why bother
@@ -314,7 +306,7 @@ class Floor:
           if len(proximity_checks) > 0:
             text_file.write("Proximity tile checks:\n\n")
             for name, probability in proximity_checks:
-              text_file.write(f"- {name}: {round(probability, 2)}%\n")
+              text_file.write(f"- {name}: {round(probability * 100, 2)}%\n")
             text_file.write('\n')
           else:
             text_file.write("No tile checks to be performed\n\n")
@@ -326,35 +318,53 @@ class Floor:
             probability = round(probability * 100, 2)
             text_file.write(f"- {enemy}: {probability}%\n")
           text_file.write('\n')
-        # Now comes the fun part - compounding the probabilities and adding
-        # them up as we go through them
-        result = {}
+        # Now we simulate enemy spawns to brute force all possible battle
+        # encounters and their probabilities
+        possible_battles = []
         for count, count_prob in enemy_counts.items():
-          probability_spread = self.compute_spread(
-            count, count_prob, proximity_checks, enemy_weights,
+          possible_battles += self.compute_encounters(
+            count, count_prob, proximity_checks, enemy_weights, [],
           )
-          for name, probability in probability_spread.items():
-            if name not in result:
-              result[name] = 0
-            result[name] += probability
+        # We iterate over the possible battles, adding up probabilities for each
+        # enemy to figure the expected number and probability of at least one
+        expected = {}
+        spawn_probability = {}
+        for name in enemy_names:
+          expected[name] = 0
+          spawn_probability[name] = 0
+          for battle in possible_battles:
+            spawns, probability = battle
+            expected[name] += spawns.count(name) * probability
+            if name in spawns:
+              spawn_probability[name] += probability
         if export_txt:
           text_file.write("Final spawn probabilities:\n\n")
-          for enemy, probability in result.items():
-            if probability == 0:
+          for name in enemy_names:
+            if expected[name] == 0:
               continue
-            probability = round(probability * 100, 2)
-            text_file.write(f"- {enemy}: {probability}%\n")
+            expected_count = round(expected[name], 4)
+            prob = round(spawn_probability[name] * 100, 2)
+            text_file.write(
+              f"- {name}: Expected {expected_count}, at least one: {prob}%\n",
+            )
           text_file.write('\n')
         if export_csv:
-          csv_file.write(f"{col},{row},")
-          values = [result[n] if n in result else 0 for n in enemy_names]
-          values = [f"{round(value * 100, 2)}%" for value in values]
-          csv_file.write(','.join(values))
-          csv_file.write('\n')
+          # Write the resulting expected count in its own csv file
+          csv_expected.write(f"{col},{row},")
+          expecteds = [str(round(expected[name], 4)) for name in enemy_names]
+          csv_expected.write(','.join(expecteds))
+          csv_expected.write('\n')
+          # Write the resulting probability to spawn in its own csv file
+          csv_prob.write(f"{col},{row},")
+          probs = [spawn_probability[name] for name in enemy_names]
+          probs = [f"{round(prob * 100, 2)}%" for prob in probs]
+          csv_prob.write(','.join(probs))
+          csv_prob.write('\n')
     if export_txt:
       text_file.close()
     if export_csv:
-      csv_file.close()
+      csv_expected.close()
+      csv_prob.close()
 
   def draw(self, image, pixels):
     # Draw the base grid and cells
