@@ -155,7 +155,7 @@ Tile 4 (regular tree) up to 2 distance:
   Seed of Forgetfulness - 100
 Tile 5 (elevated grass pink lavenders) up to 1 distance:
   Forest Flower Fairy - 200
-Tile 7 (discolorated cliff) up to 1 distance:
+Tile 7 (discolorated cliff) up to 1 distance and only in 2F:
   Fairytale Man-Eating Wolf - 100
 Tile 8 (walkable white chrysanthemum) up to 0 distance:
   Giant Walnut-Cracking Squirrel - 100
