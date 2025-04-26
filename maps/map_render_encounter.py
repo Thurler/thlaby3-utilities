@@ -8,10 +8,22 @@ double_rare_enemy = False
 triple_rare_enemy = False
 
 # Output control
-export_detailed_tile_info = True
-export_probability_spreadsheet = True
-export_probability_heatmap = False
-enemy_for_heatmap = ""
+export_detailed_tile_info = False
+export_probability_spreadsheet = False
+export_probability_heatmap = True
+enemy_for_heatmap = "Golden Seed"
+legend_text_color = (255, 255, 255) # white
+legend_size = 100 # How many pixels the legend will take up
+legend_width = 25 # How wide each legend color will be
+max_legend_height = 50 # How tall each legend color can be at max
+legend_padding = 10 # How much padding between legend text and color
+heatmap_sin_factor = 1 # Sine exponent to take when making heatmap gradient
+heatmap_colors = {
+  100: (255, 0, 0), # For pure 100%
+  99: (230, 100, 100), # For the highest non-100%
+  1: (255, 255, 255), # For the lowest non-0%
+  0: (127, 127, 127), # For the pure 0%
+}
 
 cell_size = 15 # How large each grid cell is
 
@@ -24,6 +36,19 @@ border_text_color = (0, 0, 0) # black
 text_font = ImageFont.truetype("arial.ttf", 16)
 
 img_size = grid_dim * cell_size + (grid_dim + 1)
+
+heatmap_scale = [] # Filled with the heatmap values that will be rendered
+
+# The heatmap color for a factor [0, 1]
+def heatmap_color(factor):
+  min_color = heatmap_colors[1]
+  max_color = heatmap_colors[99]
+  factor = math.sin(factor * math.pi / 2) ** heatmap_sin_factor
+  return (
+    int(min_color[0] + (factor * (max_color[0] - min_color[0]))),
+    int(min_color[1] + (factor * (max_color[1] - min_color[1]))),
+    int(min_color[2] + (factor * (max_color[2] - min_color[2]))),
+  )
 
 # An enemy spawn weight, possibly conditioned to grid positions
 class EnemyWeight:
@@ -66,16 +91,16 @@ class Cell:
     self.walkable = walkable
     self.tile = int(tile)
     self.decorator = int(decorator)
+    self.color = (255, 255, 255)
     self.x = x
     self.y = y
 
   def draw(self, pixels):
     if not self.walkable:
       return
-    color = (255, 255, 255)
     for i in range(cell_size):
       for j in range(cell_size):
-        pixels[self.x + i, self.y + j] = color
+        pixels[self.x + i, self.y + j] = self.color
 
 # A floor that will be drawn in the map
 class Floor:
@@ -221,14 +246,14 @@ class Floor:
     # First we add up all the available weights for this tile
     weight_sum = 0
     for enemy in self.enemies:
-      weight_sum += enemy.weight_at_coord(row, col)
+      weight_sum += enemy.weight_at_coord(col, row)
     # Then we divide each individual weight by the sum, to get individual
     # probabilities
     probs = {}
     if weight_sum == 0:
       return probs
     for enemy in self.enemies:
-      probs[enemy.name] = enemy.weight_at_coord(row, col) / weight_sum
+      probs[enemy.name] = enemy.weight_at_coord(col, row) / weight_sum
     return probs
 
   def compute_encounters(
@@ -278,6 +303,7 @@ class Floor:
     text_file = open("encounter_data.txt", 'w') if export_txt else None
     csv_expected = open("encounter_expected.csv", 'w') if export_csv else None
     csv_prob = open("encounter_probability.csv", 'w') if export_csv else None
+    heatmap_values = []
     # Enemy counts are global for the floor
     enemy_counts = self.enemy_count_probabilities()
     if export_txt:
@@ -340,6 +366,11 @@ class Floor:
             expected[name] += spawns.count(name) * probability
             if name in spawns:
               spawn_probability[name] += probability
+          if export_probability_heatmap and name == enemy_for_heatmap:
+            # Save the final probability as a heatmap value for these coords
+            final_probability = spawn_probability[name]
+            heatmap_values.append((row, col, final_probability))
+        # Export the text data in both txt and csv formats
         if export_txt:
           text_file.write("Final spawn probabilities:\n\n")
           for name in enemy_names:
@@ -363,11 +394,42 @@ class Floor:
           probs = [f"{round(prob * 100, 2)}%" for prob in probs]
           csv_prob.write(','.join(probs))
           csv_prob.write('\n')
+    # Close the text files so they can be flushed to disk
     if export_txt:
       text_file.close()
     if export_csv:
       csv_expected.close()
       csv_prob.close()
+    # Lastly, we update each cell's color with the expected probability for
+    # the heatmap enemy, based on the possible probabilities
+    if export_probability_heatmap:
+      # We first need to know if any tile has 100% spawn and what the non-zero
+      # min value and non-100 max value are; also the list of possible values
+      has_hundred = False
+      max_prob = 0
+      min_prob = 1
+      for value in heatmap_values:
+        _, _, probability = value
+        if probability <= 0.000001 or probability >= 0.999999:
+          continue
+        if probability > max_prob:
+          max_prob = probability
+        if probability < min_prob:
+          min_prob = probability
+        if probability not in heatmap_scale:
+          heatmap_scale.append(probability)
+      # Now we iterate again, computing the gradient and setting the colors:
+      for value in heatmap_values:
+        row, col, probability = value
+        color = None
+        if probability >= 0.999999:
+          color = heatmap_colors[100]
+        elif probability <= 0.000001:
+          color = heatmap_colors[0]
+        else:
+          factor = (probability - min_prob) / (max_prob - min_prob)
+          color = heatmap_color(factor)
+        self.grid[row][col].color = color
 
   def draw(self, image, pixels):
     # Draw the base grid and cells
@@ -454,7 +516,6 @@ class Oblivion1F(Floor):
         EnemyWeight(50, BoundaryCheck.o1_start_area_check_inv),
       ],
     ),
-    Enemy("Fairytale Man-Eating Wolf", False, [EnemyWeight(0)]),
     Enemy(
       "Golden Seed", True, [
         EnemyWeight(5, BoundaryCheck.o1_start_area_check_inv),
@@ -464,7 +525,6 @@ class Oblivion1F(Floor):
   tiles = [
     TileProximity("Seed of Forgetfulness", 4, 2, 100),
     TileProximity("Forest Flower Fairy", 5, 1, 200),
-    TileProximity("Fairytale Man-Eating Wolf", 7, 1, 100),
     TileProximity("Giant Walnut-Cracking Squirrel", 8, 0, 100),
     TileProximity("Fairytale Flower Girl", 9, 0, 100),
     TileProximity("Giant Walnut-Cracking Squirrel", 10, 1, 100),
@@ -544,8 +604,8 @@ class DreamPath2F(Floor):
     super().__init__(2, 2, self.enemies, self.tiles)
 
 # Instantiate floor data for analysis
-# floor = Oblivion1F()
-floor = Oblivion2F()
+floor = Oblivion1F()
+# floor = Oblivion2F()
 # floor = Oblivion3F()
 # floor = DreamPath1F()
 # floor = DreamPath2F()
@@ -589,13 +649,13 @@ map_img = map_img.crop((
 ))
 
 # Make a new image with a white canvas to have the coordinate border
-final_img = Image.new(
+border_img = Image.new(
   "RGBA",
   (map_img.size[0] + (border_width * 2), map_img.size[1] + (border_width * 2)),
   "white",
 )
-pixels = final_img.load()
-draw = ImageDraw.Draw(final_img)
+pixels = border_img.load()
+draw = ImageDraw.Draw(border_img)
 labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 def draw_vertical_divisor(pixels, draw, xcount, text=True):
@@ -606,7 +666,7 @@ def draw_vertical_divisor(pixels, draw, xcount, text=True):
   for g in range(grid_size):
     for h in range(border_width):
       pixels[x + g, h] = border_text_color
-      pixels[x + g, final_img.size[1] - h - 1] = border_text_color
+      pixels[x + g, border_img.size[1] - h - 1] = border_text_color
   # If drawing text, make sure it's centered
   if text:
     W, H = ((cell_size + grid_size) * 5, border_width)
@@ -620,7 +680,7 @@ def draw_vertical_divisor(pixels, draw, xcount, text=True):
     )
     # Bottom row
     draw.text(
-      (x + ((W - w) / 2), final_img.size[1] - border_width + ((H - h) / 2)),
+      (x + ((W - w) / 2), border_img.size[1] - border_width + ((H - h) / 2)),
       label,
       fill=border_text_color,
       font=text_font,
@@ -634,7 +694,7 @@ def draw_horizontal_divisor(pixels, draw, ycount, text=True):
   for g in range(grid_size):
     for h in range(border_width):
       pixels[h, y + g] = border_text_color
-      pixels[final_img.size[0] - h - 1, y + g] = border_text_color
+      pixels[border_img.size[0] - h - 1, y + g] = border_text_color
   # If drawing text, make sure it's centered
   if text:
     W, H = (border_width, (cell_size + grid_size) * 5)
@@ -648,7 +708,7 @@ def draw_horizontal_divisor(pixels, draw, ycount, text=True):
     )
     # Right column
     draw.text(
-      (final_img.size[0] - border_width + ((W - w) / 2), y + ((H - h) / 2)),
+      (border_img.size[0] - border_width + ((W - w) / 2), y + ((H - h) / 2)),
       label,
       fill=border_text_color,
       font=text_font,
@@ -667,7 +727,81 @@ for i in range(groupsy):
 draw_horizontal_divisor(pixels, draw, groupsy, False)
 
 # Paste the original map in this new image
-final_img.paste(map_img, (border_width, border_width))
+border_img.paste(map_img, (border_width, border_width))
+
+# Make a new image with a black canvas to have the heatmap scale
+heatmap_x = border_img.size[0] + (legend_padding // 2)
+final_height = border_img.size[1]
+final_img = Image.new(
+  "RGBA",
+  (border_img.size[0] + legend_size, final_height),
+  "black",
+)
+pixels = final_img.load()
+draw = ImageDraw.Draw(final_img)
+
+# Sort the values and collapse neighbor percents to the same color
+heatmap_scale.sort(reverse=True)
+legend_colors = {}
+ordered_colors = []
+for value in heatmap_scale:
+  # The last element will be the smallest after the reverse sort
+  factor = (value - heatmap_scale[-1]) / (heatmap_scale[0] - heatmap_scale[-1])
+  color = heatmap_color(factor)
+  if color not in ordered_colors:
+    ordered_colors.append(color)
+    legend_colors[color] = []
+  legend_colors[color].append(value)
+
+# Figure out how big each legend step is going to be - cap at 50px
+step_size = int(
+  min(max_legend_height, final_height / (len(ordered_colors) + 2))
+)
+# The remainder will be used as padding - odd pixel count will be added to grey
+remainder = final_height - (step_size * (len(ordered_colors) + 2))
+vpadding = remainder // 2
+vextra = remainder % 2
+
+# Draws text next to the color, centered around the height of the color
+def draw_legend_text(size, offset_y, value):
+  rounded = round(value * 100, 2)
+  rounded = 99.99 if value < 0.999999 and rounded >= 100 else rounded
+  text = f"{rounded}%"
+  _, _, _, h_value = draw.textbbox((0, 0), text, font=text_font)
+  h_text = (size - h_value) / 2
+  draw.text(
+    (heatmap_x + legend_width + legend_padding, offset_y + h_text),
+    text,
+    fill=legend_text_color,
+    font=text_font,
+  )
+
+# Draw the hardcoded heatmap values for 100% and 0%
+for i in range(legend_width):
+  for j in range(step_size):
+    pixels[heatmap_x + i, vpadding + j] = heatmap_colors[100]
+  for j in range(step_size + vextra):
+    color = heatmap_colors[0]
+    pixels[heatmap_x + i, final_height - vpadding - vextra - j] = color
+draw_legend_text(step_size, vpadding, 1)
+draw_legend_text(
+  step_size + vextra, vpadding + ((len(ordered_colors) + 1) * step_size), 0,
+)
+
+# Draw the remaining heatmap values, in order
+for c, color in enumerate(ordered_colors):
+  offset_y = vpadding + ((c + 1) * step_size)
+  for i in range(legend_width):
+    for j in range(step_size):
+      pixels[heatmap_x + i, offset_y + j] = color
+  # For the text, we always take the highest % value in that color threshold,
+  # unless it's the final step, in which case we use the lowest one
+  values = sorted(legend_colors[color], reverse=True)
+  value = values[0] if c < (len(ordered_colors) - 1) else values[-1]
+  draw_legend_text(step_size, offset_y, value)
+
+# Paste the original map in this new image
+final_img.paste(border_img, (0, 0))
 
 # Render the final product
 final_img.show()
