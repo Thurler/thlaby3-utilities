@@ -11,7 +11,7 @@ triple_rare_enemy = False
 export_detailed_tile_info = False
 export_probability_spreadsheet = False
 export_probability_heatmap = True
-enemy_for_heatmap = "Golden Seed"
+enemy_for_heatmap = "Guardian Great Tree"
 legend_text_color = (255, 255, 255) # white
 legend_size = 100 # How many pixels the legend will take up
 legend_width = 25 # How wide each legend color will be
@@ -20,8 +20,7 @@ legend_padding = 10 # How much padding between legend text and color
 heatmap_sin_factor = 1 # Sine exponent to take when making heatmap gradient
 heatmap_colors = {
   100: (255, 0, 0), # For pure 100%
-  99: (230, 100, 100), # For the highest non-100%
-  1: (255, 255, 255), # For the lowest non-0%
+  99: (230, 100, 100), # For the intermediary values - will get hue-shifted
   0: (127, 127, 127), # For the pure 0%
 }
 
@@ -41,13 +40,38 @@ heatmap_scale = [] # Filled with the heatmap values that will be rendered
 
 # The heatmap color for a factor [0, 1]
 def heatmap_color(factor):
-  min_color = heatmap_colors[1]
-  max_color = heatmap_colors[99]
-  factor = math.sin(factor * math.pi / 2) ** heatmap_sin_factor
+  shift = (factor + 0.2) / 1.2 # Clip to 0.2 - 1 to avoid rolling back to red
+  r, g, b = heatmap_colors[99]
+  # Complicated maths to hueshift the color
+  sinf = math.sin(2 * math.pi * (1 - shift))
+  cosf = math.cos(2 * math.pi * (1 - shift))
+  sq3 = (1 / 3) ** 0.5
+  shift_matrix = [
+    [
+      cosf + (1 - cosf) / 3,
+      1 / 3 * (1 - cosf) - sq3 * sinf,
+      1 / 3 * (1 - cosf) + sq3 * sinf,
+    ],
+    [
+      1 / 3 * (1 - cosf) + sq3 * sinf,
+      cosf + 1 / 3 * (1 - cosf),
+      1 / 3 * (1 - cosf) - sq3 * sinf,
+    ],
+    [
+      1 / 3 * (1 - cosf) - sq3 * sinf,
+      1 / 3 * (1 - cosf) + sq3 * sinf,
+      cosf + 1 / 3 * (1 - cosf),
+    ],
+  ]
+  rf, gf, bf = (
+    r * shift_matrix[0][0] + g * shift_matrix[0][1] + b * shift_matrix[0][2],
+    r * shift_matrix[1][0] + g * shift_matrix[1][1] + b * shift_matrix[1][2],
+    r * shift_matrix[2][0] + g * shift_matrix[2][1] + b * shift_matrix[2][2],
+  )
   return (
-    int(min_color[0] + (factor * (max_color[0] - min_color[0]))),
-    int(min_color[1] + (factor * (max_color[1] - min_color[1]))),
-    int(min_color[2] + (factor * (max_color[2] - min_color[2]))),
+    0 if rf < 0 else 255 if rf > 255 else int (rf + 0.5),
+    0 if gf < 0 else 255 if gf > 255 else int (gf + 0.5),
+    0 if bf < 0 else 255 if bf > 255 else int (bf + 0.5),
   )
 
 # An enemy spawn weight, possibly conditioned to grid positions
@@ -206,7 +230,7 @@ class Floor:
       (self.grid[row - 1][col], 1),
       # Distance 2
       (self.grid[row][col + 2], 2),
-      (self.grid[row][col + 2], 2),
+      (self.grid[row][col - 2], 2),
       (self.grid[row + 2][col], 2),
       (self.grid[row - 2][col], 2),
       (self.grid[row + 1][col + 1], 2),
@@ -604,8 +628,8 @@ class DreamPath2F(Floor):
     super().__init__(2, 2, self.enemies, self.tiles)
 
 # Instantiate floor data for analysis
-floor = Oblivion1F()
-# floor = Oblivion2F()
+# floor = Oblivion1F()
+floor = Oblivion2F()
 # floor = Oblivion3F()
 # floor = DreamPath1F()
 # floor = DreamPath2F()
