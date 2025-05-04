@@ -12,7 +12,7 @@ triple_rare_enemy = False
 export_detailed_tile_info = False
 export_probability_spreadsheet = False
 export_probability_heatmap = True
-enemy_for_heatmap = "Guardian Great Tree"
+enemy_for_heatmap = "Seed of Forgetfulness"
 legend_text_color = (255, 255, 255) # white
 legend_size = 100 # How many pixels the legend will take up
 legend_width = 25 # How wide each legend color will be
@@ -514,6 +514,14 @@ class BoundaryCheck:
   def o1_fairy_check(x, y):
     return BoundaryCheck.o1_start_area_check(x, y) and x < 87 and y > 55
 
+  # Oblivion 3F top area
+  def o3_top_area_check(x, y):
+    return x < 71 and y < 71
+
+  # And its inverse
+  def o3_top_area_check_inv(x, y):
+    return not BoundaryCheck.o3_top_area_check(x, y)
+
 # These classes literally just hold the enemies and special tiles for each floor
 class Oblivion1F(Floor):
   enemies = [
@@ -617,30 +625,139 @@ class Oblivion2F(Floor):
     super().__init__(1, 2, self.enemies, self.tiles)
 
 class Oblivion3F(Floor):
-  enemies = []
-  tiles = []
+  enemies = [
+    Enemy("Seed of Forgetfulness", False, [EnemyWeight(0)]),
+    Enemy("Giant Walnut-Cracking Squirrel", False, [EnemyWeight(0)]),
+    Enemy("Forest Flower Fairy", False, [EnemyWeight(0)]),
+    Enemy("Fairytale Flower Girl", False, [EnemyWeight(0)]),
+
+    Enemy(
+      "Sea of Trees Kedama", False, [
+        EnemyWeight(40, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(0, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Nightmare Chrysalis", False, [
+        EnemyWeight(60, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(0, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Juvenile Great Tree", False, [
+        EnemyWeight(80, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(40, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Fairytale Man-Eating Wolf", False, [
+        EnemyWeight(100, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(60, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Emerald Elemental", False, [
+        EnemyWeight(100, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(80, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy("Bomb Fruit", False, [EnemyWeight(100)]),
+    Enemy(
+      "Nightmare Disciple", False, [
+        EnemyWeight(0, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(120, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Gluttonous Memorytrap", False, [
+        EnemyWeight(0, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(80, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Golden Seed", True, [
+        EnemyWeight(3, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(4, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Giant Gold-Cracking Squirrel", True, [
+        EnemyWeight(3, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(4, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Storybook Assassin Girl", True, [
+        EnemyWeight(3, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(4, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+    Enemy(
+      "Guardian Great Tree", True, [
+        EnemyWeight(3, BoundaryCheck.o3_top_area_check),
+        EnemyWeight(4, BoundaryCheck.o3_top_area_check_inv),
+      ],
+    ),
+  ]
+  tiles = [
+    TileProximity("Forest Flower Fairy", 5, 1, 200),
+    TileProximity("Fairytale Man-Eating Wolf", 7, 1, 100),
+    TileProximity("Fairytale Flower Girl", 9, 0, 100),
+    TileProximity("Giant Walnut-Cracking Squirrel", 10, 1, 100),
+    TileProximity("Storybook Assassin Girl", 11, 2, 50),
+    TileProximity("Juvenile Great Tree", 12, 1, 100),
+    TileProximity("Juvenile Great Tree", 13, 0, 100),
+    TileProximity("Guardian Great Tree", 14, 3, 50),
+    TileProximity("Fairytale Man-Eating Wolf", 15, 1, 100),
+    TileProximity("Gluttonous Memorytrap", 18, 1, 200),
+    TileProximity("Gluttonous Memorytrap", 19, 1, 100),
+    TileProximity("Gluttonous Memorytrap", 20, 0, 100),
+    TileProximity("Seed of Forgetfulness", 21, 2, 100),
+  ]
 
   def __init__(self):
     super().__init__(1, 3, self.enemies, self.tiles)
 
 class DreamPath1F(Floor):
   enemies = []
-  tiles = []
+  tiles = [
+    TileProximity("Mind Sphere", 8, 3, 200),
+    TileProximity("Mind Sphere", 14, 3, 200),
+    TileProximity("Amethyst Elemental", 11, 3, 200),
+    TileProximity("Amethyst Elemental", 12, 3, 200),
+    TileProximity("Amethyst Elemental", 13, 3, 200),
+    TileProximity("Shadowcat", 17, 0, 100),
+    TileProximity("Nightmare Foot Soldier", 2, 0, 25),
+    TileProximity("Nightmare Foot Soldier", 3, 0, 50),
+    TileProximity("Nightmare Foot Soldier", 16, 0, 100),
+    TileProximity("Nightmare Foot Soldier", 18, 0, 100),
+  ]
 
   def __init__(self):
     super().__init__(2, 1, self.enemies, self.tiles)
 
 class DreamPath2F(Floor):
   enemies = []
-  tiles = []
+  tiles = [
+    TileProximity("Mind Sphere", 8, 3, 200),
+    TileProximity("Mind Sphere", 14, 3, 200),
+    TileProximity("Amethyst Elemental", 11, 3, 200),
+    TileProximity("Amethyst Elemental", 12, 3, 200),
+    TileProximity("Amethyst Elemental", 13, 3, 200),
+    TileProximity("Shadowcat", 17, 0, 100),
+    TileProximity("Nightmare Foot Soldier", 2, 0, 25),
+    TileProximity("Nightmare Foot Soldier", 3, 0, 50),
+    TileProximity("Nightmare Foot Soldier", 16, 0, 100),
+    TileProximity("Nightmare Foot Soldier", 18, 0, 100),
+  ]
 
   def __init__(self):
     super().__init__(2, 2, self.enemies, self.tiles)
 
 # Instantiate floor data for analysis
 # floor = Oblivion1F()
-floor = Oblivion2F()
-# floor = Oblivion3F()
+# floor = Oblivion2F()
+floor = Oblivion3F()
 # floor = DreamPath1F()
 # floor = DreamPath2F()
 
