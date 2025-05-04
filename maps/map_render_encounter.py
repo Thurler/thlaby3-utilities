@@ -12,7 +12,8 @@ triple_rare_enemy = False
 export_detailed_tile_info = False
 export_probability_spreadsheet = False
 export_probability_heatmap = True
-enemy_for_heatmap = "Seed of Forgetfulness"
+read_prob_from_csv = True # Assumes the csv file is ready, speeds up
+enemy_for_heatmap = "Guardian Great Tree"
 legend_text_color = (255, 255, 255) # white
 legend_size = 100 # How many pixels the legend will take up
 legend_width = 25 # How wide each legend color will be
@@ -329,6 +330,7 @@ class Floor:
     text_file = open("encounter_data.txt", 'w') if export_txt else None
     csv_expected = open("encounter_expected.csv", 'w') if export_csv else None
     csv_prob = open("encounter_probability.csv", 'w') if export_csv else None
+    csv_data = open("encounter_probability.csv") if read_prob_from_csv else None
     heatmap_values = []
     # Enemy counts are global for the floor
     enemy_counts = self.enemy_count_probabilities()
@@ -343,6 +345,16 @@ class Floor:
     if export_csv:
       csv_expected.write(f"X,Y,{','.join(enemy_names)}\n")
       csv_prob.write(f"X,Y,{','.join(enemy_names)}\n")
+    csv_prob_data = {}
+    if read_prob_from_csv:
+      tiles_data = csv_data.readlines()[1:] # Ignore header
+      for tile_data in tiles_data:
+        cols = tile_data[:-1].split(',') # Remove newline, split at comma
+        x, y = (int(cols[0]), int(cols[1]))
+        csv_prob_data[(x, y)] = {}
+        for i, name in enumerate(enemy_names):
+          # Make sure to remove the % char and turn it back into [0, 1] domain
+          csv_prob_data[(x, y)][name] = float(cols[i + 2][:-1]) / 100
     # When iterating, we skip the first and last 2 rows/cols to avoid dealing
     # with missing squares for tile logic - the game doesn't use valid data in
     # those tiles anyway and is likely to crash, so why bother
@@ -356,52 +368,59 @@ class Floor:
           continue
         if export_txt:
           text_file.write(f"=== Tile ({col}, {row}) ===\n\n")
-        # Check for proximity special tiles that prioritize enemy spawns
-        proximity_checks = self.proximity_spawn_probabilities(row, col)
-        if export_txt:
-          if len(proximity_checks) > 0:
-            text_file.write("Proximity tile checks:\n\n")
-            for name, probability in proximity_checks:
-              text_file.write(f"- {name}: {round(probability * 100, 2)}%\n")
-            text_file.write('\n')
-          else:
-            text_file.write("No tile checks to be performed\n\n")
-        # Global weights set what happens to remainder slots
-        enemy_weights = self.global_enemy_probabilities(row, col)
-        if export_txt:
-          text_file.write("Global spawn probabilities:\n\n")
-          for enemy, probability in enemy_weights.items():
-            probability = round(probability * 100, 2)
-            text_file.write(f"- {enemy}: {probability}%\n")
-          text_file.write('\n')
-        # Now we simulate enemy spawns to brute force all possible battle
-        # encounters and their probabilities
-        possible_battles = []
-        cache_key = f"{proximity_checks}|{enemy_weights}"
-        if cache_key in self.prob_cache:
-          possible_battles = self.prob_cache[cache_key]
-        else:
-          for count, count_prob in enemy_counts.items():
-            possible_battles += self.compute_encounters(
-              count, count_prob, proximity_checks, enemy_weights, [],
-            )
-          self.prob_cache[cache_key] = possible_battles
-        # We iterate over the possible battles, adding up probabilities for each
-        # enemy to figure the expected number and probability of at least one
         expected = {}
         spawn_probability = {}
-        for name in enemy_names:
-          expected[name] = 0
-          spawn_probability[name] = 0
-          for battle in possible_battles:
-            spawns, probability = battle
-            expected[name] += spawns.count(name) * probability
-            if name in spawns:
-              spawn_probability[name] += probability
-          if export_probability_heatmap and name == enemy_for_heatmap:
-            # Save the final probability as a heatmap value for these coords
-            final_probability = spawn_probability[name]
-            heatmap_values.append((row, col, final_probability))
+        if read_prob_from_csv:
+          for name in enemy_names:
+            probability = csv_prob_data[(col, row)][name]
+            spawn_probability[name] = probability
+            if export_probability_heatmap and name == enemy_for_heatmap:
+              heatmap_values.append((row, col, probability))
+        else:
+          # Check for proximity special tiles that prioritize enemy spawns
+          proximity_checks = self.proximity_spawn_probabilities(row, col)
+          if export_txt:
+            if len(proximity_checks) > 0:
+              text_file.write("Proximity tile checks:\n\n")
+              for name, probability in proximity_checks:
+                text_file.write(f"- {name}: {round(probability * 100, 2)}%\n")
+              text_file.write('\n')
+            else:
+              text_file.write("No tile checks to be performed\n\n")
+          # Global weights set what happens to remainder slots
+          enemy_weights = self.global_enemy_probabilities(row, col)
+          if export_txt:
+            text_file.write("Global spawn probabilities:\n\n")
+            for enemy, probability in enemy_weights.items():
+              probability = round(probability * 100, 2)
+              text_file.write(f"- {enemy}: {probability}%\n")
+            text_file.write('\n')
+          # Now we simulate enemy spawns to brute force all possible battle
+          # encounters and their probabilities
+          possible_battles = []
+          cache_key = f"{proximity_checks}|{enemy_weights}"
+          if cache_key in self.prob_cache:
+            possible_battles = self.prob_cache[cache_key]
+          else:
+            for count, count_prob in enemy_counts.items():
+              possible_battles += self.compute_encounters(
+                count, count_prob, proximity_checks, enemy_weights, [],
+              )
+            self.prob_cache[cache_key] = possible_battles
+          # We iterate over the possible battles, adding up probabilities for
+          # each enemy to figure expected number and probability of at least one
+          for name in enemy_names:
+            expected[name] = 0
+            spawn_probability[name] = 0
+            for battle in possible_battles:
+              spawns, probability = battle
+              expected[name] += spawns.count(name) * probability
+              if name in spawns:
+                spawn_probability[name] += probability
+            if export_probability_heatmap and name == enemy_for_heatmap:
+              # Save the final probability as a heatmap value for these coords
+              final_probability = spawn_probability[name]
+              heatmap_values.append((row, col, final_probability))
         # Export the text data in both txt and csv formats
         if export_txt:
           text_file.write("Final spawn probabilities:\n\n")
@@ -630,7 +649,6 @@ class Oblivion3F(Floor):
     Enemy("Giant Walnut-Cracking Squirrel", False, [EnemyWeight(0)]),
     Enemy("Forest Flower Fairy", False, [EnemyWeight(0)]),
     Enemy("Fairytale Flower Girl", False, [EnemyWeight(0)]),
-
     Enemy(
       "Sea of Trees Kedama", False, [
         EnemyWeight(40, BoundaryCheck.o3_top_area_check),
