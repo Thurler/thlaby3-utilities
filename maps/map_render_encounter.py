@@ -14,12 +14,12 @@ export_probability_spreadsheet = False
 export_probability_heatmap = True
 read_prob_from_csv = True # Assumes the csv file is ready, speeds up
 enemy_for_heatmap = "Guardian Great Tree"
+
 legend_text_color = (255, 255, 255) # white
 legend_size = 100 # How many pixels the legend will take up
 legend_width = 25 # How wide each legend color will be
 max_legend_height = 50 # How tall each legend color can be at max
 legend_padding = 10 # How much padding between legend text and color
-heatmap_sin_factor = 1 # Sine exponent to take when making heatmap gradient
 heatmap_colors = {
   100: (255, 0, 0), # For pure 100%
   99: (230, 100, 100), # For the intermediary values - will get hue-shifted
