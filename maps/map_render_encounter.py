@@ -1,4 +1,5 @@
 import math
+import time
 from PIL import Image, ImageDraw, ImageFont
 
 # Break item modifiers
@@ -136,6 +137,7 @@ class Floor:
     self.fileprefix += '0' + str(floor) + '_'
     self.enemies = enemies
     self.special_tiles = special_tiles
+    self.prob_cache = {}
     self.init_grid()
 
   def init_grid(self):
@@ -346,6 +348,7 @@ class Floor:
     # those tiles anyway and is likely to crash, so why bother
     for row in range(2, grid_dim - 2):
       print(f"Row {row}...")
+      start = time.time()
       for col in range(2, grid_dim - 2):
         cell = self.grid[row][col]
         # We only care about cells the player can step on
@@ -374,10 +377,15 @@ class Floor:
         # Now we simulate enemy spawns to brute force all possible battle
         # encounters and their probabilities
         possible_battles = []
-        for count, count_prob in enemy_counts.items():
-          possible_battles += self.compute_encounters(
-            count, count_prob, proximity_checks, enemy_weights, [],
-          )
+        cache_key = f"{proximity_checks}|{enemy_weights}"
+        if cache_key in self.prob_cache:
+          possible_battles = self.prob_cache[cache_key]
+        else:
+          for count, count_prob in enemy_counts.items():
+            possible_battles += self.compute_encounters(
+              count, count_prob, proximity_checks, enemy_weights, [],
+            )
+          self.prob_cache[cache_key] = possible_battles
         # We iterate over the possible battles, adding up probabilities for each
         # enemy to figure the expected number and probability of at least one
         expected = {}
@@ -418,6 +426,8 @@ class Floor:
           probs = [f"{round(prob * 100, 2)}%" for prob in probs]
           csv_prob.write(','.join(probs))
           csv_prob.write('\n')
+      end = time.time()
+      print(end - start)
     # Close the text files so they can be flushed to disk
     if export_txt:
       text_file.close()
