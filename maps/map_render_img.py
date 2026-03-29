@@ -19,14 +19,15 @@ img_size = grid_dim * cell_size + (grid_dim + 1)
 
 # A cell that is filled in in the grid, at position (X, Y)
 class Cell:
-  def __init__(self, x, y, hidden):
+  def __init__(self, x, y, hidden, color_override = None):
+    self.color_override = color_override
     self.hidden = hidden
     self.x = x
     self.y = y
 
   def draw(self, pixels):
     # Use a grey shade when path is hidden
-    color = (127, 127, 127) if self.hidden else (255, 255, 255)
+    color = self.color_override if self.color_override is not None else (255, 169, 255) if self.hidden else (255, 255, 255)
     for i in range(cell_size):
       for j in range(cell_size):
         pixels[self.x + i, self.y + j] = color
@@ -130,14 +131,14 @@ class RockCell(IconCell):
     super().__init__(x, y, self.icon, (icon_size, icon_size))
 
 # A cell that houses a 1F regular ice tile
-class IceCell(IconCell):
+class IceBlockCell(IconCell):
   icon = Image.open("./assets/ice.png")
 
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 1.4, cell_size * 1.4))
 
 # A cell that houses a 1F big ice tile
-class BigIceCell(IconCell):
+class BigIceBlockCell(IconCell):
   icon = Image.open("./assets/ice.png")
 
   def __init__(self, x, y):
@@ -189,13 +190,14 @@ class InvisibleWarpCell(PathCell):
 
 # A floor that will be drawn in the map
 class Floor:
-  def __init__(self, stratum, floor, special_tiles):
+  def __init__(self, stratum, floor, special_tiles, special_colors = {}):
     self.stratum = stratum
     self.floor = floor
     self.fileprefix = './data/'
     self.fileprefix += str(stratum) if stratum > 9 else ('0' + str(stratum))
     self.fileprefix += '0' + str(floor) + '_'
     self.special_tiles = special_tiles
+    self.special_colors = special_colors
     self.init_grid()
 
   def init_grid(self):
@@ -207,32 +209,35 @@ class Floor:
     maxy = 0
     with open(self.fileprefix + "OD.txt", "rb") as walkable_data:
       with open(self.fileprefix + "H.txt", 'r') as hidden_data:
-        for row in range(grid_dim):
-          self.grid.append([])
-          y = (cell_size + grid_size) * row
-          hidden_line = hidden_data.readline().split(',')[:-1]
-          for col in range(grid_dim):
-            self.grid[row].append(None)
-            x = (cell_size + grid_size) * col
-            # Check if cell is walkable (1 = visible, 2 = walkable)
-            walkable = walkable_data.read(1)[0] == 2
-            # Check if cell is a hidden path (0 = not hidden)
-            hidden = hidden_line[col] != '0'
-            if walkable or hidden:
-              # Make the cell and add it to the grid
-              self.grid[row][col] = self.make_cell(row, col, x, y, hidden)
-              # Update the boundaries for later cropping
-              if col < minx:
-                minx = col
-              if col > maxx:
-                maxx = col
-              if row < miny:
-                miny = row
-              if row > maxy:
-                maxy = row
+        with open(self.fileprefix + "G.txt", 'r') as graphic_data:
+          for row in range(grid_dim):
+            self.grid.append([])
+            y = (cell_size + grid_size) * row
+            hidden_line = hidden_data.readline().split(',')[:-1]
+            graphic_line = graphic_data.readline().split(',')[:-1]
+            for col in range(grid_dim):
+              self.grid[row].append(None)
+              x = (cell_size + grid_size) * col
+              # Check if cell is walkable (1 = visible, 2 = walkable)
+              walkable = walkable_data.read(1)[0] == 2
+              # Check if cell is a hidden path (0 = not hidden)
+              hidden = hidden_line[col] != '0'
+              graphic = graphic_line[col]
+              if walkable or hidden:
+                # Make the cell and add it to the grid
+                self.grid[row][col] = self.make_cell(row, col, x, y, hidden, graphic)
+                # Update the boundaries for later cropping
+                if col < minx:
+                  minx = col
+                if col > maxx:
+                  maxx = col
+                if row < miny:
+                  miny = row
+                if row > maxy:
+                  maxy = row
     self.boundaries = (minx, maxx, miny, maxy)
 
-  def make_cell(self, row, col, x, y, hidden):
+  def make_cell(self, row, col, x, y, hidden, graphic):
     # Check if this is a special cell by comparing row/col with x/y
     special = next(
       (tile for tile in self.special_tiles if tile.x == col and tile.y == row),
@@ -245,7 +250,8 @@ class Floor:
       special.hidden = hidden
       return special
     # Otherwise just make a simple cell
-    return Cell(x + grid_size, y + grid_size, hidden)
+    color_override = self.special_colors[graphic] if graphic in self.special_colors else None
+    return Cell(x + grid_size, y + grid_size, hidden, color_override)
 
   def draw(self, image, pixels):
     # Draw the base grid and cells
@@ -336,13 +342,13 @@ class Oblivion1F(Floor):
     TreasureCell(81, 83, ""),
     TreasureCell(57, 87, ""),
     LockedTreasureCell(76, 38, ""),
-    BigIceCell(80, 62),
-    BigIceCell(82, 48),
-    BigIceCell(95, 65),
-    IceCell(82, 49),
-    IceCell(85, 55),
-    IceCell(86, 73),
-    IceCell(95, 56),
+    BigIceBlockCell(80, 62),
+    BigIceBlockCell(82, 48),
+    BigIceBlockCell(95, 65),
+    IceBlockCell(82, 49),
+    IceBlockCell(85, 55),
+    IceBlockCell(86, 73),
+    IceBlockCell(95, 56),
   ]
 
   def __init__(self):
@@ -518,6 +524,175 @@ class DreamPath2F(Floor):
   def __init__(self):
     super().__init__(2, 2, self.tiles)
 
+class Despair1F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(3, 1, self.tiles)
+
+class Anguish1F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(4, 1, self.tiles, {"32": (55, 228, 255)})
+
+class Anguish2F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(4, 2, self.tiles, {"32": (55, 228, 255)})
+
+class Anguish3F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(4, 3, self.tiles, {"32": (55, 228, 255)})
+
+class Fragile1F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(5, 1, self.tiles)
+
+class Fragile2F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(5, 2, self.tiles)
+
+class Fragile3F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(5, 3, self.tiles)
+
+class Unforgiven1F(Floor):
+  # TODO: actually make walls work
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(6, 1, self.tiles)
+
+class Unforgiven2F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(6, 2, self.tiles)
+
+class Unforgiven3F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(6, 3, self.tiles)
+
+class Solitary1F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(7, 1, self.tiles, {"16": (55, 228, 255)})
+
+class Solitary2F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(7, 2, self.tiles, {"16": (55, 228, 255)})
+
+class Solitary3F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(7, 3, self.tiles, {"16": (55, 228, 255)})
+
+class Utopia1F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(8, 1, self.tiles)
+
+class Utopia2F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(8, 2, self.tiles)
+
+class Utopia3F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(8, 3, self.tiles)
+
+class GreatNightmare1F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(9, 1, self.tiles)
+
+class GreatNightmare2F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(9, 2, self.tiles)
+
+class GreatNightmare3F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(9, 3, self.tiles, {"61": (55, 228, 255)})
+
+class GreatNightmare4F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(9, 4, self.tiles, {"61": (55, 228, 255)})
+
+class Chaos1F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(10, 1, self.tiles, {"81": (55, 228, 255)})
+
+class Chaos2F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(10, 2, self.tiles, {"81": (55, 228, 255)})
+
+class Chaos3F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(10, 3, self.tiles, {"81": (55, 228, 255)})
+
+class Chaos4F(Floor):
+  tiles = [
+  ]
+
+  def __init__(self):
+    super().__init__(10, 4, self.tiles, {"81": (55, 228, 255)})
+
 # Make a 150x150 canvas so we can fill out the grid
 map_img = Image.new("RGBA", (img_size, img_size), "black")
 pixels = map_img.load()
@@ -527,7 +702,31 @@ pixels = map_img.load()
 # floor = Oblivion2F()
 # floor = Oblivion3F()
 # floor = DreamPath1F()
-floor = DreamPath2F()
+# floor = DreamPath2F()
+# floor = Despair1F()
+# floor = Anguish1F()
+# floor = Anguish2F()
+# floor = Anguish3F()
+# floor = Fragile1F()
+# floor = Fragile2F()
+# floor = Fragile3F()
+# floor = Unforgiven1F()
+# floor = Unforgiven2F()
+# floor = Unforgiven3F()
+# floor = Solitary1F()
+# floor = Solitary2F()
+# floor = Solitary3F()
+# floor = Utopia1F()
+# floor = Utopia2F()
+# floor = Utopia3F()
+# floor = GreatNightmare1F()
+# floor = GreatNightmare2F()
+# floor = GreatNightmare3F()
+# floor = GreatNightmare4F()
+# floor = Chaos1F()
+# floor = Chaos2F()
+# floor = Chaos3F()
+# floor = Chaos4F()
 floor.draw(map_img, pixels)
 
 # Figure out the crop coordinates - we want a multiple of 5 on x/y axis, and

@@ -6,7 +6,7 @@ This is a collection of tools, scripts and other miscellaneous things that I'm u
 
 ### Filename: saves/format.txt
 
-A text file detailing the format used in every file in the save directory. A lot of details are still missing, likely from the limited scope of the demo we have. Some bytes seem to always have some value, others are always zero and don't do anything. Everything that seems affected by the demo's scope has been mapped, however. This includes event flags and flags associated with the current mechanics, even if some details don't seem to work, like Alice's subequip dupes having a 2nd and 3rd slot that are not functional.
+A text file detailing the format used in every file in the save directory. A lot of details are still missing and a work in progress. Some bytes seem to always have some value, others are always zero and don't do anything. Everything that seems affected by the game's scope is being mapped, however. This includes event flags and flags associated with mechanics, even if some details don't seem to work, like Alice's subequip dupes having a 2nd and 3rd slot that are not functional.
 
 ### Filename: saves/diff.py
 
