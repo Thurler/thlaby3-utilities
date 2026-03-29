@@ -82,10 +82,10 @@ These files just hold the static data found in-game, in different formats. A lis
 This will generate the encryption key used by old versions of DxEncrypt, given a known password. The password was easy enough to datamine from the exe, so I gave it a shot but the DxExtract tool failed to decrypt the files no matter what. Turns out Tri is using a newer version of DxLib, so I had to download the DxEncrypt / DxDecrypt tools from their site and figure out the command to decrypt it using a known password. For reference, the command for extracting the BGM data should be:
 
 ```cmd
-DxaDecode.exe -K:HyperGigaAnalSmasher bgm1.dxa
+DxaDecode.exe -K:RanceXisBestGameEver bgm1.dxa
 ```
 
-Yes, that is the password 3peso chose. It gets worse, the password for his non-Touhou game "Arcanum Knights" was "LegendOfAnal".
+Yes, that is the password 3peso chose. For historical purposes, the demo password was "HyperGigaAnalSmasher". It gets worse, the password for his non-Touhou game "Arcanum Knights" was "LegendOfAnal".
 
 ## TODO
 
