@@ -1,8 +1,6 @@
 todo
-- character main equip slot
-
-gave up, no results on breakpoints
-- character flag that is always 3
+- character main equip slot id format?
+- rare enemy 5054 symbol of the formless moon location?
 
 ===== OVERALL =====
 
@@ -24,36 +22,7 @@ Map is a 150x150 grid, each tile is 1 byte:
 ===== C FILES =====
 
 C0XX.ngd
-XX - Character index, starts at 01
-
-01 - Reimu
-02 - Renko
-03 - Mary
-04 - Meiling
-05 - Alice
-06 - Nitori
-07 - Aya
-08 - Patchy
-09 - Cirno
-10 - Keine
-11 - Doremy
-12 - Yukari
-13 - Marisa
-14 - Koishi
-15 - Sumireko
-16 - Ran
-17 - Chen
-18 - Sanae
-19 - Kanako
-20 - Suwako
-21 - Remilia
-22 - Sakuya
-23 - Junko
-24 - Hecatia
-25 to 35 - ???
-36 - Byakuren (has no skills in demo)
-37 to 47 - ???
-48 - Miko (has no skills in demo)
+XX - Character index, starts at 01, see character-ids.txt
 
 Character level overflows into the negatives past 2^31 - 1
 EXP to next level caps at 900 billion
@@ -94,19 +63,28 @@ Skills are arranged into a 12x8 grid, with a character's spells and skills ocupy
 0x80 ~ 0x83 - Number of ACC Boosts used (4 bytes)
 0x84 ~ 0x87 - Number of EVA Boosts used (4 bytes)
 0x88 ~ 0x8b - Number of Guidance Books used (4 bytes)
-0x8c ~ 0xbb - unused, likely placeholder for 12 common skills? (48 bytes)
+[unique tree]
+0x8c ~ 0xbb - unused, likely placeholder for 1 row of skills? (48 bytes)
 0xbc ~ 0x23b - Skills learned (4 bytes per skill, 96 skills) (384 bytes)
 0x23c ~ 0x47b - unused, placeholder for 12 more skill rows (576 bytes)
-0x47c ~ 0x86b - unused, reads data for 21 skill rows again? (1008 bytes)
-0x86c ~ 0x86f - Unused skill points (4 bytes)
-0x870 ~ 0x873 - unknown, seems to always be 3? (4 bytes)
+[training tree]
+0x47c ~ 0x4ab - unused, likely placeholder for 1 row of skills? (48 bytes)
+0x4ac ~ 0x62b - Skills learned (4 bytes per skill, 96 skills) (384 bytes)
+0x62c ~ 0x86b - unused, placeholder for 12 more skill rows (576 bytes)
+0x86c ~ 0x86f - Unused unique skill points (4 bytes)
+0x870 ~ 0x873 - Unused training skill points (4 bytes)
 0x874 ~ 0x877 - Battle points (4 bytes)
 0x878 ~ 0x87b - Main Equipment level (4 bytes)
 0x87c ~ 0x87f - Subequip slot 1, uses same number as shown in game (4 bytes)
 0x880 ~ 0x883 - Subequip slot 2, uses same number as shown in game (4 bytes)
 0x884 ~ 0x887 - Subequip slot 3, uses same number as shown in game (4 bytes)
 0x888 ~ 0x893 - unused, placeholder for 3 more equip slots? (12 bytes)
-0x894 ~ 0x8bb - unused, placeholder for 10 slots of things? (40 bytes) [likely 5 slots for awakening items, and 5 extra]
+0x894 ~ 0x897 - Main equip slot 1, uses unknown id format (4 bytes)
+0x898 ~ 0x89b - Main equip slot 2, uses unknown id format (4 bytes)
+0x89c ~ 0x89f - Main equip slot 3, uses unknown id format (4 bytes)
+0x890 ~ 0x8a3 - Main equip slot 4, uses unknown id format (4 bytes)
+0x894 ~ 0x8a7 - Main equip slot 5, uses unknown id format (4 bytes)
+0x8a8 ~ 0x8bb - unused, placeholder for 3 more main equip slots? (20 bytes)
 0x8bc ~ 0xbdc - unused
 
 ===== EEF FILE =====
@@ -128,7 +106,7 @@ Offsets likely correspond to item IDs:
 0x1 ~ 0x8c - subequips
 0x1f5 ~ 0x244 - materials
 0x2bd ~ 0x30c - break items
-0x321 ~ 0x35c - special items
+0x321 ~ 0x348 - special items
 0x3e9 ~ 0x460 - awakening items
 
 ===== EEH FILE =====
@@ -463,8 +441,7 @@ Each value seems to be 4 bytes long, but there are exceptions (as noted)
 Money held caps at 100 quadrillion - 1
 
 0x0 ~ 0x3 - unused
-0x4 ~ 0xc3 - character unlock flags, see C files for character order (4 bytes per character)
-0xc4 ~ 0x18f - unused, placeholder for total of 100 character unlocks (204 bytes)
+0x4 ~ 0x18f - character unlock flags, see C files for character order (4 bytes per character, first is unused and has space for 100 total characters)
 0x190 ~ 0x1bf - characters in party (4 bytes per character)
 0x1c0 ~ 0x1c7 - play time, in seconds (8 bytes)
 0x1c8 ~ 0x1cf - total exp acquired (8 bytes)
@@ -474,7 +451,7 @@ Money held caps at 100 quadrillion - 1
 0x1e4 ~ 0x1e7 - number of steps in dungeon (4 bytes)
 0x1e8 ~ 0x1eb - number of party wipes (4 bytes)
 0x1ec ~ 0x1ef - number of nitori crafts (4 bytes)
-0x1f0 ~ 0x1f3 - ??? (4 bytes)
+0x1f0 ~ 0x1f3 - unused??? (4 bytes)
 0x1f4 ~ 0x1fb - money acquired from selling items (8 bytes)
 0x1fc ~ 0x1ff - number of treasures opened (4 bytes)
 0x200 ~ 0x203 - number of locked treasures found (4 bytes)
@@ -483,29 +460,17 @@ Money held caps at 100 quadrillion - 1
 0x8e4 ~ 0x983 - large enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
 0x984 ~ 0xa23 - rare enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
 0xa24 ~ 0xac3 - achievement rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
-0xac4 ~ 0x1103 - dungeon mapping rewards (4 bytes each, 400 slots, 1600 total) (0 = unclaimed, 2 = claimed)
-  0xaef - 1f half
-  0xaf3 - 1f full
-  0xaf7 - 2f half
-  0xafb - 2f full
-  0xaff - 3f half
-  0xb03 - 3f full
-  0xb07 - oblivion full
-  0xb17 - 1f half
-  0xb1b - 1f full
-  0xb1f - 2f half
-  0xb23 - 2f full
-  0xb27 - dream path full
-0x1104 ~ 0x1107 - ??? (4 bytes)
-0x1108 ~ 0x110b - ??? (4 bytes)
-0x110c ~ 0x110f - ??? (4 bytes)
+0xac4 ~ 0x1103 - dungeon mapping rewards (4 bytes each, 10x40 slots, 1600 total) (0 = unclaimed, 2 = claimed) [10 rewards per dungeon, skips first index]
+0x1104 ~ 0x1107 - unused??? (4 bytes)
+0x1108 ~ 0x110b - unused??? (4 bytes)
+0x110c ~ 0x110f - unused??? (4 bytes)
 0x1110 ~ 0x1113 - unused (4 bytes)
 0x1114 ~ 0x1433 - achievement data (4 bytes per achievement, 200 slots) (800 bytes) (0 = locked, 2 = acquired)
 0x1434 ~ 0x15c3 - treasure id list on lounge (4 bytes per id, 100 slots) (400 bytes)
-0x15c4 ~ 0x16b3 - ??? 12x5 matrix slots of something (4 bytes each, 240 total)
-0x16b4 ~ 0x4d63 - ??? 100x7x5 matrix slots of something (4 bytes each, 14000 total)
-0x4d64 ~ 0x4d87 - alice subequip craft slots [id, timer, ???] (4 bytes each, 3 slots, 36 total)
-0x4d88 ~ 0x4e27 - cirno shop slots [item id, price factor] (4 bytes each, 20 slots, 160 total)
+0x15c4 ~ 0x16b3 - party lineups (12x5 matrix) (4 bytes each, 240 total) [just the character ids in order]
+0x16b4 ~ 0x4d63 - equipment loadouts (100x7x5 matrix) (4 bytes each, 14000 total) [for each char in order: main equip lv, 6 sub equips (3 are blanks)]
+0x4d64 ~ 0x4d87 - alice subequip craft slots [id, timer, unused???] (4 bytes each, 3 slots, 36 total)
+0x4d88 ~ 0x4e27 - cirno shop slots [item id, price factor] (4 bytes each, 20 slots [even though there are only 19 in-game], 160 total)
 0x4e28 ~ 0x4e77 - equipped break items (4 bytes per item, 20 slots, 80 total) (uses some weird id?)
 0x4e78 ~ 0x4f17 - ??? 40 slots of something (4 bytes each, 160 total)
 0x4f18 ~ 0x5237 - ??? 200 slots of something (4 bytes each, 800 total)
@@ -514,8 +479,12 @@ Money held caps at 100 quadrillion - 1
 0x5264 ~ 0x5267 - number of times fled from battle (4 bytes)
 0x5268 ~ 0x526b - unused (4 bytes)
 0x526c ~ 0x526f - number of cirno purchases (4 bytes)
-0x5270 ~ 0x527f - break items auto use flags (4 bytes per item, ?? slots, ?? total) (0 = not auto, 1 = auto)
-0x5280 ~ 0x7537 - unused
+0x5270 ~ 0x52bf - break items auto use flags (4 bytes per item, 20 slots, 80 total) (0 = not auto, 1 = auto)
+0x52c0 ~ 0x52ef - ??? 12 slots of something (4 bytes each, 48 total)
+0x52f0 ~ 0x52f3 - ??? unknown (4 bytes)
+0x52f4 ~ 0x52f7 - ??? unknown (4 bytes)
+0x52f8 ~ 0x52fb - difficulty level (4 bytes) (0 = normal, 1 = hard, 2 = lunatic)
+0x52fc ~ 0x7537 - unused
 
 ===== PKO FILE =====
 
@@ -542,7 +511,6 @@ Bestiary data
 - 205 is Shadowcat
 - 206 is Nightmare Foot Soldier
 - 301 is ?????
-- 302 is ????????
 - 5011 is Golden Seed
 - 5012 is Giant Gold-Cracking Squirrel
 - 5013 is Storybook Assassin Girl
