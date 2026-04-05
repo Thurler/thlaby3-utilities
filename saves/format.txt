@@ -84,7 +84,7 @@ Skills are arranged into a 12x8 grid, with a character's spells and skills ocupy
 0x89c ~ 0x89f - Main equip slot 3, uses unknown id format (4 bytes)
 0x890 ~ 0x8a3 - Main equip slot 4, uses unknown id format (4 bytes)
 0x894 ~ 0x8a7 - Main equip slot 5, uses unknown id format (4 bytes)
-0x8a8 ~ 0x8bb - unused, placeholder for 3 more main equip slots? (20 bytes)
+0x8a8 ~ 0x8bb - unused, placeholder for 5 more main equip slots? (20 bytes)
 0x8bc ~ 0xbdc - unused
 
 ===== EEF FILE =====
