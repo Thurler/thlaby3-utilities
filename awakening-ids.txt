@@ -1,0 +1,172 @@
+HP Growth Rate ↑ 
+MP ↑
+TP ↑
+ATK Growth Rate ↑
+DEF Growth Rate ↑
+MAG Growth Rate ↑
+MND Growth Rate ↑
+SPD Growth Rate ↑
+ACC ↑
+EVA ↑
+HP/MP/TP ↑
+ATK/DEF ↑
+MAG/MND ↑
+ATK/MAG ↑
+DEF/MND ↑
+HP/ATK/DEF ↑
+MAG/MND/SPD ↑
+SPD/ACC/EVA ↑
+ATK/DEF/MAG/MND/SPD ↑
+ATK/DEF/MAG/MND/SPD/ACC/EVA ↑
+HP Regen ↑
+MP Regen ↑
+FIR Damage ↑
+CLD Damage ↑
+WND Damage ↑
+NTR Damage ↑
+MYS Damage ↑
+SPI Damage ↑
+DRK Damage ↑
+PHY Damage ↑
+FIR/CLD/WND/NTR Damage ↑
+MYS/SPI/DRK/PHY Damage ↑
+All Damage ↑
+FIR Resist ↑
+CLD Resist ↑
+WND Resist ↑
+NTR Resist ↑
+MYS Resist ↑
+SPI Resist ↑
+DRK Resist ↑
+PHY Resist ↑
+FIR/CLD/WND/NTR Resist ↑
+MYS/SPI/DRK/PHY Resist ↑
+All Elemental Resist ↑
+PSN Chance ↑
+PAR Chance ↑
+HVY Chance ↑
+SHK Chance ↑
+TRR Chance ↑
+SIL Chance ↑
+DTH Chance ↑
+DBF Chance ↑
+PSN/PAR/HVY/SHK Chance ↑
+TRR/SIL/DTH/DBF Chance ↑
+All Ailment Chance ↑
+PSN/PAR Resist ↑
+HVY/SHK Resist ↑
+TRR/SIL Resist ↑
+DTH/DBF Resist ↑
+PSN/PAR/HVY/SHK Resist ↑
+TRR/SIL/DTH/DBF Resist ↑
+All Ailment Resist ↑
+Ailment Potency ↑
+Debuff Potency ↑
+Buff Potency ↑
+Guard Factor ↓
+Regen HP/Turn
+Regen 8 MP/Turn (Rarely)
+TP Drain -1 (Sometimes)
+EXP Rate ↑
+Money Rate ↑
+Drop Rate ↑
+Encounter Rate ↓
+Weakness Slay
+Heal Status (Rarely)
+No MP Cost (Rarely)
+All ↑ On Enemy KO
+HP On Enemy KO
+12 MP On Enemy KO (Sometimes)
+Stats ↑ Under 50% HP
+Ailment Resist ↑ Under 50% HP
+Regen MP/Turn Under 50% HP
+Stats ↑ Under 50% MP 
+Ailment Resist ↑ Under 50% MP
+Regen HP/Turn Under 50% MP
+Stats ↑ if Ailment-Afflicted
+Regen HP/Turn if Ailment-Afflicted
+Regen MP/Turn if Ailment-Afflicted
+HP On Ally KO
+MP On Ally KO
+All ↑ On Ally KO
+Basic Attack Delay ↓
+Focus Delay ↓ 
+Formation Change Delay ↓
+DMG to Humans ↑
+DMG to Youkai ↑
+DMG to Ghosts ↑
+DMG to Plants ↑
+DMG to Beasts ↑
+DMG to Fliers ↑
+DMG to Insects ↑
+DMG to Aquatic ↑
+DMG to Inorganic ↑
+DMG to Oni ↑
+DMG to Dragons ↑
+DMG to Divine Spirits ↑
+DMG to Phantasmagoria ↑
+DMG to Other ↑
+DMG from Humans ↓
+DMG from Youkai ↓
+DMG from Ghosts ↓
+DMG from Plants ↓
+DMG from Beasts ↓
+DMG from Fliers ↓
+DMG from Insects ↓
+DMG from Aquatic ↓
+DMG from Inorganic ↓
+DMG from Oni ↓
+DMG from Dragons ↓
+DMG from Divine Spirits ↓
+DMG from Phantasmagoria ↓
+DMG from Other ↓
+DMG Dealt ↑ During PSN
+DMG Dealt ↑ During PAR
+DMG Dealt ↑ During HVY
+DMG Dealt ↑ During SHK Resist
+DMG Dealt ↑ During TRR
+DMG Dealt ↑ During SIL
+DMG Dealt ↑ During DTH Resist
+DMG Dealt ↑ During DBF
+DMG Taken ↓ During PSN
+DMG Taken ↓ During PAR
+DMG Taken ↓ During HVY
+DMG Taken ↓ During SHK Resist
+DMG Taken ↓ During TRR
+DMG Taken ↓ During SIL
+DMG Taken ↓ During DTH Resist
+DMG Taken ↓ During DBF
+DMG to PSN Enemies ↑
+DMG to PAR Enemies ↑
+DMG to HVY Enemies ↑
+DMG to SHK Resist Enemies ↑
+DMG to TRR Enemies ↑
+DMG to SIL Enemies ↑
+DMG to DTH Resist Enemies ↑
+DMG to DBF Enemies ↑
+DMG from PSN Enemies ↓
+DMG from PAR Enemies ↓
+DMG from HVY Enemies ↓
+DMG from SHK Resist Enemies ↓
+DMG from TRR Enemies ↓
+DMG from SIL Enemies ↓
+DMG from DTH Resist Enemies ↓
+DMG from DBF Enemies ↓
+All ↑ On Getting Hit
+Turn Gauge ↑ On Getting Hit
+12% HP On Getting Hit (Rarely)
+12 MP On Getting Hit (Rarely)
+All ↑ On Evading
+Turn Gauge ↑ On Evading
+12% HP On Evading (Rarely)
+12 MP On Evading (Rarely)
+All ↑ On Hitting Weakness
+Turn Gauge ↑ On Hitting Weakness
+12% HP On Hitting Weakness (Rarely)
+12 MP On Hitting Weakness (Rarely)
+All ↑ On Own Weakness Hit
+Turn Gauge ↑ On Own Weakness Hit
+24% HP On Own Weakness Hit (Rarely)
+24 MP On Own Weakness Hit (Rarely)
+Prevent KO (Rarely)
+Personal EXP ↑
