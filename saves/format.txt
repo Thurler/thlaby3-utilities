@@ -85,7 +85,7 @@ Skills are arranged into a 12x8 grid, with a character's spells and skills ocupy
 0x8a0 ~ 0x8a3 - Main equip slot 4, value is (effect id) * 1000 + effect level (4 bytes)
 0x8a4 ~ 0x8a7 - Main equip slot 5, value is (effect id) * 1000 + effect level (4 bytes)
 0x8a8 ~ 0x8bb - unused, placeholder for 5 more main equip slots? (20 bytes)
-0x8bc ~ 0xbdc - unused
+0x8bc ~ 0xbdb - unused
 
 ===== EEF FILE =====
 
