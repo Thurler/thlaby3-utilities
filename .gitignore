@@ -2,5 +2,7 @@ backup-saves
 maps/assets/tiles
 maps/*.csv
 maps/*.txt
+maps/out.png
 saves/*/*
 unlock-target
+unlock-logic
