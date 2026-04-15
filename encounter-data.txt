@@ -33,78 +33,70 @@ If enemy_count under 1:
 If enemy_count over 5:
   enemy_count = 5
 
+if hope_event == 2 && hope_horde_chance > 0:
+  if rand(99) < hope_horde_chance:
+    if horde_break:
+      horde_break -= 1
+    spawn_horde_for_floor()
+
+if either_break && mult-5:
+  chance = 0
+  if break? > 0:
+    chance = 2
+  if break? > 0:
+    chance += 2
+  if rand(99) < chance:
+    if (break? > 0):
+      break? -= 1
+    if (break? > 0):
+      break? -= 1
+    spawn_horde_for_floor()
+
+if horde_event > 0 && streak > 0 && mult-10:
+  horde_chance = 50
+  if streak / 10 == 3:
+    horde_chance = 100
+  if block_break:
+    horde_chance = 0
+  if horde_break:
+    horde_chance = 100
+    horde_break -= 1
+  if rand(99) < horde_chance:
+    spawn_horde_for_floor()
+  else:
+    spawn_rare_for_floor()
+else if horde_event > 0 && streak > 0 && mult-5:
+  rare_chance = 2 * streak
+  if rand(99) < rare_chance:
+    spawn_rare_for_floor()
+
 === Horde and Chain Checks ===
 
 This section only applies if you have already unlocked Horde fights. All of the bonuses described here are only active when the boss event in Dream Path 1F has been cleared, even the parts pertaining to rare encounters.
 
 Special triggers are checked before looking at the general encounter data, to force a horde encounter or a rare enemy spawn at specific chains. The TL;DR is:
 
+(If a hope crystal horde chance effect is active)
+- Effect% chance to force a horde encounter
+  - This will "waste" a count of horde chance increase break items
+
+(If either horde chance increase break item is active)
+- 2% chance to force a horde encounter (4% if both are active)
+  - Decreases a count on BOTH horde chance increase break items
+
 (If the chain is a multiple of 10)
 - Guaranteed to face a horde on the 30th battle in a chain
 - Guaranteed to NOT face a horde, if specific break item is on
   - This also negates the one on the 30th chain
 - Guaranteed to face a horde, if specific break item is on
-  - This takes priority over the other break items
+  - This takes priority over the horde-negating break items
   - This is wasted on the 30th battle in a chain since it was already guaranteed
 - 50% chance to face a horde on every 10th battle in a chain
   - The remaining 50% chance spawns the rare enemy for that floor
 
 (If the chain is a multiple of 5, but not 10)
-- (10 * chain / 5)% chance to spawn the rare enemy for that floor
-  - This is not affected by break items
-
-(Otherwise)
-- Break items that increase horde chance give 1% chance each to face a horde at any time
-
-And the code, as presented in the x86 assembly. The tangle of ifs and elses is so insane that Ghidra messed up the decompilation and I had to run this by hand:
-
-If chain is a multiple of 10 AND larger than 0 AND Horde boss cleared:
-  horde_chance = 50
-  If chain is 30:
-    horde_chance = 100
-  If Orange Marmalade Jam active:
-    horde_chance = 0
-  If Vanilla Lemon Curd active:
-    horde_chance = 0
-  If Fruit Basket active:
-    horde_chance = 100
-    Decrement break item counter by 1
-  If Mango Bouquet active:
-    horde_chance = 100
-    Decrement break item counter by 1
-  If (horde_chance)% check passes:
-    Spawns the horde for this floor
-    Skips every other check in the function
-  Else:
-    Spawns the rare enemy for this floor
-Else:
-  If (Fruit Basket OR Mango Bouquet active) AND chain is not a multiple of 5 AND Horde boss cleared:
-    horde_chance = 0
-    If Fruit Basket active:
-      horde_chance = horde_chance + 1
-    If Mango Bouquet active:
-      horde_chance = horde_chance + 1
-    If (horde_chance)% check passes:
-      Spawns the horde for this floor
-      Skips every other check in the function
-  If chain is a multiple of 5 AND larger than 0 AND Horde boss cleared AND didn't spawn a horde:
-    rare_chance = 10 * chain / 5
-    If (rare_chance)% check passes:
-      Spawns the rare enemy for this floor
-
-=== ???????? ===
-
-This seems to be unused right now, since the chain requirement is massive and the enemy IDs don't correspond to anything in the available enemy portraits in the game data. It's some weird code that might attempt to spawn some ultra rare enemy and force you to face against 5 enemies. The enemy IDs have dummy stats associated with them.
-
-chain_factor = min(chain * 10 + 100, 2500)
-event_chance = chain_factor / 100
-If (event_chance)% check passes:
-  Try 100 times to:
-    Generate random enemy slot 1-5 (20% chance each)
-    If it's vacant:
-      Spawn dummy enemy ID 5997 / 5998 (50% chance each)
-      enemy_count = 5
-      Stop trying to do this
+- (2 * chain)% chance to spawn the rare enemy for that floor
+  - This is not affected by break items or hope crystals
 
 === Tile Proximity Checks ===
 
@@ -147,7 +139,7 @@ Distance here means adding up your absolute X and Y offsets, so that only the ca
   7-3
    -
 
-Funny trivia, the game actually checks all 25 possible tiles manually in the order described instead of writing a loop. Below are the associated weights, tiles and enemies for each floor. Each tile has a different triggering distance, with some triggering only if you're above them, and some going up to 3 tiles away:
+Below are the associated weights, tiles and enemies for each floor. Each tile has a different triggering distance, with some triggering only if you're above them, and some going up to 3 tiles away:
 
 > Forest of Oblivion 1F / 2F
 
@@ -243,11 +235,398 @@ Tile 16 (purple floor) up to 0 distance:
 Tile 18 (dark purple floor) up to 0 distance:
   Nightmare Foot Soldier - 100
 
+> Anguish of the Lost 1F ~ 3F
+
+Tile 2 (double roof facing right with white tiles) up to 2 distance:
+  Thieving Mouse - 200
+Tile 6 (double roof facing right with darker tiles) up to 2 distance:
+  Thieving Mouse - 200
+Tile 7 (double roof facing left with darker tiles) up to 2 distance:
+  Thieving Mouse - 200
+Tile 11 (double wall with no decorations) up to 2 distance:
+  Thieving Mouse - 200
+Tile 12 (plant roof rest area with benches) up to 1 distance:
+  Blossoming Fairy - 200
+Tile 21 (small plants that look like bamboo shoots) up to 1 distance:
+  Blossoming Fairy - 200
+Tile 26 (tree with pink flowers inside pond) up to 1 distance:
+  Blossoming Fairy - 200
+Tile 22 (full sakura tree) up to 1 distance:
+  Old Sakura Informant - 100
+Tile 27 (water floor tile, not a pond) up to 1 distance:
+  Maneater Carp - 80
+Tile 30 (bridge floor tile) up to 0 distance:
+  Maneater Carp - 66
+Tile 9 (double roof facing left with wood door) up to 2 distance:
+  Bakeneko Constable - 200
+Tile 10 (double roof facing right with wood door) up to 2 distance:
+  Bakeneko Constable - 200
+Tile 20 (pond that fits into a single tile) up to 1 distance:
+  Brightwind Flutterers - 100
+Tile 35 (orange-looking autumn tree with branches showing) up to 1 distance:
+  Oni Ginkgo Seed - 200
+Tile 33 (full orange-looking autumn tree) up to 3 distance:
+  Venerable Elder Ginkgo - 300
+Tile 34 (yellow pine tree) up to 3 distance:
+  Venerable Elder Ginkgo - 300
+Tile 37 (normal sakura bud tree) up to 1 distance:
+  Mist Beast of the Lost Dream - 100
+Tile 13 (pagoda on top of pond) up to 3 distance:
+  Great Bandit Mouse - 60
+Tile 25 (pagoda with white rock pillars underneath) up to 2 distance:
+  Affluent Manekineko - 40
+Tile 31 (multi-floor pagoda) up to 1 distance:
+  Affluent Manekineko - 40
+Tile 36 (regular yellow autumn tree) up to 2 distance:
+  Oni Ginkgo Sage - 50
+Tile 38 (red sakura bud tree) up to 1 distance:
+  Oni Ginkgo Sage - 20
+Tile 39 (glowing sakura bud tree) up to 1 distance:
+  Symbol of the Formless Moon - 30
+
+> Sorrow of the Fragile 1F ~ 3F
+
+Tile 1 (grassy floor with dark green background) up to 0 distance:
+  Terror-Sucking Sapling - 100
+Tile 3 (grassy floor with dark lighter background) up to 0 distance:
+  Terror-Sucking Sapling - 100
+Tile 4 (dark brown bridge floor) up to 0 distance:
+  Wetlands Onibi - 100
+Tile 5 (beige bridge floor) up to 0 distance:
+  Wetlands Onibi - 100
+Tile 2 (floor with nothing on it) up to 0 distance:
+  Marsh Deathsprite - 100
+Tile 7 (looks exactly like tile 2) up to 0 distance:
+  Marsh Deathsprite - 100
+Tile 18 (weeping tree) up to 1 distance:
+  Wetlands Flier - 200
+Tile 13 (large and tall rock formation on water) up to 1 distance:
+  Swampstone Kedama - 200
+Tile 34 (tombstone with lit candles around it) up to 1 distance:
+  Moonlight Necromancer - 200
+Tile 23 (grass with very small purple flowers) up to 2 distance:
+  Swampland Assassin - 100
+Tile 24 (looks exactly like tile 23) up to 2 distance:
+  Swampland Assassin - 100
+Tile 30 (pond surrounded by grass) up to 2 distance:
+  Despair of the Drowning - 100
+Tile 31 (looks exactly like tile 30 but taller) up to 2 distance:
+  Despair of the Drowning - 100
+Tile 32 (looks exactly like tile 31 but taller) up to 2 distance:
+  Despair of the Drowning - 100
+Tile 33 (looks exactly like tile 32 but taller) up to 2 distance:
+  Despair of the Drowning - 100
+Tile 12 (tall but thin rock formation on water) up to 1 distance:
+  Tin-Tinted Fairy - 200
+Tile 13 (large and tall rock formation on water) up to 1 distance:
+  Tin-Tinted Fairy - 200
+Tile 16 (leafy sticks) up to 1 distance:
+  Soldier of the Sorrowful Dream - 100
+Tile 17 (dried sprouts) up to 1 distance:
+  Soldier of the Sorrowful Dream - 200
+Tile 19 (grass with mint-looking flowers) up to 2 distance:
+  Moonlight Dancer - 100
+Tile 20 (looks exactly like tile 19) up to 2 distance:
+  Moonlight Dancer - 100
+Tile 25 (tall tree with lots of foliage) up to 1 distance:
+  Terror-Gluttonizing Tree - 100
+Tile 15 (yellow firefly glows on top of water) up to 3 distance:
+  Fluorescent Shineflower - 132
+Tile 35 (tombstone with blue glow and blue candles) up to 1 distance:
+  Raging Swamp Monster - 66
+
+> Battleground of the Unforgiven 1F ~ 3F
+
+Tile 2 (?) up to 0 distance:
+  Belligerent Hitodama - 100
+Tile 18 (?) up to 2 distance:
+  Lava Child - 80
+Tile 11 (?) up to 1 distance:
+  Watchdog of the Battlefield - 40
+Tile 12 (?) up to 1 distance:
+  Watchdog of the Battlefield - 60
+Tile 13 (?) up to 1 distance:
+  Watchdog of the Battlefield - 80
+Tile 14 (?) up to 2 distance:
+  Orb of Flame - 80
+Tile 13 (?) up to 2 distance:
+  Orb of Flame - 50
+Tile 5 (?) up to 1 distance:
+  Lava Swallower - 100
+Tile 17 (?) up to 2 distance:
+  Victim of Slaughter - 100
+Tile 22 (?) up to 2 distance:
+  Smelter Ruby - 80
+Tile 19 (?) up to 2 distance:
+  Blood-Sucking Blade - 60
+Tile 20 (?) up to 2 distance:
+  Blaze Golem - 60
+Tile 28 (?) up to 1 distance:
+  Nightmare Premonition - 50
+Tile 3 (?) up to 0 distance:
+  Circle of Flame - 20
+Tile 4 (?) up to 0 distance:
+  Circle of Flame - 20
+Tile 21 (?) up to 1 distance:
+  Ruby Blaze Golem - 32
+Tile 23 (?) up to 1 distance:
+  Slaughter Avenger - 50
+
+> Prison of the Solitary 1F ~ 3F
+
+Tile 1 (?) up to 0 distance:
+  Solitude-Peddling Girl - 50
+Tile 18 (?) up to 0 distance:
+  Solitude-Peddling Girl - 50
+Tile 19 (?) up to 0 distance:
+  Solitude-Peddling Girl - 50
+Tile 31 (?) up to 0 distance:
+  Crystal Cracker - 50
+Tile 32 (?) up to 0 distance:
+  Crystal Cracker - 50
+Tile 33 (?) up to 0 distance:
+  Crystal Cracker - 50
+Tile 42 (?) up to 2 distance:
+  Frost Baby - 100
+Tile 15 (?) up to 2 distance:
+  Freezing Widow - 100
+Tile 2 (?) up to 1 distance:
+  Frigid Shellbug - 200
+Tile 3 (?) up to 1 distance:
+  Frigid Shellbug - 200
+Tile 40 (?) up to 1 distance:
+  Ice Crystal Warlock - 200
+Tile 41 (?) up to 1 distance:
+  Ice Crystal Warlock - 200
+Tile 12 (?) up to 2 distance:
+  Silver Wolf - 100
+Tile 43 (?) up to 1 distance:
+  Crystal Seed - 100
+Tile 44 (?) up to 1 distance:
+  Crystal Seed - 100
+Tile 23 (?) up to 1 distance:
+  Twinkling Icicle - 200
+Tile 24 (?) up to 1 distance:
+  Twinkling Icicle - 200
+Tile 25 (?) up to 1 distance:
+  Twinkling Icicle - 200
+Tile 28 (?) up to 2 distance:
+  Nightmare Manifest - 60
+Tile 29 (?) up to 2 distance:
+  Nightmare Manifest - 60
+Tile 30 (?) up to 2 distance:
+  Nightmare Manifest - 60
+Tile 10 (?) up to 1 distance:
+  Frost Golem - 200
+Tile 26 (?) up to 2 distance:
+  Frost Golem - 60
+Tile 27 (?) up to 2 distance:
+  Frost Golem - 60
+Tile 49 (?) up to 2 distance:
+  Queen of the Blizzard - 60
+Tile 45 (?) up to 1 distance:
+  Crystal Eater - 50
+Tile 45 (?) up to 2 distance:
+  Crystal Eater - 30
+Tile 20 (?) up to 1 distance:
+  Silver Wolf Darling - 30
+Tile 21 (?) up to 1 distance:
+  Silver Wolf Darling - 30
+Tile 22 (?) up to 1 distance:
+  Silver Wolf Darling - 30
+
+> Fleeting Phantasmagoric Utopia 1F ~ 3F
+
+Tile 25 (?) up to 1 distance:
+  Dayflower Fairy - 200
+Tile 17 (?) up to 1 distance:
+  Ideal-Embracing Maiden - 200
+Tile 18 (?) up to 1 distance:
+  Ideal-Embracing Maiden - 200
+Tile 19 (?) up to 1 distance:
+  Ideal-Embracing Maiden - 200
+Tile 20 (?) up to 1 distance:
+  Ideal-Embracing Maiden - 200
+Tile 21 (?) up to 2 distance:
+  Stump of Order - 60
+Tile 22 (?) up to 2 distance:
+  Stump of Order - 60
+Tile 29 (?) up to 2 distance:
+  Holy Swarm Premonition - 60
+Tile 32 (?) up to 2 distance:
+  Infant Power Dragon - 80
+Tile 39 (?) up to 2 distance:
+  Sunlight Dancer - 100
+Tile 44 (?) up to 0 distance:
+  Opal Elemental - 100
+Tile 26 (?) up to 2 distance:
+  Twinkling Nightmare Warden - 80
+Tile 27 (?) up to 2 distance:
+  Twinkling Nightmare Warden - 80
+Tile 28 (?) up to 2 distance:
+  Masterless Ghostblade - 80
+Tile 23 (?) up to 2 distance:
+  Flowering Order - 60
+Tile 24 (?) up to 2 distance:
+  Emissary of the Sun - 100
+Tile 43 (?) up to 2 distance:
+  Untouchable Holystone - 32
+Tile 13 (?) up to 1 distance:
+  Detestable Brightblade - 40
+Tile 14 (?) up to 1 distance:
+  Detestable Brightblade - 40
+Tile 15 (?) up to 1 distance:
+  Detestable Brightblade - 40
+Tile 16 (?) up to 1 distance:
+  Detestable Brightblade - 40
+Tile 8 (?) up to 1 distance:
+  Wingdrake of Power - 100
+
+> Great Nightmare of Phantasmagoria 1F ~ 4F
+
+Tile 4 (?) up to 0 distance:
+  Miniscule One - 100
+Tile 17 (?) up to 2 distance:
+  Onyx Elemental - 100
+Tile 15 (?) up to 2 distance:
+  Symbol of Falsehood - 100
+Tile 16 (?) up to 2 distance:
+  Symbol of Falsehood - 100
+Tile 13 (?) up to 0 distance:
+  Nobody Wishing to Be Somebody - 100
+Tile 18 (?) up to 3 distance:
+  Symbol of Atrocity - 120
+Tile 25 (?) up to 3 distance:
+  Symbol of Atrocity - 120
+Tile 45 (?) up to 3 distance:
+  Symbol of Atrocity - 120
+Tile 57 (?) up to 3 distance:
+  Symbol of Atrocity - 120
+Tile 79 (?) up to 3 distance:
+  Symbol of Atrocity - 120
+Tile 24 (?) up to 2 distance:
+  Dreaming Queen of Fire - 100
+Tile 20 (?) up to 1 distance:
+  Hellfire Cerberus - 60
+Tile 44 (?) up to 2 distance:
+  Dreaming Queen of Wind - 100
+Tile 47 (?) up to 0 distance:
+  Symbol of Avarice - 100
+Tile 48 (?) up to 1 distance:
+  Symbol of Avarice - 33
+Tile 49 (?) up to 2 distance:
+  Citadel Beetle - 50
+Tile 50 (?) up to 2 distance:
+  Citadel Beetle - 75
+Tile 51 (?) up to 2 distance:
+  Citadel Beetle - 100
+Tile 56 (?) up to 2 distance:
+  Dreaming Queen of Cold - 100
+Tile 73 (?) up to 2 distance:
+  Ruthless Enforcer - 80
+Tile 78 (?) up to 2 distance:
+  Dreaming Queen of Nature - 100
+Tile 86 (?) up to 3 distance:
+  Rampaging Nature - 120
+Tile 72 (?) up to 2 distance:
+  Indolent Power - 40
+Tile 70 (?) up to 2 distance:
+  Bloated Avarice - 40
+Tile 71 (?) up to 2 distance:
+  Bloated Avarice - 40
+Tile 66 (?) up to 2 distance:
+  Despairing Nobodies - 40
+Tile 89 (?) up to 2 distance:
+  Indolent Power - 40
+Tile 90 (?) up to 1 distance:
+  Despairing Nobodies - 50
+
+> Heart of Chaos 1F ~ 4F
+
+Tile 30 (?) up to 2 distance and only in 0F:
+  Splendorous Queen of Physical - 80
+Tile 30 (?) up to 2 distance and only in 1F:
+  Splendorous Queen of Darkness - 80
+Tile 30 (?) up to 2 distance and only in 2F:
+  Splendorous Queen of Mysticism - 80
+Tile 30 (?) up to 2 distance and only in 3F:
+  Splendorous Queen of Spirit - 80
+Tile 70 (?) up to 2 distance and only in 0F:
+  Splendorous Queen of Physical - 80
+Tile 70 (?) up to 2 distance and only in 1F:
+  Splendorous Queen of Darkness - 80
+Tile 70 (?) up to 2 distance and only in 2F:
+  Splendorous Queen of Mysticism - 80
+Tile 70 (?) up to 2 distance and only in 3F:
+  Splendorous Queen of Spirit - 80
+Tile 16 (?) up to 0 distance:
+  Chaos Egg - 100
+Tile 37 (?) up to 1 distance:
+  Multiworld Freesia - 100
+Tile 17 (?) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 18 (?) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 19 (?) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 20 (?) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 21 (?) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 23 (?) up to 3 distance:
+  Essence Elemental - 160
+Tile 24 (?) up to 3 distance:
+  Essence Elemental - 160
+Tile 25 (?) up to 3 distance:
+  Essence Elemental - 160
+Tile 26 (?) up to 3 distance:
+  Crystal Guardian - 160
+Tile 27 (?) up to 3 distance:
+  Crystal Guardian - 160
+Tile 28 (?) up to 3 distance:
+  Crystal Guardian - 160
+Tile 14 (?) up to 1 distance:
+  Songstress of the End - 200
+Tile 15 (?) up to 1 distance:
+  Songstress of the End - 200
+Tile 54 (?) up to 1 distance:
+  Songstress of the End - 200
+Tile 55 (?) up to 1 distance:
+  Songstress of the End - 200
+Tile 9 (?) up to 1 distance:
+  Abyssal Chimera - 200
+Tile 10 (?) up to 1 distance:
+  Abyssal Chimera - 200
+Tile 11 (?) up to 1 distance:
+  Abyssal Chimera - 200
+Tile 12 (?) up to 1 distance:
+  Abyssal Chimera - 200
+Tile 39 (?) up to 0 distance:
+  Phlogiston of the Finale - 100
+Tile 40 (?) up to 0 distance:
+  Phlogiston of the Finale - 100
+Tile 41 (?) up to 1 distance:
+  Chaos Butterfly - 100
+Tile 42 (?) up to 1 distance:
+  Chaos Butterfly - 100
+Tile 43 (?) up to 1 distance:
+  Chaos Butterfly - 100
+Tile 13 (?) up to 1 distance:
+  Void Tree Icon - 100
+Tile 53 (?) up to 1 distance:
+  Void Tree Icon - 100
+Tile 38 (?) up to 1 distance:
+  Lunacy of the Weak - 60
+Tile 78 (?) up to 1 distance:
+  Lunacy of the Weak - 60
+Tile 31 (?) up to 1 distance:
+  World-Swallowing Blackness - 30
+
 === Global Encounter Weights ===
 
-The break items that boost rare enemy encounter chances only apply to the weights below, not to the boosts described above. They are also currently bugged since they do not check the correct enemy IDs when assessing if a monster is rare or not: it currently checks if ID is between 600 and 700, when it should be 5000 and 6000.
+The break items that boost rare enemy encounter chances only apply to the weights below, not to the boosts described above.
 
-Those items also stack additively, not multiplicatively - they work by adding the weights a second time (or two times, for the one that triples the odds), and so when both are active, you just add the weight 3 times more to the base one, 4x'ing the weight rather than 6x'ing it.
+Those items also stack additively, not multiplicatively - they work by adding the weights a second time (or two times, for the one that triples the odds), and so when both are active, you just add the weight 3 times more to the base one, 4x'ing the weight rather than 6x'ing it. The same goes for any hope crystal boosts.
 
 These weights should be added together, and then odds of any given enemy spawning is the ratio between its weight and the sum of all applicable weights. That's how it went with the second game, but I didn't see this particular code this time around. The structure is the same so it's likely how it's done, but I couldn't find confirmation:
 
@@ -334,3 +713,506 @@ Nightmare Foot Soldier - 25
 Hexagonal Mind - 3
 
 Rare enemy for chain bonus: Hexagonal Mind
+
+> Nightmare of a Ray of Hope Wrapped in Despair 1F
+
+If 69 < X < 81 AND 39 < Y < 67:
+  Nightmare Chrysalis - 100
+  Nightmare Disciple - 100
+Otherwise:
+  Nightmare Chrysalis - 50
+  Nightmare Disciple - 50
+  Nightmare Foot Soldier - 50
+  ????? - 100
+  ???????? - 5
+
+Rare enemy for chain bonus: ????????
+
+> Anguish of the Lost 1F
+
+Nightmare Disciple - 50
+Thieving Mouse - 100
+Blossoming Fairy - 100
+Old Sakura Informant - 33
+Nightmare Foot Soldier - 100
+Maneater Carp - 3
+Swaying Dream Chrysalis - 60
+Bakeneko Constable - 33
+Great Bandit Mouse - 4
+Affluent Manekineko - 1
+
+Rare enemy for chain bonus: Great Bandit Mouse
+
+> Anguish of the Lost 2F
+
+If Y > 69:
+  Nightmare Disciple - 25
+  Thieving Mouse - 50
+  Blossoming Fairy - 50
+  Old Sakura Informant - 50
+  Nightmare Foot Soldier - 100
+  Maneater Carp - 10
+  Swaying Dream Chrysalis - 100
+  Bakeneko Constable - 66
+  Topaz Elemental - 50
+  Brightwind Flutterers - 33
+  Great Bandit Mouse - 2
+  Affluent Manekineko - 2
+Otherwise:
+  Blossoming Fairy - 50
+  Old Sakura Informant - 50
+  Nightmare Foot Soldier - 66
+  Maneater Carp - 10
+  Swaying Dream Chrysalis - 66
+  Bakeneko Constable - 66
+  Topaz Elemental - 100
+  Brightwind Flutterers - 100
+  Oni Ginkgo Seed - 100
+  Venerable Elder Ginkgo - 100
+  Great Bandit Mouse - 1
+  Affluent Manekineko - 1
+  Oni Ginkgo Sage - 3
+
+Rare enemy for chain bonus: Oni Ginkgo Sage
+
+> Anguish of the Lost 3F
+
+Nightmare Disciple - 10
+Thieving Mouse - 25
+Blossoming Fairy - 25
+Old Sakura Informant - 25
+Nightmare Foot Soldier - 25
+Maneater Carp - 25
+Swaying Dream Chrysalis - 25
+Bakeneko Constable - 25
+Topaz Elemental - 50
+Brightwind Flutterers - 50
+Oni Ginkgo Seed - 50
+Venerable Elder Ginkgo - 50
+Spring Breeze Kedama - 100
+Swaying Dream Apostle - 100
+Oni Ginkgo Blossom - 100
+If Y < 78:
+  Mist Beast of the Lost Dream - 100
+Great Bandit Mouse - 1
+Affluent Manekineko - 2
+Oni Ginkgo Sage - 3
+Symbol of Light and Wind - 4
+
+Rare enemy for chain bonus: Symbol of Light and Wind
+
+> Sorrow of the Fragile 1F
+
+Terror-Sucking Sapling - 60
+Wetlands Onibi - 80
+Fluorescent Dimflower - 100
+Zirconia Elemental - 80
+Marsh Deathsprite - 60
+Wetlands Flier - 40
+Fluorescent Shineflower - 4
+Raging Swamp Monster - 1
+
+Rare enemy for chain bonus: Fluorescent Shineflower
+
+> Sorrow of the Fragile 2F
+
+If X < 72 AND Y < 72:
+  Wetlands Onibi - 66
+  Fluorescent Dimflower - 50
+  Zirconia Elemental - 50
+  Marsh Deathsprite - 100
+  Wetlands Flier - 60
+  Swampstone Kedama - 100
+  Moonlight Necromancer - 100
+  Fluorescent Shineflower - 1
+  Raging Swamp Monster - 4
+Otherwise:
+  Terror-Sucking Sapling - 33
+  Wetlands Onibi - 66
+  Zirconia Elemental - 33
+  Marsh Deathsprite - 66
+  Wetlands Flier - 100
+  Swampstone Kedama - 100
+  Moonlight Necromancer - 100
+  Swampland Assassin - 100
+  Despair of the Drowning - 100
+  Fluorescent Shineflower - 1
+  Raging Swamp Monster - 4
+
+Rare enemy for chain bonus: Raging Swamp Monster
+
+> Sorrow of the Fragile 3F
+
+Terror-Sucking Sapling - 25
+Wetlands Onibi - 66
+Fluorescent Dimflower - 25
+Zirconia Elemental - 25
+Marsh Deathsprite - 25
+Wetlands Flier - 66
+Swampstone Kedama - 50
+Moonlight Necromancer - 50
+Swampland Assassin - 50
+Despair of the Drowning - 50
+Tin-Tinted Fairy - 100
+Soldier of the Sorrowful Dream - 100
+Moonlight Dancer - 100
+Terror-Gluttonizing Tree - 33
+If X < 72 AND Y < 72:
+  Terror-Gluttonizing Tree - 100
+  Wildscream Seedbed - 4
+Fluorescent Shineflower - 1
+Raging Swamp Monster - 2
+Wildscream Seedbed - 2
+
+Rare enemy for chain bonus: Wildscream Seedbed
+
+> Battleground of the Unforgiven 1F
+
+Belligerent Hitodama - 100
+Lava Child - 90
+Watchdog of the Battlefield - 80
+Orb of Flame - 70
+Blazing Kedama - 60
+Lava Swallower - 5
+Circle of Flame - 5
+
+Rare enemy for chain bonus: Circle of Flame
+
+> Battleground of the Unforgiven 2F
+
+IF (X > 59 AND Y > 74) OR (X > 74 AND Y > 59) OR (X > 89 AND Y > 44):
+  Belligerent Hitodama - 60
+  Lava Child - 70
+  Watchdog of the Battlefield - 80
+  Orb of Flame - 90
+  Blazing Kedama - 100
+  Lava Swallower - 5
+  Victim of Slaughter - 110
+  Scarlet Fairy - 120
+  Circle of Flame - 2
+  Ruby Blaze Golem - 5
+Otherwise:
+  Belligerent Hitodama - 20
+  Lava Child - 30
+  Watchdog of the Battlefield - 40
+  Orb of Flame - 50
+  Blazing Kedama - 60
+  Lava Swallower - 5
+  Victim of Slaughter - 70
+  Scarlet Fairy - 80
+  Smelter Ruby - 90
+  Blood-Sucking Blade - 100
+  Circle of Flame - 2
+  Ruby Blaze Golem - 4
+
+Rare enemy for chain bonus: Ruby Blaze Golem
+
+> Battleground of the Unforgiven 3F
+
+Belligerent Hitodama - 66
+Lava Child - 20
+Watchdog of the Battlefield - 30
+Orb of Flame - 40
+Blazing Kedama - 50
+Lava Swallower - 5
+Victim of Slaughter - 60
+Scarlet Fairy - 70
+Smelter Ruby - 80
+Blood-Sucking Blade - 90
+Blaze Golem - 100
+Ruby Elemental - 100
+Nightmare Premonition - 100
+Orthrus of the Battlefield - 50
+Circle of Flame - 2
+Ruby Blaze Golem - 3
+Slaughter Avenger - 5
+
+Rare enemy for chain bonus: Slaughter Avenger
+
+> Prison of the Solitary 1F
+
+Solitude-Peddling Girl - 100
+Crystal Cracker - 100
+Frost Baby - 90
+Freezing Widow - 80
+Lapis-Blue Fairy - 70
+Frigid Shellbug - 50
+Crystal Eater - 4
+Silver Wolf Darling - 1
+
+Rare enemy for chain bonus: Crystal Eater
+
+> Prison of the Solitary 2F
+
+If X > 69 AND Y > 69:
+  Solitude-Peddling Girl - 50
+  Crystal Cracker - 50
+  Frost Baby - 50
+  Freezing Widow - 66
+  Lapis-Blue Fairy - 75
+  Frigid Shellbug - 50
+  Ice Crystal Warlock - 100
+  Poisonous Prison Bee - 100
+  Silver Wolf - 75
+  Crystal Eater - 1
+  Silver Wolf Darling - 4
+Otherwise:
+  Solitude-Peddling Girl - 10
+  Crystal Cracker - 20
+  Frost Baby - 30
+  Freezing Widow - 40
+  Lapis-Blue Fairy - 50
+  Frigid Shellbug - 60
+  Ice Crystal Warlock - 70
+  Poisonous Prison Bee - 80
+  Silver Wolf - 90
+  Crystal Seed - 100
+  Twinkling Icicle - 100
+  Crystal Eater - 2
+  Silver Wolf Darling - 5
+  Sapphire Frost Golem - 1
+
+Rare enemy for chain bonus: Silver Wolf Darling
+
+> Prison of the Solitary 3F
+
+Solitude-Peddling Girl - 33
+Crystal Cracker - 33
+Frost Baby - 33
+Freezing Widow - 33
+Lapis-Blue Fairy - 33
+Frigid Shellbug - 40
+Ice Crystal Warlock - 66
+Poisonous Prison Bee - 50
+Silver Wolf - 70
+Crystal Seed - 80
+Twinkling Icicle - 90
+Sapphire Elemental - 100
+Ice Kedama - 100
+Nightmare Manifest - 100
+Frost Golem - 50
+Queen of the Blizzard - 25
+Crystal Eater - 2
+Silver Wolf Darling - 3
+Sapphire Frost Golem - 6
+
+Rare enemy for chain bonus: Sapphire Frost Golem
+
+> Fleeting Phantasmagoric Utopia 1F
+
+Stirring Power - 100
+Child of the Sun - 100
+Dayflower Fairy - 100
+Ideal-Embracing Maiden - 100
+Stump of Order - 100
+If Yukari's 1F gaps defeated:
+  Nightmare Glimpsed From the Gap - 100
+Emissary of the Sun - 6
+
+Rare enemy for chain bonus: Emissary of the Sun
+
+> Fleeting Phantasmagoric Utopia 2F
+
+Stirring Power - 50
+Child of the Sun - 50
+Dayflower Fairy - 66
+Ideal-Embracing Maiden - 66
+Stump of Order - 75
+If Yukari's 1F gaps defeated:
+  Nightmare Glimpsed From the Gap - 100
+Holy Swarm Premonition - 100
+Infant Power Dragon - 100
+Purelight Kedama - 100
+Sunlight Dancer - 66
+Emissary of the Sun - 2
+Untouchable Holystone - 6
+
+Rare enemy for chain bonus: Untouchable Holystone
+
+> Fleeting Phantasmagoric Utopia 3F
+
+Stirring Power - 25
+Child of the Sun - 25
+Dayflower Fairy - 50
+Ideal-Embracing Maiden - 50
+Stump of Order - 50
+If Yukari's 1F gaps defeated:
+  Nightmare Glimpsed From the Gap - 60
+Holy Swarm Premonition - 70
+Infant Power Dragon - 80
+Purelight Kedama - 100
+Sunlight Dancer - 75
+Ideal Swarmling - 100
+Opal Elemental - 100
+Twinkling Nightmare Warden - 100
+Masterless Ghostblade - 66
+Flowering Order - 33
+Emissary of the Sun - 2
+Untouchable Holystone - 3
+Detestable Brightblade - 6
+Wingdrake of Power - 1
+
+Rare enemy for chain bonus: Detestable Brightblade
+
+> Great Nightmare of Phantasmagoria 1F
+
+Miniscule One - 66
+Jet-Black Kedama - 100
+Symbol of Falsehood - 100
+Dreaming Queen of Fire - 100
+Nobody Wishing to Be Somebody - 100
+Hellfire Cerberus - 33
+Purple Ruin Fairy - 33
+Onyx Elemental - 20
+Symbol of Atrocity - 10
+Indolent Power - 5
+
+Rare enemy for chain bonus: Indolent Power
+
+> Great Nightmare of Phantasmagoria 2F
+
+Miniscule One - 50
+Jet-Black Kedama - 50
+Symbol of Falsehood - 25
+Nobody Wishing to Be Somebody - 100
+Purple Ruin Fairy - 100
+Dreaming Queen of Wind - 100
+Citadel Beetle - 33
+Onyx Elemental - 33
+Symbol of Atrocity - 12
+Indolent Power - 2
+Bloated Avarice - 4
+
+Rare enemy for chain bonus: Indolent Power
+
+> Great Nightmare of Phantasmagoria 3F
+
+Jet-Black Kedama - 33
+Symbol of Falsehood - 20
+Nobody Wishing to Be Somebody - 75
+Purple Ruin Fairy - 66
+Symbol of Jealousy - 100
+Onyx Elemental - 100
+Dreaming Queen of Cold - 100
+Ruthless Enforcer - 33
+Symbol of Atrocity - 16
+Indolent Power - 2
+Bloated Avarice - 2
+Despairing Nobodies - 2
+
+Rare enemy for chain bonus: Despairing Nobodies
+
+> Great Nightmare of Phantasmagoria 4F
+
+Miniscule One - 33
+Jet-Black Kedama - 33
+Symbol of Falsehood - 33
+Nobody Wishing to Be Somebody - 50
+Purple Ruin Fairy - 100
+Symbol of Jealousy - 50
+Onyx Elemental - 100
+Dreaming Queen of Nature - 100
+Rampaging Nature - 66
+Symbol of Atrocity - 33
+Indolent Power - 2
+Bloated Avarice - 2
+Despairing Nobodies - 5
+
+Rare enemy for chain bonus: Despairing Nobodies
+
+> Heart of Chaos 1F
+
+If 63 < X < 77 AND 60 < Y < 74:
+  Dream Soul of the Weak - 100
+  Chaos Egg - 100
+  Multiworld Freesia - 100
+  Splendorous Queen of Physical - 100
+  Crystalline Lens of the Apocalypse - 100
+  Essence Elemental - 100
+  Crystal Guardian - 100
+  Splendorous Queen of Darkness - 100
+  Songstress of the End - 100
+  Abyssal Chimera - 100
+  Phlogiston of the Finale - 100
+  Splendorous Queen of Mysticism - 100
+  Chaos Butterfly - 100
+  Splendorous Queen of Spirit - 100
+  Sunken of the Shining Nightmare - 100
+  Void Tree Icon - 100
+  Lunacy of the Weak - 200
+  Phlogiston Construct - 200
+  World-Swallowing Blackness - 200
+  Concept of Ruin - 200
+  One Who Judges - 200
+Otherwise:
+  Dream Soul of the Weak - 100
+  Chaos Egg - 100
+  Multiworld Freesia - 66
+  Splendorous Queen of Physical - 66
+  Crystalline Lens of the Apocalypse - 50
+  Songstress of the End - 10
+  Abyssal Chimera - 10
+  Chaos Butterfly - 10
+  Sunken of the Shining Nightmare - 10
+  Void Tree Icon - 10
+  Lunacy of the Weak - 10
+
+Rare enemy for chain bonus: Lunacy of the Weak
+
+> Heart of Chaos 2F
+
+Dream Soul of the Weak - 75
+Chaos Egg - 75
+Multiworld Freesia - 60
+Crystalline Lens of the Apocalypse - 50
+Splendorous Queen of Darkness - 100
+Songstress of the End - 100
+Abyssal Chimera - 33
+Chaos Butterfly - 10
+Sunken of the Shining Nightmare - 10
+Void Tree Icon - 10
+Lunacy of the Weak - 5
+World-Swallowing Blackness - 10
+If 68 < X < 82 AND 68 < Y < 82:
+  World-Swallowing Blackness - 125
+
+Rare enemy for chain bonus: Phlogiston Construct
+
+> Heart of Chaos 3F
+
+Dream Soul of the Weak - 50
+Chaos Egg - 50
+Multiworld Freesia - 40
+Crystalline Lens of the Apocalypse - 40
+Abyssal Chimera - 20
+Phlogiston of the Finale - 100
+Splendorous Queen of Mysticism - 100
+Chaos Butterfly - 66
+Sunken of the Shining Nightmare - 10
+Void Tree Icon - 10
+Lunacy of the Weak - 5
+Phlogiston Construct - 10
+If 66 < X < 80 AND 66 < Y < 80:
+  Phlogiston Construct - 100
+World-Swallowing Blackness - 5
+
+Rare enemy for chain bonus: World-Swallowing Blackness
+
+> Heart of Chaos 4F
+
+Dream Soul of the Weak - 33
+Multiworld Freesia - 33
+Crystalline Lens of the Apocalypse - 33
+Songstress of the End - 16
+Abyssal Chimera - 16
+Phlogiston of the Finale - 50
+Chaos Butterfly - 66
+Splendorous Queen of Spirit - 100
+Sunken of the Shining Nightmare - 100
+Void Tree Icon - 50
+Lunacy of the Weak - 5
+Phlogiston Construct - 5
+World-Swallowing Blackness - 5
+Concept of Ruin - 10
+
+Rare enemy for chain bonus: Concept of Ruin
