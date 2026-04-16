@@ -4,7 +4,7 @@ Maps are organized in a 150x150 grid, with the OD file having 1 byte per tile, a
 
 OD files - 2 means a tile is walkable, 1 means a tile is visible, 0 means a tile is invisible
 
-B files - Unknown what these numbers mean, any ideas are welcome
+B files - Each number represents a background tile that will be drawn behind the map, usually done to mask the void that sits under the tiles when the map has holes
 
 G files - Each number represents which graphic is associated with that tile's floor. In the img1.dxa archive, you'll find corresponding graphics for each ID in the Dungeon directory, per stratum
 
