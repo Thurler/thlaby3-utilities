@@ -337,289 +337,289 @@ Tile 35 (tombstone with blue glow and blue candles) up to 1 distance:
 
 > Battleground of the Unforgiven 1F ~ 3F
 
-Tile 2 (?) up to 0 distance:
+Tile 2 (rocky floor with lava in the cracks) up to 0 distance:
   Belligerent Hitodama - 100
-Tile 18 (?) up to 2 distance:
+Tile 18 (rocky floor with flowers on top) up to 2 distance:
   Lava Child - 80
-Tile 11 (?) up to 1 distance:
+Tile 11 (darker floor with lava in the cracks) up to 1 distance:
   Watchdog of the Battlefield - 40
-Tile 12 (?) up to 1 distance:
+Tile 12 (elevated darker floor with lava in the cracks) up to 1 distance:
   Watchdog of the Battlefield - 60
-Tile 13 (?) up to 1 distance:
+Tile 13 (more elevated darker floor with lava in the cracks) up to 1 distance:
   Watchdog of the Battlefield - 80
-Tile 14 (?) up to 2 distance:
+Tile 14 (tall rock pillar protruding from lava) up to 2 distance:
   Orb of Flame - 80
-Tile 13 (?) up to 2 distance:
+Tile 13 (more elevated darker floor with lava in the cracks) up to 2 distance:
   Orb of Flame - 50
-Tile 5 (?) up to 1 distance:
+Tile 5 (lava tile with nothing on it) up to 1 distance:
   Lava Swallower - 100
-Tile 17 (?) up to 2 distance:
+Tile 17 (pillar with a flame inside it) up to 2 distance:
   Victim of Slaughter - 100
-Tile 22 (?) up to 2 distance:
+Tile 22 (floor with a red crystal on top of it) up to 2 distance:
   Smelter Ruby - 80
-Tile 19 (?) up to 2 distance:
+Tile 19 (castle wall on rocky surface) up to 2 distance:
   Blood-Sucking Blade - 60
-Tile 20 (?) up to 2 distance:
+Tile 20 (elevated castle wall on rocky surface) up to 2 distance:
   Blaze Golem - 60
-Tile 28 (?) up to 1 distance:
+Tile 28 (lighter rocky floor with nothing on it) up to 1 distance:
   Nightmare Premonition - 50
-Tile 3 (?) up to 0 distance:
+Tile 3 (lava tile with small rocks on it) up to 0 distance:
   Circle of Flame - 20
-Tile 4 (?) up to 0 distance:
+Tile 4 (lava tile with more small rocks on it) up to 0 distance:
   Circle of Flame - 20
-Tile 21 (?) up to 1 distance:
+Tile 21 (more elevated castle wall on rocky surface) up to 1 distance:
   Ruby Blaze Golem - 32
-Tile 23 (?) up to 1 distance:
+Tile 23 (rock floor with glowing red tree) up to 1 distance:
   Slaughter Avenger - 50
 
 > Prison of the Solitary 1F ~ 3F
 
-Tile 1 (?) up to 0 distance:
+Tile 1 (standard tile) up to 0 distance:
   Solitude-Peddling Girl - 50
-Tile 18 (?) up to 0 distance:
+Tile 18 (much less saturated standard tile) up to 0 distance:
   Solitude-Peddling Girl - 50
-Tile 19 (?) up to 0 distance:
+Tile 19 (less saturated standard tile) up to 0 distance:
   Solitude-Peddling Girl - 50
-Tile 31 (?) up to 0 distance:
+Tile 31 (snow tile) up to 0 distance:
   Crystal Cracker - 50
-Tile 32 (?) up to 0 distance:
+Tile 32 (snow tile that started melting) up to 0 distance:
   Crystal Cracker - 50
-Tile 33 (?) up to 0 distance:
+Tile 33 (half melted snow tile) up to 0 distance:
   Crystal Cracker - 50
-Tile 42 (?) up to 2 distance:
+Tile 42 (flowerbed with snow on top) up to 2 distance:
   Frost Baby - 100
-Tile 15 (?) up to 2 distance:
+Tile 15 (rock pillar with blue candles in it) up to 2 distance:
   Freezing Widow - 100
-Tile 2 (?) up to 1 distance:
+Tile 2 (standard tile with fences facing right) up to 1 distance:
   Frigid Shellbug - 200
-Tile 3 (?) up to 1 distance:
+Tile 3 (standard tile with fences facing left) up to 1 distance:
   Frigid Shellbug - 200
-Tile 40 (?) up to 1 distance:
+Tile 40 (statue facing right) up to 1 distance:
   Ice Crystal Warlock - 200
-Tile 41 (?) up to 1 distance:
+Tile 41 (statue facing left) up to 1 distance:
   Ice Crystal Warlock - 200
-Tile 12 (?) up to 2 distance:
+Tile 12 (castle tower top with a blue flame in it) up to 2 distance:
   Silver Wolf - 100
-Tile 43 (?) up to 1 distance:
+Tile 43 (snow tile with white flowers under it) up to 1 distance:
   Crystal Seed - 100
-Tile 44 (?) up to 1 distance:
+Tile 44 (snow tile with blue flowers under it) up to 1 distance:
   Crystal Seed - 100
-Tile 23 (?) up to 1 distance:
+Tile 23 (ice pillar sticking up) up to 1 distance:
   Twinkling Icicle - 200
-Tile 24 (?) up to 1 distance:
+Tile 24 (wide ice crystal sticking up) up to 1 distance:
   Twinkling Icicle - 200
-Tile 25 (?) up to 1 distance:
+Tile 25 (extra wide ice crystal sticking up) up to 1 distance:
   Twinkling Icicle - 200
-Tile 28 (?) up to 2 distance:
+Tile 28 (ice pillar) up to 2 distance:
   Nightmare Manifest - 60
-Tile 29 (?) up to 2 distance:
+Tile 29 (thinner ice pillar) up to 2 distance:
   Nightmare Manifest - 60
-Tile 30 (?) up to 2 distance:
+Tile 30 (even thinner ice pillar) up to 2 distance:
   Nightmare Manifest - 60
-Tile 10 (?) up to 1 distance:
+Tile 10 (rock pillar with statues in it) up to 1 distance:
   Frost Golem - 200
-Tile 26 (?) up to 2 distance:
+Tile 26 (ice staircase formation) up to 2 distance:
   Frost Golem - 60
-Tile 27 (?) up to 2 distance:
+Tile 27 (brighter ice staircase formation) up to 2 distance:
   Frost Golem - 60
-Tile 49 (?) up to 2 distance:
+Tile 49 (blue mint flowers) up to 2 distance:
   Queen of the Blizzard - 60
-Tile 45 (?) up to 1 distance:
+Tile 45 (tree covered in snow) up to 1 distance:
   Crystal Eater - 50
-Tile 45 (?) up to 2 distance:
+Tile 45 (tree covered in snow) up to 2 distance:
   Crystal Eater - 30
-Tile 20 (?) up to 1 distance:
+Tile 20 (pile of crates with a barrel) up to 1 distance:
   Silver Wolf Darling - 30
-Tile 21 (?) up to 1 distance:
+Tile 21 (pair of crates and barrels) up to 1 distance:
   Silver Wolf Darling - 30
-Tile 22 (?) up to 1 distance:
+Tile 22 (pile of barrels) up to 1 distance:
   Silver Wolf Darling - 30
 
 > Fleeting Phantasmagoric Utopia 1F ~ 3F
 
-Tile 25 (?) up to 1 distance:
+Tile 25 (angel statue in a flowerbed) up to 1 distance:
   Dayflower Fairy - 200
-Tile 17 (?) up to 1 distance:
+Tile 17 (pillar with falling water) up to 1 distance:
   Ideal-Embracing Maiden - 200
-Tile 18 (?) up to 1 distance:
+Tile 18 (taller pillar with falling water) up to 1 distance:
   Ideal-Embracing Maiden - 200
-Tile 19 (?) up to 1 distance:
+Tile 19 (even taller pillar with falling water) up to 1 distance:
   Ideal-Embracing Maiden - 200
-Tile 20 (?) up to 1 distance:
+Tile 20 (tallest pillar with falling water) up to 1 distance:
   Ideal-Embracing Maiden - 200
-Tile 21 (?) up to 2 distance:
+Tile 21 (flowerbed with nothing in its center) up to 2 distance:
   Stump of Order - 60
-Tile 22 (?) up to 2 distance:
+Tile 22 (flowerbed on a hedge) up to 2 distance:
   Stump of Order - 60
-Tile 29 (?) up to 2 distance:
+Tile 29 (arches with flowers) up to 2 distance:
   Holy Swarm Premonition - 60
-Tile 32 (?) up to 2 distance:
+Tile 32 (village house with a stairway on right side) up to 2 distance:
   Infant Power Dragon - 80
-Tile 39 (?) up to 2 distance:
+Tile 39 (gazebo with a green dome) up to 2 distance:
   Sunlight Dancer - 100
-Tile 44 (?) up to 0 distance:
+Tile 44 (translucent teal tile) up to 0 distance:
   Opal Elemental - 100
-Tile 26 (?) up to 2 distance:
+Tile 26 (kneeling angel statue facing right) up to 2 distance:
   Twinkling Nightmare Warden - 80
-Tile 27 (?) up to 2 distance:
+Tile 27 (kneeling angel statue facing left) up to 2 distance:
   Twinkling Nightmare Warden - 80
-Tile 28 (?) up to 2 distance:
+Tile 28 (stone pillars with a flat top) up to 2 distance:
   Masterless Ghostblade - 80
-Tile 23 (?) up to 2 distance:
+Tile 23 (flowerbed with a regular tree in the center) up to 2 distance:
   Flowering Order - 60
-Tile 24 (?) up to 2 distance:
+Tile 24 (flowerbed with a sakura tree in the center) up to 2 distance:
   Emissary of the Sun - 100
-Tile 43 (?) up to 2 distance:
+Tile 43 (floating blue crystal) up to 2 distance:
   Untouchable Holystone - 32
-Tile 13 (?) up to 1 distance:
+Tile 13 (pillar with a bell inside it) up to 1 distance:
   Detestable Brightblade - 40
-Tile 14 (?) up to 1 distance:
+Tile 14 (taller pillar with a bell inside it) up to 1 distance:
   Detestable Brightblade - 40
-Tile 15 (?) up to 1 distance:
+Tile 15 (even taller pillar with a bell inside it) up to 1 distance:
   Detestable Brightblade - 40
-Tile 16 (?) up to 1 distance:
+Tile 16 (tallest pillar with a bell inside it) up to 1 distance:
   Detestable Brightblade - 40
-Tile 8 (?) up to 1 distance:
+Tile 8 (solid pillar with inscriptions on it) up to 1 distance:
   Wingdrake of Power - 100
 
 > Great Nightmare of Phantasmagoria 1F ~ 4F
 
-Tile 4 (?) up to 0 distance:
+Tile 4 (translucent purple tile) up to 0 distance:
   Miniscule One - 100
-Tile 17 (?) up to 2 distance:
+Tile 17 (pillar with a purple crystal on it) up to 2 distance:
   Onyx Elemental - 100
-Tile 15 (?) up to 2 distance:
+Tile 15 (pillar with stained glass on its sides) up to 2 distance:
   Symbol of Falsehood - 100
-Tile 16 (?) up to 2 distance:
+Tile 16 (taller pillar with stained glass on its sides) up to 2 distance:
   Symbol of Falsehood - 100
-Tile 13 (?) up to 0 distance:
+Tile 13 (purple floor) up to 0 distance:
   Nobody Wishing to Be Somebody - 100
-Tile 18 (?) up to 3 distance:
+Tile 18 (floating purple crystal with square borders) up to 3 distance:
   Symbol of Atrocity - 120
-Tile 25 (?) up to 3 distance:
+Tile 25 (floating red crystal with square borders) up to 3 distance:
   Symbol of Atrocity - 120
-Tile 45 (?) up to 3 distance:
+Tile 45 (floating yellow crystal with square borders) up to 3 distance:
   Symbol of Atrocity - 120
-Tile 57 (?) up to 3 distance:
+Tile 57 (floating blue crystal with square borders) up to 3 distance:
   Symbol of Atrocity - 120
-Tile 79 (?) up to 3 distance:
+Tile 79 (floating green crystal with square borders) up to 3 distance:
   Symbol of Atrocity - 120
-Tile 24 (?) up to 2 distance:
+Tile 24 (pillar with a red crystal on it) up to 2 distance:
   Dreaming Queen of Fire - 100
-Tile 20 (?) up to 1 distance:
+Tile 20 (red floor) up to 1 distance:
   Hellfire Cerberus - 60
-Tile 44 (?) up to 2 distance:
+Tile 44 (pillar with a yellow crystal on it) up to 2 distance:
   Dreaming Queen of Wind - 100
-Tile 47 (?) up to 0 distance:
+Tile 47 (yellow rocky floor) up to 0 distance:
   Symbol of Avarice - 100
-Tile 48 (?) up to 1 distance:
+Tile 48 (brown rocky floor) up to 1 distance:
   Symbol of Avarice - 33
-Tile 49 (?) up to 2 distance:
+Tile 49 (castle tower top) up to 2 distance:
   Citadel Beetle - 50
-Tile 50 (?) up to 2 distance:
+Tile 50 (taller castle tower top) up to 2 distance:
   Citadel Beetle - 75
-Tile 51 (?) up to 2 distance:
+Tile 51 (even taller castle tower top) up to 2 distance:
   Citadel Beetle - 100
-Tile 56 (?) up to 2 distance:
+Tile 56 (pillar with a blue crystal on it) up to 2 distance:
   Dreaming Queen of Cold - 100
-Tile 73 (?) up to 2 distance:
+Tile 73 (flowerbed with snow on it) up to 2 distance:
   Ruthless Enforcer - 80
-Tile 78 (?) up to 2 distance:
+Tile 78 (pillar with a green crystal on it) up to 2 distance:
   Dreaming Queen of Nature - 100
-Tile 86 (?) up to 3 distance:
+Tile 86 (purple mint flowers on grass tile) up to 3 distance:
   Rampaging Nature - 120
-Tile 72 (?) up to 2 distance:
+Tile 72 (tree with snow on it) up to 2 distance:
   Indolent Power - 40
-Tile 70 (?) up to 2 distance:
+Tile 70 (statue on snow facing right) up to 2 distance:
   Bloated Avarice - 40
-Tile 71 (?) up to 2 distance:
+Tile 71 (statue on snow facing left) up to 2 distance:
   Bloated Avarice - 40
-Tile 66 (?) up to 2 distance:
+Tile 66 (stone pillar with blue candles in it) up to 2 distance:
   Despairing Nobodies - 40
-Tile 89 (?) up to 2 distance:
+Tile 89 (regular tree in grass tile) up to 2 distance:
   Indolent Power - 40
-Tile 90 (?) up to 1 distance:
+Tile 90 (fountain on grass tile) up to 1 distance:
   Despairing Nobodies - 50
 
 > Heart of Chaos 1F ~ 4F
 
-Tile 30 (?) up to 2 distance and only in 0F:
+Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 0F:
   Splendorous Queen of Physical - 80
-Tile 30 (?) up to 2 distance and only in 1F:
+Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 1F:
   Splendorous Queen of Darkness - 80
-Tile 30 (?) up to 2 distance and only in 2F:
+Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 2F:
   Splendorous Queen of Mysticism - 80
-Tile 30 (?) up to 2 distance and only in 3F:
+Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 3F:
   Splendorous Queen of Spirit - 80
-Tile 70 (?) up to 2 distance and only in 0F:
+Tile 70 (negative version of tile 30) up to 2 distance and only in 0F:
   Splendorous Queen of Physical - 80
-Tile 70 (?) up to 2 distance and only in 1F:
+Tile 70 (negative version of tile 30) up to 2 distance and only in 1F:
   Splendorous Queen of Darkness - 80
-Tile 70 (?) up to 2 distance and only in 2F:
+Tile 70 (negative version of tile 30) up to 2 distance and only in 2F:
   Splendorous Queen of Mysticism - 80
-Tile 70 (?) up to 2 distance and only in 3F:
+Tile 70 (negative version of tile 30) up to 2 distance and only in 3F:
   Splendorous Queen of Spirit - 80
-Tile 16 (?) up to 0 distance:
+Tile 16 (white rocky floor) up to 0 distance:
   Chaos Egg - 100
-Tile 37 (?) up to 1 distance:
+Tile 37 (deep blue crystal floor) up to 1 distance:
   Multiworld Freesia - 100
-Tile 17 (?) up to 1 distance:
+Tile 17 (rocky blue floor/pillar) up to 1 distance:
   Crystalline Lens of the Apocalypse - 200
-Tile 18 (?) up to 1 distance:
+Tile 18 (taller rocky blue floor/pillar) up to 1 distance:
   Crystalline Lens of the Apocalypse - 200
-Tile 19 (?) up to 1 distance:
+Tile 19 (even taller rocky blue floor/pillar) up to 1 distance:
   Crystalline Lens of the Apocalypse - 200
-Tile 20 (?) up to 1 distance:
+Tile 20 (almost tallest rocky blue floor/pillar) up to 1 distance:
   Crystalline Lens of the Apocalypse - 200
-Tile 21 (?) up to 1 distance:
+Tile 21 (tallest rocky blue floor/pillar) up to 1 distance:
   Crystalline Lens of the Apocalypse - 200
-Tile 23 (?) up to 3 distance:
+Tile 23 (blue crystal spiking from yellow crystal base) up to 3 distance:
   Essence Elemental - 160
-Tile 24 (?) up to 3 distance:
+Tile 24 (purple crystal spiking up) up to 3 distance:
   Essence Elemental - 160
-Tile 25 (?) up to 3 distance:
+Tile 25 (blue and yellow crystals spiking up) up to 3 distance:
   Essence Elemental - 160
-Tile 26 (?) up to 3 distance:
+Tile 26 (pale red-tipped crystal spiking up) up to 3 distance:
   Crystal Guardian - 160
-Tile 27 (?) up to 3 distance:
+Tile 27 (blue crystal spiking from blue crystal base) up to 3 distance:
   Crystal Guardian - 160
-Tile 28 (?) up to 3 distance:
+Tile 28 (clear symmetric bulky crystal pillar) up to 3 distance:
   Crystal Guardian - 160
-Tile 14 (?) up to 1 distance:
+Tile 14 (twin pillars facing right) up to 1 distance:
   Songstress of the End - 200
-Tile 15 (?) up to 1 distance:
+Tile 15 (twin pillars facing left) up to 1 distance:
   Songstress of the End - 200
-Tile 54 (?) up to 1 distance:
+Tile 54 (negative version of tile 14) up to 1 distance:
   Songstress of the End - 200
-Tile 55 (?) up to 1 distance:
+Tile 55 (negative version of tile 15) up to 1 distance:
   Songstress of the End - 200
-Tile 9 (?) up to 1 distance:
+Tile 9 (square stubby pillar) up to 1 distance:
   Abyssal Chimera - 200
-Tile 10 (?) up to 1 distance:
+Tile 10 (taller version of tile 9) up to 1 distance:
   Abyssal Chimera - 200
-Tile 11 (?) up to 1 distance:
+Tile 11 (even taller version of tile 9) up to 1 distance:
   Abyssal Chimera - 200
-Tile 12 (?) up to 1 distance:
+Tile 12 (not tallest version of tile 9) up to 1 distance:
   Abyssal Chimera - 200
-Tile 39 (?) up to 0 distance:
+Tile 39 (purple translucent tile) up to 0 distance:
   Phlogiston of the Finale - 100
-Tile 40 (?) up to 0 distance:
+Tile 40 (blue translucent tile) up to 0 distance:
   Phlogiston of the Finale - 100
-Tile 41 (?) up to 1 distance:
+Tile 41 (negative version of regular floor) up to 1 distance:
   Chaos Butterfly - 100
-Tile 42 (?) up to 1 distance:
+Tile 42 (negative version of regular darker floor) up to 1 distance:
   Chaos Butterfly - 100
-Tile 43 (?) up to 1 distance:
+Tile 43 (negative version of regular elevated floor) up to 1 distance:
   Chaos Butterfly - 100
-Tile 13 (?) up to 1 distance:
+Tile 13 (extremely tall version of tile 9) up to 1 distance:
   Void Tree Icon - 100
-Tile 53 (?) up to 1 distance:
+Tile 53 (negative version of tile 13) up to 1 distance:
   Void Tree Icon - 100
-Tile 38 (?) up to 1 distance:
+Tile 38 (obelisk with inscriptions on it) up to 1 distance:
   Lunacy of the Weak - 60
-Tile 78 (?) up to 1 distance:
+Tile 78 (negative version of tile 38) up to 1 distance:
   Lunacy of the Weak - 60
-Tile 31 (?) up to 1 distance:
+Tile 31 (floating crystal glowing white with vertical debris) up to 1 distance:
   World-Swallowing Blackness - 30
 
 === Global Encounter Weights ===
