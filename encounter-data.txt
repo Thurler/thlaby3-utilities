@@ -155,6 +155,8 @@ Tile 9 (walkable white tiles) up to 0 distance:
   Fairytale Flower Girl - 100
 Tile 10 (elevated grass white chrysanthemum) up to 1 distance:
   Giant Walnut-Cracking Squirrel - 100
+
+(These tiles only exist on 2F)
 Tile 11 (elevated grass lavenders) up to 1 distance:
   Juvenile Great Tree - 200
 Tile 12 (pink lavender tree) up to 2 distance:
@@ -167,6 +169,8 @@ Tile 15 (purple/poisoned tree) up to 3 distance:
   Guardian Great Tree - 50
 Tile 16 (purple chrysanthemum cliff) up to 1 distance:
   Fairytale Man-Eating Wolf - 200
+
+(These tiles are unused in either floor)
 Tile 18 (elevated grass blue lavenders) up to 1 distance:
   Gluttonous Memorytrap - 200
 Tile 19 (elevated grass blue chrysanthemum) up to 1 distance:
@@ -177,9 +181,6 @@ Tile 23 (golden tree) up to 3 distance:
   Golden Seed - 100
 Tile 24 (pale pink lavender tree) up to 2 distance:
   Storybook Assassin Girl - 50
-
-Checking for tiles 11, 12, 13, 14, 15, 16, 18, 19, 20, 23 and 24 in 1F is pointless as it does not have them in the map
-Checking for tiles 18, 19, 20, 23 and 24 in 2F is pointless as it does not have them in the map
 
 > Forest of Oblivion 3F
 
@@ -230,20 +231,18 @@ Tile 2 (very light purple floor) up to 0 distance:
   Nightmare Foot Soldier - 25
 Tile 3 (light purple floor) up to 0 distance:
   Nightmare Foot Soldier - 50
-Tile 16 (purple floor) up to 0 distance:
-  Nightmare Foot Soldier - 100
 Tile 18 (dark purple floor) up to 0 distance:
+  Nightmare Foot Soldier - 100
+
+(This tile is unused in either floor)
+Tile 16 (purple floor) up to 0 distance:
   Nightmare Foot Soldier - 100
 
 > Anguish of the Lost 1F ~ 3F
 
-Tile 2 (double roof facing right with white tiles) up to 2 distance:
-  Thieving Mouse - 200
 Tile 6 (double roof facing right with darker tiles) up to 2 distance:
   Thieving Mouse - 200
 Tile 7 (double roof facing left with darker tiles) up to 2 distance:
-  Thieving Mouse - 200
-Tile 11 (double wall with no decorations) up to 2 distance:
   Thieving Mouse - 200
 Tile 12 (plant roof rest area with benches) up to 1 distance:
   Blossoming Fairy - 200
@@ -251,10 +250,6 @@ Tile 21 (small plants that look like bamboo shoots) up to 1 distance:
   Blossoming Fairy - 200
 Tile 26 (tree with pink flowers inside pond) up to 1 distance:
   Blossoming Fairy - 200
-Tile 22 (full sakura tree) up to 1 distance:
-  Old Sakura Informant - 100
-Tile 27 (water floor tile, not a pond) up to 1 distance:
-  Maneater Carp - 80
 Tile 30 (bridge floor tile) up to 0 distance:
   Maneater Carp - 66
 Tile 9 (double roof facing left with wood door) up to 2 distance:
@@ -263,26 +258,44 @@ Tile 10 (double roof facing right with wood door) up to 2 distance:
   Bakeneko Constable - 200
 Tile 20 (pond that fits into a single tile) up to 1 distance:
   Brightwind Flutterers - 100
-Tile 35 (orange-looking autumn tree with branches showing) up to 1 distance:
-  Oni Ginkgo Seed - 200
-Tile 33 (full orange-looking autumn tree) up to 3 distance:
-  Venerable Elder Ginkgo - 300
-Tile 34 (yellow pine tree) up to 3 distance:
-  Venerable Elder Ginkgo - 300
-Tile 37 (normal sakura bud tree) up to 1 distance:
-  Mist Beast of the Lost Dream - 100
 Tile 13 (pagoda on top of pond) up to 3 distance:
   Great Bandit Mouse - 60
+
+(This tile exists only on 1F and 2F)
+Tile 22 (full sakura tree) up to 1 distance:
+  Old Sakura Informant - 100
+
+(These tiles exist only on 2F and 3F)
+Tile 35 (orange-looking autumn tree with branches showing) up to 1 distance:
+  Oni Ginkgo Seed - 200
 Tile 25 (pagoda with white rock pillars underneath) up to 2 distance:
   Affluent Manekineko - 40
 Tile 31 (multi-floor pagoda) up to 1 distance:
   Affluent Manekineko - 40
 Tile 36 (regular yellow autumn tree) up to 2 distance:
   Oni Ginkgo Sage - 50
+
+(These tiles exist only on 3F)
+Tile 33 (full orange-looking autumn tree) up to 3 distance:
+  Venerable Elder Ginkgo - 300
+Tile 34 (yellow pine tree) up to 3 distance:
+  Venerable Elder Ginkgo - 300
+Tile 37 (normal sakura bud tree) up to 1 distance:
+  Mist Beast of the Lost Dream - 100
 Tile 38 (red sakura bud tree) up to 1 distance:
   Oni Ginkgo Sage - 20
+
+(These tiles are unused in every floor)
+Tile 2 (double roof facing right with white tiles) up to 2 distance:
+  Thieving Mouse - 200
+Tile 11 (double wall with no decorations) up to 2 distance:
+  Thieving Mouse - 200
 Tile 39 (glowing sakura bud tree) up to 1 distance:
   Symbol of the Formless Moon - 30
+
+(This tile is used as background, and will never be checked)
+Tile 27 (water floor tile, not a pond) up to 1 distance:
+  Maneater Carp - 80
 
 > Sorrow of the Fragile 1F ~ 3F
 
