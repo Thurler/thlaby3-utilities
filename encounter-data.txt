@@ -224,11 +224,11 @@ Tile 20 (pond that fits into a single tile) up to 1 distance:
 Tile 13 (pagoda on top of pond) up to 3 distance:
   Great Bandit Mouse - 60
 
-(This tile exists only on 1F and 2F)
+(This tile only exists on 1F and 2F)
 Tile 22 (full sakura tree) up to 1 distance:
   Old Sakura Informant - 100
 
-(These tiles exist only on 2F and 3F)
+(These tiles only exist on 2F and 3F)
 Tile 35 (orange-looking autumn tree with branches showing) up to 1 distance:
   Oni Ginkgo Seed - 200
 Tile 25 (pagoda with white rock pillars underneath) up to 2 distance:
@@ -238,7 +238,7 @@ Tile 31 (multi-floor pagoda) up to 1 distance:
 Tile 36 (regular yellow autumn tree) up to 2 distance:
   Oni Ginkgo Sage - 50
 
-(These tiles exist only on 3F)
+(These tiles only exist on 3F)
 Tile 33 (full orange-looking autumn tree) up to 3 distance:
   Venerable Elder Ginkgo - 300
 Tile 34 (yellow pine tree) up to 3 distance:
@@ -268,8 +268,6 @@ Tile 3 (grassy floor with dark lighter background) up to 0 distance:
   Terror-Sucking Sapling - 100
 Tile 4 (dark brown bridge floor) up to 0 distance:
   Wetlands Onibi - 100
-Tile 5 (beige bridge floor) up to 0 distance:
-  Wetlands Onibi - 100
 Tile 2 (floor with nothing on it) up to 0 distance:
   Marsh Deathsprite - 100
 Tile 7 (looks exactly like tile 2) up to 0 distance:
@@ -278,10 +276,6 @@ Tile 18 (weeping tree) up to 1 distance:
   Wetlands Flier - 200
 Tile 13 (large and tall rock formation on water) up to 1 distance:
   Swampstone Kedama - 200
-Tile 34 (tombstone with lit candles around it) up to 1 distance:
-  Moonlight Necromancer - 200
-Tile 23 (grass with very small purple flowers) up to 2 distance:
-  Swampland Assassin - 100
 Tile 24 (looks exactly like tile 23) up to 2 distance:
   Swampland Assassin - 100
 Tile 30 (pond surrounded by grass) up to 2 distance:
@@ -292,24 +286,42 @@ Tile 32 (looks exactly like tile 31 but taller) up to 2 distance:
   Despair of the Drowning - 100
 Tile 33 (looks exactly like tile 32 but taller) up to 2 distance:
   Despair of the Drowning - 100
-Tile 12 (tall but thin rock formation on water) up to 1 distance:
-  Tin-Tinted Fairy - 200
 Tile 13 (large and tall rock formation on water) up to 1 distance:
   Tin-Tinted Fairy - 200
-Tile 16 (leafy sticks) up to 1 distance:
-  Soldier of the Sorrowful Dream - 100
-Tile 17 (dried sprouts) up to 1 distance:
-  Soldier of the Sorrowful Dream - 200
 Tile 19 (grass with mint-looking flowers) up to 2 distance:
   Moonlight Dancer - 100
 Tile 20 (looks exactly like tile 19) up to 2 distance:
   Moonlight Dancer - 100
 Tile 25 (tall tree with lots of foliage) up to 1 distance:
   Terror-Gluttonizing Tree - 100
-Tile 15 (yellow firefly glows on top of water) up to 3 distance:
-  Fluorescent Shineflower - 132
+
+(These tiles only exist on 1F and 2F)
+Tile 34 (tombstone with lit candles around it) up to 1 distance:
+  Moonlight Necromancer - 200
+Tile 12 (tall but thin rock formation on water) up to 1 distance:
+  Tin-Tinted Fairy - 200
+Tile 16 (leafy sticks) up to 1 distance:
+  Soldier of the Sorrowful Dream - 100
+
+(This tile only exists on 1F and 3F)
+Tile 17 (dried sprouts) up to 1 distance:
+  Soldier of the Sorrowful Dream - 200
+
+(This tile only exists on 2F and 3F)
+Tile 23 (grass with very small purple flowers) up to 2 distance:
+  Swampland Assassin - 100
+
+(This tile only exists on 1F)
+Tile 5 (beige bridge floor) up to 0 distance:
+  Wetlands Onibi - 100
+
+(This tile only exists on 2F)
 Tile 35 (tombstone with blue glow and blue candles) up to 1 distance:
   Raging Swamp Monster - 66
+
+(This tile is unused in every floor)
+Tile 15 (yellow firefly glows on top of water) up to 3 distance:
+  Fluorescent Shineflower - 132
 
 > Battleground of the Unforgiven 1F ~ 3F
 
@@ -331,85 +343,103 @@ Tile 5 (lava tile with nothing on it) up to 1 distance:
   Lava Swallower - 100
 Tile 17 (pillar with a flame inside it) up to 2 distance:
   Victim of Slaughter - 100
-Tile 22 (floor with a red crystal on top of it) up to 2 distance:
-  Smelter Ruby - 80
 Tile 19 (castle wall on rocky surface) up to 2 distance:
   Blood-Sucking Blade - 60
+Tile 3 (lava tile with small rocks on it) up to 0 distance:
+  Circle of Flame - 20
+Tile 23 (rock floor with glowing red tree) up to 1 distance:
+  Slaughter Avenger - 50
+
+(This tile only exists on 1F and 2F)
+Tile 4 (lava tile with more small rocks on it) up to 0 distance:
+  Circle of Flame - 20
+
+(These tiles only exist on 2F and 3F)
+Tile 22 (floor with a red crystal on top of it) up to 2 distance:
+  Smelter Ruby - 80
 Tile 20 (elevated castle wall on rocky surface) up to 2 distance:
   Blaze Golem - 60
 Tile 28 (lighter rocky floor with nothing on it) up to 1 distance:
   Nightmare Premonition - 50
-Tile 3 (lava tile with small rocks on it) up to 0 distance:
-  Circle of Flame - 20
-Tile 4 (lava tile with more small rocks on it) up to 0 distance:
-  Circle of Flame - 20
 Tile 21 (more elevated castle wall on rocky surface) up to 1 distance:
   Ruby Blaze Golem - 32
-Tile 23 (rock floor with glowing red tree) up to 1 distance:
-  Slaughter Avenger - 50
 
 > Prison of the Solitary 1F ~ 3F
 
 Tile 1 (standard tile) up to 0 distance:
   Solitude-Peddling Girl - 50
-Tile 18 (much less saturated standard tile) up to 0 distance:
-  Solitude-Peddling Girl - 50
-Tile 19 (less saturated standard tile) up to 0 distance:
-  Solitude-Peddling Girl - 50
-Tile 31 (snow tile) up to 0 distance:
-  Crystal Cracker - 50
-Tile 32 (snow tile that started melting) up to 0 distance:
-  Crystal Cracker - 50
-Tile 33 (half melted snow tile) up to 0 distance:
-  Crystal Cracker - 50
-Tile 42 (flowerbed with snow on top) up to 2 distance:
-  Frost Baby - 100
 Tile 15 (rock pillar with blue candles in it) up to 2 distance:
   Freezing Widow - 100
 Tile 2 (standard tile with fences facing right) up to 1 distance:
   Frigid Shellbug - 200
 Tile 3 (standard tile with fences facing left) up to 1 distance:
   Frigid Shellbug - 200
-Tile 40 (statue facing right) up to 1 distance:
-  Ice Crystal Warlock - 200
-Tile 41 (statue facing left) up to 1 distance:
-  Ice Crystal Warlock - 200
 Tile 12 (castle tower top with a blue flame in it) up to 2 distance:
   Silver Wolf - 100
-Tile 43 (snow tile with white flowers under it) up to 1 distance:
-  Crystal Seed - 100
-Tile 44 (snow tile with blue flowers under it) up to 1 distance:
-  Crystal Seed - 100
-Tile 23 (ice pillar sticking up) up to 1 distance:
-  Twinkling Icicle - 200
-Tile 24 (wide ice crystal sticking up) up to 1 distance:
-  Twinkling Icicle - 200
-Tile 25 (extra wide ice crystal sticking up) up to 1 distance:
-  Twinkling Icicle - 200
 Tile 28 (ice pillar) up to 2 distance:
-  Nightmare Manifest - 60
-Tile 29 (thinner ice pillar) up to 2 distance:
-  Nightmare Manifest - 60
-Tile 30 (even thinner ice pillar) up to 2 distance:
   Nightmare Manifest - 60
 Tile 10 (rock pillar with statues in it) up to 1 distance:
   Frost Golem - 200
-Tile 26 (ice staircase formation) up to 2 distance:
-  Frost Golem - 60
-Tile 27 (brighter ice staircase formation) up to 2 distance:
-  Frost Golem - 60
-Tile 49 (blue mint flowers) up to 2 distance:
-  Queen of the Blizzard - 60
 Tile 45 (tree covered in snow) up to 1 distance:
   Crystal Eater - 50
 Tile 45 (tree covered in snow) up to 2 distance:
   Crystal Eater - 30
+
+(These tiles only exist on 1F and 2F)
+Tile 18 (much less saturated standard tile) up to 0 distance:
+  Solitude-Peddling Girl - 50
+Tile 31 (snow tile) up to 0 distance:
+  Crystal Cracker - 50
+Tile 42 (flowerbed with snow on top) up to 2 distance:
+  Frost Baby - 100
+Tile 43 (snow tile with white flowers under it) up to 1 distance:
+  Crystal Seed - 100
+Tile 44 (snow tile with blue flowers under it) up to 1 distance:
+  Crystal Seed - 100
+
+(These tiles only exist on 1F and 3F)
+Tile 25 (extra wide ice crystal sticking up) up to 1 distance:
+  Twinkling Icicle - 200
+Tile 26 (ice staircase formation) up to 2 distance:
+  Frost Golem - 60
+
+(This tile only exists on 2F and 3F)
+Tile 27 (brighter ice staircase formation) up to 2 distance:
+  Frost Golem - 60
+
+(These tiles only exist on 1F)
+Tile 32 (snow tile that started melting) up to 0 distance:
+  Crystal Cracker - 50
+Tile 33 (half melted snow tile) up to 0 distance:
+  Crystal Cracker - 50
+Tile 40 (statue facing right) up to 1 distance:
+  Ice Crystal Warlock - 200
+Tile 41 (statue facing left) up to 1 distance:
+  Ice Crystal Warlock - 200
+Tile 23 (ice pillar sticking up) up to 1 distance:
+  Twinkling Icicle - 200
+Tile 24 (wide ice crystal sticking up) up to 1 distance:
+  Twinkling Icicle - 200
+
+(These tiles only exist on 2F)
 Tile 20 (pile of crates with a barrel) up to 1 distance:
   Silver Wolf Darling - 30
 Tile 21 (pair of crates and barrels) up to 1 distance:
   Silver Wolf Darling - 30
 Tile 22 (pile of barrels) up to 1 distance:
   Silver Wolf Darling - 30
+
+(These tiles only exist on 3F)
+Tile 29 (thinner ice pillar) up to 2 distance:
+  Nightmare Manifest - 60
+Tile 30 (even thinner ice pillar) up to 2 distance:
+  Nightmare Manifest - 60
+Tile 49 (blue mint flowers) up to 2 distance:
+  Queen of the Blizzard - 60
+
+(This tile is unused in every floor)
+Tile 19 (less saturated standard tile) up to 0 distance:
+  Solitude-Peddling Girl - 50
 
 > Fleeting Phantasmagoric Utopia 1F ~ 3F
 
