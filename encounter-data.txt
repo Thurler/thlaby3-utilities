@@ -33,43 +33,6 @@ If enemy_count under 1:
 If enemy_count over 5:
   enemy_count = 5
 
-if hope_event == 2 && hope_horde_chance > 0:
-  if rand(99) < hope_horde_chance:
-    if horde_break:
-      horde_break -= 1
-    spawn_horde_for_floor()
-
-if either_break && mult-5:
-  chance = 0
-  if break? > 0:
-    chance = 2
-  if break? > 0:
-    chance += 2
-  if rand(99) < chance:
-    if (break? > 0):
-      break? -= 1
-    if (break? > 0):
-      break? -= 1
-    spawn_horde_for_floor()
-
-if horde_event > 0 && streak > 0 && mult-10:
-  horde_chance = 50
-  if streak / 10 == 3:
-    horde_chance = 100
-  if block_break:
-    horde_chance = 0
-  if horde_break:
-    horde_chance = 100
-    horde_break -= 1
-  if rand(99) < horde_chance:
-    spawn_horde_for_floor()
-  else:
-    spawn_rare_for_floor()
-else if horde_event > 0 && streak > 0 && mult-5:
-  rare_chance = 2 * streak
-  if rand(99) < rare_chance:
-    spawn_rare_for_floor()
-
 === Horde and Chain Checks ===
 
 This section only applies if you have already unlocked Horde fights. All of the bonuses described here are only active when the boss event in Dream Path 1F has been cleared, even the parts pertaining to rare encounters.
