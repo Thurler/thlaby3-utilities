@@ -147,7 +147,7 @@ Tile 24 (pale pink lavender tree) up to 2 distance:
 
 > Forest of Oblivion 3F
 
-For some unknown reason, some tile IDs in this floor are completely whack. I have no idea why, and am referencing the raw map data to extract the data below. Blessed shall be the one that tries to defy this unholy curse.
+For some unknown reason, some tile IDs in this floor are completely whack. I have no idea why, and am referencing the raw map data to extract the data below. Blessed shall be the one that tries to defy this unholy curse. It is also unknown if this issue affects any other floor in other dungeons.
 
 Tile 5 (elevated grass pink lavenders) up to 1 distance:
   Forest Flower Fairy - 200
