@@ -459,39 +459,41 @@ Tile 22 (flowerbed on a hedge) up to 2 distance:
   Stump of Order - 60
 Tile 29 (arches with flowers) up to 2 distance:
   Holy Swarm Premonition - 60
-Tile 32 (village house with a stairway on right side) up to 2 distance:
-  Infant Power Dragon - 80
-Tile 39 (gazebo with a green dome) up to 2 distance:
-  Sunlight Dancer - 100
-Tile 44 (translucent teal tile) up to 0 distance:
-  Opal Elemental - 100
 Tile 26 (kneeling angel statue facing right) up to 2 distance:
-  Twinkling Nightmare Warden - 80
-Tile 27 (kneeling angel statue facing left) up to 2 distance:
   Twinkling Nightmare Warden - 80
 Tile 28 (stone pillars with a flat top) up to 2 distance:
   Masterless Ghostblade - 80
 Tile 23 (flowerbed with a regular tree in the center) up to 2 distance:
   Flowering Order - 60
-Tile 24 (flowerbed with a sakura tree in the center) up to 2 distance:
-  Emissary of the Sun - 100
-Tile 43 (floating blue crystal) up to 2 distance:
-  Untouchable Holystone - 32
 Tile 13 (pillar with a bell inside it) up to 1 distance:
-  Detestable Brightblade - 40
-Tile 14 (taller pillar with a bell inside it) up to 1 distance:
-  Detestable Brightblade - 40
-Tile 15 (even taller pillar with a bell inside it) up to 1 distance:
   Detestable Brightblade - 40
 Tile 16 (tallest pillar with a bell inside it) up to 1 distance:
   Detestable Brightblade - 40
 Tile 8 (solid pillar with inscriptions on it) up to 1 distance:
   Wingdrake of Power - 100
 
+(These tiles only exist on 1F and 3F)
+Tile 32 (village house with a stairway on right side) up to 2 distance:
+  Infant Power Dragon - 80
+Tile 15 (even taller pillar with a bell inside it) up to 1 distance:
+  Detestable Brightblade - 40
+
+(These tiles only exist on 2F and 3F)
+Tile 39 (gazebo with a green dome) up to 2 distance:
+  Sunlight Dancer - 100
+Tile 44 (translucent teal tile) up to 0 distance:
+  Opal Elemental - 100
+Tile 27 (kneeling angel statue facing left) up to 2 distance:
+  Twinkling Nightmare Warden - 80
+Tile 24 (flowerbed with a sakura tree in the center) up to 2 distance:
+  Emissary of the Sun - 100
+Tile 43 (floating blue crystal) up to 2 distance:
+  Untouchable Holystone - 32
+Tile 14 (taller pillar with a bell inside it) up to 1 distance:
+  Detestable Brightblade - 40
+
 > Great Nightmare of Phantasmagoria 1F ~ 4F
 
-Tile 4 (translucent purple tile) up to 0 distance:
-  Miniscule One - 100
 Tile 17 (pillar with a purple crystal on it) up to 2 distance:
   Onyx Elemental - 100
 Tile 15 (pillar with stained glass on its sides) up to 2 distance:
@@ -500,133 +502,159 @@ Tile 16 (taller pillar with stained glass on its sides) up to 2 distance:
   Symbol of Falsehood - 100
 Tile 13 (purple floor) up to 0 distance:
   Nobody Wishing to Be Somebody - 100
-Tile 18 (floating purple crystal with square borders) up to 3 distance:
-  Symbol of Atrocity - 120
+
+(This tile only exists on 1F, 2F and 4F)
+Tile 4 (translucent purple tile) up to 0 distance:
+  Miniscule One - 100
+
+(These tiles only exist on 1F and 4F)
 Tile 25 (floating red crystal with square borders) up to 3 distance:
-  Symbol of Atrocity - 120
-Tile 45 (floating yellow crystal with square borders) up to 3 distance:
-  Symbol of Atrocity - 120
-Tile 57 (floating blue crystal with square borders) up to 3 distance:
-  Symbol of Atrocity - 120
-Tile 79 (floating green crystal with square borders) up to 3 distance:
   Symbol of Atrocity - 120
 Tile 24 (pillar with a red crystal on it) up to 2 distance:
   Dreaming Queen of Fire - 100
 Tile 20 (red floor) up to 1 distance:
   Hellfire Cerberus - 60
+
+(These tiles only exist on 2F and 4F)
+Tile 45 (floating yellow crystal with square borders) up to 3 distance:
+  Symbol of Atrocity - 120
 Tile 44 (pillar with a yellow crystal on it) up to 2 distance:
   Dreaming Queen of Wind - 100
-Tile 47 (yellow rocky floor) up to 0 distance:
-  Symbol of Avarice - 100
-Tile 48 (brown rocky floor) up to 1 distance:
-  Symbol of Avarice - 33
 Tile 49 (castle tower top) up to 2 distance:
   Citadel Beetle - 50
-Tile 50 (taller castle tower top) up to 2 distance:
-  Citadel Beetle - 75
 Tile 51 (even taller castle tower top) up to 2 distance:
   Citadel Beetle - 100
+
+(These tiles only exist on 3F and 4F)
 Tile 56 (pillar with a blue crystal on it) up to 2 distance:
   Dreaming Queen of Cold - 100
 Tile 73 (flowerbed with snow on it) up to 2 distance:
   Ruthless Enforcer - 80
-Tile 78 (pillar with a green crystal on it) up to 2 distance:
-  Dreaming Queen of Nature - 100
-Tile 86 (purple mint flowers on grass tile) up to 3 distance:
-  Rampaging Nature - 120
-Tile 72 (tree with snow on it) up to 2 distance:
-  Indolent Power - 40
 Tile 70 (statue on snow facing right) up to 2 distance:
   Bloated Avarice - 40
 Tile 71 (statue on snow facing left) up to 2 distance:
   Bloated Avarice - 40
 Tile 66 (stone pillar with blue candles in it) up to 2 distance:
   Despairing Nobodies - 40
+
+(These tiles only exist on 2F)
+Tile 47 (yellow rocky floor) up to 0 distance:
+  Symbol of Avarice - 100
+Tile 48 (brown rocky floor) up to 1 distance:
+  Symbol of Avarice - 33
+Tile 50 (taller castle tower top) up to 2 distance:
+  Citadel Beetle - 75
+
+(These tiles only exist on 3F)
+Tile 57 (floating blue crystal with square borders) up to 3 distance:
+  Symbol of Atrocity - 120
+Tile 72 (tree with snow on it) up to 2 distance:
+  Indolent Power - 40
+
+(These tiles only exist on 4F)
+Tile 18 (floating purple crystal with square borders) up to 3 distance:
+  Symbol of Atrocity - 120
+Tile 78 (pillar with a green crystal on it) up to 2 distance:
+  Dreaming Queen of Nature - 100
+Tile 86 (purple mint flowers on grass tile) up to 3 distance:
+  Rampaging Nature - 120
 Tile 89 (regular tree in grass tile) up to 2 distance:
   Indolent Power - 40
 Tile 90 (fountain on grass tile) up to 1 distance:
   Despairing Nobodies - 50
 
+(This tile is unused in every floor)
+Tile 79 (floating green crystal with square borders) up to 3 distance:
+  Symbol of Atrocity - 120
+
 > Heart of Chaos 1F ~ 4F
 
-Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 0F:
+Tiles 30 and 70 are bugged to check floors 0-3 instead of 1-4, meaning they are not valid for 4F. Tile 70 only shows up in 1F so it doesn't matter, but tile 30 shows up in all 4 floors.
+
+Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 0~3F:
   Splendorous Queen of Physical - 80
-Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 1F:
-  Splendorous Queen of Darkness - 80
-Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 2F:
-  Splendorous Queen of Mysticism - 80
-Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 3F:
-  Splendorous Queen of Spirit - 80
-Tile 70 (negative version of tile 30) up to 2 distance and only in 0F:
-  Splendorous Queen of Physical - 80
-Tile 70 (negative version of tile 30) up to 2 distance and only in 1F:
-  Splendorous Queen of Darkness - 80
-Tile 70 (negative version of tile 30) up to 2 distance and only in 2F:
-  Splendorous Queen of Mysticism - 80
-Tile 70 (negative version of tile 30) up to 2 distance and only in 3F:
-  Splendorous Queen of Spirit - 80
 Tile 16 (white rocky floor) up to 0 distance:
   Chaos Egg - 100
-Tile 37 (deep blue crystal floor) up to 1 distance:
-  Multiworld Freesia - 100
-Tile 17 (rocky blue floor/pillar) up to 1 distance:
-  Crystalline Lens of the Apocalypse - 200
-Tile 18 (taller rocky blue floor/pillar) up to 1 distance:
-  Crystalline Lens of the Apocalypse - 200
-Tile 19 (even taller rocky blue floor/pillar) up to 1 distance:
-  Crystalline Lens of the Apocalypse - 200
-Tile 20 (almost tallest rocky blue floor/pillar) up to 1 distance:
-  Crystalline Lens of the Apocalypse - 200
-Tile 21 (tallest rocky blue floor/pillar) up to 1 distance:
-  Crystalline Lens of the Apocalypse - 200
-Tile 23 (blue crystal spiking from yellow crystal base) up to 3 distance:
-  Essence Elemental - 160
 Tile 24 (purple crystal spiking up) up to 3 distance:
   Essence Elemental - 160
-Tile 25 (blue and yellow crystals spiking up) up to 3 distance:
-  Essence Elemental - 160
-Tile 26 (pale red-tipped crystal spiking up) up to 3 distance:
-  Crystal Guardian - 160
 Tile 27 (blue crystal spiking from blue crystal base) up to 3 distance:
   Crystal Guardian - 160
 Tile 28 (clear symmetric bulky crystal pillar) up to 3 distance:
   Crystal Guardian - 160
 Tile 14 (twin pillars facing right) up to 1 distance:
   Songstress of the End - 200
-Tile 15 (twin pillars facing left) up to 1 distance:
-  Songstress of the End - 200
-Tile 54 (negative version of tile 14) up to 1 distance:
-  Songstress of the End - 200
-Tile 55 (negative version of tile 15) up to 1 distance:
-  Songstress of the End - 200
 Tile 9 (square stubby pillar) up to 1 distance:
   Abyssal Chimera - 200
 Tile 10 (taller version of tile 9) up to 1 distance:
   Abyssal Chimera - 200
-Tile 11 (even taller version of tile 9) up to 1 distance:
-  Abyssal Chimera - 200
 Tile 12 (not tallest version of tile 9) up to 1 distance:
   Abyssal Chimera - 200
-Tile 39 (purple translucent tile) up to 0 distance:
-  Phlogiston of the Finale - 100
-Tile 40 (blue translucent tile) up to 0 distance:
-  Phlogiston of the Finale - 100
-Tile 41 (negative version of regular floor) up to 1 distance:
-  Chaos Butterfly - 100
-Tile 42 (negative version of regular darker floor) up to 1 distance:
-  Chaos Butterfly - 100
-Tile 43 (negative version of regular elevated floor) up to 1 distance:
-  Chaos Butterfly - 100
 Tile 13 (extremely tall version of tile 9) up to 1 distance:
   Void Tree Icon - 100
+Tile 31 (floating crystal glowing white with vertical debris) up to 1 distance:
+  World-Swallowing Blackness - 30
+
+(This tile only exists on 1F, 2F and 3F)
+Tile 39 (purple translucent tile) up to 0 distance:
+  Phlogiston of the Finale - 100
+
+(These tiles only exist on 1F, 2F and 4F)
+Tile 17 (rocky blue floor/pillar) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 18 (taller rocky blue floor/pillar) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 23 (blue crystal spiking from yellow crystal base) up to 3 distance:
+  Essence Elemental - 160
+Tile 25 (blue and yellow crystals spiking up) up to 3 distance:
+  Essence Elemental - 160
+Tile 26 (pale red-tipped crystal spiking up) up to 3 distance:
+  Crystal Guardian - 160
+Tile 15 (twin pillars facing left) up to 1 distance:
+  Songstress of the End - 200
+
+(This tile only exists on 2F, 3F and 4F)
+Tile 11 (even taller version of tile 9) up to 1 distance:
+  Abyssal Chimera - 200
+
+(These tiles only exist on 1F and 3F)
+Tile 37 (deep blue crystal floor) up to 1 distance:
+  Multiworld Freesia - 100
+Tile 42 (negative version of regular darker floor) up to 1 distance:
+  Chaos Butterfly - 100
+
+(This tile only exists on 3F and 4F)
+Tile 40 (blue translucent tile) up to 0 distance:
+  Phlogiston of the Finale - 100
+
+(These tiles only exist on 1F)
+Tile 70 (negative version of tile 30) up to 2 distance and only in 0~3F:
+  Splendorous Queen of Physical - 80
+Tile 54 (negative version of tile 14) up to 1 distance:
+  Songstress of the End - 200
+Tile 55 (negative version of tile 15) up to 1 distance:
+  Songstress of the End - 200
 Tile 53 (negative version of tile 13) up to 1 distance:
   Void Tree Icon - 100
 Tile 38 (obelisk with inscriptions on it) up to 1 distance:
   Lunacy of the Weak - 60
+
+(This tile only exists on 3F)
+Tile 43 (negative version of regular elevated floor) up to 1 distance:
+  Chaos Butterfly - 100
+
+(These tiles only exist on 4F)
+Tile 19 (even taller rocky blue floor/pillar) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 21 (tallest rocky blue floor/pillar) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+
+(These tiles are unused in every floor)
+Tile 20 (almost tallest rocky blue floor/pillar) up to 1 distance:
+  Crystalline Lens of the Apocalypse - 200
+Tile 41 (negative version of regular floor) up to 1 distance:
+  Chaos Butterfly - 100
 Tile 78 (negative version of tile 38) up to 1 distance:
   Lunacy of the Weak - 60
-Tile 31 (floating crystal glowing white with vertical debris) up to 1 distance:
-  World-Swallowing Blackness - 30
 
 === Global Encounter Weights ===
 
