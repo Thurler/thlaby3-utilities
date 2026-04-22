@@ -34,7 +34,7 @@
 (Ominous Gemstone x1) (57, 37)
 (Songstress' Apron x1) (57, 41)
 (Book of Guidance x1) (76, 46)
-(Aldebaran Gemstone x1) (63, 56)
+(Aldebaran Memory Stone x1) (63, 56)
 (Lockbox Key x1) (33, 62)
 (Shabby Katashiro x2) (45, 62)
 (Demon Core x1) (56, 62)
