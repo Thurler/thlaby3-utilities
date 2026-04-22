@@ -455,7 +455,7 @@ Money held caps at 100 quadrillion - 1
 0x1f4 ~ 0x1fb - money acquired from selling items (8 bytes)
 0x1fc ~ 0x1ff - number of treasures opened (4 bytes)
 0x200 ~ 0x203 - number of locked treasures found (4 bytes)
-0x204 ~ 0x843 - ??? 400 slots of something (4 bytes each, 1600 total)
+0x204 ~ 0x843 - boss refight data (4 bytes per boss, 400 slots, 1600 total) (value = wins x 10 + highest difficulty)
 0x844 ~ 0x8e3 - regular enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
 0x8e4 ~ 0x983 - large enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
 0x984 ~ 0xa23 - rare enemy bestiary rewards (4 bytes each, 40 slots, 160 total) (0 = unclaimed, 1 = claimed)
