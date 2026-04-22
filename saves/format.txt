@@ -153,7 +153,7 @@ FLAG 104: Archives first tutorial
 FLAG 105: Atelier first tutorial
 FLAG 106: Lounge first tutorial
 FLAG 107: Akyuu's Study first tutorial
-FLAG 108: Archive rewards tutorial (set to 1 after 2f relay circle)
+FLAG 108: Keine and Aya cutscene on archives (set to 1 after 2f relay circle)
 FLAG 109: Alice recruit cutscene (set to 1 after FLAG 1036)
 FLAG 110: Cirno recruit cutscene (automatic after beating her)
 FLAG 111: Town cutscene post first battle (2 after first dungeon battle)
@@ -161,10 +161,10 @@ FLAG 112: Meiling recruit cutscene (set to 1 after FLAG 1035)
 FLAG 113: Shikigami at base explanation cutscene (unlocked after 1113 is seen)
 FLAG 114: Cirno shop tutorial (set to 1 after recruiting her)
 FLAG 115: Akyuu eavesdropping on Renko and Mary cutscene (set to 1 after watching 118) (set to 100 after watched)
-FLAG 116: Akyuu cutscene that unlocks character recruits (value 100 after 1f explore?)
+FLAG 116: One of the dejavu cutscenes post Cirno fight (goes to 100 after multiple 1f explores?)
 FLAG 117: Weird note memo cutscene in lounge area (set to 1 after using 2f relay)
-FLAG 118: Post-avatar cutscene where characters regain some memories
-FLAG 119: Renko and Mary pre-2F nightmare cutscene (set to 1 after entering 2f) (set to 2 after 2f inner relay)
+FLAG 118: One of the dejavu cutscenes post Nightmare fight (triggers after exploring 2f)
+FLAG 119: Renko and Mary cutscene while exploring 2F (set to 1 after entering 2f)
 FLAG 120: Post-2F Nightmare boss memory cutscene
 FLAG 121: Hakurei Shrine level up points tutorial (set to 1 after 2F Nightmare)
 FLAG 122: Keine recruit cutscene + Archive Rewards tutorial (set to 1 after 2F Nightmare)
@@ -275,10 +275,10 @@ FLAG 1102: 2F Inner Relay unlock
 
 > Forest of Oblivion 2F Event Flags
 
-FLAG 1111: 2F intro cutscene (set to 1 after nightmare, 2 after entering 2f)
+FLAG 1111: 2F intro cutscene (set to 1 after nightmare boss, 2 after entering 2f)
 FLAG 1112: Relay circle tutorial cutscene
 FLAG 1113: Memo left on 2F northwest event (set to 1 after entering 2f) (52, 53)
-FLAG 1114: First relay circle use cutscene (set to 1 after 2f relay circle)
+FLAG 1114: First relay circle enter cutscene (set to 1 after 2f relay circle)
 FLAG 1115: Nightmare boss fight (set to 1 after entering 2f) (57, 86)
 FLAG 1116: Relay circle tutorial event that forces back to town
 FLAG 1117: Post-Nightmare cutscene that forces you back to town
