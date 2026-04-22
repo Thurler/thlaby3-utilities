@@ -470,7 +470,7 @@ Money held caps at 100 quadrillion - 1
 0x110c ~ 0x110f - unused??? (4 bytes)
 0x1110 ~ 0x1113 - unused (4 bytes)
 0x1114 ~ 0x1433 - achievement data (4 bytes per achievement, 200 slots) (800 bytes) (0 = locked, 2 = acquired)
-0x1434 ~ 0x15c3 - treasure id list on lounge (4 bytes per id, 100 slots) (400 bytes)
+0x1434 ~ 0x15c3 - treasure id list on lounge (4 bytes per id, 100 slots) (400 bytes) (ID = flag - 1 * 100 + keys required) (e.g. 1F flag is 1074, needs 1 key = 107301)
 0x15c4 ~ 0x16b3 - party lineups (12x5 matrix) (4 bytes each, 240 total) [just the character ids in order]
 0x16b4 ~ 0x4d63 - equipment loadouts (100x7x5 matrix) (4 bytes each, 14000 total) [for each char in order: main equip lv, 6 sub equips (3 are blanks)]
 0x4d64 ~ 0x4d87 - alice subequip craft slots [id, timer, unused???] (4 bytes each, 3 slots, 36 total)
