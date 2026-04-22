@@ -569,10 +569,13 @@ Tile 79 (floating green crystal with square borders) up to 3 distance:
 
 > Heart of Chaos 1F ~ 4F
 
-Tiles 30 and 70 are bugged to check floors 0-3 instead of 1-4, meaning they are not valid for 4F. Tile 70 only shows up in 1F so it doesn't matter, but tile 30 shows up in all 4 floors.
+Tiles 30 and 70 are bugged to check floors 0-3 instead of 1-4, meaning they are not valid for 4F. Tile 70 only shows up in 1F so it matters less, but tile 30 shows up in all 4 floors.
 
 Tile 30 (stone pillar with glowing blue crystal in it) up to 2 distance and only in 0~3F:
-  Splendorous Queen of Physical - 80
+  (0F) Splendorous Queen of Physical - 80
+  (1F) Splendorous Queen of Darkness - 80
+  (2F) Splendorous Queen of Mysticism - 80
+  (3F) Splendorous Queen of Spirit - 80
 Tile 16 (white rocky floor) up to 0 distance:
   Chaos Egg - 100
 Tile 24 (purple crystal spiking up) up to 3 distance:
@@ -628,7 +631,10 @@ Tile 40 (blue translucent tile) up to 0 distance:
 
 (These tiles only exist on 1F)
 Tile 70 (negative version of tile 30) up to 2 distance and only in 0~3F:
-  Splendorous Queen of Physical - 80
+  (0F) Splendorous Queen of Physical - 80
+  (1F) Splendorous Queen of Darkness - 80
+  (2F) Splendorous Queen of Mysticism - 80
+  (3F) Splendorous Queen of Spirit - 80
 Tile 54 (negative version of tile 14) up to 1 distance:
   Songstress of the End - 200
 Tile 55 (negative version of tile 15) up to 1 distance:
