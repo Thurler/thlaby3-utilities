@@ -226,6 +226,7 @@ FLAG 1038: Nightmare boss fight (76, 82)
 FLAG 1039: Post-Cirno cutscene that forces back to town (set to 1 after Alice recruit) (82, 42)
 FLAG 1040: Interactions with Cirno's ice rocks (set to 2 after prologue)
 FLAG 1041: Pre-boss Cirno event (set to 1 after Alice recruit) (82, 45)
+FLAG 1042: Difficulty lock event (set to 1 after pre-Cirno event) (82, 44)
 
 [...]
 
@@ -432,6 +433,9 @@ FLAG 2200: Treasure (?)
 > ??? 1F Event Flags
 
 FLAG 3012: End of demo cutscene, can't save to confirm flag number
+
+FLAG 4015: Difficulty lock event for post-demo players (set to 2 on any difficulty select)
+FLAG 4118: Difficulty lock event for post-demo players before a boss fight (set to 2 on any difficulty select)
 
 ===== PGD FILE =====
 
