@@ -142,7 +142,7 @@ Event flags (1 usually means available, 2 means seen/opened/activated/etc)
 
 > Generic Flags
 
-FLAGS 1 to 100: set to 1 after prologue, usually tied to generic dungeon events like stairs and shortcuts
+FLAGS 1 to 100: set to 1 after prologue, seems to be tied to generic dungeon events like stairs and shortcuts
 
 > Facility/Town Cutscene Flags
 
@@ -195,7 +195,7 @@ FLAG 160: Yukari cutscene before entering dungeon (set to 1 after 136)
 
 > Unknown Flags
 
-FLAGS 902 to 930: set to 1 after prologue
+FLAGS 902 to 930: set to 1 after prologue, also seem to be tied to generic dungeon events like interacting with orbs and special tiles
 
 [...]
 
