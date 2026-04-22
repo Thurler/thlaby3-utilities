@@ -204,7 +204,7 @@ FLAGS 902 to 930: set to 1 after prologue, also seem to be tied to generic dunge
 FLAG 1011: Shortcut before Alice (2 = opened) (109, 62)
 FLAG 1012: Shortcut midway west (2 = opened) (70, 62)
 FLAG 1013: Shortcut before Nightmare (2 = opened) (82, 76)
-FLAG 1014: Shortcut before Meiling (2 = opened) (88, 67)
+FLAG 1014: Shortcut before Meiling (2 = opened) (79, 73)
 
 [...]
 
