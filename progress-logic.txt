@@ -1,0 +1,180 @@
+=======================================================================
+=== Initial ===
+=======================================================================
+
+Characters: Reimu / Renko / Maribel
+
+=======================================================================
+=== Cirno - Oblivion 1F ===
+=======================================================================
+
+Characters: Meiling / Alice
+
+Awakenings:
+- 100 Slay x1 [35 achievements]
+
+Subequips:
+- 013 Power Bracer x1 [Chest]
+- 017 Heavy Leather Armor x1 [Chest]
+- 018 Steel Shield x1 [Chest]
+- 021 Treasure-Bound Manuscript x1 [Chest]
+- 029 Jaggy Leaf x1 [Chest]
+- 039 Frozen Frog x2 [Chest]
+- 054 Illegally Modified Stun Gun x1 [Chest]
+- 061 Liko Flower Hair Ornament x1 [Chest]
+- 075 Arde Dagger x1 [5 Achievements]
+- 089 Pure Sake - Wild Boar x1 [25 achievements]
+- 105 Manly Dragon Clothes x1 [45 achievements]
+
+Materials:
+- 019 Cold Sapphire x4 [Chest]
+- 023 Nature's Green Beryl x2 [Chest]
+- 041 Tanned Beast Leather x2 [Chest]
+
+Specials:
+- Extra Atelier Tools x1 [Chest]
+- Dream Amber Key x5 [10/20/30/40/50 Achievements]
+- Dream Soul of the Suffering x1 [15 Achievements]
+
+Achievements (51):
+- 001 Start
+- 011 5 hours
+- 012 15 hours
+- 013 30 hours
+- 018 300 battles
+- 019 2000 battles
+- 023 10 rares
+- 024 50 rares
+- 025 200 rares
+- 026 15 chain
+- 027 30 chain
+- 028 50 chain
+- 029 300 BP on 4
+- 043 20 types of break
+- 044 40 types of break
+- 045 60 types of break
+- 046 77 types of break
+- 047 5 stat items
+- 048 20 stat items
+- 049 50 stat items
+- 050 500 library levels
+- 051 1500 library levels
+- 052 5000 library levels
+- 058 Subequip to +3
+- 059 Subequip to +6
+- 060 Subequip to +10
+- 061 9 subequips to +3
+- 062 6 subequips to +6
+- 063 3 subequips to +10
+- 064 10 crafts
+- 065 50 crafts
+- 066 100 crafts
+- 067 15 break prepare
+- 068 40 break prepare
+- 069 80 break prepare
+- 073 10 copies
+- 074 25 copies
+- 075 50 copies
+- 076 5000 sell
+- 077 100000 sell
+- 082 10000 money
+- 083 100000 money
+- 084 1000000 money
+- 085 Wipe
+- 086 8 retreats
+- 093 140 MP
+- 094 160 MP
+- 096 36 TP
+- 097 44 TP
+- 099 10000 steps
+- 100 Level 100
+
+New Infinites (Sub):
+- 001 Taikan's Pine Sugar [Weakling Kedama 8.6%]
+- 002 Mmm, So Tasty! Well-Done Steak [Weakling Kedama 2.1%]
+- 003 Healing Blossom [Forest Flower Fairy 1.4%]
+- 005 Faerie Walnut [Giant Walnut Muncher 8.6%]
+- 006 Saviour Schnapps [Golden Seed 10.8%]
+- 009 Cup of Coffee [Fairytale Red Riding Hood 8.6%]
+- 013 Power Bracer [Sea of Trees Kedama 8.6%]
+- 014 Imitation Ootengu Masaie [Sea of Trees Kedama 2.1%]
+- 017 Heavy Leather Armor [Craft]
+- 018 Steel Shield [Craft]
+- 021 Treasure-Bound Manuscript [Clone]
+- 025 Ancient Wooden Letterpress [Seed of Forgetfulness 8.6%]
+- 026 Inharmonious Gearset [Seed of Forgetfulness 2.1%]
+- 029 Jaggy Leaf [Giant Walnut Muncher 8.6%]
+- 030 Counter Scarf [Giant Walnut Muncher 2.1%]
+- 035 Bright Powder [Golden Seed 10.8%]
+- 039 Frozen Frog [Weakling Kedama 15.8%]
+- 043 Green Dream [Sea of Trees Kedama 5.7%]
+- 047 Spirit Barrier Sign [Golden Seed 32.4%]
+- 061 Liko Flower Hair Ornament [Forest Flower Fairy 7.2%]
+- 062 Mana Flower [Seed of Forgetfulness 4.3%]
+- 063 Hunting Know-How [Fairytale Red Riding Hood 5.7%]
+
+New Infinites (Mat):
+- 001 Bronze Ingot [Fairytale Red Riding Hood 8.6%]
+- 006 Amalgam Flask [Forest Flower Fairy 11.5% / Weakling Kedama 8.6%]
+- 014 Moonstone [Golden Seed 7.2%]
+- 023 Nature's Green Beryl [Sea of Trees Kedama 11.5% / Forest Flower Fairy 8.6%]
+- 033 Old Coin Purse [Fairytale Red Riding Hood 12.9%]
+- 039 Dream Bamboo Grass Dew [Seed of Forgetfulness 11.5%]
+- 041 Tanned Beast Leather [Giant Walnut Muncher 6.4%]
+- 045 Tough Shell [Giant Walnut Muncher 12.9% / Seed of Forgetfulness 7.2%]
+- 059 Big Kedama Mustache [Sea of Trees Kedama 14.4% / Weakling Kedama 11.5%]
+
+New Infinites (Spec):
+- Shrine Items [Lunatic Grind]
+- Lockbox Key [Golden Seed 7.2%]
+
+=======================================================================
+=== Nightmare - Oblivion 1F ===
+=======================================================================
+
+Characters: Cirno / Patchouli / Nitori
+
+Awakenings:
+- 029 Battle Talent x1 [55 achievements]
+
+Subequips:
+- 001 Taikan's Pine Sugar x1 [Chest]
+- 010 Recovery Izumi x1 [Cirno 21.6%]
+- 014 Imitation Ootengu Masaie x1 [Locked Chest A - 1]
+- 018 Steel Shield x1 [Locked Chest A - 1]
+- 022 Principal First Edition x1 [Locked Chest A - 1]
+- 026 Inharmonious Gearset x1 [Locked Chest A - 1]
+- 030 Counter Scarf x2 [Locked Chest A - 1, Cirno 43.2%]
+- 039 Frozen Frog x1 [Cirno 86.4%]
+- 045 Aldebaran Memory Stone x1 [Chest]
+- 049 Ominous Gemstone x1 [Chest]
+- 057 Demon Core x1 [Chest]
+- 058 Songstress' Apron x1 [Chest]
+- 064 Shabby Katashiro x2 [Chest x2]
+- 080 Cloak of the Bat x1 [Cirno 10.8%]
+
+Materials:
+- 011 Sunstone x1 [Chest]
+- 014 Moonstone x3 [Chest, Chest, Cirno 36%]
+- 033 Old Coin Purse x2 [Chest x2]
+
+Specials:
+- Lockbox Key x1 [Chest]
+- Dream of Vitality x1 [Chest]
+- Book of Guidance x1 [Chest]
+
+Achievements (7 / 58):
+- 035 30 types of sub
+- 070 10 shop purchases
+- 071 50 shop purchases
+- 072 200 shop purchases
+- 091 1 boss refight Hard/Lunatic
+- 095 180 MP
+- 098 52 TP
+
+New Infinites (Sub):
+[Cirno's Shop Drops]
+
+New Infinites (Mat):
+[Cirno's Shop Drops]
+
