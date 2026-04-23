@@ -320,8 +320,8 @@ FLAG 1201: 3F Relay unlock
 > Forest of Oblivion 3F Event Flags
 
 FLAG 1212: 3F relay cutscene that triggers on use (set to 1 after entering 2f)
-FLAG 1213: Cutscene in 3F rocks when Avatar wasn't killed (set to 1 after entering 2f)
-FLAG 1214: Koishi recruit event (set to 1 after entering 2f) (58, 60)
+FLAG 1213: Cutscene in 3F rocks when Avatar hasn't been killed yet (set to 1 after entering 2f)
+FLAG 1214: Koishi recruit event (set to 1 after entering 2f) (60, 60)
 FLAG 1215: Pre-orb event that shows Shikigami (set to 1 after entering 2f) (98, 98)
 FLAG 1216: Ran boss fight (set to 1 after entering 2f) (73, 73)
 FLAG 1217: 3F Orb pressed status (set to 1 after interacting) (96, 96)
