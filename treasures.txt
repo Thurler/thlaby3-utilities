@@ -1,4 +1,4 @@
-===== Oblivion Forest - 1F =====
+===== Forest of Oblivion - 1F =====
 
 > Pre-Meiling
 
@@ -45,7 +45,7 @@
 (Moonstone x1) (81, 83)
 (Old Coin Purse x2) (57, 87)
 
-===== Oblivion Forest - 2F =====
+===== Forest of Oblivion - 2F =====
 
 > Pre-Nightmare
 
@@ -75,26 +75,26 @@
 (Dream of Wisdom x1) (92, 93)
 (Hunting Know-How x1) (71, 96)
 
-===== Oblivion Forest - 3F =====
+===== Forest of Oblivion - 3F =====
 
 > Pre-Koishi
 
 [Locked] (
-  Aldebaram Gemstone x1,
+  Aldebaran Memory Stone x1,
   Bangle of the Star Realm x1,
   Spirit Barrier Sign x1,
   Yin-Yang Shift Stone x1,
   Ominous Gemstone x1,
   Coagulated Blood Gem x1,
 ) (65, 43)
-(Ancient Wooden Letterpress x1) (70, 54)
 (Sticky Aubergine Dream x1) (65, 35)
+(Deep Ring x1) (43, 37)
 (Aldebaran Memory Stone x1) (54, 38)
 (Sunstone x1) (35, 43)
-(Deep Ring x1) (43, 37)
 (Inharmonious Gearset x1) (38, 54)
-(Book of Guidance x1) (35, 65)
+(Ancient Wooden Letterpress x1) (70, 54)
 (Dream of Carnage x1) (43, 57)
+(Book of Guidance x1) (35, 65)
 (Moonstone x1) (54, 70)
 
 > Pre-Ran
