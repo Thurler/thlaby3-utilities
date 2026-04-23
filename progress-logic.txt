@@ -257,5 +257,63 @@ Improved Infinites (Spec):
 - Lockbox Key [Golden Seed 7.2% -> Fable Assassin Girl 7.2%]
 
 =======================================================================
-=== Koishi - Oblivion 3F ===
+=== Ran - Oblivion 3F ===
+=======================================================================
+
+Characters: Keine / Koishi
+
+Subequips:
+- 014 Imitation Ootengu Masaie x1 [Archive-FoO-3F]
+- 016 Diamond Edge x1 [Archive-FoO-All]
+- 018 Steel Shield x1 [Archive-FoO-1F]
+- 025 Ancient Wooden Letterpress x2 [Chest, Chest]
+- 026 Inharmonious Gearset x2 [Chest, Archive-FoO-2F]
+- 045 Aldebaran Memory Stone x2 [Chest, Locked Chest C - 1]
+- 046 Bangle of the Star Realm x1 [Locked Chest C - 1]
+- 047 Spirit Barrier Sign x1 [Locked Chest C - 1]
+- 048 Yin-Yang Shift Stone x1 [Locked Chest C - 1]
+- 049 Ominous Gemstone x2 [Chest, Locked Chest C - 1]
+- 050 Coagulated Blood Gem x1 [Locked Chest C - 1]
+- 056 Impact-Resistant Polymer Liquid x1 [Shikigami 86.4%]
+- 059 Oiran's Lamentation x1 [Shikigami 21.6%]
+- 061 Liko Flower Hair Ornament x2 [Chest, Locked Chest D - 1]
+- 062 Mana Flower x1 [Locked Chest D - 1]
+- 063 Hunting Know-How x1 [Locked Chest D - 1]
+- 064 Shabby Katashiro x3 [Chest, Locked Chest D - 1, Shikigami 43.2%]
+- 065 Sticky Aubergine Dream x2 [Chest, Locked Chest D - 1]
+- 066 Forgetting Dayflowers x2 [Chest, Locked Chest D - 1]
+- 069 Deep Ring x1 [Chest]
+- 076 Thief Gloves x1 [Chest]
+- 079 Ninja Palm x1 [Shikigami 10.8%]
+
+Materials:
+- 011 Sunstone x2 [Chest, Chest]
+- 014 Moonstone x3 [Chest, Chest, Shikigami 50.4%]
+
+Specials:
+- Lockbox Key x1 [Chest]
+- Dream of Carnage x1 [Chest]
+- Dream of Protection x1 [Chest]
+- Book of Guidance x1 [Chest]
+- Single-Minded Studier's Set x1 [Bestiary-Reg2]
+- Extra Atelier Tools x1 [Chest]
+
+New Infinites (Sub):
+- 007 Source of Magic [Green Beryl Elemental 1.4%]
+- 078 Club of Hill Giant Strength [Gluttonous Memorytrap 1.8%]
+- 086 Sword, Sorcery & Smokepowder Barrel [Bomb Nut 0.3%]
+
+Improved Infinites (Sub):
+- 021 Treasure-Bound Manuscript [Green Beryl Elemental Clone -> 11.5%]
+- 065 Sticky Aubergine Dream [Nightmare Disciple 5.7% -> 11.5%]
+
+Improved Infinites (Mat):
+- 001 Bronze Ingot [Green Beryl Elemental 8.6% -> 11.5%]
+- 023 Nature's Green Beryl [Green Beryl Elemental 11.5% -> 14.4%]
+- 039 Dream Bamboo Grass Dew [Gluttonous Memorytrap 11.5% -> 21.6%]
+- 057 Nightmare Incisor [Nightmare Disciple 4.3% -> 13.8%]
+- 061 Everlasting Silicified Wood [Bomb Nut 10% -> 14.4%]
+
+=======================================================================
+=== Horde - Dream Path 1F ===
 =======================================================================
