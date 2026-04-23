@@ -142,20 +142,20 @@
   Money Tree Koban x3,
   Itemfinders Weekly x3,
 ) (78, 84)
-(Mmm, So Tasty! Well-Done Steak x1) (88, 56)
 (880 Sen) (90, 54)
-(Sticky Aubergine Dream x1) (92, 72)
-(Spire-Illuminating Lantern x1) (88, 78)
-(Dream of Swiftness x1) (82, 72)
+(Mmm, So Tasty! Well-Done Steak x1) (88, 56)
 (Occultic Cube x2) (72, 62)
-(Sunstone x2) (52, 73)
-(Moonstone x2) (72, 72)
-(Cup of Coffee x1) (64, 80)
 (Bright Powder x1) (58, 68)
-(Counter Scarf x1) (61, 87)
-(Club of Hill Giant Strength x1) (91, 91)
-(Lockbox Key x1) (53, 91)
+(Moonstone x2) (72, 72)
+(Dream of Swiftness x1) (82, 72)
+(Sticky Aubergine Dream x1) (92, 72)
+(Sunstone x2) (52, 73)
+(Spire-Illuminating Lantern x1) (88, 78)
+(Cup of Coffee x1) (64, 80)
 (Book of Guidance x1) (58, 81)
+(Counter Scarf x1) (61, 87)
+(Lockbox Key x1) (53, 91)
+(Club of Hill Giant Strength x1) (91, 91)
 
 =======================================================================
 ===== Dream Path to the Occult Balls - 2F =====
