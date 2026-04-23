@@ -358,7 +358,14 @@ FLAG 1296: Treasure before Ran (?)
 FLAG 1297: Treasure before Ran (?)
 FLAG 1298: Treasure before Ran (?)
 FLAG 1299: Treasure before Ran (?)
-FLAG 1300: Treasure before Ran (?)
+FLAG 1300: Locked Treasure before Ran (
+  Liko Flower Hair Ornament x1,
+  Mana Flower x1,
+  Hunting Know-How x1,
+  Shabby Katashiro x1,
+  Sticky Aubergine Dream x1,
+  Forgetting Dayflowers x1,
+) (54, 76)
 
 [...]
 
