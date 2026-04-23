@@ -115,14 +115,14 @@ New Infinites (Sub):
 
 New Infinites (Mat):
 - 001 Bronze Ingot [Fairytale Red Riding Hood 8.6%]
-- 006 Amalgam Flask [Forest Flower Fairy 11.5% / Weakling Kedama 8.6%]
+- 006 Amalgam Flask [Forest Flower Fairy 11.5%]
 * 014 Moonstone [Golden Seed 7.2%]
-- 023 Nature's Green Beryl [Sea of Trees Kedama 11.5% / Forest Flower Fairy 8.6%]
+- 023 Nature's Green Beryl [Sea of Trees Kedama 11.5%]
 - 033 Old Coin Purse [Fairytale Red Riding Hood 12.9%]
 - 039 Dream Bamboo Grass Dew [Seed of Forgetfulness 11.5%]
 - 041 Tanned Beast Leather [Giant Walnut Muncher 6.4%]
-- 045 Tough Shell [Giant Walnut Muncher 12.9% / Seed of Forgetfulness 7.2%]
-- 059 Big Kedama Mustache [Sea of Trees Kedama 14.4% / Weakling Kedama 11.5%]
+- 045 Tough Shell [Giant Walnut Muncher 12.9%]
+- 059 Big Kedama Mustache [Sea of Trees Kedama 14.4%]
 
 New Infinites (Spec):
 - Shrine Items [Lunatic Grind]
@@ -183,8 +183,6 @@ New Infinites (Mat):
 =======================================================================
 
 Characters: Aya
-
-Awakenings:
 
 Subequips:
 - 005 Farie Walnut x1 [Chest]
