@@ -108,16 +108,16 @@
   Forgetting Dayflowers x1,
 ) (54, 76)
 (Sunstone x1) (76, 54)
-(Moonstone x1) (100, 76)
 (Ominous Gemstone x1) (88, 55)
 (Shabby Katashiro x1) (95, 57)
 (Thief Gloves x1) (84, 70)
+(Moonstone x1) (100, 76)
 (Ancient Wooden Letterpress x1) (94, 81)
+(Forgetting Dayflowers x1) (70, 84)
 (Lockbox Key x1) (96, 90)
-(Liko Flower Hair Ornament x1) (76, 100)
 (Dream of Protection x1) (61, 91)
 (Extra Atelier Tools x1) (57, 95)
-(Forgetting Dayflowers x1) (70, 84)
+(Liko Flower Hair Ornament x1) (76, 100)
 
 ===== Dream Path to the Occult Balls - 1F =====
 
