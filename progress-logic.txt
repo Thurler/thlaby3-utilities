@@ -221,6 +221,8 @@ Achievements (1 / 59):
 
 New Infinites (Sub):
 - 022 Principia First Edition [Great Tree Guardian 21.6%]
+- 023 Symbol of Faith [Nightmare Disciple 1%]
+- 024 Enigma Machine [Nightmare Disciple 0.3%]
 - 033 Eyetrack Orbitars [Craft]
 - 044 Last Leaf [Great Tree Guardian 8.6%]
 - 045 Aldebaran Memory Stone [Fable Assassin Girl 43.2%]
