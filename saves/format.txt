@@ -386,7 +386,12 @@ FLAG 2012: Horde boss fight (set to 1 after 2011) (53, 53)
 
 FLAG 2085: Treasure (?)
 FLAG 2086: Treasure (?)
-FLAG 2087: Treasure (?)
+FLAG 2087: Locked Treasure (
+  Spire-Illuminating Lantern x1,
+  CatClaw x1,
+  Moon of the Eyeball x1,
+  Huscarl's Round Shield x1,
+) (66, 56)
 FLAG 2088: Treasure (?)
 FLAG 2089: Treasure (?)
 FLAG 2090: Treasure (?)
@@ -396,7 +401,11 @@ FLAG 2093: Treasure (?)
 FLAG 2094: Treasure (?)
 FLAG 2095: Treasure (?)
 FLAG 2096: Treasure (?)
-FLAG 2097: Treasure (?)
+FLAG 2097: Locked Treasure (
+  Single-Minded Studier's Set x3,
+  Money Tree Koban x3,
+  Itemfinders Weekly x3,
+) (78, 84)
 FLAG 2098: Treasure (?)
 FLAG 2099: Treasure (?)
 FLAG 2100: Treasure (?)
