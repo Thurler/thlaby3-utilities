@@ -168,15 +168,15 @@ FLAG 119: Renko and Mary cutscene while exploring 2F (set to 1 after entering 2f
 FLAG 120: Post-2F Nightmare boss memory cutscene
 FLAG 121: Hakurei Shrine level up points tutorial (set to 1 after 2F Nightmare)
 FLAG 122: Keine recruit cutscene + Archive Rewards tutorial (set to 1 after 2F Nightmare)
-FLAG 123: Koishi introduction cutscene
+FLAG 123: Koishi base introduction cutscene
 FLAG 124: Lounge recruit Marisa and Remilia (set to 1 after Ran fight)
-FLAG 125: ???
-FLAG 126: Exploration cutscene post lounge recruit (set to 1 after 124)
-FLAG 127: Shrine cutscene post lounge recruit (set to 1 after 124)
-FLAG 128: One of the cutscenes post Cirno fight (1 available, 100 after Cirno explores)
-FLAG 129: Nitori recruit cutscene
-FLAG 130: Aya recruit cutscene
-FLAG 131: Patchouli recruit cutscene
+FLAG 125: unused?
+FLAG 126: Exploration cutscene before first dream path visit (set to 1 after 124)
+FLAG 127: Shrine cutscene post dream path lounge recruit (set to 1 after 124)
+FLAG 128: Akyuu cutscene that unlocks character recruits (set to 1 after Cirno recruit) (value 100 after post-Cirno dungeon dive)
+FLAG 129: Nitori recruit cutscene (set to 1 after seeing 128)
+FLAG 130: Aya recruit cutscene (set to 1 after seeing 128)
+FLAG 131: Patchouli recruit cutscene (set to 1 after seeing 128)
 FLAG 132: Back from 2F cutscene
 FLAG 133: Back from Ran fight cutscene
 FLAG 134: Akyuu cutscene after first exploration of Dream Path
