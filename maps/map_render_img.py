@@ -133,7 +133,7 @@ class RockCell(IconCell):
   icon = Image.open("./assets/rock.png")
 
   def __init__(self, x, y):
-    super().__init__(x, y, self.icon, (icon_size, icon_size))
+    super().__init__(x, y, self.icon, (icon_size * 1.6, icon_size * 1.6))
 
 # A cell that houses a 1F regular ice tile
 class IceBlockCell(IconCell):
@@ -154,7 +154,7 @@ class OblivionOrbCell(IconCell):
   icon = Image.open("./assets/oblivionorb.png")
 
   def __init__(self, x, y):
-    super().__init__(x, y, self.icon, (cell_size, cell_size))
+    super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
 
 # A cell that houses a 3F green orb
 class DreamArrowCell(IconCell):
@@ -398,7 +398,7 @@ class Oblivion2F(Floor):
 class Oblivion3F(Floor):
   tiles = [
     BossCell(73, 73, ""),
-    EventCell(58, 60, ""),
+    EventCell(60, 60, ""),
     EventCell(98, 98, ""),
     StairsDownCell(68, 68),
     RelayCircleCell(65, 65),
@@ -705,7 +705,7 @@ pixels = map_img.load()
 # Actually draw the grid and cells
 # floor = Oblivion1F()
 # floor = Oblivion2F()
-# floor = Oblivion3F()
+floor = Oblivion3F()
 # floor = DreamPath1F()
 # floor = DreamPath2F()
 # floor = Despair1F()
