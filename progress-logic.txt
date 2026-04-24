@@ -401,3 +401,77 @@ Improved Infinites (Mat):
 - 013 Power Bracer [Magic Circle Kedama 8.6% -> 9.7%]
 - 029 Dark Onyx [Glaring Magic Doll 12.9% -> 13.8%]
 - 057 Nightmare Incisor [Nightmare Foot Soldier 13.8% -> 23%]
+
+=======================================================================
+=== Sumireko's Protector - Dream Path 2F ===
+=======================================================================
+
+Subequips:
+- 005 Faerie Walnut x1 [Chest]
+- 008 Master's Emblem x1 [Bestiary-Horde3]
+- 014 Imitation Ootengu Masaie x1 [Chest]
+- 019 Lorica Segmentata x1 [Horde 14.4%]
+- 022 Principia First Edition x1 [Chest]
+- 027 Leeuwenhoek Lens x1 [Archive-DP-2F]
+- 033 Eyetrack Orbitars x1 [Chest]
+- 046 Bangle of the Star Realm x1 [Locked Chest H - 1]
+- 047 Spirit Barrier Sign x1 [Chest]
+- 067 Spire-Illuminating Lantern x2 [Locked Chest H - 1, Horde 36%]
+- 069 Deep Ring x1 [Locked Chest H - 1]
+- 070 Environmental Puzzle Hallucination x1 [Locked Chest H - 1]
+- 071 Bone Scrap x1 [Locked Chest H - 1]
+- 072 Moon of the Eyeball x2 [Chest, Archive-DP-All]
+- 077 Momijihime x1 [Chest]
+- 080 Cloak of the Bat x1 [Chest]
+- 088 Double-Barreled Boomstick x1 [Horde 3.6%]
+- 092 Coveted Ice Sword x1 [Locked Chest G - 1]
+- 128 Victory Cry x1 [65 Achievements]
+
+Materials:
+- 011 Sunstone x3 [Chest x2, Horde 57.6%]
+- 014 Moonstone x2 [Chest x2]
+- 049 Strange Metal Fragment x3 [Chest x3]
+
+Specials:
+- Lockbox Key x2 [Chest, Horde 43.2%]
+- Dream Amber Key x1 [70 Achievements]
+- Book of Beginnings x1 [Bestiary-Horde1]
+- Dream of Sorcery x1 [Chest]
+- Money Tree Koban x1 [Bestiary-Horde2]
+- Book of Guidance x2 [Chest, Bestiary-Horde4]
+
+Achievements (6 / 70):
+- 020 5 hordes
+- 021 30 hordes
+- 022 100 hordes
+- 039 20 types of material
+- 053 8 allies main rank 1
+- 089 8 mapping bonuses
+
+New Infinites (Sub):
+- 010 Recovery Izumi [Forest Squad 21.6%]
+- 016 Diamond Edge [Dream Path Band 14.4%]
+- 019 Lorica Segmentata [Dream Path Team 14.4%]
+- 020 Gothic Plate Armor [Forest Band 14.4%]
+- 028 Timekeeping Crystal Oscillator [Forest Team 12.9%]
+- 053 Venomfly's Scales [Forest Team 25.9%]
+- 054 Illegally Modified Stun Gun [Forest Band 28.8%]
+- 080 Cloak of the Bat [Dream Path Band 7.2%]
+- 088 Double-Barreled Boomstick [Dream Path Team 3.6%]
+
+New Infinites (Mat):
+- 011 Sunstone [Dream Path Band 72%]
+- 012 Star Sunstone [Dream Path Band 7.2%]
+
+Improved Infinites (Sub):
+- 015 Shuten Douji's Armband [Forest Squad 1% -> 14.4%]
+- 067 Spire-Illuminating Lantern [Dream Path Team 6.4% -> 36%]
+- 069 Deep Ring [Dream Path Band 8.6% -> 28.8%]
+- 078 Club of Hill Giant Strength [Forest Squad 1.8% -> 3.6%]
+
+Improved Infinites (Mat):
+- 023 Nature's Green Beryl [Forest Team 14.4% -> 100%]
+- 057 Nightmare Incisor [Forest Band 23% -> 100%]
+
+Improved Infinites (Spec):
+- Lockbox Key [Any Horde 7.2% -> 43.2%]
