@@ -180,8 +180,8 @@ FLAG 131: Patchouli recruit cutscene (set to 1 after seeing 128)
 FLAG 132: Back from 2F cutscene
 FLAG 133: Back from Ran fight cutscene
 FLAG 134: Akyuu cutscene after first exploration of Dream Path
-FLAG 135: Renko and Maribel cutscene (set to 1 after horde boss)
-FLAG 136: Renko and Doremy cutscene (set to 1 after 135)
+FLAG 135: Renko and Maribel cutscene that buffs Maribel stats (set to 1 after horde boss)
+FLAG 136: Renko and Doremy cutscene when coming back from exploring (set to 1 after 135)
 
 [...]
 
