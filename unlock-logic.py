@@ -2,11 +2,13 @@ target_dir = "unlock-logic" # The dir that contains the save file
 subs = [
   1, 2, 3, 5, 6, 9, 13, 14, 17, 18, 21, 25, 26, 29, 30, 35, 39, 43, 47, 61, 62, 63, # Cirno
   22, 23, 24, 33, 44, 45, 49, 60, 64, 65, 66, 68, 75, 76, # Nightmare
-  7, 78, 86 # Ran
+  7, 78, 86, # Ran
+  15, 27, 50, 57, 67, 69, 70, 71, 83, 87, 91, 95 # Horde
 ]
 mats = [
   1, 6, 14, 23, 33, 39, 41, 45, 59, # Cirno
-  29, 57, 61 # Nightmare
+  29, 57, 61, # Nightmare
+  25, 37, 49, 62 # Horde
 ]
 breaks = [1, 2, 3, 4, 5, 6, 7, 8] # Cirno
 specs = [

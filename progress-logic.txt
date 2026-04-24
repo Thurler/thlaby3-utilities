@@ -136,6 +136,7 @@ Characters: Cirno / Patchouli / Nitori
 
 Awakenings:
 - 029 Battle Talent x1 [55 achievements]
+- One character can reach level 1
 
 Subequips:
 - 001 Taikan's Pine Sugar x1 [Chest]
@@ -183,6 +184,9 @@ New Infinites (Mat):
 =======================================================================
 
 Characters: Aya
+
+Awakenings:
+- Two characters (total 3) can reach level 1
 
 Subequips:
 - 005 Farie Walnut x1 [Chest]
@@ -262,6 +266,9 @@ Improved Infinites (Spec):
 
 Characters: Keine / Koishi
 
+Awakenings:
+- Two characters (total 5) can reach level 1
+
 Subequips:
 - 014 Imitation Ootengu Masaie x1 [Archive-FoO-3F]
 - 016 Diamond Edge x1 [Archive-FoO-All]
@@ -317,3 +324,80 @@ Improved Infinites (Mat):
 =======================================================================
 === Horde - Dream Path 1F ===
 =======================================================================
+
+Characters: Yukari / Marisa / Remilia
+
+Awakenings:
+- Two characters (total 7) can reach level 1
+
+Subequips:
+- 002 Mmm, So Tasty! Well-Done Steak x1 [Chest]
+- 009 Cup of Coffee x1 [Chest]
+- 011 Getitup! x3 [Bestiary-Reg3, Ran 10.8% x2]
+- 023 Symbol of Faith x1 [Archive-DP-1F]
+- 026 Inharmonious Gearset x2 [Ran 43.2% x2]
+- 030 Counter Scarf x1 [Chest]
+- 035 Bright Powder x1 [Chest]
+- 052 Huscarl's Round Shield x1 [Locked Chest E - 1]
+- 064 Shabby Katashiro x2 [Ran 86.4% x2]
+- 065 Sticky Aubergine Dream x1 [Chest]
+- 067 Spire-Illuminating Lantern x2 [Chest, Locked Chest E - 1]
+- 068 CatClaw x1 [Locked Chest E - 1]
+- 072 Moon of the Eyeball x1 [Locked Chest E - 1]
+- 077 Momijihime x2 [Ran 21.6% x2]
+- 078 Club of Hill Giant Strength x1 [Chest]
+
+Materials:
+- 011 Sunstone x2 [Chest x2]
+- 014 Moonstone x4 [Chest x2, Ran 57.6% x2]
+- 062 Occultic Cube x2 [Chest x2]
+
+Specials:
+- Lockbox Key x1 [Chest]
+- Dream Amber Key x1 [60 Achievements]
+- Dream of Swiftness x1 [Chest]
+- Book of Guidance x1 [Chest]
+- Single-Minded Studier's Set x3 [Locked Chest F x3 - 1]
+- Money Tree Koban x3 [Locked Chest F x3 - 1]
+- Itemfinders Weekly x3 [Locked Chest F x3 - 1]
+
+Achievements (5 / 64):
+- 002 Defeat Ran
+- 014 12 allies
+- 030 12 allies 300 BP
+- 036 60 types of sub
+- 080 5 locked treasures
+
+New Infinites (Sub):
+- 015 Shuten Douji's Armband [Magic Circle Kedama 1%]
+- 027 Leeuwenhoek Lens [Mind Sphere 2.8%]
+- 050 Coagulated Blood Gem [Nightmare Foot Soldier 3.6%]
+- 057 Demon Core [Glaring Magic Doll 5.7%]
+- 067 Spire-Illuminating Lantern [Glaring Magic Doll 6.4%]
+- 069 Deep Ring [Amethyst Elemental 8.6%]
+- 070 Environmental Puzzle Hallucination [Mind Sphere 5.7%]
+- 071 Bone Scrap [Nightmare Foot Soldier 6.4%]
+- 083 Broken Lead Heart [Glaring Magic Doll 0.2%]
+* 087 Phoenix's Arm [Hexagonal Mind 5.7%]
+- 091 Blood-Soaked Scoria [Amethyst Elemental 0.2%]
+- 095 Unusual Box [Shadowcat 0.2%]
+
+New Infinites (Mat):
+- 025 Mystic Amethyst [Magic Circle Kedama 15.8%]
+- 037 Ghost's Withered Silvergrass [Shadowcat 10.8%]
+- 049 Strange Metal Fragment [Glaring Magic Doll 12.6%]
+- 062 Occultic Cube [Shadowcat 15.8%]
+
+Improved Infinites (Sub):
+- 017 Heavy Leather Armor [Nightmare Foot Soldier Craft -> 8.6%]
+* 026 Inharmonious Gearset [Hexagonal Mind 2.1% -> 36%]
+* 033 Eyetrack Orbitars [Hexagonal Mind Craft -> 2.1%]
+- 049 Ominous Gemstone [Shadowcat Craft -> 5.7%]
+- 068 CatClaw [Shadowcat 1.8% -> 7.2%]
+
+Improved Infinites (Mat):
+- 001 Bronze Ingot [Amethyst Elemental 11.5% -> 17.2%]
+- 006 Amalgam Flask [Mind Sphere 11.5% -> 17.2%]
+- 013 Power Bracer [Magic Circle Kedama 8.6% -> 9.7%]
+- 029 Dark Onyx [Glaring Magic Doll 12.9% -> 13.8%]
+- 057 Nightmare Incisor [Nightmare Foot Soldier 13.8% -> 23%]
