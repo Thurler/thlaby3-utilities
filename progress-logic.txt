@@ -406,6 +406,9 @@ Improved Infinites (Mat):
 === Sumireko's Protector - Dream Path 2F ===
 =======================================================================
 
+Awakenings:
+- Every character can reach level 1
+
 Subequips:
 - 005 Faerie Walnut x1 [Chest]
 - 008 Master's Emblem x1 [Bestiary-Horde3]
@@ -475,3 +478,7 @@ Improved Infinites (Mat):
 
 Improved Infinites (Spec):
 - Lockbox Key [Any Horde 7.2% -> 43.2%]
+
+=======================================================================
+=== Nightmare Reset - Nightmare of Hope ===
+=======================================================================
