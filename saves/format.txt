@@ -491,7 +491,7 @@ Money held caps at 100 quadrillion - 1
 0x16b4 ~ 0x4d63 - equipment loadouts (100x7x5 matrix) (4 bytes each, 14000 total) [for each char in order: main equip lv, 6 sub equips (3 are blanks)]
 0x4d64 ~ 0x4d87 - alice subequip craft slots [id, timer, unused???] (4 bytes each, 3 slots, 36 total)
 0x4d88 ~ 0x4e27 - cirno shop slots [item id, price factor] (4 bytes each, 20 slots [even though there are only 19 in-game], 160 total)
-0x4e28 ~ 0x4e77 - equipped break items (4 bytes per item, 20 slots, 80 total) (uses some weird id?)
+0x4e28 ~ 0x4e77 - equipped break items (4 bytes per item, 20 slots, 80 total) (ID = [700 + item id] * 10 + 1) (e.g.: Fruit Basket is ID 61, value is [700 + 61] * 10 + 1 = 7611)
 0x4e78 ~ 0x4f17 - ??? 40 slots of something (4 bytes each, 160 total)
 0x4f18 ~ 0x5237 - ??? 200 slots of something (4 bytes each, 800 total)
 0x5238 ~ 0x525f - ??? 10 slots of something (4 bytes each, 40 total)
