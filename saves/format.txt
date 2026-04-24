@@ -189,7 +189,7 @@ FLAG 143: Suwako and Kanako recruit cutscene (set to 1 after 2111)
 
 [...]
 
-FLAG 160: Yukari cutscene before entering dungeon (set to 1 after 136)
+FLAG 160: Yukari cutscene that explains increased enemy odds based on terrain (set to 1 after 136)
 
 [...]
 
