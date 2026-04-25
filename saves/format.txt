@@ -184,9 +184,8 @@ FLAG 134: Renko and Maribel cutscene that buffs Maribel stats (set to 1 after ho
 FLAG 135: Renko and Doremy cutscene when coming back from exploring (set to 1 after 134)
 FLAG 136: Back at base from nightmare of hope cutscene
 FLAG 137: Dream souls lounge tutorial cutscene (set to 1 after 136)
-FLAG 137: Dream souls lounge tutorial cutscene (set to 1 after 136)
-FLAG 138: ???
-FLAG 139: ???
+FLAG 138: Meiling re-recruit cutscene (set to 1 after 137)
+FLAG 139: Elite character explanation cutscene (set to 1 after 138)
 FLAG 140: Renko spell learning tutorial in library cutscene (set to 1 after 136)
 FLAG 141: Akyuu survived the nightmare reset cutscene (set to 1 after 136)
 FLAG 142: Suwako and Kanako recruit cutscene while in Dream Path (set to 1 after 2110)
@@ -465,6 +464,13 @@ FLAG 3015: Dream amber key explanation cutscene
 FLAG 3016: Escape back to base cutscene (90, 90)
 FLAG 3017: Game over cutscene that plays on wipe during reset (set to 2 after coming back to base, even if you never see it)
 FLAG 3050: Unknown (set to 2 after coming back to base)
+
+[...]
+
+> Anguish of the Lost 1F Event Flags
+
+FLAG 4010: First visit cutscene (set to 1 after 139)
+FLAG 4011: Nightmare Marisa intro cutscene (set to 1 after 139)
 
 FLAG 4014: Difficulty lock event for post-demo players (set to 2 on any difficulty select)
 FLAG 4117: Difficulty lock event for post-demo players before a boss fight (set to 2 on any difficulty select)
