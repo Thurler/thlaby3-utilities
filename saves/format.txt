@@ -1,7 +1,3 @@
-todo
-- character main equip slot id format?
-- rare enemy 5054 symbol of the formless moon location?
-
 ===== OVERALL =====
 
 1F starting position is (76, 74)
@@ -545,53 +541,7 @@ Money held caps at 100 quadrillion - 1
 
 Bestiary data
 
-4 bytes per monster, 10000 enemy slots, stores death count - possibly aligns with enemy ID:
-- 101 is Weakling Kedama
-- 102 is Seed of Forgetfulness
-- 103 is Giant Walnut-Cracking Squirrel
-- 104 is Forest Flower Fairy
-- 105 is Fairytale Flower Girl
-- 106 is Sea of Trees Kedama
-- 107 is Nightmare Chrysalis
-- 108 is Juvenile Great Tree
-- 109 is Fairytale Man-Eating Wolf
-- 110 is Emerald Elemental
-- 111 is Bomb Fruit
-- 112 is Nightmare Disciple
-- 113 is Gluttonous Memorytrap
-- 201 is Magic Circle Kedama
-- 202 is Glaring Magic Doll
-- 203 is Mind Sphere
-- 204 is Amethyst Elemental
-- 205 is Shadowcat
-- 206 is Nightmare Foot Soldier
-- 301 is ?????
-- 5011 is Golden Seed
-- 5012 is Giant Gold-Cracking Squirrel
-- 5013 is Storybook Assassin Girl
-- 5014 is Guardian Great Tree
-- 5021 is Hexagonal Mind
-- 6011 is Forest Team
-- 6012 is Forest Band
-- 6013 is Forest Squad
-- 6021 is Dream Path Team
-- 6022 is Dream Path Band
-- 7001 is Cirno
-- 7003 is Nightmare Avatar
-- 7005 is Nightmare Shikigami Master
-- 7006 is Exploding Katashiro
-- 7008 is Ran
-- 7009 is Black Nightmare Shikigami
-- 7015 is Protector of Sumireko
-
-0x194 ~ 0x1c7 - Oblivion Forest regular enemies
-0x324 ~ 0x33b - Dream Path regular enemies
-0x4b4 ~ 0x4bb - Unused regular enemies
-0x4e4c ~ 0x4e5b - Oblivion Forest rare enemies
-0x4e74 ~ 0x4e77 - Dream Path rare enemies
-0x5dec ~ 0x5df7 - Oblivion Forest large enemies
-0x5e14 ~ 0x5e1b - Dream Path large enemies
-0x6d64 ~ 0x6d9f - Boss enemies
+4 bytes per monster, 10000 enemy slots, stores death count - aligns perfectly with enemy ID
 
 ===== SHD FILE =====
 
