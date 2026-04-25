@@ -182,10 +182,14 @@ FLAG 132: Back from Ran fight cutscene
 FLAG 133: Akyuu cutscene after first exploration of Dream Path
 FLAG 134: Renko and Maribel cutscene that buffs Maribel stats (set to 1 after horde boss)
 FLAG 135: Renko and Doremy cutscene when coming back from exploring (set to 1 after 134)
-
-[...]
-
-FLAG 142: Suwako and Kanako recruit cutscene (set to 1 after 2110)
+FLAG 136: Back at base from nightmare of hope cutscene
+FLAG 137: Dream souls lounge tutorial cutscene (set to 1 after 136)
+FLAG 137: Dream souls lounge tutorial cutscene (set to 1 after 136)
+FLAG 138: ???
+FLAG 139: ???
+FLAG 140: Renko spell learning tutorial in library cutscene (set to 1 after 136)
+FLAG 141: Akyuu survived the nightmare reset cutscene (set to 1 after 136)
+FLAG 142: Suwako and Kanako recruit cutscene while in Dream Path (set to 1 after 2110)
 
 [...]
 
