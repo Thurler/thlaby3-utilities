@@ -107,6 +107,14 @@ class LockedTreasureCell(IconCell):
     super().__init__(x, y, self.icon, (icon_size, icon_size))
     self.text = text
 
+# A cell that houses a locked dream amber treasure chest
+class DreamTreasureCell(IconCell):
+  icon = Image.open("./assets/dreamtreasure.png")
+
+  def __init__(self, x, y, text):
+    super().__init__(x, y, self.icon, (icon_size, icon_size))
+    self.text = text
+
 # A cell that houses stairs that go up
 class StairsUpCell(IconCell):
   icon = Image.open("./assets/stairsup.png")
