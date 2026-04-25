@@ -581,8 +581,8 @@ New Infinites (Sub):
 
 New Infinites (Mat):
 - 030 Lightless Black Onyx [???????? 12.9%]
-- 058 Songstress's Apron [Clone] (requires Alice)
-- 059 Oiran's Lamentation [Clone] (requires Alice)
+- 058 Songstress's Apron [Clone] (requires Alice and Amber-Wave2-E)
+- 059 Oiran's Lamentation [Clone] (requires Alice and Amber-Wave2-E)
 - 063 Alluring Despair [???????? 65.8%]
 - 071 Determination Polycrystal [Despair Team 20%]
 
