@@ -499,7 +499,7 @@ Money held caps at 100 quadrillion - 1
 0x4e28 ~ 0x4e77 - equipped break items (4 bytes per item, 20 slots, 80 total) (ID = [700 + item id] * 10 + 1) (e.g.: Fruit Basket is ID 61, value is [700 + 61] * 10 + 1 = 7611)
 0x4e78 ~ 0x4f17 - ??? 40 slots of something (4 bytes each, 160 total)
 0x4f18 ~ 0x5237 - ??? 200 slots of something (4 bytes each, 800 total)
-0x5238 ~ 0x525f - ??? 10 slots of something (4 bytes each, 40 total)
+0x5238 ~ 0x525f - renko equipped spells (4 bytes per spell, 10 slots, 40 total) (value = spell ID as seen in Spell.tsv, in practice 1301~1346)
 0x5260 ~ 0x5263 - number of break item crafts (4 bytes)
 0x5264 ~ 0x5267 - number of times fled from battle (4 bytes)
 0x5268 ~ 0x526b - unused (4 bytes)
