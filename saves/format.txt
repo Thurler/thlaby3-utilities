@@ -191,13 +191,9 @@ FLAG 142: Suwako and Kanako recruit cutscene while in Dream Path (set to 1 after
 FLAG 159: Yukari cutscene that explains increased enemy odds based on terrain (set to 1 after 135)
 FLAG 160: Patchouli gacha tutorial (set to 1 after re-recruiting her)
 
-[...]
-
 > Unknown Flags
 
 FLAGS 901 to 929: set to 1 after prologue, also seem to be tied to generic dungeon events like interacting with orbs and special tiles
-
-[...]
 
 > Forest of Oblivion 1F Map Flags
 
@@ -205,8 +201,6 @@ FLAG 1010: Shortcut before Alice (2 = opened) (109, 62)
 FLAG 1011: Shortcut midway west (2 = opened) (70, 62)
 FLAG 1012: Shortcut before Nightmare (2 = opened) (82, 76)
 FLAG 1013: Shortcut before Meiling (2 = opened) (79, 73)
-
-[...]
 
 > Forest of Oblivion 1F Event Flags
 
@@ -227,8 +221,6 @@ FLAG 1038: Post-Cirno cutscene that forces back to town (set to 1 after Alice re
 FLAG 1039: Interactions with Cirno's ice rocks (set to 2 after prologue)
 FLAG 1040: Pre-boss Cirno event (set to 1 after Alice recruit) (82, 45)
 FLAG 1041: Difficulty lock event (set to 1 after pre-Cirno event) (82, 44)
-
-[...]
 
 > Forest of Oblivion 1F Treasure Flags
 
@@ -271,8 +263,6 @@ FLAG 1099: Treasure before Cirno (Steel Shield x1) (95, 63)
 FLAG 1100: 2F Relay unlock
 FLAG 1101: 2F Inner Relay unlock
 
-[...]
-
 > Forest of Oblivion 2F Event Flags
 
 FLAG 1110: 2F intro cutscene (set to 1 after nightmare boss, 2 after entering 2f)
@@ -282,8 +272,6 @@ FLAG 1113: First relay circle enter cutscene (set to 1 after 2f relay circle)
 FLAG 1114: Nightmare boss fight (set to 1 after entering 2f) (57, 86)
 FLAG 1115: Relay circle tutorial event that forces back to town
 FLAG 1116: Post-Nightmare cutscene that forces you back to town
-
-[...]
 
 > Forest of Oblivion 2F Treasure Flags
 
@@ -326,8 +314,6 @@ FLAG 1214: Pre-orb event that shows Shikigami (set to 1 after entering 2f) (98, 
 FLAG 1215: Ran boss fight (set to 1 after entering 2f) (73, 73)
 FLAG 1216: 3F Orb pressed status (set to 1 after interacting) (96, 96)
 
-[...]
-
 > Forest of Oblivion 3F Treasure Flags
 
 FLAG 1278: Treasure before Koishi (?)
@@ -367,20 +353,14 @@ FLAG 1299: Locked Treasure before Ran (
   Forgetting Dayflowers x1,
 ) (54, 76)
 
-[...]
-
 > Dream Path to the Occult Balls 1F Relay Circles
 
-> FLAG 2000: 1F Inner Relay unlock
-
-[...]
+FLAG 2000: 1F Inner Relay unlock
 
 > Dream Path to the Occult Balls 1F Event Flags
 
 FLAG 2010: First visit to Dream Path cutscene (set to 1 after 123)
 FLAG 2011: Horde boss fight (set to 1 after 2010) (53, 53)
-
-[...]
 
 > Dream Path to the Occult Balls 1F Treasure Flags
 
@@ -415,15 +395,11 @@ FLAG 2099: Treasure (?)
 > FLAG 2100: 2F Relay unlock
 > FLAG 2101: 2F Inner Relay unlock
 
-[...]
-
 > Dream Path to the Occult Balls 2F Event Flags
 
 FLAG 2110: First visit to 2F cutscene (set to 1 after 2010)
 FLAG 2111: Sumireko Protector boss fight (set to 1 after 2110) (83, 52)
 FLAG 2112: Post Sumireko Protector cutscene (set to 1 after 2110) (80, 52)
-
-[...]
 
 > Dream Path to the Occult Balls 2F Treasure Flags
 
@@ -449,8 +425,6 @@ FLAG 2197: Treasure (?)
 FLAG 2198: Treasure (?)
 FLAG 2199: Treasure (?)
 
-[...]
-
 > Nightmare of a Ray of Hope Wrapped in Despair 1F Event Flags
 
 FLAG 3011: Renko rescuing Maribel from nightmare cutscene (75, 64)
@@ -462,9 +436,7 @@ FLAG 3016: Escape back to base cutscene (90, 90)
 FLAG 3017: Game over cutscene that plays on wipe during reset (set to 2 after coming back to base, even if you never see it)
 FLAG 3050: Treasure (Dream Soul of the Paradise-Yearning x1) (90, 75)
 
-[...]
-
-> Nightmare of a Ray of Hope Wrapped in Despair 1F Flags
+> Nightmare of a Ray of Hope Wrapped in Despair 1F Treasure Flags
 
 FLAG 3088: Dream Treasure (?)
 FLAG 3089: Dream Treasure (?)
@@ -474,15 +446,52 @@ FLAG 3095: Dream Treasure (?)
 FLAG 3098: Dream Treasure (?)
 FLAG 3099: Dream Treasure (?)
 
-[...]
-
 > Anguish of the Lost 1F Event Flags
 
 FLAG 4010: First visit cutscene (set to 1 after 139)
-FLAG 4011: Nightmare Marisa intro cutscene (set to 1 after 139)
-
+FLAG 4011: Nightmare Marisa intro cutscene (set to 1 after 139) (70, 76)
+FLAG 4012: Shortcut miniboss explanation cutscene (set to 1 after 4010) (70, 65)
+FLAG 4013: Shortcut miniboss (set to 1 after 4010) (70, 64)
 FLAG 4014: Difficulty lock event for post-demo players (set to 2 on any difficulty select)
+
+> Anguish of the Lost 1F Treasure Flags
+
+FLAG 4084: Treasure (?)
+FLAG 4085: Treasure (?)
+FLAG 4086: Treasure (?)
+FLAG 4087: Treasure (?)
+FLAG 4088: Treasure (?)
+FLAG 4089: Treasure (?)
+FLAG 4090: Treasure (?)
+FLAG 4091: Treasure (?)
+FLAG 4092: Locked Treasure (
+  Aldebaran Memory Stone x2
+  Bangle of the Star Realm x1
+  Thief Gloves x1
+  Mist Piercer x1
+) (63, 60)
+FLAG 4093: Treasure (?)
+FLAG 4094: Treasure (?)
+FLAG 4095: Treasure (?)
+FLAG 4096: Treasure (?)
+FLAG 4097: Treasure (?)
+FLAG 4098: Treasure (?)
+FLAG 4099: Treasure (?)
+
+> Anguish of the Lost 2F Event Flags
+
+FLAG 4110: ??? (set to 1 after 4010)
+FLAG 4111: ??? (set to 1 after 4010)
+FLAG 4112: ??? (set to 1 after 4010)
+FLAG 4113: ??? (set to 1 after 4010)
 FLAG 4117: Difficulty lock event for post-demo players before a boss fight (set to 2 on any difficulty select)
+
+> Anguish of the Lost 3F Event Flags
+
+FLAG 4210: ??? (set to 1 after 4010)
+FLAG 4211: ??? (set to 1 after 4010)
+FLAG 4212: ??? (set to 1 after 4010)
+FLAG 4213: ??? (set to 1 after 4010)
 
 ===== PGD FILE =====
 

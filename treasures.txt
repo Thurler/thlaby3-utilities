@@ -26,7 +26,7 @@
 
 > Pre-Nightmare
 
-[Locked] (
+[Locked-1] (
   Imitation Ootengu Masaie x1
   Steel Shield x1
   Principal First Edition x1
@@ -51,7 +51,7 @@
 ===== Forest of Oblivion - 2F =====
 =======================================================================
 
-[Locked] (
+[Locked-1] (
   Dream of Vitality x2
   Dream of Sorcery x2
   Dream of Energy x2
@@ -83,7 +83,7 @@
 
 > Pre-Koishi
 
-[Locked] (
+[Locked-1] (
   Aldebaran Memory Stone x1
   Bangle of the Star Realm x1
   Spirit Barrier Sign x1
@@ -103,7 +103,7 @@
 
 > Pre-Ran
 
-[Locked] (
+[Locked-1] (
   Liko Flower Hair Ornament x1
   Mana Flower x1
   Hunting Know-How x1
@@ -127,13 +127,13 @@
 ===== Dream Path to the Occult Balls - 1F =====
 =======================================================================
 
-[Locked] (
+[Locked-1] (
   Spire-Illuminating Lantern x1
   CatClaw x1
   Moon of the Eyeball x1
   Huscarl's Round Shield x1
 ) (66, 56)
-[Locked] (
+[Locked-1] (
   Single-Minded Studier's Set x3
   Money Tree Koban x3
   Itemfinders Weekly x3
@@ -157,8 +157,8 @@
 ===== Dream Path to the Occult Balls - 2F =====
 =======================================================================
 
-[Locked] (Coveted Ice Sword x1) (45, 45)
-[Locked] (
+[Locked-1] (Coveted Ice Sword x1) (45, 45)
+[Locked-1] (
   Deep Ring x1
   Environmental Puzzle Hallucination x1
   Bone Scrap x1
@@ -258,3 +258,29 @@
 > Dream Treasures Wave 5
 
 [Dream] (x x1) (00, 00)
+
+=======================================================================
+===== Anguish of the Lost - 1F =====
+=======================================================================
+
+[Locked-2] (
+  Aldebaran Memory Stone x2
+  Bangle of the Star Realm x1
+  Thief Gloves x1
+  Mist Piercer x1
+) (63, 60)
+(Mist Piercer x1) (70, 35)
+(Book of Guidance x1) (84, 51)
+(Extra Atelier Tools x1) (76, 52)
+(Plague Doctor Mask x1) (79, 55)
+(Sunstone x2) (61, 57)
+(Champion's Windbomb x1) (49, 58)
+(Lockbox Key x1) (87, 59)
+(Safety Goggles x1) (77, 60)
+(Moonstone x2) (41, 70)
+(Arde Dagger x1) (44, 70)
+(Dream of Hunting x1) (92, 70)
+(Aldebaran Memory Stone x1) (65, 77)
+(CatClaw x1) (75, 77)
+(Saviour Schnapps x1) (66, 100)
+(Thief Gloves x1) (70, 105)

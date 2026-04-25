@@ -83,6 +83,14 @@ class BossCell(IconCell):
     super().__init__(x, y, self.icon, (icon_size, icon_size))
     self.text = text
 
+# A cell that houses a miniboss fight event
+class MiniBossCell(IconCell):
+  icon = Image.open("./assets/miniboss.png")
+
+  def __init__(self, x, y, text):
+    super().__init__(x, y, self.icon, (icon_size, icon_size))
+    self.text = text
+
 # A cell that houses a dungeon event
 class EventCell(IconCell):
   icon = Image.open("./assets/event.png")
@@ -576,6 +584,36 @@ class Despair1F(Floor):
 
 class Anguish1F(Floor):
   tiles = [
+    EventCell(70, 76, ""),
+    EventCell(70, 65, ""),
+    MiniBossCell(70, 64, ""),
+    WarpCell(66, 55, 74, 55),
+    WarpCell(74, 55, 66, 55),
+    WarpCell(66, 57, 74, 57),
+    WarpCell(74, 57, 66, 57),
+    WarpCell(66, 83, 74, 83),
+    WarpCell(74, 83, 66, 83),
+    WarpCell(66, 85, 74, 85),
+    WarpCell(74, 85, 66, 85),
+    WarpCell(70, 97, 70, 46),
+    WarpCell(70, 46, 70, 97),
+    StairsUpCell(70, 60),
+    LockedTreasureCell(63, 60, ""),
+    TreasureCell(70, 35, ""),
+    TreasureCell(84, 51, ""),
+    TreasureCell(76, 52, ""),
+    TreasureCell(79, 55, ""),
+    TreasureCell(61, 57, ""),
+    TreasureCell(49, 58, ""),
+    TreasureCell(87, 59, ""),
+    TreasureCell(77, 60, ""),
+    TreasureCell(41, 70, ""),
+    TreasureCell(44, 70, ""),
+    TreasureCell(92, 70, ""),
+    TreasureCell(65, 77, ""),
+    TreasureCell(75, 77, ""),
+    TreasureCell(66, 100, ""),
+    TreasureCell(70, 105, ""),
   ]
 
   def __init__(self):
@@ -745,9 +783,9 @@ pixels = map_img.load()
 # floor = Oblivion2F()
 # floor = Oblivion3F()
 # floor = DreamPath1F()
-floor = DreamPath2F()
+# floor = DreamPath2F()
 # floor = Despair1F()
-# floor = Anguish1F()
+floor = Anguish1F()
 # floor = Anguish2F()
 # floor = Anguish3F()
 # floor = Fragile1F()
