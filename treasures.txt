@@ -27,11 +27,11 @@
 > Pre-Nightmare
 
 [Locked] (
-  Imitation Ootengu Masaie x1,
-  Steel Shield x1,
-  Principal First Edition x1,
-  Inharmonious Gearset x1,
-  Counter Scarf x1,
+  Imitation Ootengu Masaie x1
+  Steel Shield x1
+  Principal First Edition x1
+  Inharmonious Gearset x1
+  Counter Scarf x1
 ) (76, 38)
 (Ominous Gemstone x1) (57, 37)
 (Songstress' Apron x1) (57, 41)
@@ -54,9 +54,9 @@
 > Pre-Nightmare
 
 [Locked] (
-  Dream of Vitality x2,
-  Dream of Sorcery x2,
-  Dream of Energy x2,
+  Dream of Vitality x2
+  Dream of Sorcery x2
+  Dream of Energy x2
 ) (66, 60)
 (Book of Guidance x1) (71, 48)
 (Ominous Gemstone x1) (49, 50)
@@ -86,12 +86,12 @@
 > Pre-Koishi
 
 [Locked] (
-  Aldebaran Memory Stone x1,
-  Bangle of the Star Realm x1,
-  Spirit Barrier Sign x1,
-  Yin-Yang Shift Stone x1,
-  Ominous Gemstone x1,
-  Coagulated Blood Gem x1,
+  Aldebaran Memory Stone x1
+  Bangle of the Star Realm x1
+  Spirit Barrier Sign x1
+  Yin-Yang Shift Stone x1
+  Ominous Gemstone x1
+  Coagulated Blood Gem x1
 ) (65, 43)
 (Sticky Aubergine Dream x1) (65, 35)
 (Deep Ring x1) (43, 37)
@@ -106,12 +106,12 @@
 > Pre-Ran
 
 [Locked] (
-  Liko Flower Hair Ornament x1,
-  Mana Flower x1,
-  Hunting Know-How x1,
-  Shabby Katashiro x1,
-  Sticky Aubergine Dream x1,
-  Forgetting Dayflowers x1,
+  Liko Flower Hair Ornament x1
+  Mana Flower x1
+  Hunting Know-How x1
+  Shabby Katashiro x1
+  Sticky Aubergine Dream x1
+  Forgetting Dayflowers x1
 ) (54, 76)
 (Sunstone x1) (76, 54)
 (Ominous Gemstone x1) (88, 55)
@@ -132,15 +132,15 @@
 > Pre-Horde
 
 [Locked] (
-  Spire-Illuminating Lantern x1,
-  CatClaw x1,
-  Moon of the Eyeball x1,
-  Huscarl's Round Shield x1,
+  Spire-Illuminating Lantern x1
+  CatClaw x1
+  Moon of the Eyeball x1
+  Huscarl's Round Shield x1
 ) (66, 56)
 [Locked] (
-  Single-Minded Studier's Set x3,
-  Money Tree Koban x3,
-  Itemfinders Weekly x3,
+  Single-Minded Studier's Set x3
+  Money Tree Koban x3
+  Itemfinders Weekly x3
 ) (78, 84)
 (880 Sen) (90, 54)
 (Mmm, So Tasty! Well-Done Steak x1) (88, 56)
@@ -165,10 +165,10 @@
 
 [Locked] (Coveted Ice Sword x1) (45, 45)
 [Locked] (
-  Deep Ring x1,
-  Environmental Puzzle Hallucination x1,
-  Bone Scrap x1,
-  Bangle of the Star Realm x1,
+  Deep Ring x1
+  Environmental Puzzle Hallucination x1
+  Bone Scrap x1
+  Bangle of the Star Realm x1
 ) (92, 68)
 (Eyetrack Orbitars x1) (74, 48)
 (Cloak of the Bat x1) (69, 52)
@@ -184,3 +184,66 @@
 (Momijihime x1) (96, 96)
 (Sunstone x2) (92, 99)
 (Faerie Walnut x1) (52, 116)
+
+=======================================================================
+===== Nightmare of a Ray of Hope Wrapped in Despair - 1F =====
+=======================================================================
+
+(Dream Soul of the Paradise-Yearning x1) (90, 75)
+[Dream] (Dream Soul of the Suffering x1) (58, 64)
+[Dream] (Dream Soul of the Fragile x1) (57, 62)
+[Dream] (Sun Shades x2) (58, 61)
+[Dream] (
+  Hero Gep's Potion x2
+  Master's Emblem x2
+  Tokyo Metronome x2
+  Diamond Edge x2
+  Gothic Plate Armor x2
+  Enigma Machine x2
+  Timekeeping Crystal Oscillator x2
+  Immortal Salamander Scale x2
+) (61, 58)
+[Dream] (
+  Love Machine 3322 x2
+  Flowing Dress x2
+  Flying Machine x2
+  Last Leaf x2
+  Bangle of the Star Realm x2
+  Yin-Yang Shift Stone x2
+  Coagulated Bloog Gem x2
+  Huscarl's Round Shield x2
+) (62, 57)
+[Dream] (
+  Momijihime x1
+  Coveted Ice Sword x1
+  Whirlwind Mixer Blade x1
+) (64, 58)
+[Dream] (Dream Soul of the Unforgiven x1) (55, 61)
+[Dream] (Lockbox Key x12) (54, 59)
+[Dream] (Book of Guidance x20) (55, 58)
+[Dream] (
+  Sunstone x5
+  Star Sunstone x5
+  Lattice Sunstone x5
+  Moonstone x5
+  Blue Moonstone x5
+  Royal Blue Moonstone x5
+) (58, 55)
+[Dream] (Extra Atelier Tools x1) (59, 54)
+[Dream] (
+  Star Pendant x2
+  Ouroboros Loop x1
+) (61, 55)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
+[Dream] (x x1) (00, 00)
