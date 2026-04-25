@@ -142,103 +142,104 @@ Event flags (1 usually means available, 2 means seen/opened/activated/etc)
 
 > Generic Flags
 
-FLAGS 1 to 100: set to 1 after prologue, seems to be tied to generic dungeon events like stairs and shortcuts
+FLAGS 0 to 99: set to 1 after prologue, seems to be tied to generic dungeon events like stairs and shortcuts
 
 > Facility/Town Cutscene Flags
 
-FLAG 101: unused
-FLAG 102: Hakurei Shrine first tutorial
-FLAG 103: Magic Library first tutorial
-FLAG 104: Archives first tutorial
-FLAG 105: Atelier first tutorial
-FLAG 106: Lounge first tutorial
-FLAG 107: Akyuu's Study first tutorial
-FLAG 108: Keine and Aya cutscene on archives (set to 1 after 2f relay circle)
-FLAG 109: Alice recruit cutscene (set to 1 after FLAG 1036)
-FLAG 110: Cirno recruit cutscene (automatic after beating her)
-FLAG 111: Town cutscene post first battle (2 after first dungeon battle)
-FLAG 112: Meiling recruit cutscene (set to 1 after FLAG 1035)
-FLAG 113: Shikigami at base explanation quick cutscene (unlocked after 1113 is seen) (set to 100 after watched)
-FLAG 114: Cirno shop tutorial (set to 1 after recruiting her)
-FLAG 115: Akyuu eavesdropping on Renko and Mary cutscene (set to 1 after watching 118) (set to 100 after watched)
-FLAG 116: One of the dejavu cutscenes post Cirno fight (goes to 100 after multiple 1f explores?)
-FLAG 117: Weird note memo cutscene in lounge area (set to 1 after using 2f relay)
-FLAG 118: One of the dejavu cutscenes post Nightmare fight (triggers after exploring 2f)
-FLAG 119: Renko and Mary cutscene while exploring 2F (set to 1 after entering 2f)
-FLAG 120: Post-2F Nightmare boss memory cutscene
-FLAG 121: Hakurei Shrine level up points tutorial (set to 1 after 2F Nightmare)
-FLAG 122: Keine recruit cutscene + Archive Rewards tutorial (set to 1 after 2F Nightmare)
-FLAG 123: Koishi base introduction cutscene
-FLAG 124: Lounge recruit Marisa and Remilia (set to 1 after Ran fight)
-FLAG 125: unused?
-FLAG 126: Exploration cutscene before first dream path visit (set to 1 after 124)
-FLAG 127: Shrine cutscene post dream path lounge recruit (set to 1 after 124)
-FLAG 128: Akyuu cutscene that unlocks character recruits (set to 1 after Cirno recruit) (value 100 after post-Cirno dungeon dive)
-FLAG 129: Nitori recruit cutscene (set to 1 after seeing 128)
-FLAG 130: Aya recruit cutscene (set to 1 after seeing 128)
-FLAG 131: Patchouli recruit cutscene (set to 1 after seeing 128)
-FLAG 132: Back from 2F cutscene
-FLAG 133: Back from Ran fight cutscene
-FLAG 134: Akyuu cutscene after first exploration of Dream Path
-FLAG 135: Renko and Maribel cutscene that buffs Maribel stats (set to 1 after horde boss)
-FLAG 136: Renko and Doremy cutscene when coming back from exploring (set to 1 after 135)
+FLAG 100: unused
+FLAG 101: Hakurei Shrine first tutorial
+FLAG 102: Magic Library first tutorial
+FLAG 103: Archives first tutorial
+FLAG 104: Atelier first tutorial
+FLAG 105: Lounge first tutorial
+FLAG 106: Akyuu's Study first tutorial
+FLAG 107: Keine and Aya cutscene on archives (set to 1 after 2f relay circle)
+FLAG 108: Alice recruit cutscene (set to 1 after FLAG 1035)
+FLAG 109: Cirno recruit cutscene (automatic after beating her)
+FLAG 110: Town cutscene post first battle (2 after first dungeon battle)
+FLAG 111: Meiling recruit cutscene (set to 1 after FLAG 1034)
+FLAG 112: Shikigami at base explanation quick cutscene (unlocked after 1112 is seen) (set to 100 after watched)
+FLAG 113: Cirno shop tutorial (set to 1 after recruiting her)
+FLAG 114: Akyuu eavesdropping on Renko and Mary cutscene (set to 1 after watching 117) (set to 100 after watched)
+FLAG 115: One of the dejavu cutscenes post Cirno fight (goes to 100 after multiple 1f explores?)
+FLAG 116: Weird note memo cutscene in lounge area (set to 1 after using 2f relay)
+FLAG 117: One of the dejavu cutscenes post Nightmare fight (triggers after exploring 2f)
+FLAG 118: Renko and Mary cutscene while exploring 2F (set to 1 after entering 2f)
+FLAG 119: Post-2F Nightmare boss memory cutscene
+FLAG 120: Hakurei Shrine level up points tutorial (set to 1 after 2F Nightmare)
+FLAG 121: Keine recruit cutscene + Archive Rewards tutorial (set to 1 after 2F Nightmare)
+FLAG 122: Koishi base introduction cutscene
+FLAG 123: Lounge recruit Marisa and Remilia (set to 1 after Ran fight)
+FLAG 124: unused?
+FLAG 125: Exploration cutscene before first dream path visit (set to 1 after 123)
+FLAG 126: Shrine cutscene post dream path lounge recruit (set to 1 after 123)
+FLAG 127: Akyuu cutscene that unlocks character recruits (set to 1 after Cirno recruit) (value 100 after post-Cirno dungeon dive)
+FLAG 128: Nitori recruit cutscene (set to 1 after seeing 127)
+FLAG 129: Aya recruit cutscene (set to 1 after seeing 127)
+FLAG 130: Patchouli recruit cutscene (set to 1 after seeing 127)
+FLAG 131: Back from 2F cutscene
+FLAG 132: Back from Ran fight cutscene
+FLAG 133: Akyuu cutscene after first exploration of Dream Path
+FLAG 134: Renko and Maribel cutscene that buffs Maribel stats (set to 1 after horde boss)
+FLAG 135: Renko and Doremy cutscene when coming back from exploring (set to 1 after 134)
 
 [...]
 
-FLAG 143: Suwako and Kanako recruit cutscene (set to 1 after 2111)
+FLAG 142: Suwako and Kanako recruit cutscene (set to 1 after 2110)
 
 [...]
 
-FLAG 160: Yukari cutscene that explains increased enemy odds based on terrain (set to 1 after 136)
+FLAG 159: Yukari cutscene that explains increased enemy odds based on terrain (set to 1 after 135)
 
 [...]
 
 > Unknown Flags
 
-FLAGS 902 to 930: set to 1 after prologue, also seem to be tied to generic dungeon events like interacting with orbs and special tiles
+FLAGS 901 to 929: set to 1 after prologue, also seem to be tied to generic dungeon events like interacting with orbs and special tiles
 
 [...]
 
 > Forest of Oblivion 1F Map Flags
 
-FLAG 1011: Shortcut before Alice (2 = opened) (109, 62)
-FLAG 1012: Shortcut midway west (2 = opened) (70, 62)
-FLAG 1013: Shortcut before Nightmare (2 = opened) (82, 76)
-FLAG 1014: Shortcut before Meiling (2 = opened) (79, 73)
+FLAG 1010: Shortcut before Alice (2 = opened) (109, 62)
+FLAG 1011: Shortcut midway west (2 = opened) (70, 62)
+FLAG 1012: Shortcut before Nightmare (2 = opened) (82, 76)
+FLAG 1013: Shortcut before Meiling (2 = opened) (79, 73)
 
 [...]
 
 > Forest of Oblivion 1F Event Flags
 
-FLAG 1026: Tutorial Sumireko fight
-FLAG 1027: First Sumireko event
-FLAG 1028: Sumireko boss event
-FLAG 1029: Tutorial Reimu fight
-FLAG 1030: Intro cutscene with Renko and Mary
-FLAG 1031: Dungeon tutorial (1 after prologue, 2 first dungeon dive)
-FLAG 1032: Dungeon post-battle tutorial (2 after first dungeon battle)
-FLAG 1033: In-dungeon large ice chunk cutscene (set to 1 after prologue)
-FLAG 1034: In-dungeon small ice chunk cutscene (set to 1 after prologue)
-FLAG 1035: Event to unlock Meiling (88, 67)
-FLAG 1036: Event to unlock Alice (114, 62)
-FLAG 1037: Cirno boss fight (82, 43)
-FLAG 1038: Nightmare boss fight (76, 82)
-FLAG 1039: Post-Cirno cutscene that forces back to town (set to 1 after Alice recruit) (82, 42)
-FLAG 1040: Interactions with Cirno's ice rocks (set to 2 after prologue)
-FLAG 1041: Pre-boss Cirno event (set to 1 after Alice recruit) (82, 45)
-FLAG 1042: Difficulty lock event (set to 1 after pre-Cirno event) (82, 44)
+FLAG 1025: Tutorial Sumireko fight
+FLAG 1026: First Sumireko event
+FLAG 1027: Sumireko boss event
+FLAG 1028: Tutorial Reimu fight
+FLAG 1029: Intro cutscene with Renko and Mary
+FLAG 1030: Dungeon tutorial (1 after prologue, 2 first dungeon dive)
+FLAG 1031: Dungeon post-battle tutorial (2 after first dungeon battle)
+FLAG 1032: In-dungeon large ice chunk cutscene (set to 1 after prologue)
+FLAG 1033: In-dungeon small ice chunk cutscene (set to 1 after prologue)
+FLAG 1034: Event to unlock Meiling (88, 67)
+FLAG 1035: Event to unlock Alice (114, 62)
+FLAG 1036: Cirno boss fight (82, 43)
+FLAG 1037: Nightmare boss fight (76, 82)
+FLAG 1038: Post-Cirno cutscene that forces back to town (set to 1 after Alice recruit) (82, 42)
+FLAG 1039: Interactions with Cirno's ice rocks (set to 2 after prologue)
+FLAG 1040: Pre-boss Cirno event (set to 1 after Alice recruit) (82, 45)
+FLAG 1041: Difficulty lock event (set to 1 after pre-Cirno event) (82, 44)
 
 [...]
 
 > Forest of Oblivion 1F Treasure Flags
 
-FLAG 1074: Locked Treasure (
+FLAG 1073: Locked Treasure (
   Imitation Ootengu Masaie x1,
   Steel Shield x1,
   Principal First Edition x1,
   Inharmonious Gearset x1,
   Counter Scarf x1,
 ) (76, 38)
+FLAG 1074: Treasure before Nightmare (?)
 FLAG 1075: Treasure before Nightmare (?)
 FLAG 1076: Treasure before Nightmare (?)
 FLAG 1077: Treasure before Nightmare (?)
@@ -250,43 +251,43 @@ FLAG 1082: Treasure before Nightmare (?)
 FLAG 1083: Treasure before Nightmare (?)
 FLAG 1084: Treasure before Nightmare (?)
 FLAG 1085: Treasure before Nightmare (?)
-FLAG 1086: Treasure before Nightmare (?)
-FLAG 1087: Treasure before Alice (?)
-FLAG 1088: Treasure before Nightmare (?)
+FLAG 1086: Treasure before Alice (?)
+FLAG 1087: Treasure before Nightmare (?)
+FLAG 1088: Treasure before Alice (?)
 FLAG 1089: Treasure before Alice (?)
 FLAG 1090: Treasure before Alice (?)
 FLAG 1091: Treasure before Alice (?)
 FLAG 1092: Treasure before Alice (?)
 FLAG 1093: Treasure before Alice (?)
-FLAG 1094: Treasure before Alice (?)
+FLAG 1094: Treasure before Meiling (?)
 FLAG 1095: Treasure before Meiling (?)
 FLAG 1096: Treasure before Meiling (?)
 FLAG 1097: Treasure before Meiling (?)
 FLAG 1098: Treasure before Meiling (?)
-FLAG 1099: Treasure before Meiling (?)
-FLAG 1100: Treasure before Cirno (Steel Shield x1) (95, 63)
+FLAG 1099: Treasure before Cirno (Steel Shield x1) (95, 63)
 
 > Forest of Oblivion 2F Relay Circles
 
-FLAG 1101: 2F Relay unlock
-FLAG 1102: 2F Inner Relay unlock
+FLAG 1100: 2F Relay unlock
+FLAG 1101: 2F Inner Relay unlock
 
 [...]
 
 > Forest of Oblivion 2F Event Flags
 
-FLAG 1111: 2F intro cutscene (set to 1 after nightmare boss, 2 after entering 2f)
-FLAG 1112: Relay circle tutorial cutscene
-FLAG 1113: Memo left on 2F northwest event (set to 1 after entering 2f) (52, 53)
-FLAG 1114: First relay circle enter cutscene (set to 1 after 2f relay circle)
-FLAG 1115: Nightmare boss fight (set to 1 after entering 2f) (57, 86)
-FLAG 1116: Relay circle tutorial event that forces back to town
-FLAG 1117: Post-Nightmare cutscene that forces you back to town
+FLAG 1110: 2F intro cutscene (set to 1 after nightmare boss, 2 after entering 2f)
+FLAG 1111: Relay circle tutorial cutscene
+FLAG 1112: Memo left on 2F northwest event (set to 1 after entering 2f) (52, 53)
+FLAG 1113: First relay circle enter cutscene (set to 1 after 2f relay circle)
+FLAG 1114: Nightmare boss fight (set to 1 after entering 2f) (57, 86)
+FLAG 1115: Relay circle tutorial event that forces back to town
+FLAG 1116: Post-Nightmare cutscene that forces you back to town
 
 [...]
 
 > Forest of Oblivion 2F Treasure Flags
 
+FLAG 1179: Treasure (?)
 FLAG 1180: Treasure (?)
 FLAG 1181: Treasure (?)
 FLAG 1182: Treasure (?)
@@ -299,45 +300,44 @@ FLAG 1188: Treasure (?)
 FLAG 1189: Treasure (?)
 FLAG 1190: Treasure (?)
 FLAG 1191: Treasure (?)
-FLAG 1192: Treasure (?)
-FLAG 1193: Locked Treasure (
+FLAG 1192: Locked Treasure (
   Dream of Vitality x2,
   Dream of Sorcery x2,
   Dream of Energy x2,
 ) (66, 60)
+FLAG 1193: Treasure (?)
 FLAG 1194: Treasure (?)
 FLAG 1195: Treasure (?)
 FLAG 1196: Treasure (?)
 FLAG 1197: Treasure (?)
 FLAG 1198: Treasure (?)
 FLAG 1199: Treasure (?)
-FLAG 1200: Treasure (?)
 
 > Forest of Oblivion 3F Relay Circles
 
-FLAG 1201: 3F Relay unlock
+FLAG 1200: 3F Relay unlock
 
 > Forest of Oblivion 3F Event Flags
 
-FLAG 1212: 3F relay cutscene that triggers on use (set to 1 after entering 2f)
-FLAG 1213: Cutscene in 3F rocks when Avatar hasn't been killed yet (set to 1 after entering 2f)
-FLAG 1214: Koishi recruit event (set to 1 after entering 2f) (60, 60)
-FLAG 1215: Pre-orb event that shows Shikigami (set to 1 after entering 2f) (98, 98)
-FLAG 1216: Ran boss fight (set to 1 after entering 2f) (73, 73)
-FLAG 1217: 3F Orb pressed status (set to 1 after interacting) (96, 96)
+FLAG 1211: 3F relay cutscene that triggers on use (set to 1 after entering 2f)
+FLAG 1212: Cutscene in 3F rocks when Avatar hasn't been killed yet (set to 1 after entering 2f)
+FLAG 1213: Koishi recruit event (set to 1 after entering 2f) (60, 60)
+FLAG 1214: Pre-orb event that shows Shikigami (set to 1 after entering 2f) (98, 98)
+FLAG 1215: Ran boss fight (set to 1 after entering 2f) (73, 73)
+FLAG 1216: 3F Orb pressed status (set to 1 after interacting) (96, 96)
 
 [...]
 
 > Forest of Oblivion 3F Treasure Flags
 
+FLAG 1278: Treasure before Koishi (?)
 FLAG 1279: Treasure before Koishi (?)
 FLAG 1280: Treasure before Koishi (?)
 FLAG 1281: Treasure before Koishi (?)
 FLAG 1282: Treasure before Koishi (?)
 FLAG 1283: Treasure before Koishi (?)
 FLAG 1284: Treasure before Koishi (?)
-FLAG 1285: Treasure before Koishi (?)
-FLAG 1286: Locked Treasure before Koishi (
+FLAG 1285: Locked Treasure before Koishi (
   Aldebaram Gemstone x1,
   Bangle of the Star Realm x1,
   Spirit Barrier Sign x1,
@@ -345,8 +345,9 @@ FLAG 1286: Locked Treasure before Koishi (
   Ominous Gemstone x1,
   Coagulated Blood Gem x1,
 ) (65, 43)
+FLAG 1286: Treasure before Koishi (?)
 FLAG 1287: Treasure before Koishi (?)
-FLAG 1288: Treasure before Koishi (?)
+FLAG 1288: Treasure before Ran (?)
 FLAG 1289: Treasure before Ran (?)
 FLAG 1290: Treasure before Ran (?)
 FLAG 1291: Treasure before Ran (?)
@@ -357,8 +358,7 @@ FLAG 1295: Treasure before Ran (?)
 FLAG 1296: Treasure before Ran (?)
 FLAG 1297: Treasure before Ran (?)
 FLAG 1298: Treasure before Ran (?)
-FLAG 1299: Treasure before Ran (?)
-FLAG 1300: Locked Treasure before Ran (
+FLAG 1299: Locked Treasure before Ran (
   Liko Flower Hair Ornament x1,
   Mana Flower x1,
   Hunting Know-How x1,
@@ -371,27 +371,28 @@ FLAG 1300: Locked Treasure before Ran (
 
 > Dream Path to the Occult Balls 1F Relay Circles
 
-> FLAG 2001: 1F Inner Relay unlock
+> FLAG 2000: 1F Inner Relay unlock
 
 [...]
 
 > Dream Path to the Occult Balls 1F Event Flags
 
-FLAG 2011: First visit to Dream Path cutscene (set to 1 after 124)
-FLAG 2012: Horde boss fight (set to 1 after 2011) (53, 53)
+FLAG 2010: First visit to Dream Path cutscene (set to 1 after 123)
+FLAG 2011: Horde boss fight (set to 1 after 2010) (53, 53)
 
 [...]
 
 > Dream Path to the Occult Balls 1F Treasure Flags
 
+FLAG 2084: Treasure (?)
 FLAG 2085: Treasure (?)
-FLAG 2086: Treasure (?)
-FLAG 2087: Locked Treasure (
+FLAG 2086: Locked Treasure (
   Spire-Illuminating Lantern x1,
   CatClaw x1,
   Moon of the Eyeball x1,
   Huscarl's Round Shield x1,
 ) (66, 56)
+FLAG 2087: Treasure (?)
 FLAG 2088: Treasure (?)
 FLAG 2089: Treasure (?)
 FLAG 2090: Treasure (?)
@@ -400,63 +401,62 @@ FLAG 2092: Treasure (?)
 FLAG 2093: Treasure (?)
 FLAG 2094: Treasure (?)
 FLAG 2095: Treasure (?)
-FLAG 2096: Treasure (?)
-FLAG 2097: Locked Treasure (
+FLAG 2096: Locked Treasure (
   Single-Minded Studier's Set x3,
   Money Tree Koban x3,
   Itemfinders Weekly x3,
 ) (78, 84)
+FLAG 2097: Treasure (?)
 FLAG 2098: Treasure (?)
 FLAG 2099: Treasure (?)
-FLAG 2100: Treasure (?)
 
 > Dream Path to the Occult Balls 2F Relay Circles
 
-> FLAG 2101: 2F Relay unlock
-> FLAG 2102: 2F Inner Relay unlock
+> FLAG 2100: 2F Relay unlock
+> FLAG 2101: 2F Inner Relay unlock
 
 [...]
 
 > Dream Path to the Occult Balls 2F Event Flags
 
-FLAG 2111: First visit to 2F cutscene (set to 1 after 2011)
-FLAG 2112: Sumireko Protector boss fight (set to 1 after 2111) (83, 52)
-FLAG 2113: Post Sumireko Protector cutscene (set to 1 after 2111) (80, 52)
+FLAG 2110: First visit to 2F cutscene (set to 1 after 2010)
+FLAG 2111: Sumireko Protector boss fight (set to 1 after 2110) (83, 52)
+FLAG 2112: Post Sumireko Protector cutscene (set to 1 after 2110) (80, 52)
 
 [...]
 
 > Dream Path to the Occult Balls 2F Treasure Flags
 
-FLAG 2185: Treasure (?)
-FLAG 2186: Locked Treasure (Coveted Ice Sword x1) (45, 45)
+FLAG 2184: Treasure (?)
+FLAG 2185: Locked Treasure (Coveted Ice Sword x1) (45, 45)
+FLAG 2186: Treasure (?)
 FLAG 2187: Treasure (?)
 FLAG 2188: Treasure (?)
 FLAG 2189: Treasure (?)
 FLAG 2190: Treasure (?)
 FLAG 2191: Treasure (?)
 FLAG 2192: Treasure (?)
-FLAG 2193: Treasure (?)
-FLAG 2194: Locked Treasure (
+FLAG 2193: Locked Treasure (
   Deep Ring x1,
   Environmental Puzzle Hallucination x1,
   Bone Scrap x1,
   Bangle of the Star Realm x1,
 ) (92, 68)
+FLAG 2194: Treasure (?)
 FLAG 2195: Treasure (?)
 FLAG 2196: Treasure (?)
 FLAG 2197: Treasure (?)
 FLAG 2198: Treasure (?)
 FLAG 2199: Treasure (?)
-FLAG 2200: Treasure (?)
 
 [...]
 
 > ??? 1F Event Flags
 
-FLAG 3012: End of demo cutscene, can't save to confirm flag number
+FLAG 3011: End of demo cutscene, can't save to confirm flag number
 
-FLAG 4015: Difficulty lock event for post-demo players (set to 2 on any difficulty select)
-FLAG 4118: Difficulty lock event for post-demo players before a boss fight (set to 2 on any difficulty select)
+FLAG 4014: Difficulty lock event for post-demo players (set to 2 on any difficulty select)
+FLAG 4117: Difficulty lock event for post-demo players before a boss fight (set to 2 on any difficulty select)
 
 ===== PGD FILE =====
 
@@ -491,7 +491,7 @@ Money held caps at 100 quadrillion - 1
 0x110c ~ 0x110f - unused??? (4 bytes)
 0x1110 ~ 0x1113 - unused (4 bytes)
 0x1114 ~ 0x1433 - achievement data (4 bytes per achievement, 200 slots) (800 bytes) (0 = locked, 2 = acquired)
-0x1434 ~ 0x15c3 - treasure id list on lounge (4 bytes per id, 100 slots) (400 bytes) (ID = flag - 1 * 100 + keys required) (e.g. 1F flag is 1074, needs 1 key = 107301)
+0x1434 ~ 0x15c3 - treasure id list on lounge (4 bytes per id, 100 slots) (400 bytes) (ID = flag * 100 + keys required) (e.g. 1F flag is 1073, needs 1 key = 107301)
 0x15c4 ~ 0x16b3 - party lineups (12x5 matrix) (4 bytes each, 240 total) [just the character ids in order]
 0x16b4 ~ 0x4d63 - equipment loadouts (100x7x5 matrix) (4 bytes each, 14000 total) [for each char in order: main equip lv, 6 sub equips (3 are blanks)]
 0x4d64 ~ 0x4d87 - alice subequip craft slots [id, timer, unused???] (4 bytes each, 3 slots, 36 total)

@@ -37,7 +37,7 @@ def read_flags(filename, will_print):
     for i in range(30000):
       flag = flag_to_int(f.read(4))
       if flag > 0 and will_print:
-        print("FLAG", i + 1, "SET TO", flag)
+        print("FLAG", i, "SET TO", flag)
       flags.append(flag)
   return flags
 
@@ -53,7 +53,7 @@ compare_flags = read_flags(compare, print_compare)
 
 for i in range(30000):
   if target_flags[i] != compare_flags[i] and print_flag_diff:
-    print("DIFF AT FLAG", i + 1, "WAS", target_flags[i], "IS", compare_flags[i])
+    print("DIFF AT FLAG", i, "WAS", target_flags[i], "IS", compare_flags[i])
 
 target_data = read_gamedata(target)
 compare_data = read_gamedata(compare)
