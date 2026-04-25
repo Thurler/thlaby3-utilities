@@ -166,14 +166,14 @@ class BigIceBlockCell(IconCell):
     super().__init__(x, y, self.icon, (cell_size * 2, cell_size * 2))
 
 # A cell that houses a 3F green orb
-class OblivionOrbCell(IconCell):
-  icon = Image.open("./assets/oblivionorb.png")
+class GreenOrbCell(IconCell):
+  icon = Image.open("./assets/greenorb.png")
 
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
 
 # A cell that houses a 3F green orb
-class DreamArrowCell(IconCell):
+class ArrowCell(IconCell):
   icon_up = Image.open("./assets/arrowup.png")
   icon_down = Image.open("./assets/arrowdown.png")
   icon_left = Image.open("./assets/arrowleft.png")
@@ -424,7 +424,7 @@ class Oblivion3F(Floor):
     RockCell(65, 71),
     RockCell(72, 72),
     RockCell(56, 56),
-    OblivionOrbCell(96, 96),
+    GreenOrbCell(96, 96),
     TreasureCell(70, 54, ""),
     TreasureCell(65, 35, ""),
     TreasureCell(54, 38, ""),
@@ -508,38 +508,38 @@ class DreamPath2F(Floor):
     TreasureCell(116, 52, ""),
     LockedTreasureCell(45, 45, ""),
     LockedTreasureCell(92, 68, ""),
-    DreamArrowCell(49, 83, "Up"),
-    DreamArrowCell(49, 87, "Up"),
-    DreamArrowCell(55, 83, "Down"),
-    DreamArrowCell(55, 87, "Down"),
-    DreamArrowCell(64, 85, "Left"),
-    DreamArrowCell(72, 85, "Right"),
-    DreamArrowCell(68, 89, "Up"),
-    DreamArrowCell(68, 81, "Up"),
-    DreamArrowCell(76, 85, "Left"),
-    DreamArrowCell(63, 83, "Up"),
-    DreamArrowCell(85, 76, "Down"),
-    DreamArrowCell(89, 68, "Right"),
-    DreamArrowCell(81, 68, "Right"),
-    DreamArrowCell(76, 71, "Right"),
-    DreamArrowCell(66, 71, "Left"),
-    DreamArrowCell(71, 76, "Up"),
-    DreamArrowCell(71, 66, "Down"),
-    DreamArrowCell(62, 71, "Right"),
-    DreamArrowCell(54, 71, "Right"),
-    DreamArrowCell(50, 71, "Left"),
-    DreamArrowCell(52, 76, "Up"),
-    DreamArrowCell(48, 61, "Down"),
-    DreamArrowCell(52, 61, "Up"),
-    DreamArrowCell(56, 61, "Down"),
-    DreamArrowCell(61, 48, "Right"),
-    DreamArrowCell(61, 52, "Left"),
-    DreamArrowCell(61, 56, "Right"),
-    DreamArrowCell(71, 50, "Up"),
-    DreamArrowCell(71, 54, "Down"),
-    DreamArrowCell(71, 59, "Up"),
-    DreamArrowCell(64, 62, "Up"),
-    DreamArrowCell(62, 64, "Left"),
+    ArrowCell(49, 83, "Up"),
+    ArrowCell(49, 87, "Up"),
+    ArrowCell(55, 83, "Down"),
+    ArrowCell(55, 87, "Down"),
+    ArrowCell(64, 85, "Left"),
+    ArrowCell(72, 85, "Right"),
+    ArrowCell(68, 89, "Up"),
+    ArrowCell(68, 81, "Up"),
+    ArrowCell(76, 85, "Left"),
+    ArrowCell(63, 83, "Up"),
+    ArrowCell(85, 76, "Down"),
+    ArrowCell(89, 68, "Right"),
+    ArrowCell(81, 68, "Right"),
+    ArrowCell(76, 71, "Right"),
+    ArrowCell(66, 71, "Left"),
+    ArrowCell(71, 76, "Up"),
+    ArrowCell(71, 66, "Down"),
+    ArrowCell(62, 71, "Right"),
+    ArrowCell(54, 71, "Right"),
+    ArrowCell(50, 71, "Left"),
+    ArrowCell(52, 76, "Up"),
+    ArrowCell(48, 61, "Down"),
+    ArrowCell(52, 61, "Up"),
+    ArrowCell(56, 61, "Down"),
+    ArrowCell(61, 48, "Right"),
+    ArrowCell(61, 52, "Left"),
+    ArrowCell(61, 56, "Right"),
+    ArrowCell(71, 50, "Up"),
+    ArrowCell(71, 54, "Down"),
+    ArrowCell(71, 59, "Up"),
+    ArrowCell(64, 62, "Up"),
+    ArrowCell(62, 64, "Left"),
   ]
 
   def __init__(self):
@@ -785,8 +785,8 @@ pixels = map_img.load()
 # floor = DreamPath1F()
 # floor = DreamPath2F()
 # floor = Despair1F()
-floor = Anguish1F()
-# floor = Anguish2F()
+# floor = Anguish1F()
+floor = Anguish2F()
 # floor = Anguish3F()
 # floor = Fragile1F()
 # floor = Fragile2F()
