@@ -531,6 +531,36 @@ class DreamPath2F(Floor):
 
 class Despair1F(Floor):
   tiles = [
+    EventCell(75, 64, ""),
+    EventCell(64, 75, ""),
+    EventCell(90, 90, ""),
+    WarpCell(75, 71, 75, 79),
+    WarpCell(75, 79, 75, 71),
+    WarpCell(75, 109, 41, 75),
+    WarpCell(41, 75, 75, 109),
+    WarpCell(71, 75, 79, 75),
+    WarpCell(79, 75, 71, 75),
+    WarpCell(109, 75, 77, 77),
+    WarpCell(77, 77, 109, 75),
+    WarpCell(75, 75, 67, 67),
+    WarpCell(67, 67, 75, 75),
+    WarpCell(64, 64, 83, 83),
+    WarpCell(83, 83, 64, 64),
+    RockCell(59, 59),
+    RockCell(56, 56),
+    TreasureCell(90, 75, ""),
+    DreamTreasureCell(58, 64, ""),
+    DreamTreasureCell(57, 62, ""),
+    DreamTreasureCell(58, 61, ""),
+    DreamTreasureCell(61, 58, ""),
+    DreamTreasureCell(62, 57, ""),
+    DreamTreasureCell(64, 58, ""),
+    DreamTreasureCell(55, 61, ""),
+    DreamTreasureCell(54, 59, ""),
+    DreamTreasureCell(55, 58, ""),
+    DreamTreasureCell(58, 55, ""),
+    DreamTreasureCell(59, 54, ""),
+    DreamTreasureCell(61, 55, ""),
   ]
 
   def __init__(self):

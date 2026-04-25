@@ -193,6 +193,7 @@ FLAG 142: Suwako and Kanako recruit cutscene while in Dream Path (set to 1 after
 [...]
 
 FLAG 159: Yukari cutscene that explains increased enemy odds based on terrain (set to 1 after 135)
+FLAG 160: Patchouli gacha tutorial (set to 1 after re-recruiting her)
 
 [...]
 
@@ -463,7 +464,19 @@ FLAG 3014: Dream soul explanation cutscene
 FLAG 3015: Dream amber key explanation cutscene
 FLAG 3016: Escape back to base cutscene (90, 90)
 FLAG 3017: Game over cutscene that plays on wipe during reset (set to 2 after coming back to base, even if you never see it)
-FLAG 3050: Unknown (set to 2 after coming back to base)
+FLAG 3050: Treasure (Dream Soul of the Paradise-Yearning x1) (90, 75)
+
+[...]
+
+> Nightmare of a Ray of Hope Wrapped in Despair 1F Flags
+
+FLAG 3088: Dream Treasure (?)
+FLAG 3089: Dream Treasure (?)
+FLAG 3090: Dream Treasure (?)
+FLAG 3094: Dream Treasure (?)
+FLAG 3095: Dream Treasure (?)
+FLAG 3098: Dream Treasure (?)
+FLAG 3099: Dream Treasure (?)
 
 [...]
 

@@ -437,17 +437,15 @@ Materials:
 
 Specials:
 - Lockbox Key x2 [Chest, Horde 43.2%]
-- Dream Amber Key x1 [70 Achievements]
 - Book of Beginnings x1 [Bestiary-Horde1]
 - Dream of Sorcery x1 [Chest]
 - Money Tree Koban x1 [Bestiary-Horde2]
 - Book of Guidance x2 [Chest, Bestiary-Horde4]
 
-Achievements (6 / 70):
+Achievements (5 / 69):
 - 020 5 hordes
 - 021 30 hordes
 - 022 100 hordes
-- 039 20 types of material
 - 053 8 allies main rank 1
 - 089 8 mapping bonuses
 
@@ -480,5 +478,113 @@ Improved Infinites (Spec):
 - Lockbox Key [Any Horde 7.2% -> 43.2%]
 
 =======================================================================
-=== Nightmare Reset - Nightmare of Hope ===
+=== Nightmare Reset - Nightmare of a Ray of Hope Wrapped in Despair ===
 =======================================================================
+
+Characters: Renko / Maribel / Doremy / Junko / Hecatia / Koishi / Meiling
+
+Dream Souls (Suffering x1) [+1 Amber-Wave1-A]:
+- Nitori (requires Amber-Wave1-E)
+- Patchouli
+- Cirno (requires Cold Sapphire x2 from Oblivion 1F)
+- Rumia
+
+Dream Souls (Fragile x0) [+1 Amber-Wave1-B]:
+- Alice
+
+Renko spells:
+- Encroaching Nightmare
+- Supercompressed Ice Spray
+- Slaughtering Nightmare
+- Bursting Nightmare
+- Multilayer Amnesiac Evil-Sealing Circle
+- Occult - Rumors of a Girl Struggling Against Nightmares
+- Paralysis Prank
+- Assassin's Strike
+- Shadow Step
+- Hypnosis Eye
+- Hexaflame
+
+Awakenings:
+- Every main awakening item can be obtained through Patchouli gacha
+
+Subequips:
+- 006 Saviour Schnapps x1 [Sumireko Protector 43.2%]
+- 021 Treasure-Bound Manuscript x1 [Sumireko Protector 86.4%]
+- 027 Leeuwenhoek Lens x5 [Nightmare 10.8% x5]
+- 045 Aldebaran Memory Stone x5 [Nightmare 43.2% x5]
+- 065 Sticky Aubergine Dream x5 [Nightmare 86.4% x5]
+- 069 Deep Ring x5 [Nightmare 21.6% x5]
+- 081 Mist Piercer x1 [Sumireko Protector 21.6%]
+- 093 Blue Chemistry Pack x1 [Sumireko Protector 10.8%]
+
+Materials:
+- 014 Moonstone x6 [Sumireko Protector 64.8%, Nightmare 43.2% x5]
+
+Specials:
+- Dream Soul of the Paradise-Yearning x1 [Chest]
+- Dream Amber Key x1 [70 Achievements]
+
+Dream Amber chests:
+- At least 4 chests of Wave 1
+- At least 3 chests of Wave 1/2
+- 10 new subequips, 3 new materials, 7 locked chests (88/100, 25/40, 15/30)
+
+Subequips (Dream Amber):
+- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???)
+- 008 Master's Emblem x2 [Amber-Wave1-D x2] (new until ???)
+- 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new until ???)
+- 016 Diamond Edge x2 [Amber-Wave1-D x2]
+- 020 Gothic Plate Armor x2 [Amber-Wave1-D x2]
+- 024 Enigma Machine x2 [Amber-Wave1-D x2]
+- 028 Timekeeping Crystal Oscillator x2 [Amber-Wave1-D x2]
+- 032 Immortal Salamander Scale x2 [Amber-Wave1-D x2] (unfarmable until ???)
+- 038 Love Machine 3322 x2 [Amber-Wave1-E x2] (new until ???)
+- 040 Flowing Dress x2 [Amber-Wave1-E x2] (new until ???)
+- 042 Flying Machine x2 [Amber-Wave1-E x2] (new until ???)
+- 044 Last Leaf x2 [Amber-Wave1-E x2]
+- 046 Bangle of the Star Realm x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 048 Yin-Yang Shift Stone x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 050 Coagulated Bloog Gem x2 [Amber-Wave1-E x2]
+- 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 077 Momijihime x1 [Amber-Wave1-F] (unfarmable until ???)
+- 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until ???)
+- 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new until ???)
+- 116 Sun Shades x2 [Amber-Wave1-C x2] (new until ???)
+- 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
+- 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
+
+Materials (Dream Amber):
+- 011 Sunstone x5 [Amber-Wave2-D]
+- 012 Star Sunstone x5 [Amber-Wave2-D]
+- 013 Lattice Sunstone x5 [Amber-Wave2-D] (new until ???)
+- 014 Moonstone x5 [Amber-Wave2-D x5]
+- 015 Blue Moonstone x5 [Amber-Wave2-D] (new until ???)
+- 016 Royal Blue Moonstone x5 [Amber-Wave2-D] (new until ???)
+
+Specials (Dream Amber):
+- Dream Soul of the Suffering x1 [Amber-Wave1-A]
+- Dream Soul of the Fragile x1 [Amber-Wave1-B]
+- Dream Soul of the Unforgiven x1 [Amber-Wave2-A]
+- Lockbox Key x12 [Amber-Wave2-B x12]
+- Book of Guidance x20 [Amber-Wave2-C x20]
+- Extra Atelier Tools x1 [Amber-Wave2-E]
+
+Achievements (3 / 72):
+- 003 Defeat Sumireko's Protector
+- 032 5 boss refights
+- 039 20 types of material
+
+New Infinites (Sub):
+- 056 Impact-Resistant Polymer Liquid [????? 8.6%]
+- 072 Moon of the Eyeball [???????? 43.2%]
+
+New Infinites (Mat):
+- 030 Lightless Black Onyx [???????? 12.9%]
+- 058 Songstress's Apron [Clone] (requires Alice)
+- 059 Oiran's Lamentation [Clone] (requires Alice)
+- 063 Alluring Despair [???????? 65.8%]
+- 071 Determination Polycrystal [Despair Team 20%]
+
+Improved Infinites (Mat):
+- 050 Coagulated Blood Gem [Despair Team 3.6% -> 10%]
