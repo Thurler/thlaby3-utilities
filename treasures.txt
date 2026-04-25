@@ -51,8 +51,6 @@
 ===== Forest of Oblivion - 2F =====
 =======================================================================
 
-> Pre-Nightmare
-
 [Locked] (
   Dream of Vitality x2
   Dream of Sorcery x2
@@ -129,8 +127,6 @@
 ===== Dream Path to the Occult Balls - 1F =====
 =======================================================================
 
-> Pre-Horde
-
 [Locked] (
   Spire-Illuminating Lantern x1
   CatClaw x1
@@ -161,8 +157,6 @@
 ===== Dream Path to the Occult Balls - 2F =====
 =======================================================================
 
-> Pre-Sumireko
-
 [Locked] (Coveted Ice Sword x1) (45, 45)
 [Locked] (
   Deep Ring x1
@@ -189,7 +183,12 @@
 ===== Nightmare of a Ray of Hope Wrapped in Despair - 1F =====
 =======================================================================
 
+> Story segment
+
 (Dream Soul of the Paradise-Yearning x1) (90, 75)
+
+> Dream Treasures Wave 1
+
 [Dream] (Dream Soul of the Suffering x1) (58, 64)
 [Dream] (Dream Soul of the Fragile x1) (57, 62)
 [Dream] (Sun Shades x2) (58, 61)
@@ -218,6 +217,9 @@
   Coveted Ice Sword x1
   Whirlwind Mixer Blade x1
 ) (64, 58)
+
+> Dream Treasures Wave 2
+
 [Dream] (Dream Soul of the Unforgiven x1) (55, 61)
 [Dream] (Lockbox Key x12) (54, 59)
 [Dream] (Book of Guidance x20) (55, 58)
@@ -234,16 +236,25 @@
   Star Pendant x2
   Ouroboros Loop x1
 ) (61, 55)
+
+> Dream Treasures Wave 3
+
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
+
+> Dream Treasures Wave 4
+
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
 [Dream] (x x1) (00, 00)
+
+> Dream Treasures Wave 5
+
 [Dream] (x x1) (00, 00)
