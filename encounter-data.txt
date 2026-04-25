@@ -223,6 +223,8 @@ Tile 20 (pond that fits into a single tile) up to 1 distance:
   Brightwind Flutterers - 100
 Tile 13 (pagoda on top of pond) up to 3 distance:
   Great Bandit Mouse - 60
+Tile 25 (pagoda with white rock pillars underneath) up to 2 distance:
+  Affluent Manekineko - 40
 
 (This tile only exists on 1F and 2F)
 Tile 22 (full sakura tree) up to 1 distance:
@@ -231,8 +233,6 @@ Tile 22 (full sakura tree) up to 1 distance:
 (These tiles only exist on 2F and 3F)
 Tile 35 (orange-looking autumn tree with branches showing) up to 1 distance:
   Oni Ginkgo Seed - 200
-Tile 25 (pagoda with white rock pillars underneath) up to 2 distance:
-  Affluent Manekineko - 40
 Tile 31 (multi-floor pagoda) up to 1 distance:
   Affluent Manekineko - 40
 Tile 36 (regular yellow autumn tree) up to 2 distance:
