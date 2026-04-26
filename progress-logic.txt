@@ -704,7 +704,7 @@ Specials (Dream Amber):
 - Book of Discipline x50 [Amber-Wave3-B x50]
 - Explorer's Helmet x1 [Amber-Wave3-C]
 
-Achievements (0 / 72):
+Achievements (0 / 72) [+6]:
 (Requires Keine) [+2]
 - 033 15 boss refights
 - 034 50 boss refights
@@ -838,6 +838,7 @@ Dream Souls (Fragile x0) [+1 Amber-Wave1-B]:
 - No change
 
 Renko spells:
+- Eclipse Master Spark
 - Changeability of the Lost
 (no longer requires Aya/Patchouli/Rumia)
 - Sakura Petalgale
@@ -921,7 +922,7 @@ Dream Amber chests:
 - At least 1 chest of Wave 1/2/3 (10 total)
 - 5 new characters, 7 new subs, 4 new mats, 10 locked chests (14/24, 107/138, 44/60, 23/30)
 
-Achievements (2 / 74):
+Achievements (2 / 74) [+4]:
 - 035 100 types of sub
 - 040 40 types of material
 (Requires Nitori, no longer requires 2 other unlocks) [+1]
