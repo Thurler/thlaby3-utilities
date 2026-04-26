@@ -769,7 +769,6 @@ New Infinites (Mat):
 - 064 Fool's Petal [Blossoming Fairy 8.6%]
 (Requires shortcut miniboss)
 - 024 Flowering Emerald [Terror-Gluttonizing Tree 5.7%]
-- 058 Great Nightmare Weapon [Soldier of the Sorrowful Dream 2.8% -> 4.3%]
 - 065 Despondent Peat [Raging Swamp Monster 32.4%]
 (Requires Aya/Patchouli/Rumia)
 - 055 Celestial's Hagoromo [Symbol of Light and Wind 21.6%]
@@ -806,9 +805,12 @@ Improved Infinites (Mat):
 - 014 Moonstone [Symbol of Light and Wind 39.6% -> 45%]
 - 015 Blue Moonstone [Symbol of Light and Wind 5.4% -> 7.2%]
 (Requires shortcut miniboss)
-- 014 Moonstone [Raging Swamp Monster 45%% -> 59.4%]
+- 014 Moonstone [Raging Swamp Monster 45% -> 59.4%]
 - 015 Blue Moonstone [Raging Swamp Monster 5.4% -> 12.6%]
 - 043 Green Dream [Terror-Gluttonizing Tree 5.7% -> 9%]
+- 058 Great Nightmare Weapon [Soldier of the Sorrowful Dream 2.8% -> 4.3%]
+(Requires Keine)
+- 014 Moonstone [Sumireko Protector 59.4% -> 64.8%]
 (Requires Keine)
 - 014 Moonstone [Sumireko Protector 59.4% -> 64.8%]
 
