@@ -730,12 +730,12 @@ New Infinites (Sub):
 - 085 Sea Hunter [Maneater Carp 2.1%]
 - 089 Pure Sake - Wild Boar [Bakeneko Constable 1.4%]
 - 090 Illegal LAN-Connected Yakuza Gun [Old Sakura Informant 1.4%]
+- 099 Make-or-Break EM Blade [Great Bandit Mouse 6.9%]
+- 101 838861 Casino Coins [Affluent Manekineko 8.6%]
 - 103 Joy Capsule [Swaying Dream Chrysalis 0.7%]
 - 111 Defense Staff [Brightwind Flutterers 0.3%]
 (Requires shortcut miniboss)
 - 084 Krampus Sack [Soldier of the Sorrowful Dream 4.3%]
-- 099 Make-or-Break EM Blade [Great Bandit Mouse 6.9%]
-- 101 838861 Casino Coins [Affluent Manekineko 8.6%]
 - 106 Whirlwind Mixer Blade [Raging Swamp Monster 6.4%]
 - 138 Pimea Aurinko [Terror-Gluttonizing Tree 0.07%]
 (Requires Nitori and shortcut miniboss)
