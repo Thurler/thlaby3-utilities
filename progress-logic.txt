@@ -603,8 +603,9 @@ Dream Souls (Fragile x0) [+1 Amber-Wave1-B]:
 - Aya
 - Keine (requires shortcut miniboss)
 
-Awakenings (Requires Nitori):
+Awakenings:
 - 088 Total Protection x1 [75 achievements]
+(Requires Nitori)
 - Junko can reach level 1
 - Meiling, Nitori, Aya, Cirno, Doremy, Hecatia can reach level 2
 - Maribel, Alice, Patchouli, Keine, Koishi, Rumia can reach level 2 using limited Element Flask
@@ -731,6 +732,8 @@ New Infinites (Sub):
 - 032 Immortal Salamander Scale [Clone]
 (Requires Alice and Amber-Wave2-E and Amber-Wave1-D)
 - 004 Hero Gep's Potion [Clone]
+(Requires Keine)
+- 093 Blue Chemistry Pack [Sumireko Protector 10.8%]
 
 New Infinites (Mat):
 - 002 Tamahane Ingot [Topaz Elemental 10%]
@@ -755,6 +758,21 @@ Improved Infinites (Sub):
 - 063 Hunting Know-How [Maneater Carp 5.7% -> 7.9%]
 - 068 CatClaw [Bakeneko Constable 7.2% -> 8.6%]
 - 076 Thief Gloves [Great Bandit Mouse 7.2 -> 17.2%]
+(Requires Keine)
+- 006 Saviour Schnapps [Sumireko Protector 10.8% -> 43.2%]
+- 011 Getitup! [Ran 7.2% -> 10.8%]
+- 021 Treasure-Bound Manuscript [Sumireko Protector 11.5% -> 86.4%]
+- 026 Inharmonious Gearset [Ran 36% -> 43.2%]
+- 027 Leeuwenhoek Lens [Nightmare 2.8% -> 10.8%]
+- 030 Counter Scarf [Cirno 21.6% -> 43.2%]
+- 039 Frozen Frog [Cirno 15.8% -> 86.4%]
+- 056 Impact-Resistant Polymer Liquid [Shikigami 8.6% -> 86.4%]
+- 059 Oiran's Lamentation [Shikigami Clone -> 21.6%]
+- 064 Shabby Katashiro [Ran 1.5% -> 86.4%]
+- 065 Sticky Aubergine Dream [Nightmare 11.5% -> 86.4%]
+- 077 Momijihime [Ran 11.5% -> 21.6%]
+- 080 Cloak of the Bat [Cirno 7.2% -> 10.8%]
+- 081 Mist Piercer [Sumireko Protector Craft -> 21.6%]
 
 Improved Infinites (Mat):
 - 011 Sunstone [Anguish Band 72% -> 79.2%]
@@ -766,6 +784,8 @@ Improved Infinites (Mat):
 - 014 Moonstone [Raging Swamp Monster 39.6% -> 59.4%]
 - 015 Blue Moonstone [Raging Swamp Monster 5.4% -> 12.6%]
 - 043 Green Dream [Terror-Gluttonizing Tree 5.7% -> 9%]
+(Requires Keine)
+- 014 Moonstone [Sumireko Protector 59.4% -> 64.8%]
 
 >< Reference
 
