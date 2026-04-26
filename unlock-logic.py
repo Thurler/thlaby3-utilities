@@ -5,14 +5,18 @@ subs = [
   7, 78, 86, # Ran
   15, 27, 50, 57, 67, 69, 70, 71, 83, 87, 91, 95, # Horde
   10, 16, 19, 20, 28, 53, 54, 80, 88, # Sumireko Protector
-  56, 72 # Reset
+  56, 72, # Reset
+  11, 40, 41, 42, 47, 73, 74, 77, 79, 85, 89, 90, 103, 111, # Marisa
+  84, 99, 101, 106, 138 # Marisa with miniboss
 ]
 mats = [
   1, 6, 14, 23, 33, 39, 41, 45, 59, # Cirno
   29, 57, 61, # Nightmare
   25, 37, 49, 62, # Horde
   11, 12, # Sumireko Protector
-  30, 63, 71 # Reset
+  30, 63, 71, # Reset
+  2, 15, 19, 21, 27, 34, 35, 42, 43, 47, 58, 64, # Marisa
+  24, 58, 65 # Marisa with miniboss
 ]
 breaks = [1, 2, 3, 4, 5, 6, 7, 8] # Cirno
 specs = [

@@ -528,28 +528,29 @@ Specials:
 Dream Amber chests:
 - At least 4 chests of Wave 1
 - At least 3 chests of Wave 1/2
-- 10 new subequips, 3 new materials, 7 locked chests (88/100, 25/40, 15/30)
+- 3 new characters, 9 new subs, 3 new mats, 7 locked chests (10/24, 88/100, 25/40, 15/30)
+- 2 chests of wave 2 (B/C) are obsolete (2 total)
 
 Subequips (Dream Amber):
-- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???)
-- 008 Master's Emblem x2 [Amber-Wave1-D x2] (new until ???)
+- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa)
+- 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until ???)
 - 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new until ???)
 - 016 Diamond Edge x2 [Amber-Wave1-D x2]
 - 020 Gothic Plate Armor x2 [Amber-Wave1-D x2]
 - 024 Enigma Machine x2 [Amber-Wave1-D x2]
 - 028 Timekeeping Crystal Oscillator x2 [Amber-Wave1-D x2]
-- 032 Immortal Salamander Scale x2 [Amber-Wave1-D x2] (unfarmable until ???)
+- 032 Immortal Salamander Scale x2 [Amber-Wave1-D x2] (unfarmable until ???, cloneable by Marisa)
 - 038 Love Machine 3322 x2 [Amber-Wave1-E x2] (new until ???)
-- 040 Flowing Dress x2 [Amber-Wave1-E x2] (new until ???)
-- 042 Flying Machine x2 [Amber-Wave1-E x2] (new until ???)
+- 040 Flowing Dress x2 [Amber-Wave1-E x2] (new/unfarmable until Marisa)
+- 042 Flying Machine x2 [Amber-Wave1-E x2] (new/unfarmable until Marisa)
 - 044 Last Leaf x2 [Amber-Wave1-E x2]
 - 046 Bangle of the Star Realm x2 [Amber-Wave1-E x2] (unfarmable until ???)
 - 048 Yin-Yang Shift Stone x2 [Amber-Wave1-E x2] (unfarmable until ???)
 - 050 Coagulated Bloog Gem x2 [Amber-Wave1-E x2]
 - 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until ???)
-- 077 Momijihime x1 [Amber-Wave1-F] (unfarmable until ???)
+- 077 Momijihime x1 [Amber-Wave1-F] (unfarmable until Marisa)
 - 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until ???)
-- 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new until ???)
+- 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new/unfarmable until Marisa shortcut, ??? otherwise)
 - 116 Sun Shades x2 [Amber-Wave1-C x2] (new until ???)
 - 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
 - 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
@@ -559,7 +560,7 @@ Materials (Dream Amber):
 - 012 Star Sunstone x5 [Amber-Wave2-D]
 - 013 Lattice Sunstone x5 [Amber-Wave2-D] (new until ???)
 - 014 Moonstone x5 [Amber-Wave2-D x5]
-- 015 Blue Moonstone x5 [Amber-Wave2-D] (new until ???)
+- 015 Blue Moonstone x5 [Amber-Wave2-D] (new/unfarmable until Marisa)
 - 016 Royal Blue Moonstone x5 [Amber-Wave2-D] (new until ???)
 
 Specials (Dream Amber):
@@ -581,10 +582,210 @@ New Infinites (Sub):
 
 New Infinites (Mat):
 - 030 Lightless Black Onyx [???????? 12.9%]
-- 058 Songstress's Apron [Clone] (requires Alice and Amber-Wave2-E)
-- 059 Oiran's Lamentation [Clone] (requires Alice and Amber-Wave2-E)
 - 063 Alluring Despair [???????? 65.8%]
 - 071 Determination Polycrystal [Despair Team 20%]
+(Requires Alice and Amber-Wave2-E)
+- 058 Songstress's Apron [Clone]
+- 059 Oiran's Lamentation [Clone]
 
 Improved Infinites (Mat):
 - 050 Coagulated Blood Gem [Despair Team 3.6% -> 10%]
+
+=======================================================================
+=== Marisa - Anguish of the Lost 1F / 2F ===
+=======================================================================
+
+Dream Souls (Suffering x1) [+1 Amber-Wave1-A]:
+- Nitori no longer requires Amber-Wave1-E
+- Cirno no longer requires limited resource
+
+Dream Souls (Fragile x0) [+1 Amber-Wave1-B]:
+- Aya
+- Keine (requires shortcut miniboss)
+
+Awakenings (Requires Nitori):
+- 088 Total Protection x1 [75 achievements]
+- Junko can reach level 1
+- Meiling, Nitori, Aya, Cirno, Doremy, Hecatia can reach level 2
+- Maribel, Alice, Patchouli, Keine, Koishi, Rumia can reach level 2 using limited Element Flask
+(Requires Keine)
+- 059 Form of Wind x3 [Archive-AotL-2F-h x3]
+- 063 Form of Mysticism x1 [Archive-AotL-1F-h]
+
+Subequips:
+- 006 Saviour Schnapps x1 [Chest]
+- 007 Source of Magic x1 [Chest]
+- 023 Symbol of Faith x2 [Chest x2]
+- 040 Flowing Dress x1 [Chest]
+- 041 Safety Goggles x1 [Chest]
+- 042 Flying Machine x1 [Chest]
+- 045 Aldebaran Memory Stone x3 [Chest, Locked Chest I x2 - 2]
+- 046 Bangle of the Star Realm x1 [Locked Chest I - 2]
+- 047 Spirit Barrier Sign x1 [Chest]
+- 060 Plague Doctor Mask x1 [Chest]
+- 068 CatClaw x2 [Chest, Chest]
+- 071 Bone Scrap x1 [Chest]
+- 073 Minette Mage's Silvervine x1 [Chest]
+- 074 Champion's Windbomb x1 [Chest]
+- 075 Arde Dagger x2 [Chest, Chest]
+- 076 Thief Gloves x2 [Chest, Locked Chest I - 2]
+- 081 Mist Piercer x2 [Chest, Locked Chest I - 2]
+- 083 Broken Lead Heart x1 [Chest]
+(Requires Keine)
+- 081 Mist Piercer [Archive-AotL-1F-F]
+- 120 Juicy Queenbeet x1 [Lunatic-1]
+- 121 Ouroboros Loop x1 [Lunatic-3]
+
+Materials:
+- 007 Element Flask x3 [Chest x3]
+- 011 Sunstone x4 [Chest x2, Chest x2]
+- 014 Moonstone x4 [Chest x2, Chest x2]
+(Requires Keine)
+- 030 Lightless Black Onyx x3 [Archive-NoH-1F-h x3]
+
+Specials:
+- Lockbox Key x2 [Chest, Chest]
+- Dream of Hunting x1 [Chest]
+- Book of Guidance x1 [Chest]
+- Extra Atelier Tools x1 [Chest]
+(Requires Aya)
+- Lockbox Key x2 [Bestiary-Reg4 x2]
+- Dream of Vitality x5 [Bestiary-Reg5 x5]
+- Dream of Sorcery x5 [Bestiary-Horde5 x5]
+- Dream of Energy x5 [Bestiary-Rare5 x5]
+- Dream of Carnage x3 [Bestiary-Rare4 x3]
+- Dream of Affection x3 [Bestiary-Rare6 x3]
+- Book of Discipline x3 [Bestiary-Horde6 x3]
+(Requires Keine)
+- Dream Amber Key x2 [Lunatic-2, Lunatic-4]
+- Phantasmagoria Pouch x1 [Lunatic-5]
+
+Dream Amber chests:
+- 3 new characters, 5 new subs, 2 new mats, 7 locked chests (10/24, 97/100, 38/40, 16/30)
+  - 1 new subequip (Booster 0.8 if Nitori and uses limited Element Flask)
+  - 1 new subequip (Juicy Queenbeet if Keine)
+  - 1 new subequip (Ouroboros Loop if Keine)
+(Requires Keine)
+- At least 1 chest of Wave 1/2
+- At least 1 chest of Wave 1/2/3
+- 2 chests of wave 3 (B/D) are obsolete (4 total)
+- 3 new characters, 7 new subs, 4 new mats, 9 locked chests (10/24, 99/100, 40/40, 18/30)
+
+Subequips (Dream Amber):
+- 126 Guiding Moonlight x1 [Amber-Wave3-F] (new until ???)
+- 127 Aleksander's Magic Meteor x1 [Amber-Wave3-F] (new until ???)
+
+Materials (Dream Amber):
+- 071 Determination Polycrystal x40 [Amber-Wave3-D x40]
+- 074 Despair Crystal x20 [Amber-Wave3-D x20]
+- 079 Gensokyo Fragment x2 [Amber-Wave3-E x2] (new until ???)
+- 080 Chaos Fragment x2 [Amber-Wave3-E x2] (new until ???)
+
+Specials (Dream Amber):
+- Dream Soul of the Solitude x1 [Amber-Wave3-A]
+- Book of Discipline x50 [Amber-Wave3-B x50]
+- Explorer's Helmet x1 [Amber-Wave3-C]
+
+Achievements (0 / 72):
+(Requires Keine) [+2]
+- 033 15 boss refights
+- 034 50 boss refights
+(Requires Nitori and Keine and Booster 0.8 craft and Amber-Wave1-C/D/E and Amber-Wave2-F) [+1]
+- 035 100 types of sub
+(Requires Keine and Amber-Wave2-D and Amber-Wave3-E) [+1]
+- 040 40 types of material
+(Requires Nitori and 2 other unlocks) [+1]
+- 054 8 allies main rank 2
+(Requires Aya) [+1]
+- 087 12 bestiary rewards
+
+New Infinites (Sub):
+- 011 Getitup! [Blossoming Fairy 7.2%]
+- 040 Flowing Dress [Maneater Carp 2.1%]
+- 041 Safety Goggles [Topaz Elemental 11.5%]
+- 042 Flying Machine [Topaz Elemental 1.4%]
+- 047 Spirit Barrier Sign [Brightwind Flutterers 11.5%]
+- 073 Minette Mage's Silvervine [Anguish Team 17.2%]
+- 074 Champion's Windbomb [Anguish Band 17.2%]
+- 077 Momijihime [Anguish Band 11.5%]
+- 079 Ninja Palm [Anguish Team 11.5%]
+- 085 Sea Hunter [Maneater Carp 2.1%]
+- 089 Pure Sake - Wild Boar [Bakeneko Constable 1.4%]
+- 090 Illegal LAN-Connected Yakuza Gun [Old Sakura Informant 1.4%]
+- 103 Joy Capsule [Swaying Dream Chrysalis 0.7%]
+- 111 Defense Staff [Brightwind Flutterers 0.3%]
+(Requires shortcut miniboss)
+- 084 Krampus Sack [Soldier of the Sorrowful Dream 4.3%]
+- 099 Make-or-Break EM Blade [Great Bandit Mouse 6.9%]
+- 101 838861 Casino Coins [Affluent Manekineko 8.6%]
+- 106 Whirlwind Mixer Blade [Raging Swamp Monster 6.4%]
+- 138 Pimea Aurinko [Terror-Gluttonizing Tree 0.07%]
+(Requires Nitori)
+- 081 Mist Piercer [Craft]
+(Requires Alice)
+- 058 Songstress's Apron [Clone]
+- 059 Oiran's Lamentation [Clone]
+(Requires Nitori and Alice and 1 limited Element Flask)
+- 031 Booster 0.8 [Clone]
+(Requires Alice and Amber-Wave2-E)
+- 032 Immortal Salamander Scale [Clone]
+(Requires Alice and Amber-Wave2-E and Amber-Wave1-D)
+- 004 Hero Gep's Potion [Clone]
+
+New Infinites (Mat):
+- 002 Tamahane Ingot [Topaz Elemental 10%]
+- 015 Blue Moonstone [Affluent Manekineko 5.4%]
+- 019 Cold Sapphire [Maneater Carp 8.6%]
+- 021 Wind Topaz [Topaz Elemental 11.5%]
+- 027 Spirit Opal [Brightwind Flutterers 7.9%]
+- 034 Antique Perforated Coins [Affluent Manekineko 8.6%]
+- 035 Youkai's Geta [Thieving Mouse 11.5%]
+- 042 Beast Claw Accessory [Bakeneko Constable 5.4%]
+- 043 Large Feather [Blossoming Fairy 12.9%]
+- 047 Soft Sealife Scale [Maneater Carp 14.4%]
+- 058 Great Nightmare Weapon [Swaying Dream Chrysalis 2.8%]
+- 064 Fool's Petal [Blossoming Fairy 8.6%]
+(Requires shortcut miniboss)
+- 024 Flowering Emerald [Terror-Gluttonizing Tree 5.7%]
+- 058 Great Nightmare Weapon [Soldier of the Sorrowful Dream 2.8% -> 4.3%]
+- 065 Despondent Peat [Raging Swamp Monster 32.4%]
+
+Improved Infinites (Sub):
+- 001 Taikan's Pine Sugar [Old Sakura Informant 8.6% -> 11.5%]
+- 063 Hunting Know-How [Maneater Carp 5.7% -> 7.9%]
+- 068 CatClaw [Bakeneko Constable 7.2% -> 8.6%]
+- 076 Thief Gloves [Great Bandit Mouse 7.2 -> 17.2%]
+
+Improved Infinites (Mat):
+- 011 Sunstone [Anguish Band 72% -> 79.2%]
+- 012 Star Sunstone [Anguish Band 7.2% -> 11.5%]
+- 014 Moonstone [Affluent Manekineko 28.8% -> 39.6%]
+- 029 Jaggy Leaf [Blossoming Fairy 8.6% -> 10%]
+- 071 Determination Polycrystal [Anguish Team 20% -> 36%]
+(Requires shortcut miniboss)
+- 014 Moonstone [Raging Swamp Monster 39.6% -> 59.4%]
+- 015 Blue Moonstone [Raging Swamp Monster 5.4% -> 12.6%]
+- 043 Green Dream [Terror-Gluttonizing Tree 5.7% -> 9%]
+
+>< Reference
+
+- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa)
+- 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until ???)
+- 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new until ???)
+- 032 Immortal Salamander Scale x2 [Amber-Wave1-D x2] (unfarmable until ???, cloneable by Marisa)
+- 038 Love Machine 3322 x2 [Amber-Wave1-E x2] (new until ???)
+- 046 Bangle of the Star Realm x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 048 Yin-Yang Shift Stone x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until ???)
+- 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new/unfarmable until Marisa shortcut, ??? otherwise)
+- 116 Sun Shades x2 [Amber-Wave1-C x2] (new until ???)
+- 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
+- 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
+- 126 Guiding Moonlight x1 [Amber-Wave3-F] (new until ???)
+- 127 Aleksander's Magic Meteor x1 [Amber-Wave3-F] (new until ???)
+
+- 013 Lattice Sunstone x5 [Amber-Wave2-D] (new until ???)
+- 016 Royal Blue Moonstone x5 [Amber-Wave2-D] (new until ???)
+- 079 Gensokyo Fragment x2 [Amber-Wave3-E x2] (new until ???)
+- 080 Chaos Fragment x2 [Amber-Wave3-E x2] (new until ???)
