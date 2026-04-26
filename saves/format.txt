@@ -197,7 +197,8 @@ FLAGS 901 to 929: set to 1 after prologue, also seem to be tied to generic dunge
 
 [...]
 
-FLAG 999: unknown (set to 2 on Chen recruit)
+FLAG 998: Youmu recruit hint (set to 1 on rock interaction) (set to 2 on Youmu recruit)
+FLAG 999: Chen recruit hint (set to 1 on rock interaction) (set to 2 on Chen recruit)
 
 > Forest of Oblivion 1F Map Flags
 
@@ -539,12 +540,52 @@ FLAG 4197: Treasure before Marisa (?)
 FLAG 4198: Treasure before Marisa (?)
 FLAG 4199: Locked Treasure after Marisa (Determination Polycrystal x8) (80, 75)
 
+> Anguish of the Lost 3F Relay Circles and Shortcuts
+
+> FLAG 4200: 3F Relay unlock
+> FLAG 4201: 3F Inner Relay unlock
+> FLAG 4206: Final vertical shortcut unlock
+> FLAG 4207: Final horizontal shortcut unlock
+> FLAG 4208: Halfway vertical shortcut unlock
+> FLAG 4209: Halfway horizontal shortcut unlock
+
 > Anguish of the Lost 3F Event Flags
 
-FLAG 4210: ??? (set to 1 after 4010)
+FLAG 4210: First visit nightmare Reimu cutscene (set to 1 after 4010)
 FLAG 4211: ??? (set to 1 after 4010)
 FLAG 4212: ??? (set to 1 after 4010)
 FLAG 4213: ??? (set to 1 after 4010)
+
+> Anguish of the Lost 3F Treasure Flags
+
+FLAG 4282: Treasure (?)
+FLAG 4283: Treasure (?)
+FLAG 4284: Treasure (?)
+FLAG 4285: Treasure (?)
+FLAG 4286: Treasure (?)
+FLAG 4287: Treasure (?)
+FLAG 4288: Locked Treasure (
+  Blue Chemistry Pack x1
+  Elysium System x1
+  Flowing Dress x1
+) (92, 56)
+FLAG 4289: Treasure (?)
+FLAG 4290: Treasure (?)
+FLAG 4291: Treasure (?)
+FLAG 4292: Treasure (?)
+FLAG 4293: Treasure (?)
+FLAG 4294: Treasure (?)
+FLAG 4295: Treasure (?)
+FLAG 4296: Locked Treasure (
+  Flying Machine x1
+  Yin-Yang Shift Stone x1
+  Coagulated Blood Gem x1
+  Broken Lead Heart x1
+  Pure Sake - Wild Boar x1
+) (64, 100)
+FLAG 4297: Treasure (?)
+FLAG 4298: Treasure (?)
+FLAG 4299: Treasure (?)
 
 ===== PGD FILE =====
 
