@@ -239,12 +239,21 @@
 
 > Dream Treasures Wave 3
 
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
+[Dream] (Dream Soul of the Solitude x1) (52, 58)
+[Dream] (Book of Discipline x50) (51, 56)
+[Dream] (Explorer's Helmet x1) (52, 55)
+[Dream] (
+  Determination Polycrystal x40
+  Despair Crystal x20
+) (55, 52)
+[Dream] (
+  Gensokyo Fragment x2
+  Chaos Fragment x2
+) (56, 51)
+[Dream] (
+  Guiding Moonlight x1
+  Aleksander's Magic Meteor x1
+) (58, 52)
 
 > Dream Treasures Wave 4
 

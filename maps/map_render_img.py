@@ -564,6 +564,7 @@ class Despair1F(Floor):
     WarpCell(83, 83, 64, 64),
     RockCell(59, 59),
     RockCell(56, 56),
+    RockCell(53, 53),
     TreasureCell(90, 75, ""),
     DreamTreasureCell(58, 64, ""),
     DreamTreasureCell(57, 62, ""),
@@ -577,6 +578,12 @@ class Despair1F(Floor):
     DreamTreasureCell(58, 55, ""),
     DreamTreasureCell(59, 54, ""),
     DreamTreasureCell(61, 55, ""),
+    DreamTreasureCell(52, 58, ""),
+    DreamTreasureCell(51, 56, ""),
+    DreamTreasureCell(52, 55, ""),
+    DreamTreasureCell(55, 52, ""),
+    DreamTreasureCell(56, 51, ""),
+    DreamTreasureCell(58, 52, ""),
   ]
 
   def __init__(self):
