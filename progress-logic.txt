@@ -667,7 +667,7 @@ Specials:
 - Phantasmagoria Pouch x1 [Lunatic-5]
 
 Dream Amber chests:
-- 3 new characters, 5 new subs, 2 new mats, 7 locked chests (10/24, 97/100, 38/40, 16/30)
+- 3 new characters, 5 new subs, 2 new mats, 7 locked chests (10/24, 97/100, 39/40, 16/30)
   - 1 new subequip (Booster 0.8 if Nitori and uses limited Element Flask)
   - 1 new subequip (Stellar Twister if Aya/Patchouli/Rumia)
   - 1 new subequip (Juicy Queenbeet if Keine)
@@ -677,7 +677,7 @@ Dream Amber chests:
 - At least 1 chest of Wave 1/2
 - At least 1 chest of Wave 1/2/3
 - 2 chests of wave 3 (B/D) are obsolete (4 total)
-- 3 new characters, 7 new subs, 4 new mats, 9 locked chests (10/24, 99/100, 40/40, 18/30)
+- 3 new characters, 7 new subs, 4 new mats, 9 locked chests (10/24, 99/100, 41/40, 18/30)
 
 Subequips (Dream Amber):
 - 126 Guiding Moonlight x1 [Amber-Wave3-F] (new until ???)
@@ -711,7 +711,12 @@ Achievements (0 / 72):
     - (1) Nitori and uses limited Element Flask
 ) [+1]
 - 035 100 types of sub
-(Requires Keine and Amber-Wave2-D and Amber-Wave3-E) [+1]
+(
+  Requires 3 points out of 5 below:
+    - (2) Amber-Wave2-D
+    - (2) Amber-Wave3-E
+    - (1) Aya/Patchouli/Rumia
+) [+1]
 - 040 40 types of material
 (Requires Nitori and 2 other unlocks) [+1]
 - 054 8 allies main rank 2
