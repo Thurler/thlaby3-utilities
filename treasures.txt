@@ -284,3 +284,26 @@
 (CatClaw x1) (75, 77)
 (Saviour Schnapps x1) (66, 100)
 (Thief Gloves x1) (70, 105)
+
+=======================================================================
+===== Anguish of the Lost - 2F =====
+=======================================================================
+
+> Pre-Marisa
+
+(Flying Machine x1) (67, 85)
+(Bone Scrap x1) (83, 85)
+(Lockbox Key x1) (48, 90)
+(Spirit Barrier Sign x1) (102, 90)
+(Moonstone x2) (98, 96)
+(Broken Lead Heart x1) (76, 100)
+(Element Flask x3) (54, 103)
+(Flowing Dress x1) (71, 107)
+(CatClaw x1) (96, 111)
+(Sunstone x2) (52, 118)
+(Symbol of Faith x2) (67, 129)
+(Source of Magic x1) (83, 129)
+(Minette Mage's Silvervine x1) (41, 131)
+(Arde Dagger x1) (109, 131)
+
+> Post-Marisa

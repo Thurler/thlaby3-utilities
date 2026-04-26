@@ -478,13 +478,35 @@ FLAG 4097: Treasure (?)
 FLAG 4098: Treasure (?)
 FLAG 4099: Treasure (?)
 
+> Anguish of the Lost 2F Relay Circles
+
+> FLAG 4100: 2F Relay unlock
+
 > Anguish of the Lost 2F Event Flags
 
 FLAG 4110: ??? (set to 1 after 4010)
 FLAG 4111: ??? (set to 1 after 4010)
 FLAG 4112: ??? (set to 1 after 4010)
 FLAG 4113: ??? (set to 1 after 4010)
+FLAG 4114: 2F Orb pressed status (set to 1 after interacting) (75, 95)
 FLAG 4117: Difficulty lock event for post-demo players before a boss fight (set to 2 on any difficulty select)
+
+> Anguish of the Lost 2F Treasure Flags
+
+FLAG 4185: Treasure (?)
+FLAG 4186: Treasure (?)
+FLAG 4187: Treasure (?)
+FLAG 4188: Treasure (?)
+FLAG 4189: Treasure (?)
+FLAG 4190: Treasure (?)
+FLAG 4191: Treasure (?)
+FLAG 4192: Treasure (?)
+FLAG 4193: Treasure (?)
+FLAG 4194: Treasure (?)
+FLAG 4195: Treasure (?)
+FLAG 4196: Treasure (?)
+FLAG 4197: Treasure (?)
+FLAG 4198: Treasure (?)
 
 > Anguish of the Lost 3F Event Flags
 

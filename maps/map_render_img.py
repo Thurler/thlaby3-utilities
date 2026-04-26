@@ -621,6 +621,26 @@ class Anguish1F(Floor):
 
 class Anguish2F(Floor):
   tiles = [
+    StairsDownCell(74, 88),
+    RelayCircleCell(76, 90),
+    ArrowCell(75, 92, "Up"),
+    GreenOrbCell(75, 95),
+    RockCell(75, 81),
+    BossCell(75, 79, ""),
+    TreasureCell(67, 85, ""),
+    TreasureCell(83, 85, ""),
+    TreasureCell(48, 90, ""),
+    TreasureCell(102, 90, ""),
+    TreasureCell(98, 96, ""),
+    TreasureCell(76, 100, ""),
+    TreasureCell(54, 103, ""),
+    TreasureCell(71, 107, ""),
+    TreasureCell(96, 111, ""),
+    TreasureCell(52, 118, ""),
+    TreasureCell(67, 129, ""),
+    TreasureCell(83, 129, ""),
+    TreasureCell(41, 131, ""),
+    TreasureCell(109, 131, ""),
   ]
 
   def __init__(self):
