@@ -532,7 +532,7 @@ Dream Amber chests:
 - 2 chests of wave 2 (B/C) are obsolete (2 total)
 
 Subequips (Dream Amber):
-- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa)
+- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa, craftable by Reimu)
 - 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until ???)
 - 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new until ???)
 - 016 Diamond Edge x2 [Amber-Wave1-D x2]
@@ -816,12 +816,138 @@ Improved Infinites (Mat):
 - 058 Great Nightmare Weapon [Soldier of the Sorrowful Dream 2.8% -> 4.3%]
 (Requires Keine)
 - 014 Moonstone [Sumireko Protector 59.4% -> 64.8%]
+
+=======================================================================
+=== Reimu - Anguish of the Lost 2F / 3F ===
+=======================================================================
+
+Characters: Marisa / Chen
+
+Dream Souls (Suffering x3) [+1 Amber-Wave1-A]:
+- All characters can be recruited
+
+Dream Souls (Fragile x0) [+1 Amber-Wave1-B]:
+- No change
+
+Renko spells:
+- Changeability of the Lost
+(no longer requires Aya/Patchouli/Rumia)
+- Sakura Petalgale
+
+Awakenings:
+- 041 Hand of Mysticism x1 [Marisa 43.2%]
+(Requires Nitori)
+- Chen can reach level 2
+- Marisa can reach level 2 using limited Element Flask
+(Requires Nitori, no longer requires Aya/Patchouli/Rumia)
+- Junko can reach level 2 using limited Element Flask
+
+Subequips:
+- 007 Source of Magic x1 [Marisa 57.6%]
+- 010 Recovery Izumi x1 [Chest]
+- 015 Shuten Douji's Armband x1 [Chest]
+- 024 Enigma Machine x1 [Marisa 43.2%]
+- 040 Flowing Dress x1 [Locked Chest L - 2]
+- 041 Safety Goggles x2 [Chest, Chest]
+- 042 Flying Machine x1 [Locked Chest M - 2]
+- 045 Aldebaran Memory Stone x1 [Chest]
+- 046 Bangle of the Star Realm x1 [Chest]
+- 048 Yin-Yang Shift Stone x2 [Chest, Locked Chest M - 2]
+- 049 Ominous Gemstone x2 [Chest, Chest]
+- 050 Coagulated Blood Gem x1 [Locked Chest M - 2]
+- 054 Illegally Modified Stun Gun x1 [Chest]
+- 055 Dwarven Axe x1 [Chest]
+- 058 Songstress's Apron x1 [Chest]
+- 060 Plague Doctor Mask x1 [Chest]
+- 068 CatClaw x1 [Chest]
+- 070 Environmental Puzzle Hallucination x1 [Chest]
+- 073 Minette Mage's Silvervine x2 [Chest, Locked Chest K - 2]
+- 074 Champion's Windbomb x1 [Locked Chest K - 2]
+- 075 Arde Dagger x1 [Locked Chest K - 2]
+- 076 Thief Gloves x1 [Locked Chest K - 2]
+- 077 Momijihime x2 [Chest, Locked Chest K - 2]
+- 078 Club of Hill Giant Strength x2 [Chest, Locked Chest K - 2]
+- 079 Ninja Palm x2 [Chest, Locked Chest K - 2]
+- 083 Broken Lead Heart x1 [Locked Chest M - 2]
+- 089 Pure Sake - Wild Boar x2 [Chest, Locked Chest M - 2]
+- 093 Blue Chemistry Pack x1 [Locked Chest L - 2]
+- 097 Summon Giga Disc x1 [Marisa 14.4%]
+- 109 Elysium System x1 [Locked Chest L - 2]
+
+Materials:
+- 011 Sunstone x2 [Chest x2]
+- 014 Moonstone x2 [Chest x2]
+- 071 Determination Polycrystal x8 [Locked Chest J x8 - 2]
+
+Specials:
+- Dream Soul of the Suffering x2 [Chest, Chest]
+- Lockbox Key x1 [Chest]
+- Dream of Energy x1 [Chest]
+- Dream of Illusions x1 [Chest]
+- Book of Guidance x1 [Chest]
+- Extra Atelier Tools x1 [Chest]
+- Phantasmagora Pouch x1 [Chest]
+
+Achievements (2 / 74):
+- 035 100 types of sub
+- 040 40 types of material
+
+New Infinites (Main):
 (Requires Keine)
-- 014 Moonstone [Sumireko Protector 59.4% -> 64.8%]
+- 041 Hand of Mysticism [Marisa 43.2%]
+
+New Infinites (Sub):
+- 094 Stomped Hoarfrost of the Tarnished [Mist Beast of the Lost Dream 1.4%]
+- 098 Twinkling Golden Strawberry [Oni Ginkgo Blossom 0.4%]
+- 108 Potion of Healing [Spring Breeze Kedama 0.3%]
+(no longer requires Keine or Nitori and shortcut miniboss)
+- 081 Mist Piercer [Mist Beast of the Lost Dream Craft -> 3.6%]
+(no longer requires Aya/Patchouli/Rumia)
+- 117 Stellar Twister [Symbol of Light and Wind 4.6%]
+(Requires Nitori OR Alice and Amber-Wave1-D, no longer requires Amber-Wave2-E)
+- 004 Hero Gep's Potion [Craft / Clone]
+(Requires Alice, no longer requires Amber-Wave2-E)
+- 032 Immortal Salamander Scale [Clone]
+(Requires Alice)
+- 055 Dwarven Axe [Clone]
+(Requires Keine)
+- 097 Summon Giga Disc [Marisa 14.4%]
+(Requires shortcut miniboss)
+- 110 True Sword of the Forest [Wildscream Seedbed 6.8%]
+
+New Infinites (Mat):
+- 026 Occult Ametrine [Venerable Elder Ginkgo 5.7%]
+- 060 Kedama Gem [Spring Breeze Kedama 4.3%]
+(no longer requires Aya/Patchouli/Rumia)
+- 055 Celestial's Hagoromo [Symbol of Light and Wind 21.6%]
+
+Improved Infinites (Sub):
+- 009 Cup of Coffee [Venerable Elder Ginkgo 8.6% -> 9%]
+- 013 Power Bracer [Oni Ginkgo Seed 9.7% -> 12.9%]
+- 025 Ancient Wooden Letterpress [Oni Ginkgo Blossom 8.6% -> 9%]
+- 029 Jaggy Leaf [Spring Breeze Kedama 10% -> 10.8%]
+- 078 Club of Hill Giant Strength [Anguish Squad 3.6% -> 11.5%]
+- 086 Sword, Sorcery & Smokepowder Barrel [Oni Ginkgo Seed 0.3% -> 1.4%]
+(Requires Keine)
+- 007 Source of Magic [Marisa 1.4% -> 57.6%]
+- 024 Enigma Machine [Marisa 0.3% -> 43.2%]
+- 081 Mist Piercer [Sumireko Protector 3.6% -> 21.6%]
+
+Improved Infinites (Mat):
+- 002 Tamahane Ingot [Oni Ginkgo Blossom 10% -> 12.9%]
+- 011 Sunstone [Anguish Squad 79.2% -> 86.4%]
+- 012 Star Sunstone [Anguish Squad 11.5% -> 17.2%]
+- 021 Wind Topaz [Spring Breeze Kedama 11.5% -> 12.9%]
+- 035 Youkai's Geta [Mist Beast of the Lost Dream 11.5% -> 15.8%]
+- 064 Fool's Petal [Mist Beast of the Lost Dream 8.6% -> 15.8%]
+(Requires shortcut miniboss)
+- 015 Blue Moonstone [Wildscream Seedbed 10.8% -> 16.2%]
+- 058 Great Nightmare Weapon [Nightmare Premonition 4.3% -> 5%]
+- 088 Double-Barreled Boomstick [Nightmare Premonition 3.6% -> 5.7%]
 
 >< Reference
 
-- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa)
+- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa, craftable by Reimu)
 - 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until ???)
 - 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new until ???)
 - 032 Immortal Salamander Scale x2 [Amber-Wave1-D x2] (unfarmable until ???, cloneable by Marisa)
