@@ -195,6 +195,10 @@ FLAG 160: Patchouli gacha tutorial (set to 1 after re-recruiting her)
 
 FLAGS 901 to 929: set to 1 after prologue, also seem to be tied to generic dungeon events like interacting with orbs and special tiles
 
+[...]
+
+FLAG 999: unknown (set to 2 on Chen recruit)
+
 > Forest of Oblivion 1F Map Flags
 
 FLAG 1010: Shortcut before Alice (2 = opened) (109, 62)
@@ -481,32 +485,59 @@ FLAG 4099: Treasure (?)
 > Anguish of the Lost 2F Relay Circles
 
 > FLAG 4100: 2F Relay unlock
+> FLAG 4101: 2F Center Relay unlock
 
 > Anguish of the Lost 2F Event Flags
 
-FLAG 4110: ??? (set to 1 after 4010)
-FLAG 4111: ??? (set to 1 after 4010)
-FLAG 4112: ??? (set to 1 after 4010)
-FLAG 4113: ??? (set to 1 after 4010)
-FLAG 4114: 2F Orb pressed status (set to 1 after interacting) (75, 95)
+FLAG 4110: unused even though text exists? (set to 1 after 4010)
+FLAG 4111: Marisa boss fight (set to 1 after 4010) (75, 79)
+FLAG 4112: Nightmare Reimu into cutscene (set to 1 after 4010) (75, 62)
+FLAG 4113: Chen recruit cutscene (set to 1 after 4010) (70, 75)
+FLAG 4114: 2F Green Orb pressed status (set to 1 after interacting) (75, 95)
+FLAG 4115: 2F Blue Orb pressed status (set to 1 after interacting) (37, 33)
+FLAG 4116: 2F Red Orb pressed status (set to 1 after interacting) (113, 33)
 FLAG 4117: Difficulty lock event for post-demo players before a boss fight (set to 2 on any difficulty select)
 
 > Anguish of the Lost 2F Treasure Flags
 
-FLAG 4185: Treasure (?)
-FLAG 4186: Treasure (?)
-FLAG 4187: Treasure (?)
-FLAG 4188: Treasure (?)
-FLAG 4189: Treasure (?)
-FLAG 4190: Treasure (?)
-FLAG 4191: Treasure (?)
-FLAG 4192: Treasure (?)
-FLAG 4193: Treasure (?)
-FLAG 4194: Treasure (?)
-FLAG 4195: Treasure (?)
-FLAG 4196: Treasure (?)
-FLAG 4197: Treasure (?)
-FLAG 4198: Treasure (?)
+FLAG 4170: Treasure after Marisa (?)
+FLAG 4171: Treasure after Marisa (?)
+FLAG 4172: Treasure after Marisa (?)
+FLAG 4173: Treasure after Marisa (?)
+FLAG 4174: Treasure after Marisa (?)
+FLAG 4175: Treasure after Marisa (?)
+FLAG 4176: Treasure after Marisa (?)
+FLAG 4177: Treasure after Marisa (?)
+FLAG 4178: Treasure after Marisa (?)
+FLAG 4179: Treasure after Marisa (?)
+FLAG 4180: Locked Treasure after Marisa (
+  Minette Mage's Silvervine x1
+  Champion's Windbomb x1
+  Arde Dagger x1
+  Thief Gloves x1
+  Momijihime x1
+  Club of Hill Giant Strength x1
+  Ninja Palm x1
+) (43, 42)
+FLAG 4181: Treasure after Marisa (?)
+FLAG 4182: Treasure after Marisa (?)
+FLAG 4183: Treasure after Marisa (?)
+FLAG 4184: Treasure after Marisa (?)
+FLAG 4185: Treasure before Marisa (?)
+FLAG 4186: Treasure before Marisa (?)
+FLAG 4187: Treasure before Marisa (?)
+FLAG 4188: Treasure before Marisa (?)
+FLAG 4189: Treasure before Marisa (?)
+FLAG 4190: Treasure before Marisa (?)
+FLAG 4191: Treasure before Marisa (?)
+FLAG 4192: Treasure before Marisa (?)
+FLAG 4193: Treasure before Marisa (?)
+FLAG 4194: Treasure before Marisa (?)
+FLAG 4195: Treasure before Marisa (?)
+FLAG 4196: Treasure before Marisa (?)
+FLAG 4197: Treasure before Marisa (?)
+FLAG 4198: Treasure before Marisa (?)
+FLAG 4199: Locked Treasure after Marisa (Determination Polycrystal x8) (80, 75)
 
 > Anguish of the Lost 3F Event Flags
 

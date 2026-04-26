@@ -165,9 +165,23 @@ class BigIceBlockCell(IconCell):
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 2, cell_size * 2))
 
-# A cell that houses a 3F green orb
+# A cell that houses a green orb
 class GreenOrbCell(IconCell):
   icon = Image.open("./assets/greenorb.png")
+
+  def __init__(self, x, y):
+    super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
+
+# A cell that houses a green orb
+class BlueOrbCell(IconCell):
+  icon = Image.open("./assets/blueorb.png")
+
+  def __init__(self, x, y):
+    super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
+
+# A cell that houses a green orb
+class RedOrbCell(IconCell):
+  icon = Image.open("./assets/redorb.png")
 
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
@@ -634,6 +648,8 @@ class Anguish2F(Floor):
     GreenOrbCell(75, 95),
     RockCell(75, 81),
     BossCell(75, 79, ""),
+    RockCell(72, 75),
+    EventCell(70, 75, ""),
     TreasureCell(67, 85, ""),
     TreasureCell(83, 85, ""),
     TreasureCell(48, 90, ""),
@@ -648,6 +664,29 @@ class Anguish2F(Floor):
     TreasureCell(83, 129, ""),
     TreasureCell(41, 131, ""),
     TreasureCell(109, 131, ""),
+    LockedTreasureCell(80, 75, ""),
+    EventCell(75, 62, ""),
+    RelayCircleCell(75, 61),
+    RockCell(75, 56),
+    RockCell(75, 54),
+    StairsUpCell(75, 48),
+    BlueOrbCell(37, 33),
+    RedOrbCell(113, 33),
+    LockedTreasureCell(43, 42, ""),
+    TreasureCell(53, 63, ""),
+    TreasureCell(53, 20, ""),
+    TreasureCell(34, 55, ""),
+    TreasureCell(43, 41, ""),
+    TreasureCell(64, 25, ""),
+    TreasureCell(86, 25, ""),
+    TreasureCell(75, 44, ""),
+    TreasureCell(75, 13, ""),
+    TreasureCell(107, 41, ""),
+    TreasureCell(107, 42, ""),
+    TreasureCell(97, 55, ""),
+    TreasureCell(116, 55, ""),
+    TreasureCell(97, 19, ""),
+    TreasureCell(97, 27, ""),
   ]
 
   def __init__(self):

@@ -316,3 +316,28 @@
 (Arde Dagger x1) (109, 131)
 
 > Post-Marisa
+
+[Locked-2] (
+  Minette Mage's Silvervine x1
+  Champion's Windbomb x1
+  Arde Dagger x1
+  Thief Gloves x1
+  Momijihime x1
+  Club of Hill Giant Strength x1
+  Ninja Palm x1
+) (43, 42)
+[Locked-2] (Determination Polycrystal x8) (80, 75)
+(Ominous Gemstone x1) (53, 63)
+(Phantasmagora Pouch x1) (53, 20)
+(Environmental Puzzle Hallucination x1) (34, 55)
+(Plague Doctor Mask x1) (43, 41)
+(Aldebaran Memory Stone x1) (64, 25)
+(Recovery Izumi x1) (86, 25)
+(Dream of Energy x1) (75, 44)
+(Dream Soul of the Suffering x1) (75, 13)
+(CatClaw x1) (107, 41)
+(Safety Goggles x1) (107, 42)
+(Minette Mage's Silverline x1) (97, 55)
+(Shuten Douji's Armband x1) (116, 55)
+(Momijihime x1) (97, 19)
+(Bangle of the Star Realm x1) (97, 27)
