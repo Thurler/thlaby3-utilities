@@ -723,7 +723,6 @@ New Infinites (Sub):
 - 040 Flowing Dress [Maneater Carp 2.1%]
 - 041 Safety Goggles [Topaz Elemental 11.5%]
 - 042 Flying Machine [Topaz Elemental 1.4%]
-- 047 Spirit Barrier Sign [Brightwind Flutterers 11.5%]
 - 073 Minette Mage's Silvervine [Anguish Team 17.2%]
 - 074 Champion's Windbomb [Anguish Band 17.2%]
 - 077 Momijihime [Anguish Band 11.5%]
