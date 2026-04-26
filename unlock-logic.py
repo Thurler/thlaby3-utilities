@@ -17,7 +17,7 @@ mats = [
   11, 12, # Sumireko Protector
   30, 63, 71, # Reset
   2, 15, 19, 21, 27, 34, 35, 42, 43, 47, 58, 64, # Marisa
-  24, 58, 65 # Marisa with miniboss
+  24, 65 # Marisa with miniboss
 ]
 breaks = [1, 2, 3, 4, 5, 6, 7, 8] # Cirno
 specs = [
