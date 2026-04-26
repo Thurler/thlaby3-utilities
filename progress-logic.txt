@@ -721,7 +721,7 @@ New Infinites (Sub):
 - 101 838861 Casino Coins [Affluent Manekineko 8.6%]
 - 106 Whirlwind Mixer Blade [Raging Swamp Monster 6.4%]
 - 138 Pimea Aurinko [Terror-Gluttonizing Tree 0.07%]
-(Requires Nitori)
+(Requires Nitori and shortcut miniboss)
 - 081 Mist Piercer [Craft]
 (Requires Alice)
 - 058 Songstress's Apron [Clone]
