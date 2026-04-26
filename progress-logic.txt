@@ -616,6 +616,8 @@ Awakenings:
 (Requires Keine)
 - 059 Form of Wind x3 [Archive-AotL-2F-h x3]
 - 063 Form of Mysticism x1 [Archive-AotL-1F-h]
+(Requires Nitori and Aya/Patchouli/Rumia)
+- Junko can reach level 2 using limited Element Flask
 
 Subequips:
 - 006 Saviour Schnapps x1 [Chest]
