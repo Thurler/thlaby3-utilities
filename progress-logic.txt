@@ -579,14 +579,14 @@ Achievements (3 / 72):
 New Infinites (Sub):
 - 056 Impact-Resistant Polymer Liquid [????? 8.6%]
 - 072 Moon of the Eyeball [???????? 43.2%]
+(Requires Alice and Amber-Wave2-E)
+- 058 Songstress's Apron [Clone]
+- 059 Oiran's Lamentation [Clone]
 
 New Infinites (Mat):
 - 030 Lightless Black Onyx [???????? 12.9%]
 - 063 Alluring Despair [???????? 65.8%]
 - 071 Determination Polycrystal [Despair Team 20%]
-(Requires Alice and Amber-Wave2-E)
-- 058 Songstress's Apron [Clone]
-- 059 Oiran's Lamentation [Clone]
 
 Improved Infinites (Mat):
 - 050 Coagulated Blood Gem [Despair Team 3.6% -> 10%]
