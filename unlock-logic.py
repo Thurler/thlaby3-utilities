@@ -9,6 +9,8 @@ subs = [
   56, 72, # Reset
   11, 40, 41, 42, 73, 74, 77, 79, 85, 89, 90, 99, 101, 103, 111, # Marisa
   84, 106, 138, # Marisa with miniboss
+  81, 94, 98, 108, 117, # Reimu
+  110 # Reimu with miniboss
 ]
 mats = [
   1, 6, 14, 23, 33, 39, 41, 45, 59, # Cirno
@@ -17,7 +19,8 @@ mats = [
   11, 12, # Sumireko Protector
   30, 63, 71, # Reset
   2, 15, 19, 21, 27, 34, 35, 42, 43, 47, 58, 64, # Marisa
-  24, 65 # Marisa with miniboss
+  24, 65, # Marisa with miniboss
+  26, 40, 55, 60 # Reimu
 ]
 breaks = [1, 2, 3, 4, 5, 6, 7, 8] # Cirno
 specs = [
