@@ -346,12 +346,12 @@
 ===== Anguish of the Lost - 3F =====
 =======================================================================
 
-[Locked] (
+[Locked-2] (
   Blue Chemistry Pack x1
   Elysium System x1
   Flowing Dress x1
 ) (92, 56)
-[Locked] (
+[Locked-2] (
   Flying Machine x1
   Yin-Yang Shift Stone x1
   Coagulated Blood Gem x1
