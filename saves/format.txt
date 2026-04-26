@@ -185,11 +185,18 @@ FLAG 139: Elite character explanation cutscene (set to 1 after 138)
 FLAG 140: Renko spell learning tutorial in library cutscene (set to 1 after 136)
 FLAG 141: Akyuu survived the nightmare reset cutscene (set to 1 after 136)
 FLAG 142: Suwako and Kanako recruit cutscene while in Dream Path (set to 1 after 2110)
+FLAG 143: Boss refight tutorial cutscene
+FLAG 144: Back to town after re-recruiting Reimu cutscene
+FLAG 145: New characters to save from nightmares cutscene (set to 1 after 144)
 
 [...]
 
 FLAG 159: Yukari cutscene that explains increased enemy odds based on terrain (set to 1 after 135)
 FLAG 160: Patchouli gacha tutorial (set to 1 after re-recruiting her)
+
+[...]
+
+FLAG 163: Hope and Despair crystal system tutorial cutscene (triggers after Reimu defeated)
 
 > Unknown Flags
 
@@ -552,9 +559,9 @@ FLAG 4199: Locked Treasure after Marisa (Determination Polycrystal x8) (80, 75)
 > Anguish of the Lost 3F Event Flags
 
 FLAG 4210: First visit nightmare Reimu cutscene (set to 1 after 4010)
-FLAG 4211: ??? (set to 1 after 4010)
-FLAG 4212: ??? (set to 1 after 4010)
-FLAG 4213: ??? (set to 1 after 4010)
+FLAG 4211: Reimu boss fight (set to 1 after 4010) (52, 52)
+FLAG 4212: Youmu recruit cutscene (set to 1 after 4010) (86, 90)
+FLAG 4213: Shortcut miniboss (set to 1 after 4010) (87, 83)
 
 > Anguish of the Lost 3F Treasure Flags
 
@@ -586,6 +593,21 @@ FLAG 4296: Locked Treasure (
 FLAG 4297: Treasure (?)
 FLAG 4298: Treasure (?)
 FLAG 4299: Treasure (?)
+
+> Sorrow of the Fragile 1F Event Flags
+
+FLAG 5010: ??? (set to 1 after 144)
+FLAG 5011: ??? (set to 1 after 144)
+FLAG 5012: ??? (set to 1 after 144)
+
+> Battleground of the Unforgiven 1F Event Flags
+
+FLAG 6010: ??? (set to 1 after 144)
+
+> Prison of the Solitary 1F Event Flags
+
+FLAG 7010: ??? (set to 1 after 144)
+FLAG 7011: ??? (set to 1 after 144)
 
 ===== PGD FILE =====
 
