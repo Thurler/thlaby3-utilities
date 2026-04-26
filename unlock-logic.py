@@ -1,4 +1,5 @@
 target_dir = "unlock-logic" # The dir that contains the save file
+main = []
 subs = [
   1, 2, 3, 5, 6, 9, 13, 14, 17, 18, 21, 25, 26, 29, 30, 35, 39, 43, 47, 61, 62, 63, # Cirno
   22, 23, 24, 33, 44, 45, 49, 60, 64, 65, 66, 68, 75, 76, # Nightmare
@@ -48,6 +49,9 @@ with open(target_dir + "/EEF01.ngd", 'wb') as f:
     else:
       f.write(bytearray([data[i+800]]))
   for i in range(201):
+    if i in main:
+      f.write(bytearray([1]))
+    else:
       f.write(bytearray([data[i+1000]]))
 
 # 500 copies of every item
@@ -78,4 +82,7 @@ with open(target_dir + "/EEN01.ngd", 'wb') as f:
     else:
       f.write(bytearray(data[(i+800)*4:(i+800)*4+4]))
   for i in range(201):
+    if i in main:
+      f.write(bytearray([0, 0, 1, 0xf4]))
+    else:
       f.write(bytearray(data[(i+1000)*4:(i+1000)*4+4]))
