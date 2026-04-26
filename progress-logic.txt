@@ -844,6 +844,8 @@ Renko spells:
 
 Awakenings:
 - 041 Hand of Mysticism x1 [Marisa 43.2%]
+(Requires Keine)
+- 059 Form of Spirituality x3 [Archive-AotL-3F-h x3]
 (Requires Nitori)
 - Chen can reach level 2
 - Marisa can reach level 2 using limited Element Flask
@@ -881,11 +883,19 @@ Subequips:
 - 093 Blue Chemistry Pack x1 [Locked Chest L - 2]
 - 097 Summon Giga Disc x1 [Marisa 14.4%]
 - 109 Elysium System x1 [Locked Chest L - 2]
+(Requires Aya)
+- 085 Sea Hunter x1 [Bestiary-Rare8]
+(Requires Keine)
+- 083 Broken Lead Heart x1 [Archive-AotL-2F-F]
+- 089 Pure Sake - Wild Boar x1 [Archive-AotL-3F-F]
+- 103 Joy Capsule x1 [Archive-AotL-All]
 
 Materials:
 - 011 Sunstone x2 [Chest x2]
 - 014 Moonstone x2 [Chest x2]
 - 071 Determination Polycrystal x8 [Locked Chest J x8 - 2]
+(Requires Aya)
+- 015 Blue Moonstone x3 [Bestiary-Reg6 x3]
 
 Specials:
 - Dream Soul of the Suffering x2 [Chest, Chest]
@@ -895,6 +905,10 @@ Specials:
 - Book of Guidance x1 [Chest]
 - Extra Atelier Tools x1 [Chest]
 - Phantasmagora Pouch x1 [Chest]
+(Requires Aya)
+- Money Tree Koban x1 [Bestiary-Horde7]
+(Requires Keine)
+- Dream Amber Key x1 [Lunatic-6]
 
 Achievements (2 / 74):
 - 035 100 types of sub
