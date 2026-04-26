@@ -527,7 +527,7 @@ Specials:
 
 Dream Amber chests:
 - At least 4 chests of Wave 1
-- At least 3 chests of Wave 1/2
+- At least 3 chests of Wave 1/2 (7 total)
 - 3 new characters, 9 new subs, 3 new mats, 7 locked chests (10/24, 88/100, 25/40, 15/30)
 - 2 chests of wave 2 (B/C) are obsolete (2 total)
 
@@ -681,11 +681,11 @@ Dream Amber chests:
   - 1 new subequip (Booster 0.8 if Nitori and uses limited Element Flask)
   - 1 new subequip (Stellar Twister if Aya/Patchouli/Rumia)
   - 1 new subequip (Juicy Queenbeet if Keine)
-  - 1 new subequip (Ouroboros Loop if Keine)
+  - 1 new subequip (Ouroboros Loop if Keine OR Amber-Wave2-F) (redundant)
   - 1 new material (Celestial's Hagoromo if Aya/Patchouli/Rumia)
 (Requires Keine)
 - At least 1 chest of Wave 1/2
-- At least 1 chest of Wave 1/2/3
+- At least 1 chest of Wave 1/2/3 (9 total)
 - 2 chests of wave 3 (B/D) are obsolete (4 total)
 - 3 new characters, 7 new subs, 4 new mats, 9 locked chests (10/24, 99/100, 41/40, 18/30)
 
@@ -846,6 +846,8 @@ Awakenings:
 - 041 Hand of Mysticism x1 [Marisa 43.2%]
 (Requires Keine)
 - 059 Form of Spirituality x3 [Archive-AotL-3F-h x3]
+(Requires Keine OR Nitori OR Aya)
+- 088 Total Protection x1 [75 achievements]
 (Requires Nitori)
 - Chen can reach level 2
 - Marisa can reach level 2 using limited Element Flask
@@ -910,9 +912,20 @@ Specials:
 (Requires Keine)
 - Dream Amber Key x1 [Lunatic-6]
 
+Dream Amber chests:
+- 5 new characters, 5 new subs, 2 new mats, 7 locked chests (14/24, 105/138, 42/60, 20/30)
+  - 1 new subequip (Booster 0.8 if Nitori and uses limited Element Flask)
+  - 1 new subequip (Juicy Queenbeet if Keine)
+  - 1 new subequip (Ouroboros Loop if Keine OR Amber-Wave2-F) (redundant)
+(Requires Keine)
+- At least 1 chest of Wave 1/2/3 (10 total)
+- 5 new characters, 7 new subs, 4 new mats, 10 locked chests (14/24, 107/138, 44/60, 23/30)
+
 Achievements (2 / 74):
 - 035 100 types of sub
 - 040 40 types of material
+(Requires Nitori, no longer requires 2 other unlocks) [+1]
+- 054 8 allies main rank 2
 
 New Infinites (Main):
 (Requires Keine)
