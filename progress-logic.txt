@@ -608,14 +608,22 @@ Renko spells:
 - Sakura Petalgale
 
 Awakenings:
+(Requires Keine)
+- 059 Form of Wind x3 [Archive-AotL-2F-h x3]
+- 063 Form of Mysticism x1 [Archive-AotL-1F-h]
+(
+  Requires 3 points out of 6 below:
+    - (2) Keine
+    - (1) Nitori and 2 other unlocks
+    - (1) Aya
+    - (1) Material achievement
+    - (1) Subequip achievement
+)
 - 088 Total Protection x1 [75 achievements]
 (Requires Nitori)
 - Junko can reach level 1
 - Meiling, Nitori, Aya, Cirno, Doremy, Hecatia can reach level 2
 - Maribel, Alice, Patchouli, Keine, Koishi, Rumia can reach level 2 using limited Element Flask
-(Requires Keine)
-- 059 Form of Wind x3 [Archive-AotL-2F-h x3]
-- 063 Form of Mysticism x1 [Archive-AotL-1F-h]
 (Requires Nitori and Aya/Patchouli/Rumia)
 - Junko can reach level 2 using limited Element Flask
 
