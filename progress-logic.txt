@@ -556,12 +556,12 @@ Subequips (Dream Amber):
 - 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
 
 Materials (Dream Amber):
-- 011 Sunstone x5 [Amber-Wave2-D]
-- 012 Star Sunstone x5 [Amber-Wave2-D]
-- 013 Lattice Sunstone x5 [Amber-Wave2-D] (new until ???)
+- 011 Sunstone x5 [Amber-Wave2-D x5]
+- 012 Star Sunstone x5 [Amber-Wave2-D x5]
+- 013 Lattice Sunstone x5 [Amber-Wave2-D x5] (new until ???)
 - 014 Moonstone x5 [Amber-Wave2-D x5]
-- 015 Blue Moonstone x5 [Amber-Wave2-D] (new/unfarmable until Marisa)
-- 016 Royal Blue Moonstone x5 [Amber-Wave2-D] (new until ???)
+- 015 Blue Moonstone x5 [Amber-Wave2-D x5] (new/unfarmable until Marisa)
+- 016 Royal Blue Moonstone x5 [Amber-Wave2-D x5] (new until ???)
 
 Specials (Dream Amber):
 - Dream Soul of the Suffering x1 [Amber-Wave1-A]
