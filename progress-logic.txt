@@ -733,7 +733,7 @@ New Infinites (Sub):
 - 099 Make-or-Break EM Blade [Great Bandit Mouse 6.9%]
 - 101 838861 Casino Coins [Affluent Manekineko 8.6%]
 - 103 Joy Capsule [Swaying Dream Chrysalis 0.7%]
-- 111 Defense Staff [Brightwind Flutterers 0.3%]
+- 111 Defense Staff [Oni Ginkgo Sage 5.7%]
 (Requires shortcut miniboss)
 - 084 Krampus Sack [Soldier of the Sorrowful Dream 4.3%]
 - 106 Whirlwind Mixer Blade [Raging Swamp Monster 6.4%]
@@ -756,12 +756,13 @@ New Infinites (Sub):
 
 New Infinites (Mat):
 - 002 Tamahane Ingot [Topaz Elemental 10%]
-- 015 Blue Moonstone [Affluent Manekineko 5.4%]
+- 015 Blue Moonstone [Oni Ginkgo Sage 10.8%]
 - 019 Cold Sapphire [Maneater Carp 8.6%]
 - 021 Wind Topaz [Topaz Elemental 11.5%]
 - 027 Spirit Opal [Brightwind Flutterers 7.9%]
 - 034 Antique Perforated Coins [Affluent Manekineko 8.6%]
 - 035 Youkai's Geta [Thieving Mouse 11.5%]
+- 040 Dream Tree Sap [Oni Ginkgo Sage 15.8%]
 - 042 Beast Claw Accessory [Bakeneko Constable 5.4%]
 - 043 Large Feather [Blossoming Fairy 12.9%]
 - 047 Soft Sealife Scale [Maneater Carp 14.4%]
@@ -798,15 +799,12 @@ Improved Infinites (Sub):
 Improved Infinites (Mat):
 - 011 Sunstone [Anguish Band 72% -> 79.2%]
 - 012 Star Sunstone [Anguish Band 7.2% -> 11.5%]
-- 014 Moonstone [Affluent Manekineko 28.8% -> 39.6%]
+- 014 Moonstone [Oni Ginkgo Sage 28.8% -> 54%]
 - 029 Jaggy Leaf [Blossoming Fairy 8.6% -> 10%]
 - 071 Determination Polycrystal [Anguish Team 20% -> 36%]
-(Requires Aya/Patchouli/Rumia)
-- 014 Moonstone [Symbol of Light and Wind 39.6% -> 45%]
-- 015 Blue Moonstone [Symbol of Light and Wind 5.4% -> 7.2%]
 (Requires shortcut miniboss)
-- 014 Moonstone [Raging Swamp Monster 45% -> 59.4%]
-- 015 Blue Moonstone [Raging Swamp Monster 5.4% -> 12.6%]
+- 014 Moonstone [Raging Swamp Monster 54% -> 59.4%]
+- 015 Blue Moonstone [Raging Swamp Monster 10.8% -> 12.6%]
 - 043 Green Dream [Terror-Gluttonizing Tree 5.7% -> 9%]
 - 058 Great Nightmare Weapon [Soldier of the Sorrowful Dream 2.8% -> 4.3%]
 (Requires Keine)
