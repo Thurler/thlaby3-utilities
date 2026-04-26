@@ -694,6 +694,24 @@ class Anguish2F(Floor):
 
 class Anguish3F(Floor):
   tiles = [
+    StairsDownCell(83, 81),
+    RelayCircleCell(83, 83),
+    RockCell(83, 87),
+    EventCell(86, 90, ""),
+    MiniBossCell(87, 83, ""),
+    WarpCell(90, 88, 56, 67),
+    WarpCell(56, 67, 90, 88),
+    ArrowCell(63, 67, "Right"),
+    RelayCircleCell(57, 57),
+    BossCell(52, 52, ""),
+    WarpCell(70, 71, 72, 71),
+    WarpCell(72, 71, 70, 71),
+    WarpCell(71, 70, 71, 72),
+    WarpCell(71, 72, 71, 70),
+    WarpCell(78, 79, 80, 79),
+    WarpCell(80, 79, 78, 79),
+    WarpCell(79, 78, 79, 80),
+    WarpCell(79, 80, 79, 78),
   ]
 
   def __init__(self):
@@ -852,8 +870,8 @@ pixels = map_img.load()
 # floor = DreamPath2F()
 # floor = Despair1F()
 # floor = Anguish1F()
-floor = Anguish2F()
-# floor = Anguish3F()
+# floor = Anguish2F()
+floor = Anguish3F()
 # floor = Fragile1F()
 # floor = Fragile2F()
 # floor = Fragile3F()
