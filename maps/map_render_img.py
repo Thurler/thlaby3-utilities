@@ -151,6 +151,13 @@ class RockCell(IconCell):
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (icon_size * 1.6, icon_size * 1.6))
 
+# A cell that houses a pushable swamp rock
+class SwampRockCell(IconCell):
+  icon = Image.open("./assets/swamprock.png")
+
+  def __init__(self, x, y):
+    super().__init__(x, y, self.icon, (icon_size * 0.7, icon_size * 0.7))
+
 # A cell that houses a 1F regular ice tile
 class IceBlockCell(IconCell):
   icon = Image.open("./assets/ice.png")
@@ -739,10 +746,20 @@ class Anguish3F(Floor):
 
 class Fragile1F(Floor):
   tiles = [
+    SwampRockCell(75, 84),
   ]
 
   def __init__(self):
-    super().__init__(5, 1, self.tiles)
+    super().__init__(5, 1, self.tiles, {
+      "8": (0, 0, 0),
+      "9": (0, 0, 0),
+      "10": (0, 0, 0),
+      "11": (0, 0, 0),
+      "12": (0, 0, 0),
+      "13": (0, 0, 0),
+      "14": (0, 0, 0),
+      "15": (0, 0, 0),
+    })
 
 class Fragile2F(Floor):
   tiles = [
@@ -891,8 +908,8 @@ pixels = map_img.load()
 # floor = Despair1F()
 # floor = Anguish1F()
 # floor = Anguish2F()
-floor = Anguish3F()
-# floor = Fragile1F()
+# floor = Anguish3F()
+floor = Fragile1F()
 # floor = Fragile2F()
 # floor = Fragile3F()
 # floor = Unforgiven1F()
