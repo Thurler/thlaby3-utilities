@@ -746,7 +746,35 @@ class Anguish3F(Floor):
 
 class Fragile1F(Floor):
   tiles = [
+    SwampRockCell(42, 70),
+    SwampRockCell(51, 81),
+    SwampRockCell(52, 59),
+    SwampRockCell(64, 70),
     SwampRockCell(75, 84),
+    SwampRockCell(88, 52),
+    SwampRockCell(88, 88),
+    SwampRockCell(100, 70),
+    RockCell(90, 70),
+    EventCell(81, 70, ""),
+    ArrowCell(48, 84, "Down"),
+    ArrowCell(46, 84, "Up"),
+    MiniBossCell(76, 70, ""),
+    StairsUpCell(75, 61),
+    LockedTreasureCell(82, 73, ""),
+    TreasureCell(75, 47, ""),
+    TreasureCell(93, 47, ""),
+    TreasureCell(54, 48, ""),
+    TreasureCell(108, 48, ""),
+    TreasureCell(45, 51, ""),
+    TreasureCell(36, 56, ""),
+    TreasureCell(82, 67, ""),
+    TreasureCell(29, 70, ""),
+    TreasureCell(121, 70, ""),
+    TreasureCell(36, 84, ""),
+    TreasureCell(45, 89, ""),
+    TreasureCell(54, 92, ""),
+    TreasureCell(108, 92, ""),
+    TreasureCell(93, 93, ""),
   ]
 
   def __init__(self):
