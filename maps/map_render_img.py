@@ -791,10 +791,36 @@ class Fragile1F(Floor):
 
 class Fragile2F(Floor):
   tiles = [
+    StairsDownCell(38, 37),
+    RelayCircleCell(40, 39),
+    WarpCell(42, 44, 42, 42),
+    WarpCell(42, 42, 42, 44),
+    SwampRockCell(62, 70),
+    SwampRockCell(71, 61),
+    RelayCircleCell(73, 72),
+    BossCell(76, 75, ""),
+    TreasureCell(27, 26, ""),
+    TreasureCell(67, 30, ""),
+    TreasureCell(34, 33, ""),
+    TreasureCell(63, 37, ""),
+    TreasureCell(54, 43, ""),
+    TreasureCell(40, 47, ""),
+    TreasureCell(58, 57, ""),
+    TreasureCell(31, 66, ""),
+    TreasureCell(39, 66, ""),
   ]
 
   def __init__(self):
-    super().__init__(5, 2, self.tiles)
+    super().__init__(5, 2, self.tiles, {
+      "8": (0, 0, 0),
+      "9": (0, 0, 0),
+      "10": (0, 0, 0),
+      "11": (0, 0, 0),
+      "12": (0, 0, 0),
+      "13": (0, 0, 0),
+      "14": (0, 0, 0),
+      "15": (0, 0, 0),
+    })
 
 class Fragile3F(Floor):
   tiles = [
@@ -937,8 +963,8 @@ pixels = map_img.load()
 # floor = Anguish1F()
 # floor = Anguish2F()
 # floor = Anguish3F()
-floor = Fragile1F()
-# floor = Fragile2F()
+# floor = Fragile1F()
+floor = Fragile2F()
 # floor = Fragile3F()
 # floor = Unforgiven1F()
 # floor = Unforgiven2F()
