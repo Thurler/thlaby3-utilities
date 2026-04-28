@@ -374,3 +374,28 @@
 (Club of Hill Giant Strength x1) (48, 110)
 (Moonstone x2) (74, 110)
 (Sunstone x2) (61, 121)
+
+=======================================================================
+===== Sorrow of the Fragile - 1F =====
+=======================================================================
+
+[Locked-2] (
+  Coagulated Blood Gem x1
+  Demon Core x2
+  Hoplite's Spear x1
+  Blood-Soaked Scoria x1
+) (82, 73)
+(Dream Soul of the Fragile x1) (75, 47)
+(Venomfly's Scales x1) (93, 47)
+(Star Sunstone x1) (54, 48)
+(Book of Guidance x1) (108, 48)
+(Lockbox Key x1) (45, 51)
+(Lucky Horseshoe x1) (36, 56)
+(Dream of Swiftness x1) (82, 67)
+(Coagulated Blood Gem x1) (29, 70)
+(Extra Atelier Tools x1) (121, 70)
+(Demon Core x1) (36, 84)
+(Frozen Frog x1) (45, 89)
+(Blood-Soaked Scoria x1) (54, 92)
+(Ominous Gemstone x1) (108, 92)
+(Blue Moonstone x1) (93, 93)

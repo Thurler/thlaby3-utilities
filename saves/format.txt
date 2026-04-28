@@ -204,6 +204,7 @@ FLAGS 901 to 929: set to 1 after prologue, also seem to be tied to generic dunge
 
 [...]
 
+FLAG 997: Rin recruit hint (set to 1 on rock interaction) (set to 2 on Rin recruit)
 FLAG 998: Youmu recruit hint (set to 1 on rock interaction) (set to 2 on Youmu recruit)
 FLAG 999: Chen recruit hint (set to 1 on rock interaction) (set to 2 on Chen recruit)
 
@@ -596,9 +597,50 @@ FLAG 4299: Treasure (?)
 
 > Sorrow of the Fragile 1F Event Flags
 
-FLAG 5010: ??? (set to 1 after 144)
-FLAG 5011: ??? (set to 1 after 144)
-FLAG 5012: ??? (set to 1 after 144)
+FLAG 5010: First visit cutscene (set to 1 after 144)
+FLAG 5011: How to push boulders cutscene (set to 1 after 144) (75, 85)
+FLAG 5012: What do you mean one scene wasn't enough, push the rocks (set to 1 after 144) (75, 82)
+FLAG 5013: Rin recruit event (set to 1 after 5010) (81, 70)
+FLAG 5014: Shortcut miniboss (set to 1 after 5010) (76, 70)
+
+> Sorrow of the Fragile 1F Treasure Flags
+
+FLAG 5085: Treasure (?)
+FLAG 5086: Treasure (?)
+FLAG 5087: Treasure (?)
+FLAG 5088: Treasure (?)
+FLAG 5089: Treasure (?)
+FLAG 5090: Treasure (?)
+FLAG 5091: Locked Treasure (
+  Coagulated Blood Gem x1
+  Demon Core x2
+  Hoplite's Spear x1
+  Blood-Soaked Scoria x1
+) (82, 73)
+FLAG 5092: Treasure (?)
+FLAG 5093: Treasure (?)
+FLAG 5094: Treasure (?)
+FLAG 5095: Treasure (?)
+FLAG 5096: Treasure (?)
+FLAG 5097: Treasure (?)
+FLAG 5098: Treasure (?)
+FLAG 5099: Treasure (?)
+
+> Sorrow of the Fragile 2F Relay Circles
+
+> FLAG 5100: 2F Relay unlock
+
+> Sorrow of the Fragile 2F Event Flags
+
+FLAG 5110: First visit cutscene (set to 1 after 5010)
+FLAG 5111: ??? (set to 1 after 5010)
+FLAG 5112: ??? (set to 1 after 5010)
+FLAG 5113: ??? (set to 1 after 5010)
+
+> Sorrow of the Fragile 3F Event Flags
+
+FLAG 5210: ??? (set to 1 after 5010)
+FLAG 5211: ??? (set to 1 after 5010)
 
 > Battleground of the Unforgiven 1F Event Flags
 
