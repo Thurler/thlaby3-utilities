@@ -27,12 +27,12 @@ class Cell:
 
   def draw(self, pixels):
     color = (255, 255, 255)
-    # Use a pink shade when path is hidden
-    if self.hidden:
-      color = (255, 169, 255)
     # Override color if specified
     if self.color_override is not None:
       color = self.color_override
+    # Use a pink shade when path is hidden, even if override applies
+    if self.hidden:
+      color = (255, 169, 255)
     for i in range(cell_size):
       for j in range(cell_size):
         pixels[self.x + i, self.y + j] = color
