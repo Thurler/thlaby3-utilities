@@ -626,9 +626,11 @@ FLAG 5097: Treasure (?)
 FLAG 5098: Treasure (?)
 FLAG 5099: Treasure (?)
 
-> Sorrow of the Fragile 2F Relay Circles
+> Sorrow of the Fragile 2F Relay Circles and Shortcuts
 
 > FLAG 5100: 2F Relay unlock
+> FLAG 5101: 2F Center Relay unlock
+> FLAG 5109: Shortcut halfway through northwest maze (42, 44)
 
 > Sorrow of the Fragile 2F Event Flags
 
@@ -636,6 +638,18 @@ FLAG 5110: First visit cutscene (set to 1 after 5010)
 FLAG 5111: ??? (set to 1 after 5010)
 FLAG 5112: ??? (set to 1 after 5010)
 FLAG 5113: ??? (set to 1 after 5010)
+
+> Sorrow of the Fragile 2F Treasure Flags
+
+FLAG 5191: Treasure before Kogasa (?)
+FLAG 5192: Treasure before Kogasa (?)
+FLAG 5193: Treasure before Kogasa (?)
+FLAG 5194: Treasure before Kogasa (?)
+FLAG 5195: Treasure before Kogasa (?)
+FLAG 5196: Treasure before Kogasa (?)
+FLAG 5197: Treasure before Kogasa (?)
+FLAG 5198: Treasure before Kogasa (?)
+FLAG 5199: Treasure before Kogasa (?)
 
 > Sorrow of the Fragile 3F Event Flags
 
