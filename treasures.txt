@@ -399,3 +399,21 @@
 (Blood-Soaked Scoria x1) (54, 92)
 (Ominous Gemstone x1) (108, 92)
 (Blue Moonstone x1) (93, 93)
+
+=======================================================================
+===== Sorrow of the Fragile - 2F =====
+=======================================================================
+
+> Pre-Kogasa
+
+(Double-Barreled Boomstick x1) (27, 26)
+(Hoplite's Spear x2) (67, 30)
+(Lorica Segmentata x2) (34, 33)
+(Blue Moonstone x1) (63, 37)
+(Flowing Dress x1) (54, 43)
+(Demon Core x1) (40, 47)
+(Venomfly's Scales x1) (58, 57)
+(Dream of Vitality x1) (31, 66)
+(Demon Core x1) (39, 66)
+
+> Post-Kogasa
