@@ -550,8 +550,8 @@ Subequips (Dream Amber):
 - 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until ???)
 - 077 Momijihime x1 [Amber-Wave1-F] (unfarmable until Marisa)
 - 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until ???)
-- 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new/unfarmable until Marisa shortcut, ??? otherwise)
-- 116 Sun Shades x2 [Amber-Wave1-C x2] (new until ???)
+- 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new/unfarmable until Marisa shortcut, Kogasa otherwise)
+- 116 Sun Shades x2 [Amber-Wave1-C x2] (new/unfarmable until Kogasa)
 - 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
 - 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
 
@@ -981,6 +981,156 @@ Improved Infinites (Mat):
 - 058 Great Nightmare Weapon [Nightmare Premonition 4.3% -> 5%]
 - 088 Double-Barreled Boomstick [Nightmare Premonition 3.6% -> 5.7%]
 
+=======================================================================
+=== Midbosses - Sorrow of the Fragile 1F/2F ===
+=======================================================================
+
+Subequips:
+- 019 Lorica Segmentata x2 [Chest x2]
+- 039 Frozen Frog x1 [Chest]
+- 040 Flowing Dress x1 [Chest]
+- 049 Ominous Gemstone x1 [Chest]
+- 050 Coagulated Blood Gem x2 [Chest, Locked Chest N - 2]
+- 051 Lucky Horseshoe x1 [Chest]
+- 053 Venomfly's Scales x2 [Chest, Chest]
+- 057 Demon Core x5 [Chest, Chest, Chest, Locked Chest N x2 - 2]
+- 082 Hoplite's Spear x3 [Chest x2, Locked Chest N - 2]
+- 088 Double-Barreled Boomstick x1 [Chest]
+- 091 Blood-Soaked Scoria x2 [Chest, Locked Chest N - 2]
+
+Materials:
+- 012 Star Sunstone x1 [Chest]
+- 015 Blue Moonstone x2 [Chest, Chest]
+
+Specials:
+- Lockbox Key x1 [Chest]
+- Dream Soul of the Fragile x1 [Chest]
+- Dream of Vitality x1 [Chest]
+- Dream of Swiftness x1 [Chest]
+- Book of Guidance x1 [Chest]
+- Extra Atelier Tools x1 [Chest]
+
+New Infinites (Sub):
+- 051 Lucky Horseshoe [Zirconia Elemental 10.8%]
+- 082 Hoplite's Spear [Swampland ssassin 5.4%]
+- 100 Temple Shooter Card [Moonlight Necromancer 1.1%]
+- 115 Secret Red Shoulder Files [Swampstone Kedama 0.1%]
+- 116 Sun Shades [Moonlight Dancer 0.2%]
+(no longer requires Alice)
+- 058 Songstress's Apron [Moonlight Dancer Clone -> 10.8%]
+- 059 Oiran's Lamentation [Despair of the Drowning Clone -> 5.7%]
+(no longer requires Marisa shortcut)
+- 084 Krampus Sack [Sorrow Band 11.5%]
+- 106 Whirlwind Mixer Blade [Raging Swamp Monster 6.4%]
+- 138 Pimea Aurinko [Terror-Gluttonizing Tree 0.07%]
+(no longer requires Reimu shortcut)
+- 110 True Sword of the Forest [Wildscream Seedbed 6.8%]
+(Requires shortcut miniboss)
+- 004 Hero Gep's Potion [Ruby Elemental 7.5%]
+- 037 Dragon's Breath [Ruby Elemental 15.8%]
+- 046 Bangle of the Star Realm [Sapphire Elemental 5.7%]
+- 052 Huscarl's Round Shield [Ruby Blaze Golem 23%]
+- 092 Coveted Ice Sword [Frost Golem 5.7%]
+- 124 Death God's Rocket Launcher [Ruby Elemental 0.1%]
+- 133 Upwell Structure - Keepstar [Frost Golem 0.1%]
+
+New Infinites (Mat):
+- 007 Element Flask [Tin-Tinted Fairy 11.5%]
+- 031 Physical Zirconia [Swampstone Kedama 11.5%]
+(no longer requires Marisa shortcut)
+- 024 Flowering Emerald [Terror-Gluttonizing Tree 5.7%]
+- 065 Despondent Peat [Raging Swamp Monster 32.4%]
+(Requires shortcut miniboss)
+- 003 Damascus Steel Ingot [Sapphire Elemental 12.9%]
+- 017 Fire Ruby [Ruby Elemental 11.5%]
+- 050 Wandering Magic Armor [Frost Golem 7.9%]
+
+Improved Infinites (Sub):
+- 007 Source of Magic [Zirconia Elemental 1.4% -> 2.1%]
+- 049 Ominous Gemstone [Wetlands Onibi 5.7% -> 10%]
+- 056 Impact-Resistant Polymer Liquid [Marsh Deathsprite 8.6% -> 9.7%]
+- 070 Environmental Puzzle Hallucination [Terror-Sucking Sapling 5.7% -> 8.6%]
+- 071 Bone Scrap [Swampstone Kedama 6.4% -> 8.6%]
+- 080 Cloak of the Bat [Sorrow Team 9% -> 15.8%]
+- 081 Mist Piercer [Sorrow Band 3.6% -> 15.8%]
+- 083 Broken Lead Heart [Sorrow Team 0.2% -> 11.5%]
+- 085 Sea Hunter [Despair of the Drowning 2.1% -> 5.7%]
+- 090 Illegal LAN-Connected Yakuza Gun [Swampland ssassin 1.4% -> 2.1%]
+- 098 Twinkling Golden Strawberry [Fluorescent Shineflower 0.4% -> 8.6%]
+(Requires shortcut miniboss)
+- 007 Source of Magic [Sapphire Elemental 2.1% -> 7.2%]
+- 040 Flowing Dress [Sapphire Elemental 2.1% -> 4.3%]
+- 108 Potion of Healing [Ruby Blaze Golem 0.3% -> 9%]
+
+Improved Infinites (Mat):
+- 011 Sunstone [Sorrow Squad 86.4% -> 100%]
+- 012 Star Sunstone [Sorrow Squad 17.2% -> 28.8%]
+- 019 Cold Sapphire [Despair of the Drowning 8.6% -> 11.5%]
+- 027 Spirit Opal [Moonlight Dancer 7.9% -> 10%]
+- 037 Ghost's Withered Silvergrass [Despair of the Drowning 10.8% -> 13.6%]
+- 039 Dream Bamboo Grass Dew [Fluorescent Shineflower 21.6% -> 72%]
+- 045 Tough Shell [Wetlands Flier 12.9% -> 15.8%]
+- 071 Determination Polycrystal [Sorrow Team 36% -> 45%]
+(no longer requires Marisa/Reimu shortcuts)
+- 014 Moonstone [Raging Swamp Monster 54% -> 59.4%]
+- 015 Blue Moonstone [Wildscream Seedbed 10.8% -> 16.2%]
+- 043 Green Dream [Terror-Gluttonizing Tree 5.7% -> 9%]
+- 058 Great Nightmare Weapon [Soldier of the Sorrowful Dream 2.8% -> 4.3%]
+(Requires shortcut miniboss)
+- 002 Tamahane Ingot [Frost Golem 12.9% -> 17.2%]
+- 015 Blue Moonstone [Ruby Blaze Golem 16.2% -> 25.2%]
+- 019 Cold Sapphire [Sapphire Elemental 11.5% -> 12.9%]
+
+=======================================================================
+=== Midbosses - Battleground of the Unforgiven 1F/2F ===
+=======================================================================
+
+=======================================================================
+=== Midbosses - Prison of the Solitary 1F/2F ===
+=======================================================================
+
+=======================================================================
+=== Kogasa - Exploration Consolidation ===
+=======================================================================
+
+Characters: Reimu / Youmu
+
+Renko spells:
+- Yin-Yang Reversal -Descension Spear-
+
+Awakenings:
+- 104 Opportune Recovery x1 [Reimu 28.8%]
+
+Subequips:
+- 089 Pure Sake - Wild Boar x1 [Reimu 28.8]
+- 100 Temple Shooter Card x1 [Reimu 14.4%]
+
+Materials:
+- 027 Spirit Opal x1 [Reimu 57.6%]
+
+Awakenings:
+(no longer requires Keine/Nitori/Aya)
+- 088 Total Protection x1 [75 achievements]
+
+Achievements (1 / 75) [+4]:
+- 004 Defeat Reimu
+
+New Infinites (Main):
+(Requires Keine)
+- 104 Opportune Recovery [Reimu 28.8%]
+
+Improved Infinites (Sub):
+(Requires Keine)
+- 007 Source of Magic [Marisa 7.2% -> 57.6%]
+- 056 Impact-Resistant Polymer Liquid [Shikigami 9.7% -> 86.4%]
+- 059 Oiran's Lamentation [Shikigami 5.7 -> 21.6%]
+- 081 Mist Piercer [Sumireko Protector 15.8% -> 21.6%]
+- 089 Pure Sake - Wild Boar [Reimu 1.4% -> 28.8%]
+- 100 Temple Shooter Card [Reimu 1.1% -> 14.4%]
+
+Improved Infinites (Mat):
+- 027 Spirit Opal [Reimu 10% -> 57.6%]
+
 >< Reference
 
 - 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa, craftable by Reimu)
@@ -992,8 +1142,6 @@ Improved Infinites (Mat):
 - 048 Yin-Yang Shift Stone x2 [Amber-Wave1-E x2] (unfarmable until ???)
 - 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until ???)
 - 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until ???)
-- 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new/unfarmable until Marisa shortcut, ??? otherwise)
-- 116 Sun Shades x2 [Amber-Wave1-C x2] (new until ???)
 - 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
 - 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
 - 126 Guiding Moonlight x1 [Amber-Wave3-F] (new until ???)
