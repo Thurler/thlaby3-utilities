@@ -422,7 +422,7 @@
 ===== Battleground of the Unforgiven - 1F =====
 =======================================================================
 
-[Locked] (
+[Locked-3] (
   Sword, Sorcery & Smokepowder Barrel x1
   Phoenix's Arm x1
   Double-Barreled Boomstick x1
@@ -444,3 +444,32 @@
 (Dream Soul of the Unfogiven x1) (63, 100)
 (Star Sunstone x1) (37, 108)
 (Cloak of the Bat x1) (82, 119)
+
+=======================================================================
+===== Battleground of the Unforgiven - 2F =====
+=======================================================================
+
+> Pre-Kasen
+
+[Locked-3] (
+  Flying Machine x1
+  Last Leaf x1
+  Pure Sake - Wild Boar x2
+  Twinkling Golden Strawberry x2
+) (90, 93)
+(Phoenix's Arm x1) (96, 49)
+(Safety Goggles x1) (111, 59)
+(Twinkling Golden Strawberry x1) (81, 62)
+(Phantasmagoria Pouch x1) (111, 69)
+(Blue Moonstone x1) (89, 75)
+(Lucky Horseshoe x1) (77, 79)
+(Flying Machine x1) (61, 84)
+(Momijihime x1) (106, 86)
+(Booster 0.8 x1) (91, 92)
+(Pure Sake - Wild Boar x1) (73, 98)
+(Lucky Horseshoe x1) (68, 108)
+(Double-Barreled Boomstick x1) (67, 114)
+(Safety Goggles x1) (84, 115)
+(Master's Emblem x1) (67, 116)
+
+> Post-Kasen

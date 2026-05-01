@@ -204,9 +204,11 @@ FLAGS 901 to 929: set to 1 after prologue, also seem to be tied to generic dunge
 
 [...]
 
-FLAG 997: Rin recruit hint (set to 1 on rock interaction) (set to 2 on Rin recruit)
-FLAG 998: Youmu recruit hint (set to 1 on rock interaction) (set to 2 on Youmu recruit)
-FLAG 999: Chen recruit hint (set to 1 on rock interaction) (set to 2 on Chen recruit)
+FLAG 995: Satori recruit hint (set to 1 on rock interaction) (set to 2 on rock destroy)
+FLAG 996: ???
+FLAG 997: Rin recruit hint (set to 1 on rock interaction) (set to 2 on rock destroy)
+FLAG 998: Youmu recruit hint (set to 1 on rock interaction) (set to 2 on rock destroy)
+FLAG 999: Chen recruit hint (set to 1 on rock interaction) (set to 2 on rock destroy)
 
 > Forest of Oblivion 1F Map Flags
 
@@ -322,7 +324,7 @@ FLAG 1200: 3F Relay unlock
 
 FLAG 1211: 3F relay cutscene that triggers on use (set to 1 after entering 2f)
 FLAG 1212: Cutscene in 3F rocks when Avatar hasn't been killed yet (set to 1 after entering 2f)
-FLAG 1213: Koishi recruit event (set to 1 after entering 2f) (60, 60)
+FLAG 1213: Koishi recruit cutscene (set to 1 after entering 2f) (60, 60)
 FLAG 1214: Pre-orb event that shows Shikigami (set to 1 after entering 2f) (98, 98)
 FLAG 1215: Ran boss fight (set to 1 after entering 2f) (73, 73)
 FLAG 1216: 3F Orb pressed status (set to 1 after interacting) (96, 96)
@@ -600,7 +602,7 @@ FLAG 4299: Treasure (?)
 FLAG 5010: First visit cutscene (set to 1 after 144)
 FLAG 5011: How to push boulders cutscene (set to 1 after 144) (75, 85)
 FLAG 5012: What do you mean one scene wasn't enough, push the rocks (set to 1 after 144) (75, 82)
-FLAG 5013: Rin recruit event (set to 1 after 5010) (81, 70)
+FLAG 5013: Rin recruit cutscene (set to 1 after 5010) (81, 70)
 FLAG 5014: Shortcut miniboss (set to 1 after 5010) (76, 70)
 
 > Sorrow of the Fragile 1F Treasure Flags
@@ -690,15 +692,40 @@ FLAG 6097: Treasure(?)
 FLAG 6098: Treasure(?)
 FLAG 6099: Treasure(?)
 
-> Battleground of the Unforgiven 2F Relay Circles
+> Battleground of the Unforgiven 2F Relay Circles and Shortcuts
 
 FLAG 6100: 2F Relay unlock
+FLAG 6101: 2F Center Relay unlock
+FLAG 6109: Shortcut before Satori (102, 105)
 
 > Battleground of the Unforgiven 2F Event Flags
 
-FLAG 6011: ??? (set to 1 after 6010) (likely was originally in 1F)
+FLAG 6011: Satori recruit cutscene (set to 1 after 6010) (likely was originally in 1F) (106, 105)
 FLAG 6110: First visit cutscene (set to 1 after 6010)
 FLAG 6111: ??? (set to 1 after 6010)
+
+> Battleground of the Unforgiven 2F Treasure Flags
+
+FLAG 6174: Treasure before Kasen (?)
+FLAG 6185: Treasure before Kasen (?)
+FLAG 6187: Treasure before Kasen (?)
+FLAG 6188: Treasure before Kasen (?)
+FLAG 6189: Treasure before Kasen (?)
+FLAG 6190: Treasure before Kasen (?)
+FLAG 6191: Treasure before Kasen (?)
+FLAG 6192: Treasure before Kasen (?)
+FLAG 6193: Locked Treasure before Kasen (
+  Flying Machine x1
+  Last Leaf x1
+  Pure Sake - Wild Boar x2
+  Twinkling Golden Strawberry x2
+) (90, 93)
+FLAG 6194: Treasure before Kasen (?)
+FLAG 6195: Treasure before Kasen (?)
+FLAG 6196: Treasure before Kasen (?)
+FLAG 6197: Treasure before Kasen (?)
+FLAG 6198: Treasure before Kasen (?)
+FLAG 6199: Treasure before Kasen (?)
 
 > Battleground of the Unforgiven 3F Event Flags
 
