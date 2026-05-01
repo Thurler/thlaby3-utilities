@@ -405,8 +405,8 @@ FLAG 2099: Treasure (?)
 
 > Dream Path to the Occult Balls 2F Relay Circles
 
-> FLAG 2100: 2F Relay unlock
-> FLAG 2101: 2F Inner Relay unlock
+FLAG 2100: 2F Relay unlock
+FLAG 2101: 2F Inner Relay unlock
 
 > Dream Path to the Occult Balls 2F Event Flags
 
@@ -493,8 +493,8 @@ FLAG 4099: Treasure (?)
 
 > Anguish of the Lost 2F Relay Circles
 
-> FLAG 4100: 2F Relay unlock
-> FLAG 4101: 2F Center Relay unlock
+FLAG 4100: 2F Relay unlock
+FLAG 4101: 2F Center Relay unlock
 
 > Anguish of the Lost 2F Event Flags
 
@@ -550,12 +550,12 @@ FLAG 4199: Locked Treasure after Marisa (Determination Polycrystal x8) (80, 75)
 
 > Anguish of the Lost 3F Relay Circles and Shortcuts
 
-> FLAG 4200: 3F Relay unlock
-> FLAG 4201: 3F Inner Relay unlock
-> FLAG 4206: Final vertical shortcut unlock
-> FLAG 4207: Final horizontal shortcut unlock
-> FLAG 4208: Halfway vertical shortcut unlock
-> FLAG 4209: Halfway horizontal shortcut unlock
+FLAG 4200: 3F Relay unlock
+FLAG 4201: 3F Inner Relay unlock
+FLAG 4206: Final vertical shortcut unlock
+FLAG 4207: Final horizontal shortcut unlock
+FLAG 4208: Halfway vertical shortcut unlock
+FLAG 4209: Halfway horizontal shortcut unlock
 
 > Anguish of the Lost 3F Event Flags
 
@@ -628,9 +628,9 @@ FLAG 5099: Treasure (?)
 
 > Sorrow of the Fragile 2F Relay Circles and Shortcuts
 
-> FLAG 5100: 2F Relay unlock
-> FLAG 5101: 2F Center Relay unlock
-> FLAG 5109: Shortcut halfway through northwest maze (42, 44)
+FLAG 5100: 2F Relay unlock
+FLAG 5101: 2F Center Relay unlock
+FLAG 5109: Shortcut halfway through northwest maze (42, 44)
 
 > Sorrow of the Fragile 2F Event Flags
 
@@ -656,9 +656,56 @@ FLAG 5199: Treasure before Kogasa (?)
 FLAG 5210: ??? (set to 1 after 5010)
 FLAG 5211: ??? (set to 1 after 5010)
 
+> Battleground of the Unforgiven 1F Relay Circles and Shortcuts
+
+FLAG 6009: Shortcut to southern floor part (59, 104)
+
 > Battleground of the Unforgiven 1F Event Flags
 
-FLAG 6010: ??? (set to 1 after 144)
+FLAG 6010: First visit cutscene (set to 1 after 144)
+FLAG 6012: Shortcut miniboss (set to 1 after 6010) (65, 91)
+
+> Battleground of the Unforgiven 1F Treasure Flags
+
+FLAG 6085: Treasure(?)
+FLAG 6086: Treasure(?)
+FLAG 6087: Locked Treasure (
+  Sword, Sorcery & Smokepowder Barrel x1
+  Phoenix's Arm x1
+  Double-Barreled Boomstick x1
+  Pure Sake - Wild Boar x1
+  Illegal LAN-Connected Yakuza Gun x1
+  Blood-Soaked Scoria x1
+) (71, 117)
+FLAG 6088: Treasure(?)
+FLAG 6089: Treasure(?)
+FLAG 6090: Treasure(?)
+FLAG 6091: Treasure(?)
+FLAG 6092: Treasure(?)
+FLAG 6093: Treasure(?)
+FLAG 6094: Treasure(?)
+FLAG 6095: Treasure(?)
+FLAG 6096: Treasure(?)
+FLAG 6097: Treasure(?)
+FLAG 6098: Treasure(?)
+FLAG 6099: Treasure(?)
+
+> Battleground of the Unforgiven 2F Relay Circles
+
+FLAG 6100: 2F Relay unlock
+
+> Battleground of the Unforgiven 2F Event Flags
+
+FLAG 6011: ??? (set to 1 after 6010) (likely was originally in 1F)
+FLAG 6110: First visit cutscene (set to 1 after 6010)
+FLAG 6111: ??? (set to 1 after 6010)
+
+> Battleground of the Unforgiven 3F Event Flags
+
+FLAG 6210: ??? (set to 1 after 6010)
+FLAG 6211: ??? (set to 1 after 6010)
+FLAG 6212: ??? (set to 1 after 6010)
+FLAG 6213: ??? (set to 1 after 6010)
 
 > Prison of the Solitary 1F Event Flags
 

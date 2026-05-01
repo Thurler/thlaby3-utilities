@@ -417,3 +417,30 @@
 (Demon Core x1) (39, 66)
 
 > Post-Kogasa
+
+=======================================================================
+===== Battleground of the Unforgiven - 1F =====
+=======================================================================
+
+[Locked] (
+  Sword, Sorcery & Smokepowder Barrel x1
+  Phoenix's Arm x1
+  Double-Barreled Boomstick x1
+  Pure Sake - Wild Boar x1
+  Illegal LAN-Connected Yakuza Gun x1
+  Blood-Soaked Scoria x1
+) (71, 117)
+(Diamond Edge x1) (63, 44)
+(Champion's Windbomb x1) (98, 50)
+(Illegal LAN-Connected Yakuza Gun x1) (51, 53)
+(Pure Sake - Wild Boar x1) (59, 56)
+(Blood-Soaked Scoria x1) (77, 60)
+(Dream of Carnage x1) (51, 71)
+(Blue Moonstone x1) (95, 76)
+(Lockbox Key x1) (72, 83)
+(Extra Atelier Tools x1) (65, 87)
+(Huscarl's Round Shield x1) (48, 89)
+(1200 sen) (75, 91)
+(Dream Soul of the Unfogiven x1) (63, 100)
+(Star Sunstone x1) (37, 108)
+(Cloak of the Bat x1) (82, 119)

@@ -172,6 +172,13 @@ class BigIceBlockCell(IconCell):
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 2, cell_size * 2))
 
+# A cell that houses a movable tile
+class MovableTileCell(IconCell):
+  icon = Image.open("./assets/movabletile.png")
+
+  def __init__(self, x, y):
+    super().__init__(x, y, self.icon, (cell_size * 1.6, cell_size * 1.6))
+
 # A cell that houses a green orb
 class GreenOrbCell(IconCell):
   icon = Image.open("./assets/greenorb.png")
@@ -232,7 +239,7 @@ class InvisibleWarpCell(PathCell):
 
 # A floor that will be drawn in the map
 class Floor:
-  def __init__(self, stratum, floor, special_tiles, special_colors = {}):
+  def __init__(self, stratum, floor, special_tiles, special_colors = {}, draw_walls = False):
     self.stratum = stratum
     self.floor = floor
     self.fileprefix = './data/'
@@ -240,6 +247,7 @@ class Floor:
     self.fileprefix += '0' + str(floor) + '_'
     self.special_tiles = special_tiles
     self.special_colors = special_colors
+    self.draw_walls = draw_walls
     self.init_grid()
 
   def init_grid(self):
@@ -261,13 +269,15 @@ class Floor:
               self.grid[row].append(None)
               x = (cell_size + grid_size) * col
               # Check if cell is walkable (1 = visible, 2 = walkable)
-              walkable = walkable_data.read(1)[0] == 2
+              data = walkable_data.read(1)[0]
+              walkable = data == 2
+              visible = data >= 1
               # Check if cell is a hidden path (0 = not hidden)
               hidden = hidden_line[col] != '0'
               graphic = graphic_line[col]
-              if walkable or hidden:
+              if walkable or hidden or (self.draw_walls and visible):
                 # Make the cell and add it to the grid
-                self.grid[row][col] = self.make_cell(row, col, x, y, hidden, graphic)
+                self.grid[row][col] = self.make_cell(row, col, x, y, hidden, graphic, walkable)
                 # Update the boundaries for later cropping
                 if col < minx:
                   minx = col
@@ -279,7 +289,10 @@ class Floor:
                   maxy = row
     self.boundaries = (minx, maxx, miny, maxy)
 
-  def make_cell(self, row, col, x, y, hidden, graphic):
+  def make_cell(self, row, col, x, y, hidden, graphic, walkable = True):
+    color_override = self.special_colors[graphic] if graphic in self.special_colors else None
+    if color_override is None and not walkable:
+      color_override = (0, 0, 0)
     # Check if this is a special cell by comparing row/col with x/y
     special = next(
       (tile for tile in self.special_tiles if tile.x == col and tile.y == row),
@@ -292,7 +305,6 @@ class Floor:
       special.hidden = hidden
       return special
     # Otherwise just make a simple cell
-    color_override = self.special_colors[graphic] if graphic in self.special_colors else None
     return Cell(x + grid_size, y + grid_size, hidden, color_override)
 
   def draw(self, image, pixels):
@@ -830,12 +842,93 @@ class Fragile3F(Floor):
     super().__init__(5, 3, self.tiles)
 
 class Unforgiven1F(Floor):
-  # TODO: actually make walls work
   tiles = [
+    MovableTileCell(63, 47),
+    MovableTileCell(62, 51),
+    MovableTileCell(47, 53),
+    MovableTileCell(53, 53),
+    MovableTileCell(64, 53),
+    MovableTileCell(55, 56),
+    MovableTileCell(70, 56),
+    MovableTileCell(49, 60),
+    MovableTileCell(89, 60),
+    MovableTileCell(64, 61),
+    MovableTileCell(46, 64),
+    MovableTileCell(71, 64),
+    MovableTileCell(85, 64),
+    MovableTileCell(80, 67),
+    MovableTileCell(91, 68),
+    MovableTileCell(68, 76),
+    MovableTileCell(77, 78),
+    MovableTileCell(77, 79),
+    MovableTileCell(63, 80),
+    MovableTileCell(83, 80),
+    MovableTileCell(75, 81),
+    MovableTileCell(84, 82),
+    MovableTileCell(41, 83),
+    MovableTileCell(62, 83),
+    MovableTileCell(62, 84),
+    MovableTileCell(80, 87),
+    MovableTileCell(53, 89),
+    MovableTileCell(67, 89),
+    MovableTileCell(59, 91),
+    MovableTileCell(62, 95),
+    MovableTileCell(59, 98),
+    MovableTileCell(73, 100),
+    MovableTileCell(71, 101),
+    MovableTileCell(73, 101),
+    MovableTileCell(64, 103),
+    MovableTileCell(48, 106),
+    MovableTileCell(74, 106),
+    MovableTileCell(68, 109),
+    MovableTileCell(67, 110),
+    MovableTileCell(74, 110),
+    MovableTileCell(71, 111),
+    MiniBossCell(65, 91, ""),
+    WarpCell(56, 48, 56, 50),
+    WarpCell(59, 104, 59, 102),
+    WarpCell(59, 102, 59, 104),
+    StairsUpCell(63, 72),
+    LockedTreasureCell(71, 117, ""),
+    TreasureCell(63, 44, ""),
+    TreasureCell(98, 50, ""),
+    TreasureCell(51, 53, ""),
+    TreasureCell(59, 56, ""),
+    TreasureCell(77, 60, ""),
+    TreasureCell(51, 71, ""),
+    TreasureCell(95, 76, ""),
+    TreasureCell(72, 83, ""),
+    TreasureCell(65, 87, ""),
+    TreasureCell(48, 89, ""),
+    TreasureCell(75, 91, ""),
+    TreasureCell(63, 100, ""),
+    TreasureCell(37, 108, ""),
+    TreasureCell(82, 119, ""),
   ]
 
   def __init__(self):
-    super().__init__(6, 1, self.tiles)
+    super().__init__(6, 1, self.tiles, {
+      "5": (0, 0, 0),
+      "6": (127, 127, 127),
+      "7": (127, 127, 127),
+      "8": (127, 127, 127),
+      "9": (127, 127, 127),
+      "10": (127, 127, 127),
+      "11": (127, 127, 127),
+      "12": (127, 127, 127),
+      "13": (127, 127, 127),
+      "14": (127, 127, 127),
+      "15": (127, 127, 127),
+      "16": (127, 127, 127),
+      "17": (127, 127, 127),
+      "18": (127, 127, 127),
+      "19": (127, 127, 127),
+      "20": (127, 127, 127),
+      "21": (127, 127, 127),
+      "22": (127, 127, 127),
+      "23": (127, 127, 127),
+      "26": (0, 0, 0),
+    }, True)
 
 class Unforgiven2F(Floor):
   tiles = [
@@ -964,9 +1057,9 @@ pixels = map_img.load()
 # floor = Anguish2F()
 # floor = Anguish3F()
 # floor = Fragile1F()
-floor = Fragile2F()
+# floor = Fragile2F()
 # floor = Fragile3F()
-# floor = Unforgiven1F()
+floor = Unforgiven1F()
 # floor = Unforgiven2F()
 # floor = Unforgiven3F()
 # floor = Solitary1F()
@@ -1018,7 +1111,8 @@ final_img = Image.new(
 )
 pixels = final_img.load()
 draw = ImageDraw.Draw(final_img)
-labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+labels = [i for i in alphabet] + ["A" + i for i in alphabet]
 
 def draw_vertical_divisor(pixels, draw, xcount, text=True):
   # Horizontal groups use number, start at 1
