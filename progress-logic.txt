@@ -532,9 +532,9 @@ Dream Amber chests:
 - 2 chests of wave 2 (B/C) are obsolete (2 total)
 
 Subequips (Dream Amber):
-- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa, craftable by Reimu)
-- 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until ???)
-- 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new until ???)
+- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new/unfarmable until Kogasa shortcut, ??? otherwise, cloneable by Marisa, craftable by Reimu)
+- 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until Kasen shortcut, ??? otherwise)
+- 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new/unfarmable until Kogasa)
 - 016 Diamond Edge x2 [Amber-Wave1-D x2]
 - 020 Gothic Plate Armor x2 [Amber-Wave1-D x2]
 - 024 Enigma Machine x2 [Amber-Wave1-D x2]
@@ -544,16 +544,16 @@ Subequips (Dream Amber):
 - 040 Flowing Dress x2 [Amber-Wave1-E x2] (new/unfarmable until Marisa)
 - 042 Flying Machine x2 [Amber-Wave1-E x2] (new/unfarmable until Marisa)
 - 044 Last Leaf x2 [Amber-Wave1-E x2]
-- 046 Bangle of the Star Realm x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 046 Bangle of the Star Realm x2 [Amber-Wave1-E x2] (unfarmable until Kogasa shortcut, ??? otherwise)
 - 048 Yin-Yang Shift Stone x2 [Amber-Wave1-E x2] (unfarmable until ???)
 - 050 Coagulated Bloog Gem x2 [Amber-Wave1-E x2]
-- 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until Kogasa)
 - 077 Momijihime x1 [Amber-Wave1-F] (unfarmable until Marisa)
-- 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until ???)
+- 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until Kogasa shortcut, ??? otherwise)
 - 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new/unfarmable until Marisa shortcut, Kogasa otherwise)
 - 116 Sun Shades x2 [Amber-Wave1-C x2] (new/unfarmable until Kogasa)
 - 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
-- 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
+- 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until Marisa if Keine, ??? otherwise)
 
 Materials (Dream Amber):
 - 011 Sunstone x5 [Amber-Wave2-D x5]
@@ -561,7 +561,7 @@ Materials (Dream Amber):
 - 013 Lattice Sunstone x5 [Amber-Wave2-D x5] (new until ???)
 - 014 Moonstone x5 [Amber-Wave2-D x5]
 - 015 Blue Moonstone x5 [Amber-Wave2-D x5] (new/unfarmable until Marisa)
-- 016 Royal Blue Moonstone x5 [Amber-Wave2-D x5] (new until ???)
+- 016 Royal Blue Moonstone x5 [Amber-Wave2-D x5] (new/unfarmable until Kasen shortcut, ??? otherwise)
 
 Specials (Dream Amber):
 - Dream Soul of the Suffering x1 [Amber-Wave1-A]
@@ -691,7 +691,7 @@ Dream Amber chests:
 
 Subequips (Dream Amber):
 - 126 Guiding Moonlight x1 [Amber-Wave3-F] (new until ???)
-- 127 Aleksander's Magic Meteor x1 [Amber-Wave3-F] (new until ???)
+- 127 Aleksander's Magic Meteor x1 [Amber-Wave3-F] (new/unfarmable until Kasen shortcut, ??? otherwise)
 
 Materials (Dream Amber):
 - 071 Determination Polycrystal x40 [Amber-Wave3-D x40]
@@ -964,6 +964,8 @@ Improved Infinites (Sub):
 - 029 Jaggy Leaf [Spring Breeze Kedama 10% -> 10.8%]
 - 078 Club of Hill Giant Strength [Anguish Squad 3.6% -> 11.5%]
 - 086 Sword, Sorcery & Smokepowder Barrel [Oni Ginkgo Seed 0.3% -> 1.4%]
+(Requires shortcut miniboss)
+- 088 Double-Barreled Boomstick [Nightmare Premonition 3.6% -> 5.7%]
 (Requires Keine)
 - 007 Source of Magic [Marisa 1.4% -> 57.6%]
 - 024 Enigma Machine [Marisa 0.3% -> 43.2%]
@@ -979,7 +981,6 @@ Improved Infinites (Mat):
 (Requires shortcut miniboss)
 - 015 Blue Moonstone [Wildscream Seedbed 10.8% -> 16.2%]
 - 058 Great Nightmare Weapon [Nightmare Premonition 4.3% -> 5%]
-- 088 Double-Barreled Boomstick [Nightmare Premonition 3.6% -> 5.7%]
 
 =======================================================================
 === Midbosses - Sorrow of the Fragile 1F/2F ===
@@ -1012,7 +1013,7 @@ Specials:
 
 New Infinites (Sub):
 - 051 Lucky Horseshoe [Zirconia Elemental 10.8%]
-- 082 Hoplite's Spear [Swampland ssassin 5.4%]
+- 082 Hoplite's Spear [Swampland Assassin 5.4%]
 - 100 Temple Shooter Card [Moonlight Necromancer 1.1%]
 - 115 Secret Red Shoulder Files [Swampstone Kedama 0.1%]
 - 116 Sun Shades [Moonlight Dancer 0.2%]
@@ -1055,7 +1056,7 @@ Improved Infinites (Sub):
 - 081 Mist Piercer [Sorrow Band 3.6% -> 15.8%]
 - 083 Broken Lead Heart [Sorrow Team 0.2% -> 11.5%]
 - 085 Sea Hunter [Despair of the Drowning 2.1% -> 5.7%]
-- 090 Illegal LAN-Connected Yakuza Gun [Swampland ssassin 1.4% -> 2.1%]
+- 090 Illegal LAN-Connected Yakuza Gun [Swampland Assassin 1.4% -> 2.1%]
 - 098 Twinkling Golden Strawberry [Fluorescent Shineflower 0.4% -> 8.6%]
 (Requires shortcut miniboss)
 - 007 Source of Magic [Sapphire Elemental 2.1% -> 7.2%]
@@ -1063,8 +1064,8 @@ Improved Infinites (Sub):
 - 108 Potion of Healing [Ruby Blaze Golem 0.3% -> 9%]
 
 Improved Infinites (Mat):
-- 011 Sunstone [Sorrow Squad 86.4% -> 100%]
-- 012 Star Sunstone [Sorrow Squad 17.2% -> 28.8%]
+- 011 Sunstone [Sorrow Band 86.4% -> 100%]
+- 012 Star Sunstone [Sorrow Band 17.2% -> 28.8%]
 - 019 Cold Sapphire [Despair of the Drowning 8.6% -> 11.5%]
 - 027 Spirit Opal [Moonlight Dancer 7.9% -> 10%]
 - 037 Ghost's Withered Silvergrass [Despair of the Drowning 10.8% -> 13.6%]
@@ -1084,6 +1085,105 @@ Improved Infinites (Mat):
 =======================================================================
 === Midbosses - Battleground of the Unforgiven 1F/2F ===
 =======================================================================
+
+Subequips:
+- 008 Master's Emblem x1 [Chest]
+- 016 Diamond Edge x1 [Chest]
+- 031 Booster 0.8 x1 [Chest]
+- 041 Safety Goggles x2 [Chest, Chest]
+- 042 Flying Machine x2 [Chest, Locked Chest P - 3]
+- 044 Last Leaf x1 [Locked Chest P - 3]
+- 051 Lucky Horseshoe x2 [Chest, Chest]
+- 052 Huscarl's Round Shield x1 [Chest]
+- 074 Champion's Windbomb x1 [Chest]
+- 077 Momijihime x1 [Chest]
+- 080 Cloak of the Bat x1 [Chest]
+- 086 Sword, Sorcery & Smokepowder Barrel x1 [Locked Chest O - 3]
+- 087 Phoenix's Arm x2 [Chest, Locked Chest O - 3]
+- 088 Double-Barreled Boomstick x2 [Chest, Locked Chest O - 3]
+- 089 Pure Sake - Wild Boar x5 [Chest, Chest, Locked Chest O - 3, Locked Chest P x2 - 3]
+- 090 Illegal LAN-Connected Yakuza Gun x2 [Chest, Locked Chest O - 3]
+- 091 Blood-Soaked Scoria x2 [Chest, Locked Chest O - 3]
+- 098 Twinkling Golden Strawberry x3 [Chest, Locked Chest P x2 - 3]
+
+Materials:
+- 012 Star Sunstone x1 [Chest]
+- 015 Blue Moonstone x2 [Chest, Chest]
+
+Specials:
+- Lockbox Key x1 [Chest]
+- Dream Soul of the Unfogiven x1 [Chest]
+- Dream of Carnage x1 [Chest]
+- Extra Atelier Tools x1 [Chest]
+- Phantasmagoria Pouch x1 [Chest]
+
+New Infinites (Sub):
+- 012 Tokyo Metronome [hito 1%]
+- 037 Dragon's Breath [child 11.5%]
+- 102 Battle Dress [fairy 1.4%]
+- 104 Lion's Pride [orb 0.7%]
+- 113 Double-Edged Spatha [victim 0.1%]
+- 118 Heavy Bomber PZ-P4 [hito 0.3%]
+- 123 Leonid Progenitor [child 0.1%]
+- 125 Uber Hot Watch [dog 0.1%]
+(no longer requires Nitori and Alice and 1 limited Element Flask)
+- 031 Booster 0.8 [fairy Clone -> 7.5%]
+(no longer requires Kogasa shortcut miniboss)
+- 052 Huscarl's Round Shield [Ruby Blaze Golem 23%]
+(Requires shortcut miniboss)
+- 008 Master's Emblem [sun 28.8%]
+- 127 Aleksander's Magic Meteor [stone 1%]
+
+New Infinites (Mat):
+- 018 Sweltering Star Ruby [smelter 4.3%]
+- 038 Ghost's Eboshi [victim 6%]
+- 048 Ancient Fish Scale [swallow 7.5%]
+- 051 Oni Panties [dog 14.4%]
+- 066 Infuriated Coke [kedama 10.8%]
+(no longer requires Kogasa shortcut miniboss)
+- 017 Fire Ruby [smelter 23%]
+(Requires shortcut miniboss)
+- 016 Royal Blue Moonstone [stone 5.4%]
+- 032 Durable Diamond [stone 23%]
+- 056 Angel Wing [sun 36%]
+
+Improved Infinites (Sub):
+- 003 Healing Blossom [fairy 1.4% -> 9%]
+- 014 Imitation Ootengu Masaie [blade 3.6% -> 10.8%]
+- 023 Symbol of Faith [smelter 1% -> 9%]
+- 027 Leeuwenhoek Lens [orb 2.8% -> 9.7%]
+- 033 Eyetrack Orbitars [hito 2.1% -> 8.6%]
+- 042 Flying Machine [kedama 1.4% -> 4.3%]
+- 051 Lucky Horseshoe [smelter 10.8% -> 11.8%]
+- 085 Sea Hunter [swallow 5.7% -> 6.4%]
+- 086 Sword, Sorcery & Smokepowder Barrel [Battlefield Team 1.4% -> 15.8%]
+- 087 Phoenix's Arm [Battlefield Band 5.7% -> 15.8%]
+- 089 Pure Sake - Wild Boar [Battlefield Team 1.4% -> 11.5%]
+- 090 Illegal LAN-Connected Yakuza Gun [Battlefield Band 2.1% -> 11.5%]
+- 091 Blood-Soaked Scoria [dog 0.2% -> 3.6%]
+(no longer requires Reimu shortcut)
+- 088 Double-Barreled Boomstick [Nightmare Premonition 3.6% -> 5.7%]
+(no longer requires Kogasa shortcut miniboss)
+- 108 Potion of Healing [Ruby Blaze Golem 0.3% -> 9%]
+(Requires Kogasa shortcut miniboss)
+- 037 Dragon's Breath [Ruby Elemental 11.5% -> 15.8%]
+
+Improved Infinites (Mat):
+- 002 Tamahane Ingot [child 12.9% -> 14.4%]
+- 006 Amalgam Flask [fairy 17.2% -> 19.4%]
+- 007 Element Flask [fairy 11.5% -> 14.4%]
+- 012 Star Sunstone [Battlefield Band 28.8% -> 50.4%]
+- 047 Soft Sealife Scale [swallow 14.4% -> 17.2%]
+- 049 Strange Metal Fragment [blade 12.6% -> 14.4%]
+- 058 Great Nightmare Weapon [Nightmare Premonition 4.3% -> 5%]
+- 060 Kedama Gem [kedama 4.3% -> 5.1%]
+- 071 Determination Polycrystal [Battlefield Team 45% -> 54%]
+(no longer requires Kogasa shortcut miniboss)
+- 015 Blue Moonstone [Ruby Blaze Golem 16.2% -> 25.2%]
+(Requires Kogasa shortcut miniboss)
+- 002 Tamahane Ingot [Frost Golem 14.4% -> 17.2%]
+(Requires shortcut miniboss)
+- 015 Blue Moonstone [stone 25.2% -> 46.8%]
 
 =======================================================================
 === Midbosses - Prison of the Solitary 1F/2F ===
