@@ -1122,10 +1122,10 @@ New Infinites (Sub):
 - 037 Dragon's Breath [Lava Child 11.5%]
 - 102 Battle Dress [Scarlet Fairy 1.4%]
 - 104 Lion's Pride [Circle of Flame 9%]
-- 113 Double-Edged Spatha [Victim of Slaughter 0.1%]
+- 113 Double-Edged Spatha [Slaughter Avenger 15.8%]
 - 118 Heavy Bomber PZ-P4 [Belligerent Hitodama 0.3%]
 - 123 Leonid Progenitor [Lava Child 0.1%]
-- 125 Uber Hot Watch [Watchdog of the Battlefield 0.1%]
+- 125 Uber Hot Watch [Orthrus of the Battlefield 1.8%]
 (no longer requires Nitori and Alice and 1 limited Element Flask)
 - 031 Booster 0.8 [Scarlet Fairy Clone -> 7.5%]
 (no longer requires Kogasa shortcut miniboss)
@@ -1135,10 +1135,11 @@ New Infinites (Sub):
 - 127 Aleksander's Magic Meteor [Untouchable Holystone 1%]
 
 New Infinites (Mat):
+- 003 Damascus Steel Ingot [Orthrus of the Battlefield 8.6%]
 - 018 Sweltering Star Ruby [Circle of Flame 46%]
 - 038 Ghost's Eboshi [Victim of Slaughter 6%]
 - 048 Ancient Fish Scale [Lava Swallower 7.5%]
-- 051 Oni Panties [Watchdog of the Battlefield 14.4%]
+- 051 Oni Panties [Orthrus of the Battlefield 23%]
 - 066 Infuriated Coke [Blazing Kedama 10.8%]
 (no longer requires Kogasa shortcut miniboss)
 - 017 Fire Ruby [Smelter Ruby 23%]
@@ -1160,7 +1161,7 @@ Improved Infinites (Sub):
 - 087 Phoenix's Arm [Battlefield Band 5.7% -> 15.8%]
 - 089 Pure Sake - Wild Boar [Battlefield Team 1.4% -> 11.5%]
 - 090 Illegal LAN-Connected Yakuza Gun [Battlefield Band 2.1% -> 11.5%]
-- 091 Blood-Soaked Scoria [Watchdog of the Battlefield 0.2% -> 3.6%]
+- 091 Blood-Soaked Scoria [Orthrus of the Battlefield 0.2% -> 6.4%]
 (no longer requires Reimu shortcut)
 - 088 Double-Barreled Boomstick [Nightmare Premonition 3.6% -> 5.7%]
 (no longer requires Kogasa shortcut miniboss)
@@ -1179,11 +1180,12 @@ Improved Infinites (Mat):
 - 060 Kedama Gem [Blazing Kedama 4.3% -> 5.1%]
 - 071 Determination Polycrystal [Battlefield Team 45% -> 54%]
 (no longer requires Kogasa shortcut miniboss)
-- 015 Blue Moonstone [Ruby Blaze Golem 16.2% -> 25.2%]
+- 015 Blue Moonstone [Slaughter Avenger 16.2% -> 28.8%]
 (Requires Kogasa shortcut miniboss)
 - 002 Tamahane Ingot [Frost Golem 14.4% -> 17.2%]
+- 003 Damascus Steel Ingot [Sapphire Elemental 8.6% -> 12.9%]
 (Requires shortcut miniboss)
-- 015 Blue Moonstone [Untouchable Holystone 25.2% -> 46.8%]
+- 015 Blue Moonstone [Untouchable Holystone 28.8% -> 46.8%]
 
 =======================================================================
 === Midbosses - Prison of the Solitary 1F/2F ===
