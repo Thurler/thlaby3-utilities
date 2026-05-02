@@ -473,3 +473,31 @@
 (Master's Emblem x1) (67, 116)
 
 > Post-Kasen
+
+=======================================================================
+===== Prison of the Solitary - 1F =====
+=======================================================================
+
+[Locked-3] (
+  Huscarl's Round Shield x1
+  Coagulated Blood Gem x1
+  Oiran's Lamentation x1
+  Coveted Ice Sword x1
+  Joy Capsule x1
+  Manly Dragon Clothes x1
+) (65, 65)
+(Lockbox Key x1) (63, 46)
+(Blue Moonstone x1) (107, 52)
+(Book of Guidance x1) (73, 56)
+(Stomped Hoarfrost of the Tarnished x1) (46, 63)
+(Flowing Dress x1) (96, 70)
+(Coagulated Blood Gem x1) (74, 74)
+(Dream of Illusions x1) (55, 77)
+(Dream Soul of the Solitude x1) (96, 78)
+(Extra Atelier Tools x1) (70, 96)
+(Coveted Ice Sword x1) (78, 96)
+(Star Sunstone x1) (52, 107)
+
+=======================================================================
+===== Prison of the Solitary - 2F =====
+=======================================================================

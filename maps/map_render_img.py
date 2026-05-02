@@ -1057,6 +1057,26 @@ class Unforgiven3F(Floor):
 
 class Solitary1F(Floor):
   tiles = [
+    RockCell(104, 107),
+    EventCell(104, 109, ""),
+    MiniBossCell(107, 104, ""),
+    WarpCell(109, 104, 50, 50),
+    WarpCell(50, 50, 109, 104),
+    ArrowCell(52, 54, "Right"),
+    ArrowCell(54, 52, "Down"),
+    StairsUpCell(54, 54),
+    LockedTreasureCell(65, 65, ""),
+    TreasureCell(63, 46, ""),
+    TreasureCell(107, 52, ""),
+    TreasureCell(73, 56, ""),
+    TreasureCell(46, 63, ""),
+    TreasureCell(96, 70, ""),
+    TreasureCell(74, 74, ""),
+    TreasureCell(55, 77, ""),
+    TreasureCell(96, 78, ""),
+    TreasureCell(70, 96, ""),
+    TreasureCell(78, 96, ""),
+    TreasureCell(52, 107, ""),
   ]
 
   def __init__(self):
@@ -1171,9 +1191,9 @@ pixels = map_img.load()
 # floor = Fragile2F()
 # floor = Fragile3F()
 # floor = Unforgiven1F()
-floor = Unforgiven2F()
+# floor = Unforgiven2F()
 # floor = Unforgiven3F()
-# floor = Solitary1F()
+floor = Solitary1F()
 # floor = Solitary2F()
 # floor = Solitary3F()
 # floor = Utopia1F()

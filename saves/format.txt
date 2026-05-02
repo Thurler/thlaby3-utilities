@@ -204,6 +204,8 @@ FLAGS 901 to 929: set to 1 after prologue, also seem to be tied to generic dunge
 
 [...]
 
+FLAG 993: Tenshi recruit hint (set to 1 on rock interaction) (set to 2 on rock destroy)
+FLAG 994: ???
 FLAG 995: Satori recruit hint (set to 1 on rock interaction) (set to 2 on rock destroy)
 FLAG 996: ???
 FLAG 997: Rin recruit hint (set to 1 on rock interaction) (set to 2 on rock destroy)
@@ -736,8 +738,43 @@ FLAG 6213: ??? (set to 1 after 6010)
 
 > Prison of the Solitary 1F Event Flags
 
-FLAG 7010: ??? (set to 1 after 144)
-FLAG 7011: ??? (set to 1 after 144)
+FLAG 7010: First visit cutscene (set to 1 after 144)
+FLAG 7011: Tenshi recruit cutscene (set to 1 after 144) (104, 109)
+FLAG 7012: Shortcut miniboss (set to 1 after 7010) (107, 104)
+
+> Prison of the Solitary 1F Treasure Flags
+
+FLAG 7088: Treasure (?)
+FLAG 7089: Treasure (?)
+FLAG 7090: Treasure (?)
+FLAG 7091: Treasure (?)
+FLAG 7092: Locked Treasure (
+  Huscarl's Round Shield x1
+  Coagulated Blood Gem x1
+  Oiran's Lamentation x1
+  Coveted Ice Sword x1
+  Joy Capsule x1
+  Manly Dragon Clothes x1
+) (65, 65)
+FLAG 7093: Treasure (?)
+FLAG 7094: Treasure (?)
+FLAG 7095: Treasure (?)
+FLAG 7096: Treasure (?)
+FLAG 7097: Treasure (?)
+FLAG 7098: Treasure (?)
+FLAG 7099: Treasure (?)
+
+> Prison of the Solitary 2F Event Flags
+
+FLAG 7110: ??? (set to 1 after 7010)
+FLAG 7111: ??? (set to 1 after 7010)
+
+> Prison of the Solitary 3F Event Flags
+
+FLAG 7210: ??? (set to 1 after 7010)
+FLAG 7211: ??? (set to 1 after 7010)
+FLAG 7212: ??? (set to 1 after 7010)
+FLAG 7213: ??? (set to 1 after 7010)
 
 ===== PGD FILE =====
 
