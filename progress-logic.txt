@@ -540,7 +540,7 @@ Subequips (Dream Amber):
 - 024 Enigma Machine x2 [Amber-Wave1-D x2]
 - 028 Timekeeping Crystal Oscillator x2 [Amber-Wave1-D x2]
 - 032 Immortal Salamander Scale x2 [Amber-Wave1-D x2] (unfarmable until ???, cloneable by Marisa)
-- 038 Love Machine 3322 x2 [Amber-Wave1-E x2] (new until ???)
+- 038 Love Machine 3322 x2 [Amber-Wave1-E x2] (new/unfarmable until Kogasa)
 - 040 Flowing Dress x2 [Amber-Wave1-E x2] (new/unfarmable until Marisa)
 - 042 Flying Machine x2 [Amber-Wave1-E x2] (new/unfarmable until Marisa)
 - 044 Last Leaf x2 [Amber-Wave1-E x2]
@@ -549,10 +549,10 @@ Subequips (Dream Amber):
 - 050 Coagulated Bloog Gem x2 [Amber-Wave1-E x2]
 - 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until Kogasa)
 - 077 Momijihime x1 [Amber-Wave1-F] (unfarmable until Marisa)
-- 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until Kogasa shortcut, ??? otherwise)
+- 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until Kogasa shortcut)
 - 106 Whirlwind Mixer Blade x1 [Amber-Wave1-F] (new/unfarmable until Marisa shortcut, Kogasa otherwise)
 - 116 Sun Shades x2 [Amber-Wave1-C x2] (new/unfarmable until Kogasa)
-- 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
+- 119 Star Pendant x2 [Amber-Wave2-F x2] (new/unfarmable until Kogasa)
 - 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until Marisa if Keine, ??? otherwise)
 
 Materials (Dream Amber):
@@ -697,7 +697,7 @@ Materials (Dream Amber):
 - 071 Determination Polycrystal x40 [Amber-Wave3-D x40]
 - 074 Despair Crystal x20 [Amber-Wave3-D x20]
 - 079 Gensokyo Fragment x2 [Amber-Wave3-E x2] (new until ???)
-- 080 Chaos Fragment x2 [Amber-Wave3-E x2] (new until ???)
+- 080 Chaos Fragment x2 [Amber-Wave3-E x2] (new/unfarmable until Sakuya shortcut, ??? otherwise)
 
 Specials (Dream Amber):
 - Dream Soul of the Solitude x1 [Amber-Wave3-A]
@@ -1190,6 +1190,110 @@ Improved Infinites (Mat):
 =======================================================================
 === Midbosses - Prison of the Solitary 1F/2F ===
 =======================================================================
+
+Subequips:
+- 039 Frozen Frog x2 [Chest x2]
+- 040 Flowing Dress x1 [Chest]
+- 050 Coagulated Blood Gem x2 [Chest, Locked Chest Q - 3]
+- 052 Huscarl's Round Shield x1 [Locked Chest Q - 3]
+- 059 Oiran's Lamentation x3 [Chest, Chest, Locked Chest Q - 3]
+- 092 Coveted Ice Sword x3 [Chest, Chest, Locked Chest Q - 3]
+- 093 Blue Chemistry Pack x1 [Chest]
+- 094 Stomped Hoarfrost of the Tarnished x2 [Chest, Chest]
+- 095 Unusual Box x1 [Chest]
+- 103 Joy Capsule x1 [Locked Chest Q - 3]
+- 105 Manly Dragon Clothes x1 [Locked Chest Q - 3]
+
+Materials:
+- 009 Ochimizu Flask x3 [Chest x3]
+- 012 Star Sunstone x1 [Chest]
+- 015 Blue Moonstone x1 [Chest]
+
+Specials:
+- Lockbox Key x2 [Chest, Chest]
+- Dream Soul of the Solitude x1 [Chest]
+- Dream of Illusions x1 [Chest]
+- Book of Guidance x1 [Chest]
+- Extra Atelier Tools x1 [Chest]
+
+New Infinites (Sub):
+- 034 Frozen Eye [bug 5.4%]
+- 036 Black Hole Ocarina [nightmare 4.3%]
+- 038 Love Machine 3322 [war 5.4%]
+- 096 Sublime Cap [Prison Band 11.5%]
+- 109 Elysium System [nightmare 1.4%]
+- 112 Glaive of Pain [bee 0.3%]
+- 114 Kiss of Blessing [darling 6.9%]
+- 119 Star Pendant [widow 0.3%]
+- 128 Victory Cry [wolf 0.1%]
+- 129 Tear of Despair [fairy 0.1%]
+(no longer requires Alice)
+- 055 Dwarven Axe [nightmare Clone -> 8.6%]
+(no longer requires Kogasa shortcut miniboss)
+- 092 Coveted Ice Sword [Prison Team 5.7% -> 15.8%]
+- 133 Upwell Structure - Keepstar [Frost Golem 0.1%]
+(no longer requires Keine)
+- 093 Blue Chemistry Pack [Prison Band 15.8%]
+- 097 Summon Giga Disc [fairy 5.4%]
+(Requires shortcut miniboss)
+- 107 Heavy EM Worm Cannon [lens 7.9%]
+- 137 Divine Shield [enforcer 0.1%]
+
+New Infinites (Mat):
+- 008 Ether Flask [fairy 11.5%]
+- 020 Freezing Star Sapphire [eater 51.8%]
+- 044 Monster Wing Accessory [bug 6.4%]
+- 046 Rainbow Insect Wing [bug 8.6%]
+- 067 Solitary Cryolite [icicle 15.8%]
+(no longer requires Kogasa shortcut miniboss)
+- 050 Wandering Magic Armor [Frost Golem 7.9%]
+(Requires shortcut miniboss)
+- 004 Titan Steel Ingot [enforcer 10%]
+- 028 Holy Crystal Opal [lens 10.8%]
+- 052 Sturdy Oni Horn [lens 12.9%]
+- 072 Determination Monocrystal [world 16.2%]
+- 080 Chaos Fragment [world 4.6%]
+
+Improved Infinites (Sub):
+- 003 Healing Blossom [seed 9% -> 10.8%]
+- 031 Booster 0.8 [bug 7.5% -> 12.9%]
+- 033 Eyetrack Orbitars [cracker 8.6% -> 11.5%]
+- 040 Flowing Dress [widow 2.1% -> 5.7%]
+- 058 Songstress's Apron [queen 10.8% -> 11.5%]
+- 082 Hoplite's Spear [bee 5.4% -> 5.7%]
+- 088 Double-Barreled Boomstick [cracker 5.7% -> 6.4%]
+- 094 Stomped Hoarfrost of the Tarnished [queen 1.4% -> 11.5%]
+- 095 Unusual Box [Prison Team 0.2% -> 11.5%]
+- 111 Defense Staff [eater 5.7% -> 6.9%]
+(Requires shortcut miniboss)
+- 123 Leonid Progenitor [world 0.1% -> 2.1%]
+
+Improved Infinites (Mat):
+- 001 Bronze Ingot [wolf 17.2% -> 25.9%]
+- 003 Damascus Steel Ingot [nightmare 8.6% -> 10.8%]
+- 012 Star Sunstone [Prison Band 50.4% -> 72%]
+- 015 Blue Moonstone [darling 28.8% -> 36%]
+- 024 Flowering Emerald [seed 5.7% -> 7.2%]
+- 026 Occult Ametrine [queen 5.7% -> 8.6%]
+- 031 Physical Zirconia [bee 11.5% -> 12.9%]
+- 033 Old Coin Purse [girl 12.9% -> 13.6%]
+- 034 Antique Perforated Coins [queen 8.6% -> 15.8%]
+- 037 Ghost's Withered Silvergrass [war 13.6% -> 14.4%]
+- 042 Beast Claw Accessory [darling 5.4% -> 57.6%]
+- 043 Large Feather [fairy 12.9% -> 14.4%]
+- 045 Tough Shell [seed 15.8% -> 17.2%]
+- 049 Strange Metal Fragment [war 14.4% -> 15.8%]
+- 058 Great Nightmare Weapon [nightmare 5% -> 5.7%]
+- 071 Determination Polycrystal [Prison Team 54% -> 63%]
+(no longer requires Kogasa shortcut miniboss)
+- 002 Tamahane Ingot [Frost Golem 14.4% -> 17.2%]
+(Requires Kogasa shortcut miniboss)
+- 003 Damascus Steel Ingot [Sapphire Elemental 10.8% -> 12.9%]
+(Requires Kasen shortcut miniboss)
+- 015 Blue Moonstone [Untouchable Holystone 36% -> 46.8%]
+(Requires shortcut miniboss)
+- 016 Royal Blue Moonstone [world 5.4% -> 18%]
+- 019 Cold Sapphire [enforcer 11.5% -> 21.6%]
 
 =======================================================================
 === Kogasa - Exploration Consolidation ===
