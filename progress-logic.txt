@@ -1118,49 +1118,49 @@ Specials:
 - Phantasmagoria Pouch x1 [Chest]
 
 New Infinites (Sub):
-- 012 Tokyo Metronome [hito 1%]
-- 037 Dragon's Breath [child 11.5%]
-- 102 Battle Dress [fairy 1.4%]
-- 104 Lion's Pride [orb 0.7%]
-- 113 Double-Edged Spatha [victim 0.1%]
-- 118 Heavy Bomber PZ-P4 [hito 0.3%]
-- 123 Leonid Progenitor [child 0.1%]
-- 125 Uber Hot Watch [dog 0.1%]
+- 012 Tokyo Metronome [Belligerent Hitodama 1%]
+- 037 Dragon's Breath [Lava Child 11.5%]
+- 102 Battle Dress [Scarlet Fairy 1.4%]
+- 104 Lion's Pride [Circle of Flame 9%]
+- 113 Double-Edged Spatha [Victim of Slaughter 0.1%]
+- 118 Heavy Bomber PZ-P4 [Belligerent Hitodama 0.3%]
+- 123 Leonid Progenitor [Lava Child 0.1%]
+- 125 Uber Hot Watch [Watchdog of the Battlefield 0.1%]
 (no longer requires Nitori and Alice and 1 limited Element Flask)
-- 031 Booster 0.8 [fairy Clone -> 7.5%]
+- 031 Booster 0.8 [Scarlet Fairy Clone -> 7.5%]
 (no longer requires Kogasa shortcut miniboss)
 - 052 Huscarl's Round Shield [Ruby Blaze Golem 23%]
 (Requires shortcut miniboss)
-- 008 Master's Emblem [sun 28.8%]
-- 127 Aleksander's Magic Meteor [stone 1%]
+- 008 Master's Emblem [Emissary of the Sun 28.8%]
+- 127 Aleksander's Magic Meteor [Untouchable Holystone 1%]
 
 New Infinites (Mat):
-- 018 Sweltering Star Ruby [smelter 4.3%]
-- 038 Ghost's Eboshi [victim 6%]
-- 048 Ancient Fish Scale [swallow 7.5%]
-- 051 Oni Panties [dog 14.4%]
-- 066 Infuriated Coke [kedama 10.8%]
+- 018 Sweltering Star Ruby [Circle of Flame 46%]
+- 038 Ghost's Eboshi [Victim of Slaughter 6%]
+- 048 Ancient Fish Scale [Lava Swallower 7.5%]
+- 051 Oni Panties [Watchdog of the Battlefield 14.4%]
+- 066 Infuriated Coke [Blazing Kedama 10.8%]
 (no longer requires Kogasa shortcut miniboss)
-- 017 Fire Ruby [smelter 23%]
+- 017 Fire Ruby [Smelter Ruby 23%]
 (Requires shortcut miniboss)
-- 016 Royal Blue Moonstone [stone 5.4%]
-- 032 Durable Diamond [stone 23%]
-- 056 Angel Wing [sun 36%]
+- 016 Royal Blue Moonstone [Untouchable Holystone 5.4%]
+- 032 Durable Diamond [Untouchable Holystone 23%]
+- 056 Angel Wing [Emissary of the Sun 36%]
 
 Improved Infinites (Sub):
-- 003 Healing Blossom [fairy 1.4% -> 9%]
-- 014 Imitation Ootengu Masaie [blade 3.6% -> 10.8%]
-- 023 Symbol of Faith [smelter 1% -> 9%]
-- 027 Leeuwenhoek Lens [orb 2.8% -> 9.7%]
-- 033 Eyetrack Orbitars [hito 2.1% -> 8.6%]
-- 042 Flying Machine [kedama 1.4% -> 4.3%]
-- 051 Lucky Horseshoe [smelter 10.8% -> 11.8%]
-- 085 Sea Hunter [swallow 5.7% -> 6.4%]
+- 003 Healing Blossom [Scarlet Fairy 1.4% -> 9%]
+- 014 Imitation Ootengu Masaie [Blood-Sucking Blade 3.6% -> 10.8%]
+- 023 Symbol of Faith [Smelter Ruby 1% -> 9%]
+- 027 Leeuwenhoek Lens [Orb of Flame 2.8% -> 9.7%]
+- 033 Eyetrack Orbitars [Belligerent Hitodama 2.1% -> 8.6%]
+- 042 Flying Machine [Blazing Kedama 1.4% -> 4.3%]
+- 051 Lucky Horseshoe [Smelter Ruby 10.8% -> 11.8%]
+- 085 Sea Hunter [Lava Swallower 5.7% -> 6.4%]
 - 086 Sword, Sorcery & Smokepowder Barrel [Battlefield Team 1.4% -> 15.8%]
 - 087 Phoenix's Arm [Battlefield Band 5.7% -> 15.8%]
 - 089 Pure Sake - Wild Boar [Battlefield Team 1.4% -> 11.5%]
 - 090 Illegal LAN-Connected Yakuza Gun [Battlefield Band 2.1% -> 11.5%]
-- 091 Blood-Soaked Scoria [dog 0.2% -> 3.6%]
+- 091 Blood-Soaked Scoria [Watchdog of the Battlefield 0.2% -> 3.6%]
 (no longer requires Reimu shortcut)
 - 088 Double-Barreled Boomstick [Nightmare Premonition 3.6% -> 5.7%]
 (no longer requires Kogasa shortcut miniboss)
@@ -1169,21 +1169,21 @@ Improved Infinites (Sub):
 - 037 Dragon's Breath [Ruby Elemental 11.5% -> 15.8%]
 
 Improved Infinites (Mat):
-- 002 Tamahane Ingot [child 12.9% -> 14.4%]
-- 006 Amalgam Flask [fairy 17.2% -> 19.4%]
-- 007 Element Flask [fairy 11.5% -> 14.4%]
+- 002 Tamahane Ingot [Lava Child 12.9% -> 14.4%]
+- 006 Amalgam Flask [Scarlet Fairy 17.2% -> 19.4%]
+- 007 Element Flask [Scarlet Fairy 11.5% -> 14.4%]
 - 012 Star Sunstone [Battlefield Band 28.8% -> 50.4%]
-- 047 Soft Sealife Scale [swallow 14.4% -> 17.2%]
-- 049 Strange Metal Fragment [blade 12.6% -> 14.4%]
+- 047 Soft Sealife Scale [Lava Swallower 14.4% -> 17.2%]
+- 049 Strange Metal Fragment [Blood-Sucking Blade 12.6% -> 14.4%]
 - 058 Great Nightmare Weapon [Nightmare Premonition 4.3% -> 5%]
-- 060 Kedama Gem [kedama 4.3% -> 5.1%]
+- 060 Kedama Gem [Blazing Kedama 4.3% -> 5.1%]
 - 071 Determination Polycrystal [Battlefield Team 45% -> 54%]
 (no longer requires Kogasa shortcut miniboss)
 - 015 Blue Moonstone [Ruby Blaze Golem 16.2% -> 25.2%]
 (Requires Kogasa shortcut miniboss)
 - 002 Tamahane Ingot [Frost Golem 14.4% -> 17.2%]
 (Requires shortcut miniboss)
-- 015 Blue Moonstone [stone 25.2% -> 46.8%]
+- 015 Blue Moonstone [Untouchable Holystone 25.2% -> 46.8%]
 
 =======================================================================
 === Midbosses - Prison of the Solitary 1F/2F ===
