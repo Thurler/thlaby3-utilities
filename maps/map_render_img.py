@@ -617,6 +617,13 @@ class Despair1F(Floor):
     DreamTreasureCell(56, 51, ""),
     DreamTreasureCell(58, 52, ""),
     RockCell(53, 53),
+    DreamTreasureCell(49, 55, ""),
+    DreamTreasureCell(48, 53, ""),
+    DreamTreasureCell(49, 52, ""),
+    DreamTreasureCell(52, 49, ""),
+    DreamTreasureCell(53, 48, ""),
+    DreamTreasureCell(55, 49, ""),
+    RockCell(50, 50),
   ]
 
   def __init__(self):

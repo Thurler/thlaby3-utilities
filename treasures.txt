@@ -257,12 +257,29 @@
 
 > Dream Treasures Wave 4
 
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
-[Dream] (x x1) (00, 00)
+[Dream] (Dream Soul of the Paradise-Yearning x2) (49, 55)
+[Dream] (
+  Dream of Vitality x5
+  Dream of Sorcery x5
+  Dream of Energy x5
+  Dream of Carnage x5
+  Dream of Protection x5
+  Dream of Wisdom x5
+  Dream of Affection x5
+  Dream of Swiftness x5
+  Dream of Hunting x5
+  Dream of Illusions x5
+) (48, 53)
+[Dream] (
+  Hero's Sword x1
+  Shining Hellstar x1
+) (49, 52)
+[Dream] (
+  Determination Monocrystal x30
+  Hope Crystal x30
+) (52, 49)
+[Dream] (Gensokyo Fragment x5) (53, 48)
+[Dream] (Chaos Fragment x5) (55, 49)
 
 > Dream Treasures Wave 5
 
