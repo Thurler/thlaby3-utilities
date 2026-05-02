@@ -1084,6 +1084,19 @@ class Solitary1F(Floor):
 
 class Solitary2F(Floor):
   tiles = [
+    StairsDownCell(117, 117),
+    RelayCircleCell(113, 113),
+    RelayCircleCell(72, 72),
+    BossCell(69, 69, ""),
+    TreasureCell(79, 79, ""),
+    TreasureCell(83, 83, ""),
+    TreasureCell(107, 83, ""),
+    TreasureCell(89, 89, ""),
+    TreasureCell(119, 100, ""),
+    TreasureCell(101, 101, ""),
+    TreasureCell(83, 107, ""),
+    TreasureCell(107, 107, ""),
+    TreasureCell(100, 119, ""),
   ]
 
   def __init__(self):
@@ -1193,8 +1206,8 @@ pixels = map_img.load()
 # floor = Unforgiven1F()
 # floor = Unforgiven2F()
 # floor = Unforgiven3F()
-floor = Solitary1F()
-# floor = Solitary2F()
+# floor = Solitary1F()
+floor = Solitary2F()
 # floor = Solitary3F()
 # floor = Utopia1F()
 # floor = Utopia2F()

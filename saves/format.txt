@@ -764,10 +764,27 @@ FLAG 7097: Treasure (?)
 FLAG 7098: Treasure (?)
 FLAG 7099: Treasure (?)
 
+> Prison of the Solitary 2F Relay Circles and Shortcuts
+
+FLAG 7100: 2F Relay unlock
+FLAG 7101: 2F Center Relay unlock
+
 > Prison of the Solitary 2F Event Flags
 
-FLAG 7110: ??? (set to 1 after 7010)
+FLAG 7110: First visit cutscene (set to 1 after 7010)
 FLAG 7111: ??? (set to 1 after 7010)
+
+> Prison of the Solitary 2F Treasure Flags
+
+FLAG 7191: Treasure before Sakuya (?)
+FLAG 7192: Treasure before Sakuya (?)
+FLAG 7193: Treasure before Sakuya (?)
+FLAG 7194: Treasure before Sakuya (?)
+FLAG 7195: Treasure before Sakuya (?)
+FLAG 7196: Treasure before Sakuya (?)
+FLAG 7197: Treasure before Sakuya (?)
+FLAG 7198: Treasure before Sakuya (?)
+FLAG 7199: Treasure before Sakuya (?)
 
 > Prison of the Solitary 3F Event Flags
 

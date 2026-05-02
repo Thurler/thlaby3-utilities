@@ -501,3 +501,17 @@
 =======================================================================
 ===== Prison of the Solitary - 2F =====
 =======================================================================
+
+> Pre-Sakuya
+
+(Ochimizu Flask x3) (79, 79)
+(Blue Chemistry Pack x1) (83, 83)
+(Stomped Hoarfrost of the Tarnished x1) (107, 83)
+(Lockbox Key x1) (89, 89)
+(Coveted Ice Sword x1) (119, 100)
+(Unusual Box x1) (101, 101)
+(Oiran's Lamentation x1) (83, 107)
+(Frozen Frog x2) (107, 107)
+(Oiran's Lamentation x1) (100, 119)
+
+> Post-Sakuya
