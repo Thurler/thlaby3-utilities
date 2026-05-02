@@ -1135,13 +1135,13 @@ New Infinites (Sub):
 - 127 Aleksander's Magic Meteor [Untouchable Holystone 1%]
 
 New Infinites (Mat):
-- 003 Damascus Steel Ingot [Orthrus of the Battlefield 8.6%]
 - 018 Sweltering Star Ruby [Circle of Flame 46%]
 - 038 Ghost's Eboshi [Victim of Slaughter 6%]
 - 048 Ancient Fish Scale [Lava Swallower 7.5%]
 - 051 Oni Panties [Orthrus of the Battlefield 23%]
 - 066 Infuriated Coke [Blazing Kedama 10.8%]
 (no longer requires Kogasa shortcut miniboss)
+- 003 Damascus Steel Ingot [Orthrus of the Battlefield 8.6%]
 - 017 Fire Ruby [Smelter Ruby 23%]
 (Requires shortcut miniboss)
 - 016 Royal Blue Moonstone [Untouchable Holystone 5.4%]
