@@ -529,7 +529,7 @@ Dream Amber chests:
 - At least 4 chests of Wave 1
 - At least 3 chests of Wave 1/2 (7 total)
 - 3 new characters, 9 new subs, 3 new mats, 7 locked chests (10/24, 88/100, 25/40, 15/30)
-- 2 chests of wave 2 (B/C) are obsolete (2 total)
+- 2 chests of wave 2 (B/C) are obsolete (0/2 = 2 total)
 
 Subequips (Dream Amber):
 - 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new/unfarmable until Kogasa shortcut, ??? otherwise, cloneable by Marisa, craftable by Reimu)
@@ -686,11 +686,11 @@ Dream Amber chests:
 (Requires Keine)
 - At least 1 chest of Wave 1/2
 - At least 1 chest of Wave 1/2/3 (9 total)
-- 2 chests of wave 3 (B/D) are obsolete (4 total)
+- 2 chests of wave 3 (B/D) are obsolete (0/2/2 = 4 total)
 - 3 new characters, 7 new subs, 4 new mats, 9 locked chests (10/24, 99/100, 41/40, 18/30)
 
 Subequips (Dream Amber):
-- 126 Guiding Moonlight x1 [Amber-Wave3-F] (new until ???)
+- 126 Guiding Moonlight x1 [Amber-Wave3-F] (new/unfarmable until Sakuya midboss via craft, ??? otherwise)
 - 127 Aleksander's Magic Meteor x1 [Amber-Wave3-F] (new/unfarmable until Kasen shortcut, ??? otherwise)
 
 Materials (Dream Amber):
@@ -1126,7 +1126,7 @@ New Infinites (Sub):
 - 118 Heavy Bomber PZ-P4 [Belligerent Hitodama 0.3%]
 - 123 Leonid Progenitor [Lava Child 0.1%]
 - 125 Uber Hot Watch [Orthrus of the Battlefield 1.8%]
-(no longer requires Nitori and Alice and 1 limited Element Flask)
+(no longer requires Nitori and Alice and 1 no longer limited Element Flask)
 - 031 Booster 0.8 [Scarlet Fairy Clone -> 7.5%]
 (no longer requires Kogasa shortcut miniboss)
 - 052 Huscarl's Round Shield [Ruby Blaze Golem 23%]
@@ -1299,61 +1299,259 @@ Improved Infinites (Mat):
 === Kogasa - Exploration Consolidation ===
 =======================================================================
 
-Characters: Reimu / Youmu
+Characters: Reimu / Youmu / Rin / Satori / Tenshi
+
+Dream Souls (Suffering x3) [+1 Amber-Wave1-A]:
+- No change, all can be recruited
+
+Dream Souls (Fragile x1) [+1 Amber-Wave1-B]:
+- Keine no longer requires Marisa shortcut miniboss
+- All characters can be recruited
+
+Dream Souls (Unforgiven x1) [+1 Amber-Wave2-A] [+1 Keine]:
+- Wriggle
+- Mystia
+- Iku
+- Momiji
+
+Dream Souls (Solitude x1) [+1 Amber-Wave3-A]:
+- Ran
+- Mokou (requires using limited Ochimizu Flask)
+- Kokoro
+
+Dream Souls (Paradise x0) [+2 Amber-Wave4-A]:
+- Suwako (requires Amber-Wave3-E OR Amber-Wave4-E)
+- Utsuho
+- Flandre
 
 Renko spells:
 - Yin-Yang Reversal -Descension Spear-
+- Moonlight Dance
+- Terror Eater
+- Oni Strike
+- Hellfire Trio
+- Widow's Lusoria
 
 Awakenings:
 - 104 Opportune Recovery x1 [Reimu 28.8%]
+(no longer requires Keine/Nitori/Aya)
+- 088 Total Protection x1 [75 achievements]
+(Requires Keine)
+- 019 Evasion x5 [Archive-PotS-1F-h x5]
+- 055 Form of Fire x3 [Archive-BotU-2F-h x3]
+- 086 Mental Ailment Prevention x2 [Archive-SotF-1F-h x2]
+(
+  Requires 9 points out of 11 below:
+    - (3) Keine
+    - (3) Nitori
+    - (2) Aya
+    - (2) Use 10 souls
+    - (1) Keine and Aya and 13 amber chests
+)
+- 075 Embodiment of All [85 achievements]
+(Requires Nitori)
+- Every character except Mystia can reach level 3
+- Renko, Meiling, Nitori, Doremy, Chen, Hecatia, Youmu, Rin, Tenshi, Satori can reach level 4
+- Reimu, Maribel, Marisa, Koishi, Junko can reach level 4 using limited Ochimizu Flask
+(Requires Nitori and their unlocks)
+- Cirno, Wriggle, Momiji, Mokou, Kokoro can reach level 4
+- Alice, Patchouli, Keine, Ran, Iku, Suwako, Utsuho, Flandre can reach level 4 using limited Ochimizu Flask
 
 Subequips:
 - 089 Pure Sake - Wild Boar x1 [Reimu 28.8]
 - 100 Temple Shooter Card x1 [Reimu 14.4%]
+(Requires Aya)
+- 088 Double-Barreled Boomstick x1 [Bestiary-Reg8]
+- 091 Blood-Soaked Scoria x1 [Bestiary-Horde8]
+- 106 Whirlwind Mixer Blade x1 [Bestiary-Reg13]
+- 108 Potion of Healing x1 [Bestiary-Rare13]
+(Requires Keine)
+- 091 Blood-Soaked Scoria x1 [Archive-SotF-1F-F]
+- 092 Coveted Ice Sword x2 [Archive-PotS-1F-F x2]
+- 098 Twinkling Golden Strawberry x1 [Archive-BotU-1F-F]
 
 Materials:
 - 027 Spirit Opal x1 [Reimu 57.6%]
+(Requires Aya)
+- 016 Royal Blue Moonstone x1 [Bestiary-Reg11]
 
-Awakenings:
-(no longer requires Keine/Nitori/Aya)
-- 088 Total Protection x1 [75 achievements]
+Specials:
+(
+  Requires 4 points out of 11 below:
+    - (3) Keine
+    - (3) Nitori
+    - (2) Aya
+    - (2) Use 10 souls
+    - (1) Keine and Aya and 13 amber chests
+)
+- Dream Amber Key x1 [80 achievements]
+(Requires Aya)
+- Lockbox Key x4 [Bestiary-Reg9 x4]
+- Dream Amber Key x3 [Bestiary-Reg10, Bestiary-Horde10, Bestiary-Rare10]
+- Dream of Vitality x3 [Bestiary-Rare14 x3]
+- Dream of Wisdom x3 [Bestiary-Rare9 x3]
+- Dream of Swiftness x3 [Bestiary-Rare11 x3]
+- Book of Guidance x3 [Bestiary-Horde11 x3]
+- Book of Beginnings x3 [Bestiary-Horde9 x3]
+- Itemfinders Weekly x1 [Bestiary-Rare12]
+- Single-Minded Studier's Set x2 [Bestiary-Reg7, Bestiary-Reg12]
+(Requires Keine)
+- Dream Soul of the Unforgiven x1 [Lunatic-7]
 
-Achievements (1 / 75) [+4]:
+Dream Amber chests:
+- 2 chests of wave 1 (C/F) are obsolete (2/2/2 = 6 total)
+- 10 new characters, 0 new subs, 1 new mats, 7 locked chests (24/24, 128/138, 66/75, 24/30)
+  - 1 new character (Unforgiven if Keine)
+  - 1 new subequip (Juicy Queenbeet if Keine)
+  - 1 new subequip (Ouroboros Loop if Keine OR Amber-Wave2-F) (redundant)
+  - 2 new material (Remnants if Mokou/Kokoro)
+(Requires Keine OR Aya)
+- 10 new characters, 1 new subs, 2 new mats, 10 locked chests (24/24, 129/138, 67/75, 27/30)
+(Requires Keine AND Aya)
+- 3 chests of wave 4 (B/D/F) are obsolete (2/2/2/3 = 9 total)
+- At least 2 chests of Wave 1/2/3
+- At least 2 chests of Wave 1/2/3/4 (14 total)
+- 12 new characters, 3 new subs, 2 new mats, 14 locked chests (26/24, 131/138, 67/75, 31/30)
+  - 7 new subequip (Craft 122, 126, 130, 131, 132, 135, 136 if Nitori and Suwako) (2 redundant)
+    - 122 uses 1 of 6 limited Gensokyo Fragment
+    - 130 uses 4 of 6 limited Gensokyo Fragment
+    - 131 uses 2 of 6 limited Gensokyo Fragment
+    - 132 uses 2 of 6 limited Gensokyo Fragment
+    - 136 uses 2 of 6 limited Gensokyo Fragment
+  - 1 new material (Remnants if Flandre)
+
+Subequips (Dream Amber):
+- 134 Hero's Sword x1 [Amber-Wave4-C] (new until ???)
+- 135 Shining Hellstar x1 [Amber-Wave4-C] (new until Sakuya shortcut if Nitori and Suwako, ??? otherwise)
+
+Materials (Dream Amber):
+- 072 Determination Monocrystal x30 [Amber-Wave4-D x30]
+- 075 Hope Crystal x30 [Amber-Wave4-D x30]
+- 079 Gensokyo Fragment x5 [Amber-Wave4-E x5] (new until ???)
+- 080 Chaos Fragment x5 [Amber-Wave4-F x5]
+
+Specials (Dream Amber):
+- Dream Soul of the Paradise-Yearning x2 [Amber-Wave4-A x2]
+- Dream of Vitality x5 [Amber-Wave4-B x5]
+- Dream of Sorcery x5 [Amber-Wave4-B x5]
+- Dream of Energy x5 [Amber-Wave4-B x5]
+- Dream of Carnage x5 [Amber-Wave4-B x5]
+- Dream of Protection x5 [Amber-Wave4-B x5]
+- Dream of Wisdom x5 [Amber-Wave4-B x5]
+- Dream of Affection x5 [Amber-Wave4-B x5]
+- Dream of Swiftness x5 [Amber-Wave4-B x5]
+- Dream of Hunting x5 [Amber-Wave4-B x5]
+- Dream of Illusions x5 [Amber-Wave4-B x5]
+
+Achievements (2 / 76) [+11]:
 - 004 Defeat Reimu
+- 041 60 types of material
+(Requires using 10 souls) [+2]
+- 015 24 allies
+- 031 24 allies 300 BP
+(Requires Nitori) [+2]
+- 055 6 allies main rank 3
+- 056 3 allies main rank 4
+(Requires Keine and Aya and 13 amber chests) [+1]
+- 081 30 locked treasures
+(Requires Aya) [+1]
+- 088 36 bestiary rewards
+(Requires Keine) [+1]
+- 090 24 mapping bonuses
 
 New Infinites (Main):
 (Requires Keine)
 - 104 Opportune Recovery [Reimu 28.8%]
+(Requires Mokou)
+- 001 Life [Remnant]
+- 003 Mana [Remnant]
+- 005 Tenacity [Remnant]
+- 007 Attack [Remnant]
+- 009 Defense [Remnant]
+- 011 Magic [Remnant]
+- 013 Mind [Remnant]
+- 015 Speed [Remnant]
+- 017 Accuracy [Remnant]
+- 019 Evasion [Remnant]
+(Requires Flandre)
+- 002 Longevity [Remnant]
+- 004 Arcane [Remnant]
+- 006 Perseverance [Remnant]
+- 008 Onslaught [Remnant]
+- 010 Fortification [Remnant]
+- 012 Sorcery [Remnant]
+- 014 Mentality [Remnant]
+- 016 Swiftness [Remnant]
+- 018 Precision [Remnant]
+- 020 Avoidance [Remnant]
+
+New Infinites (Sub):
+(Requires Alice OR Nitori)
+- 032 Immortal Salamander Scale [Clone / Craft]
+(Requires Alice OR Nitori)
+- 048 Yin-Yang Shift Stone [Clone / Craft]
+(Required Nitori and Suwako)
+- 126 Guiding Moonlight [Craft]
+
+New Infinites (Mat):
+- 074 Despair Crystal [Farm]
+- 075 Hope Crystal [Farm]
+(Requires Mokou)
+- 076 Life Remnant [Farm]
+(Requires Kokoro)
+- 077 Emotion Remnant [Farm]
+(Requires Flandre)
+- 078 Destruction Remnant [Farm]
+
+New Infinites (Spec):
+(Requires Mokou)
+- Book of Beginnings [Remnant]
+(Requires Kokoro)
+- Book of Guidance [Remnant]
+(Requires Flandre)
+- Book of Discipline [Remnant]
 
 Improved Infinites (Sub):
 (Requires Keine)
 - 007 Source of Magic [Marisa 7.2% -> 57.6%]
+- 027 Leeuwenhoek Lens [Nightmare 9.7% -> 10.8%]
 - 056 Impact-Resistant Polymer Liquid [Shikigami 9.7% -> 86.4%]
 - 059 Oiran's Lamentation [Shikigami 5.7 -> 21.6%]
 - 081 Mist Piercer [Sumireko Protector 15.8% -> 21.6%]
-- 089 Pure Sake - Wild Boar [Reimu 1.4% -> 28.8%]
+- 089 Pure Sake - Wild Boar [Reimu 11.5% -> 28.8%]
+- 097 Summon Giga Disc [Marisa 5.4% -> 14.4%]
 - 100 Temple Shooter Card [Reimu 1.1% -> 14.4%]
 
 Improved Infinites (Mat):
+(Requires Keine)
 - 027 Spirit Opal [Reimu 10% -> 57.6%]
+(Requires Mokou)
+- 071 Determination Polycrystal [63% -> Remnant]
+(Requires Kokoro and Flandre)
+- 072 Determination Monocrystal [16.2% -> Remnant]
+(Requires Nitori and Alice and Cirno and Rumia and Wriggle and Mystia)
+[Gathering's Improved Drops]
+
+Improved Infinites (Spec):
+(Requires Mokou and Kokoro and Flandre)
+- Lockbox Key [43.2% -> Remnant]
+- Shrine Items [Lunatic Grind -> Remnants]
 
 >< Reference
 
-- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new until ???, cloneable by Marisa, craftable by Reimu)
-- 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until ???)
-- 012 Tokyo Metronome x2 [Amber-Wave1-D x2] (new until ???)
+- 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new/unfarmable until Kogasa shortcut, ??? otherwise, cloneable by Marisa, craftable by Reimu)
+- 008 Master's Emblem x2 [Amber-Wave1-D x2] (unfarmable until Kasen shortcut, ??? otherwise)
 - 032 Immortal Salamander Scale x2 [Amber-Wave1-D x2] (unfarmable until ???, cloneable by Marisa)
-- 038 Love Machine 3322 x2 [Amber-Wave1-E x2] (new until ???)
-- 046 Bangle of the Star Realm x2 [Amber-Wave1-E x2] (unfarmable until ???)
+- 046 Bangle of the Star Realm x2 [Amber-Wave1-E x2] (unfarmable until Kogasa shortcut, ??? otherwise)
 - 048 Yin-Yang Shift Stone x2 [Amber-Wave1-E x2] (unfarmable until ???)
-- 052 Huscarl's Round Shield x2 [Amber-Wave1-E x2] (unfarmable until ???)
-- 092 Coveted Ice Sword x1 [Amber-Wave1-F] (unfarmable until ???)
-- 119 Star Pendant x2 [Amber-Wave2-F x2] (new until ???)
-- 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until ???)
-- 126 Guiding Moonlight x1 [Amber-Wave3-F] (new until ???)
-- 127 Aleksander's Magic Meteor x1 [Amber-Wave3-F] (new until ???)
+- 121 Ouroboros Loop x1 [Amber-Wave2-F] (new until Marisa if Keine, ??? otherwise)
+- 126 Guiding Moonlight x1 [Amber-Wave3-F] (new/unfarmable until Sakuya midboss via craft, ??? otherwise)
+- 127 Aleksander's Magic Meteor x1 [Amber-Wave3-F] (new/unfarmable until Kasen shortcut, ??? otherwise)
+- 134 Hero's Sword x1 [Amber-Wave4-C] (new until ???)
+- 135 Shining Hellstar x1 [Amber-Wave4-C] (new until Sakuya shortcut if Nitori and Suwako, ??? otherwise)
 
-- 013 Lattice Sunstone x5 [Amber-Wave2-D] (new until ???)
-- 016 Royal Blue Moonstone x5 [Amber-Wave2-D] (new until ???)
+- 013 Lattice Sunstone x5 [Amber-Wave2-D x5] (new until ???)
+- 016 Royal Blue Moonstone x5 [Amber-Wave2-D x5] (new/unfarmable until Kasen shortcut, ??? otherwise)
 - 079 Gensokyo Fragment x2 [Amber-Wave3-E x2] (new until ???)
-- 080 Chaos Fragment x2 [Amber-Wave3-E x2] (new until ???)
+- 079 Gensokyo Fragment x5 [Amber-Wave4-E x5] (new until ???)
+- 080 Chaos Fragment x2 [Amber-Wave3-E x2] (new/unfarmable until Sakuya shortcut, ??? otherwise)
