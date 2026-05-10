@@ -513,7 +513,7 @@
 (Extra Atelier Tools x1) (65, 87)
 (Huscarl's Round Shield x1) (48, 89)
 (1200 sen) (75, 91)
-(Dream Soul of the Unfogiven x1) (63, 100)
+(Dream Soul of the Unforgiven x1) (63, 100)
 (Star Sunstone x1) (37, 108)
 (Cloak of the Bat x1) (82, 119)
 

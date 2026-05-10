@@ -1112,7 +1112,7 @@ Materials:
 
 Specials:
 - Lockbox Key x1 [Chest]
-- Dream Soul of the Unfogiven x1 [Chest]
+- Dream Soul of the Unforgiven x1 [Chest]
 - Dream of Carnage x1 [Chest]
 - Extra Atelier Tools x1 [Chest]
 - Phantasmagoria Pouch x1 [Chest]
