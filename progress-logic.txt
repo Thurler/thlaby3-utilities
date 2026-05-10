@@ -1566,9 +1566,6 @@ Awakenings:
 (Requires Keine)
 - 063 Form of Mysticism x3 [Archive-SotF-2F-h x3]
 - 086 Mental Ailment Prevention x2 [Archive-SotF-3F-h x2]
-(Requires Nitori)
-- Kogasa can reach level 4
-- Sanae can reach level 4 using limited Ochimizu Flask
 (
   Requires 9 points out of 11 below:
     - (3) Keine
@@ -1578,6 +1575,9 @@ Awakenings:
     - (1) Keine or Aya and 10 amber chests
 )
 - 075 Embodiment of All [85 achievements] (update)
+(Requires Nitori)
+- Kogasa can reach level 4
+- Sanae can reach level 4 using limited Ochimizu Flask
 
 Subequips:
 - 003 Healing Blossom x1 [Chest]
@@ -1671,6 +1671,103 @@ Improved Infinites (Mat):
 (Requires Keine)
 - 004 Titan Steel Ingot [Kogasa 10% -> 18%]
 - 029 Dark Onyx [Kogasa 13.8% -> 57.6%]
+
+=======================================================================
+=== Kasen - Battleground of the Unforgiven Midboss ===
+=======================================================================
+
+Characters: Reisen
+
+Dream Souls (Suffering x3) [+1 Amber-Wave1-A]:
+- No change, all can be recruited
+
+Dream Souls (Fragile x2) [+1 Amber-Wave1-B]:
+- No change, all can be recruited
+
+Dream Souls (Unforgiven x1) [+1 Amber-Wave2-A] [+1 Keine]:
+- No change, all can be recruited
+
+Dream Souls (Solitude x1) [+1 Amber-Wave3-A]:
+- No change, all can be recruited
+
+Dream Souls (Paradise x0) [+2 Amber-Wave4-A]:
+- No change, all can be recruited
+
+Renko spells:
+- Eternal Lunacy
+
+Awakenings:
+- 083 Bearer of Weakness x1 [Reisen 28.8%]
+(
+  Requires 8 points out of 11 below:
+    - (3) Keine
+    - (3) Nitori
+    - (2) Aya
+    - (2) Use 7 souls
+    - (1) Keine or Aya and 10 amber chests
+)
+- 075 Embodiment of All [85 achievements] (update)
+(Requires Nitori)
+- Reisen can reach level 4 using limited Ochimizu Flask
+
+Subequips:
+- 035 Bright Powder x1 [Reisen 57.6%]
+- 091 Blood-Soaked Scoria x1 [Reisen 14.4%]
+- 103 Joy Capsule x1 [Reisen 7.2%]
+(Requires Keine)
+- 139 Crest of the Lunatic Moon x1 [Lunatic-9]
+
+Specials:
+(
+  Requires 3 points out of 11 below:
+    - (3) Keine
+    - (3) Nitori
+    - (2) Aya
+    - (2) Use 7 souls
+    - (1) Keine or Aya and 10 amber chests
+)
+- Dream Amber Key x1 [80 achievements] (update)
+
+Dream Amber chests:
+- 10 new characters, 0 new subs, 1 new mats, 7 locked chests (27/36, 128/138, 66/75, 27/30)
+  - 1 new character (Unforgiven if Keine)
+  - 1 new subequip (Juicy Queenbeet if Keine)
+  - 1 new subequip (Crest of the Lunatic Moon if Keine)
+  - 1 new subequip (Ouroboros Loop if Keine OR Amber-Wave2-F) (redundant)
+  - 2 new material (Remnants if Mokou/Kokoro)
+(Requires Aya)
+- 11 new characters, 0 new subs, 2 new mats, 10 locked chests (28/36, 128/138, 67/75, 30/30)
+(Requires Keine)
+- 12 new characters, 0 new subs, 2 new mats, 12 locked chests (29/36, 128/138, 67/75, 32/30)
+(Requires Keine AND Aya)
+- 13 new characters, 3 new subs, 2 new mats, 15 locked chests (30/36, 131/138, 67/75, 35/30)
+  - 7 new subequip (Craft 122, 126, 130, 131, 132, 135, 136 if Nitori and Suwako) (2 redundant)
+    - 122 uses 1 of 6 limited Gensokyo Fragment
+    - 130 uses 4 of 6 limited Gensokyo Fragment
+    - 131 uses 2 of 6 limited Gensokyo Fragment
+    - 132 uses 2 of 6 limited Gensokyo Fragment
+    - 136 uses 2 of 6 limited Gensokyo Fragment
+  - 1 new material (Remnants if Flandre)
+
+Achievements (1 / 77) [+11]:
+- 005 Defeat Reisen
+(Requires using 7 souls, used to be 8) [+2]
+- 015 24 allies
+- 031 24 allies 300 BP
+
+New Infinites (Main):
+(Requires Keine)
+- 083 Bearer of Weakness [Reisen 28.8%]
+
+Improved Infinites (Sub):
+(Requires Keine)
+- 035 Bright Powder [Reisen 10.8% -> 57.6%]
+- 091 Blood-Soaked Scoria [Reisen 6.4% -> 14.4%]
+- 103 Joy Capsule [Reisen 0.7% -> 7.2%]
+
+=======================================================================
+=== Yuugi - Battleground of the Unforgiven 2F / 3F ===
+=======================================================================
 
 >< Reference
 
