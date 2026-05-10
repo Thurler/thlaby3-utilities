@@ -435,6 +435,29 @@
 
 > Post-Kogasa
 
+[Locked-2] (
+  Cloak of the Bat x1
+  Mist Piercer x1
+  Hoplite's Spear x1
+  Broken Lead Heart x1
+  Krampus Sack x1
+  Sea Hunter x1
+) (97, 66)
+(Star Sunstone x1) (87, 45)
+(Illegal LAN-Connected Yakuza Gun x1) (107, 56)
+(Mist Piercer x1) (73, 58)
+(Plague Doctor Mask x1) (59, 72)
+(Impact-Resistant Polymer Liquid x1) (118, 76)
+(Dream Soul of the Fragile x1) (85, 78)
+(Unusual Box x1) (46, 86)
+(Book of Beginnings x1) (58, 105)
+(Green Dream x1) (50, 113)
+(Lockbox Key x1) (77, 117)
+
+=======================================================================
+===== Sorrow of the Fragile - 3F =====
+=======================================================================
+
 =======================================================================
 ===== Battleground of the Unforgiven - 1F =====
 =======================================================================

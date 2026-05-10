@@ -634,17 +634,54 @@ FLAG 5099: Treasure (?)
 
 FLAG 5100: 2F Relay unlock
 FLAG 5101: 2F Center Relay unlock
+FLAG 5103: Shortcut to puzzle 3 (counter-clockwise) (89, 92)
+FLAG 5104: Shortcut to puzzle 4 (counter-clockwise) (93, 88)
+FLAG 5105: Shortcut to puzzle 2 (counter-clockwise) (77, 92)
+FLAG 5106: Shortcut to puzzle 5 (counter-clockwise) (93, 76)
+FLAG 5107: Shortcut to puzzle 1 (counter-clockwise) (73, 88)
+FLAG 5108: Shortcut to puzzle 6 (counter-clockwise) (89, 72)
 FLAG 5109: Shortcut halfway through northwest maze (42, 44)
 
 > Sorrow of the Fragile 2F Event Flags
 
 FLAG 5110: First visit cutscene (set to 1 after 5010)
-FLAG 5111: ??? (set to 1 after 5010)
-FLAG 5112: ??? (set to 1 after 5010)
-FLAG 5113: ??? (set to 1 after 5010)
+FLAG 5111: Kogasa boss fight (set to 1 after 5010) (76, 75)
+FLAG 5112: Reisen cutscene before puzzle checks (set to 1 after 5010) (78, 77)
+FLAG 5113: Sanae recruit cutscene (set to 1 after 5010) (79, 84)
+FLAG 5114: Puzzle 6 Green Orb pressed status (set to 1 after interacting) (93, 70)
+FLAG 5115: Puzzle 1 Green Orb pressed status (set to 1 after interacting) (66, 88)
+FLAG 5116: Puzzle 5 Green Orb pressed status (set to 1 after interacting) (94, 80)
+FLAG 5117: Puzzle 2 Green Orb pressed status (set to 1 after interacting) (68, 97)
+FLAG 5118: Puzzle 4 Green Orb pressed status (set to 1 after interacting) (111, 94)
+FLAG 5119: Puzzle 3 Green Orb pressed status (set to 1 after interacting) (83, 91)
+
+FLAG 5150: Puzzle map illumination trigger (which one?)
+FLAG 5151: Puzzle map illumination trigger (which one?)
+FLAG 5152: Puzzle map illumination trigger (which one?)
+FLAG 5153: Puzzle map illumination trigger (which one?)
+FLAG 5154: Puzzle map illumination trigger (which one?)
+FLAG 5155: Puzzle map illumination trigger (which one?)
 
 > Sorrow of the Fragile 2F Treasure Flags
 
+FLAG 5180: Treasure after Kogasa (?)
+FLAG 5181: Treasure after Kogasa (?)
+FLAG 5182: Locked Treasure after Kogasa (
+  Cloak of the Bat x1
+  Mist Piercer x1
+  Hoplite's Spear x1
+  Broken Lead Heart x1
+  Krampus Sack x1
+  Sea Hunter x1
+) (97, 66)
+FLAG 5183: Treasure after Kogasa (?)
+FLAG 5184: Treasure after Kogasa (?)
+FLAG 5185: Treasure after Kogasa (?)
+FLAG 5186: Treasure after Kogasa (?)
+FLAG 5187: Treasure after Kogasa (?)
+FLAG 5188: Treasure after Kogasa (?)
+FLAG 5189: Treasure after Kogasa (?)
+FLAG 5190: Treasure after Kogasa (?)
 FLAG 5191: Treasure before Kogasa (?)
 FLAG 5192: Treasure before Kogasa (?)
 FLAG 5193: Treasure before Kogasa (?)
@@ -655,9 +692,13 @@ FLAG 5197: Treasure before Kogasa (?)
 FLAG 5198: Treasure before Kogasa (?)
 FLAG 5199: Treasure before Kogasa (?)
 
+> Sorrow of the Fragile 3F Relay Circles and Shortcuts
+
+FLAG 5200: 3F Relay unlock
+
 > Sorrow of the Fragile 3F Event Flags
 
-FLAG 5210: ??? (set to 1 after 5010)
+FLAG 5210: First visit cutscene (set to 1 after 5010)
 FLAG 5211: ??? (set to 1 after 5010)
 
 > Battleground of the Unforgiven 1F Relay Circles and Shortcuts

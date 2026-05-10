@@ -179,6 +179,13 @@ class MovableTileCell(IconCell):
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 1.6, cell_size * 1.6))
 
+# A cell that houses a puzzle reset tile
+class PuzzleResetCell(IconCell):
+  icon = Image.open("./assets/puzzlereset.png")
+
+  def __init__(self, x, y):
+    super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
+
 # A cell that houses a green orb
 class GreenOrbCell(IconCell):
   icon = Image.open("./assets/greenorb.png")
@@ -827,6 +834,84 @@ class Fragile2F(Floor):
     TreasureCell(58, 57, ""),
     TreasureCell(31, 66, ""),
     TreasureCell(39, 66, ""),
+    EventCell(78, 77, ""),
+    EventCell(79, 84, ""),
+    RockCell(80, 79),
+    RockCell(85, 80),
+    RockCell(85, 80),
+    RockCell(81, 84),
+    StairsUpCell(85, 84),
+    ArrowCell(58, 99, "Left"),
+    ArrowCell(109, 59, "Down"),
+    ArrowCell(111, 61, "Down"),
+    PuzzleResetCell(87, 70),
+    PuzzleResetCell(95, 74),
+    PuzzleResetCell(71, 86),
+    PuzzleResetCell(103, 88),
+    PuzzleResetCell(76, 95),
+    PuzzleResetCell(89, 103),
+    WarpCell(73, 88, 75, 88),
+    WarpCell(75, 88, 73, 88),
+    SwampRockCell(67, 91),
+    SwampRockCell(70, 92),
+    SwampRockCell(71, 92),
+    SwampRockCell(66, 92),
+    SwampRockCell(67, 93),
+    GreenOrbCell(66, 88),
+    WarpCell(77, 92, 77, 90),
+    WarpCell(77, 90, 77, 92),
+    SwampRockCell(74, 96),
+    SwampRockCell(74, 97),
+    SwampRockCell(72, 97),
+    SwampRockCell(73, 98),
+    GreenOrbCell(68, 97),
+    WarpCell(89, 92, 89, 90),
+    WarpCell(89, 90, 89, 92),
+    SwampRockCell(81, 95),
+    SwampRockCell(85, 95),
+    SwampRockCell(81, 96),
+    SwampRockCell(85, 96),
+    SwampRockCell(82, 99),
+    SwampRockCell(84, 99),
+    SwampRockCell(82, 101),
+    SwampRockCell(83, 102),
+    GreenOrbCell(83, 91),
+    WarpCell(93, 88, 91, 88),
+    WarpCell(91, 88, 93, 88),
+    SwampRockCell(103, 92),
+    SwampRockCell(102, 93),
+    SwampRockCell(103, 93),
+    SwampRockCell(104, 93),
+    SwampRockCell(103, 94),
+    SwampRockCell(97, 93),
+    SwampRockCell(96, 94),
+    SwampRockCell(98, 94),
+    SwampRockCell(96, 95),
+    SwampRockCell(97, 95),
+    GreenOrbCell(111, 94),
+    WarpCell(93, 76, 91, 76),
+    WarpCell(91, 76, 93, 76),
+    SwampRockCell(100, 77),
+    SwampRockCell(101, 78),
+    SwampRockCell(99, 80),
+    GreenOrbCell(94, 80),
+    WarpCell(89, 72, 89, 74),
+    WarpCell(89, 74, 89, 72),
+    SwampRockCell(89, 68),
+    SwampRockCell(89, 69),
+    SwampRockCell(90, 69),
+    SwampRockCell(89, 70),
+    GreenOrbCell(93, 70),
+    TreasureCell(87, 45, ""),
+    TreasureCell(107, 56, ""),
+    TreasureCell(73, 58, ""),
+    TreasureCell(59, 72, ""),
+    TreasureCell(118, 76, ""),
+    TreasureCell(85, 78, ""),
+    TreasureCell(46, 86, ""),
+    TreasureCell(58, 105, ""),
+    TreasureCell(50, 113, ""),
+    TreasureCell(77, 117, ""),
   ]
 
   def __init__(self):
@@ -1208,13 +1293,13 @@ pixels = map_img.load()
 # floor = Anguish2F()
 # floor = Anguish3F()
 # floor = Fragile1F()
-# floor = Fragile2F()
+floor = Fragile2F()
 # floor = Fragile3F()
 # floor = Unforgiven1F()
 # floor = Unforgiven2F()
 # floor = Unforgiven3F()
 # floor = Solitary1F()
-floor = Solitary2F()
+# floor = Solitary2F()
 # floor = Solitary3F()
 # floor = Utopia1F()
 # floor = Utopia2F()
