@@ -1345,7 +1345,7 @@ Awakenings:
     - (3) Keine
     - (3) Nitori
     - (2) Aya
-    - (2) Use 10 souls
+    - (2) Keine or Aya and Use 10 souls
     - (1) Keine and Aya and 13 amber chests
 )
 - 075 Embodiment of All [85 achievements]
@@ -1381,7 +1381,7 @@ Specials:
     - (3) Keine
     - (3) Nitori
     - (2) Aya
-    - (2) Use 10 souls
+    - (2) Keine or Aya and Use 10 souls
     - (1) Keine and Aya and 13 amber chests
 )
 - Dream Amber Key x1 [80 achievements]
@@ -1400,7 +1400,7 @@ Specials:
 
 Dream Amber chests:
 - 2 chests of wave 1 (C/F) are obsolete (2/2/2 = 6 total)
-- 10 new characters, 0 new subs, 1 new mats, 7 locked chests (24/24, 128/138, 66/75, 24/30)
+- 9 new characters, 0 new subs, 1 new mats, 7 locked chests (23/24, 128/138, 66/75, 24/30)
   - 1 new character (Unforgiven if Keine)
   - 1 new subequip (Juicy Queenbeet if Keine)
   - 1 new subequip (Ouroboros Loop if Keine OR Amber-Wave2-F) (redundant)
@@ -1446,7 +1446,7 @@ Specials (Dream Amber):
 Achievements (2 / 76) [+11]:
 - 004 Defeat Reimu
 - 041 60 types of material
-(Requires using 10 souls) [+2]
+(Requires Keine or Aya and using 10 souls) [+2]
 - 015 24 allies
 - 031 24 allies 300 BP
 (Requires Nitori) [+2]
