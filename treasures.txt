@@ -486,7 +486,7 @@
 (Healing Blossom x1) (46, 84)
 (Extra Atelier Tools x1) (37, 87)
 (Plague Doctor Mask x1) (100, 87)
-(Impact-Resistant Polymer Liquid x1 x1) (88, 94)
+(Impact-Resistant Polymer Liquid x1) (88, 94)
 (Summon Giga Disc x1) (78, 108)
 (Tamahane Ingot x5) (54, 117)
 
