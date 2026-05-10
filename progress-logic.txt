@@ -1537,6 +1537,141 @@ Improved Infinites (Spec):
 - Lockbox Key [43.2% -> Remnant]
 - Shrine Items [Lunatic Grind -> Remnants]
 
+=======================================================================
+=== Reisen - Sorrow of the Fragile 2F / 3F ===
+=======================================================================
+
+Characters: Kogasa / Sanae
+
+Dream Souls (Suffering x3) [+1 Amber-Wave1-A]:
+- No change, all can be recruited
+
+Dream Souls (Fragile x2) [+1 Amber-Wave1-B]:
+- No change, all can be recruited
+
+Dream Souls (Unforgiven x1) [+1 Amber-Wave2-A] [+1 Keine]:
+- No change, all can be recruited
+
+Dream Souls (Solitude x1) [+1 Amber-Wave3-A]:
+- No change, all can be recruited
+
+Dream Souls (Paradise x0) [+2 Amber-Wave4-A]:
+- No change, all can be recruited
+
+Renko spells:
+- Stubbornness of the One Who Knows Not Love
+
+Awakenings:
+- 080 Bearer of Terror x1 [Kogasa 28.8%]
+(Requires Keine)
+- 063 Form of Mysticism x3 [Archive-SotF-2F-h x3]
+- 086 Mental Ailment Prevention x2 [Archive-SotF-3F-h x2]
+(Requires Nitori)
+- Kogasa can reach level 4
+- Sanae can reach level 4 using limited Ochimizu Flask
+(
+  Requires 9 points out of 11 below:
+    - (3) Keine
+    - (3) Nitori
+    - (2) Aya
+    - (2) Use 8 souls
+    - (1) Keine or Aya and 10 amber chests
+)
+- 075 Embodiment of All [85 achievements] (update)
+
+Subequips:
+- 003 Healing Blossom x1 [Chest]
+- 027 Leeunwenhoek Lens x1 [Chest]
+- 043 Green Dream x2 [Chest, Chest]
+- 044 Last Leaf x1 [Chest]
+- 051 Lucky Horseshoe x1 [Chest]
+- 056 Impact-Resistant Polymer Liquid x3 [Chest, Chest, Chest]
+- 059 Oiran's Lamentation x1 [Chest]
+- 060 Plague Doctor Mask x5 [Chest, Chest, Chest, Locked Chest S x2 - 2]
+- 079 Ninja Palm x1 [Locked Chest S - 2]
+- 080 Cloak of the Bat x1 [Locked Chest R - 2]
+- 081 Mist Piercer x3 [Chest, Locked Chest R - 2, Locked Chest S - 2]
+- 082 Hoplite's Spear x1 [Locked Chest R - 2]
+- 083 Broken Lead Heart x2 [Chest, Locked Chest R - 2]
+- 084 Krampus Sack x2 [Chest, Locked Chest R - 2]
+- 085 Sea Hunter x2 [Chest, Locked Chest R - 2]
+- 090 Illegal LAN-Connected Yakuza Gun x2 [Chest, Locked Chest S - 2]
+- 095 Unusual Box x2 [Chest, Kogasa 10.8%]
+- 097 Summon Giga Disc x2 [Chest, Locked Chest T - 2]
+- 099 Make-or-Break EM Blade x1 [Locked Chest T - 2]
+(Requires Keine)
+- 090 Illegal LAN-Connected Yakuza Gun x1 [Archive-SotF-2F-F]
+- 093 Blue Chemistry Pack x1 [Archive-SotF-3F-F]
+- 113 Double-Edged Spatha x1 [Archive-SotF-All]
+
+Materials:
+- 002 Tamahane Ingot x5 [Chest x5]
+- 004 Titan Steel Ingot x1 [Kogasa 18%]
+- 012 Star Sunstone x2 [Chest, Chest]
+- 015 Blue Moonstone x1 [Chest]
+- 029 Dark Onyx x1 [Kogasa 57.6%]
+
+Specials:
+- Lockbox Key x2 [Chest, Chest]
+- Dream Soul of the Fragile x1 [Chest]
+- Dream of Affection x1 [Chest]
+- Book of Guidance x1 [Chest]
+- Book of Beginnings x1 [Chest]
+- Extra Atelier Tools x1 [Chest]
+(Requires Aya)
+- Money Tree Koban x1 [Bestiary-Horde12]
+(Requires Keine)
+- Dream Amber Key x1 [Lunatic-8]
+(
+  Requires 4 points out of 11 below:
+    - (3) Keine
+    - (3) Nitori
+    - (2) Aya
+    - (2) Use 8 souls
+    - (1) Keine or Aya and 10 amber chests
+)
+- Dream Amber Key x1 [80 achievements] (update)
+
+Dream Amber chests:
+- 10 new characters, 0 new subs, 1 new mats, 7 locked chests (26/36, 128/138, 66/75, 27/30)
+  - 1 new character (Unforgiven if Keine)
+  - 1 new subequip (Juicy Queenbeet if Keine)
+  - 1 new subequip (Ouroboros Loop if Keine OR Amber-Wave2-F) (redundant)
+  - 2 new material (Remnants if Mokou/Kokoro)
+(Requires Aya)
+- 11 new characters, 0 new subs, 2 new mats, 10 locked chests (27/36, 128/138, 67/75, 30/30)
+(Requires Keine)
+- 12 new characters, 0 new subs, 2 new mats, 12 locked chests (28/36, 128/138, 67/75, 32/30)
+(Requires Keine AND Aya)
+- 13 new characters, 3 new subs, 2 new mats, 15 locked chests (29/36, 131/138, 67/75, 35/30)
+  - 7 new subequip (Craft 122, 126, 130, 131, 132, 135, 136 if Nitori and Suwako) (2 redundant)
+    - 122 uses 1 of 6 limited Gensokyo Fragment
+    - 130 uses 4 of 6 limited Gensokyo Fragment
+    - 131 uses 2 of 6 limited Gensokyo Fragment
+    - 132 uses 2 of 6 limited Gensokyo Fragment
+    - 136 uses 2 of 6 limited Gensokyo Fragment
+  - 1 new material (Remnants if Flandre)
+
+Achievements (0 / 76) [+11]:
+(Requires using 8 souls, used to be 10, no longer requires Keine or Aya) [+2]
+- 015 24 allies
+- 031 24 allies 300 BP
+(Requires Keine OR Aya and 10 amber chests, used to be 13 and both characters) [+1]
+- 081 30 locked treasures
+
+New Infinites (Main):
+(Requires Keine)
+- 080 Bearer of Terror [Kogasa 28.8%]
+
+Improved Infinites (Sub):
+- 082 Hoplite's Spear [Sorrow Squad 5.7% -> 15.8%]
+- 085 Sea Hunter [Sorrow Squad 6.4% -> 11.5%]
+
+Improved Infinites (Mat):
+(Requires Keine)
+- 004 Titan Steel Ingot [Kogasa 10% -> 18%]
+- 029 Dark Onyx [Kogasa 13.8% -> 57.6%]
+
 >< Reference
 
 - 004 Hero Gep's Potion x2 [Amber-Wave1-D x2] (new/unfarmable until Kogasa shortcut, ??? otherwise, cloneable by Marisa, craftable by Reimu)
