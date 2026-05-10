@@ -805,15 +805,15 @@ class Fragile1F(Floor):
 
   def __init__(self):
     super().__init__(5, 1, self.tiles, {
-      "8": (0, 0, 0),
-      "9": (0, 0, 0),
-      "10": (0, 0, 0),
-      "11": (0, 0, 0),
+      "8": (30, 50, 170),
+      "9": (30, 50, 170),
+      "10": (30, 50, 170),
+      "11": (30, 50, 170),
       "12": (0, 0, 0),
       "13": (0, 0, 0),
       "14": (0, 0, 0),
       "15": (0, 0, 0),
-    })
+    }, True)
 
 class Fragile2F(Floor):
   tiles = [
@@ -916,22 +916,134 @@ class Fragile2F(Floor):
 
   def __init__(self):
     super().__init__(5, 2, self.tiles, {
-      "8": (0, 0, 0),
-      "9": (0, 0, 0),
-      "10": (0, 0, 0),
-      "11": (0, 0, 0),
+      "8": (30, 50, 170),
+      "9": (30, 50, 170),
+      "10": (30, 50, 170),
+      "11": (30, 50, 170),
       "12": (0, 0, 0),
       "13": (0, 0, 0),
       "14": (0, 0, 0),
       "15": (0, 0, 0),
-    })
+    }, True)
 
 class Fragile3F(Floor):
   tiles = [
+    StairsDownCell(105, 104),
+    RelayCircleCell(102, 102),
+    EventCell(98, 97, ""),
+    SwampRockCell(97, 97),
+    SwampRockCell(99, 97),
+    SwampRockCell(89, 92),
+    SwampRockCell(99, 89),
+    SwampRockCell(89, 79),
+    SwampRockCell(87, 84),
+    SwampRockCell(89, 84),
+    SwampRockCell(91, 84),
+    SwampRockCell(76, 92),
+    SwampRockCell(76, 90),
+    SwampRockCell(74, 94),
+    SwampRockCell(72, 94),
+    SwampRockCell(68, 96),
+    SwampRockCell(68, 98),
+    SwampRockCell(67, 97),
+    SwampRockCell(66, 96),
+    SwampRockCell(66, 98),
+    SwampRockCell(61, 112),
+    SwampRockCell(61, 110),
+    RelayCircleCell(54, 88),
+    SwampRockCell(103, 67),
+    SwampRockCell(105, 67),
+    SwampRockCell(102, 66),
+    SwampRockCell(104, 66),
+    SwampRockCell(106, 66),
+    RelayCircleCell(95, 56),
+    SwampRockCell(96, 52),
+    SwampRockCell(98, 57),
+    SwampRockCell(92, 57),
+    SwampRockCell(97, 43),
+    SwampRockCell(102, 37),
+    SwampRockCell(104, 37),
+    SwampRockCell(104, 39),
+    SwampRockCell(102, 39),
+    SwampRockCell(92, 32),
+    SwampRockCell(92, 33),
+    SwampRockCell(92, 34),
+    SwampRockCell(94, 33),
+    SwampRockCell(96, 33),
+    SwampRockCell(59, 38),
+    SwampRockCell(59, 40),
+    SwampRockCell(61, 38),
+    SwampRockCell(61, 40),
+    SwampRockCell(63, 38),
+    SwampRockCell(63, 40),
+    SwampRockCell(68, 53),
+    SwampRockCell(70, 53),
+    SwampRockCell(72, 53),
+    SwampRockCell(69, 52),
+    SwampRockCell(71, 52),
+    SwampRockCell(68, 51),
+    SwampRockCell(70, 51),
+    SwampRockCell(72, 51),
+    SwampRockCell(51, 85),
+    SwampRockCell(52, 83),
+    SwampRockCell(56, 73),
+    SwampRockCell(54, 73),
+    SwampRockCell(54, 71),
+    SwampRockCell(56, 71),
+    SwampRockCell(41, 73),
+    SwampRockCell(42, 73),
+    SwampRockCell(43, 73),
+    SwampRockCell(42, 64),
+    SwampRockCell(44, 64),
+    SwampRockCell(43, 63),
+    SwampRockCell(42, 62),
+    SwampRockCell(44, 62),
+    SwampRockCell(45, 52),
+    SwampRockCell(64, 68),
+    SwampRockCell(64, 70),
+    SwampRockCell(65, 70),
+    SwampRockCell(65, 68),
+    SwampRockCell(85, 49),
+    SwampRockCell(86, 48),
+    SwampRockCell(86, 50),
+    RelayCircleCell(44, 43),
+    BossCell(39, 39, ""),
+    LockedTreasureCell(52, 52, ""),
+    LockedTreasureCell(66, 105, ""),
+    TreasureCell(109, 38, ""),
+    TreasureCell(71, 39, ""),
+    TreasureCell(89, 42, ""),
+    TreasureCell(96, 44, ""),
+    TreasureCell(53, 51, ""),
+    TreasureCell(61, 56, ""),
+    TreasureCell(83, 64, ""),
+    TreasureCell(78, 67, ""),
+    TreasureCell(55, 69, ""),
+    TreasureCell(114, 69, ""),
+    TreasureCell(49, 71, ""),
+    TreasureCell(82, 71, ""),
+    TreasureCell(71, 75, ""),
+    TreasureCell(71, 80, ""),
+    TreasureCell(109, 80, ""),
+    TreasureCell(46, 84, ""),
+    TreasureCell(37, 87, ""),
+    TreasureCell(100, 87, ""),
+    TreasureCell(88, 94, ""),
+    TreasureCell(78, 108, ""),
+    TreasureCell(54, 117, ""),
   ]
 
   def __init__(self):
-    super().__init__(5, 3, self.tiles)
+    super().__init__(5, 3, self.tiles, {
+      "8": (30, 50, 170),
+      "9": (30, 50, 170),
+      "10": (30, 50, 170),
+      "11": (30, 50, 170),
+      "12": (0, 0, 0),
+      "13": (0, 0, 0),
+      "14": (0, 0, 0),
+      "15": (0, 0, 0),
+    }, True)
 
 class Unforgiven1F(Floor):
   tiles = [
@@ -1293,8 +1405,8 @@ pixels = map_img.load()
 # floor = Anguish2F()
 # floor = Anguish3F()
 # floor = Fragile1F()
-floor = Fragile2F()
-# floor = Fragile3F()
+# floor = Fragile2F()
+floor = Fragile3F()
 # floor = Unforgiven1F()
 # floor = Unforgiven2F()
 # floor = Unforgiven3F()

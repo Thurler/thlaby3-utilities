@@ -458,6 +458,38 @@
 ===== Sorrow of the Fragile - 3F =====
 =======================================================================
 
+[Locked-2] (
+  Plague Doctor Mask x2
+  Ninja Palm x1
+  Mist Piercer x1
+  Illegal LAN-Connected Yakuza Gun x1
+) (52, 52)
+[Locked-2] (
+  Summon Giga Disc x1
+  Make-or-Break EM Blade x1
+) (66, 105)
+(Sea Hunter x1) (109, 38)
+(Krampus Sack x1) (71, 39)
+(Lucky Horseshoe x1) (89, 42)
+(Last Leaf x1) (96, 44)
+(Oiran's Lamentation x1) (53, 51)
+(Lockbox Key x1) (61, 56)
+(Dream of Affection x1) (83, 64)
+(Blue Moonstone x1) (78, 67)
+(Book of Guidance x1) (55, 69)
+(Broken Lead Heart x1) (114, 69)
+(Impact-Resistant Polymer Liquid x1) (49, 71)
+(Green Dream x1) (82, 71)
+(Star Sunstone x1) (71, 75)
+(Leeunwenhoek Lens x1) (71, 80)
+(Plague Doctor Mask x1) (109, 80)
+(Healing Blossom x1) (46, 84)
+(Extra Atelier Tools x1) (37, 87)
+(Plague Doctor Mask x1) (100, 87)
+(Impact-Resistant Polymer Liquid x1 x1) (88, 94)
+(Summon Giga Disc x1) (78, 108)
+(Tamahane Ingot x5) (54, 117)
+
 =======================================================================
 ===== Battleground of the Unforgiven - 1F =====
 =======================================================================

@@ -695,11 +695,49 @@ FLAG 5199: Treasure before Kogasa (?)
 > Sorrow of the Fragile 3F Relay Circles and Shortcuts
 
 FLAG 5200: 3F Relay unlock
+FLAG 5201: 3F East Relay unlock
+FLAG 5202: 3F West Relay unlock
+FLAG 5202: 3F Inner Relay unlock
 
 > Sorrow of the Fragile 3F Event Flags
 
 FLAG 5210: First visit cutscene (set to 1 after 5010)
-FLAG 5211: ??? (set to 1 after 5010)
+FLAG 5211: Reisen boss fight (set to 1 after 5010) (39, 39)
+FLAG 5212: Puzzle hint cutscene (98, 97)
+
+> Sorrow of the Fragile 3F Treasure Flags
+
+FLAG 5277: Treasure (?)
+FLAG 5278: Treasure (?)
+FLAG 5279: Treasure (?)
+FLAG 5280: Treasure (?)
+FLAG 5281: Treasure (?)
+FLAG 5282: Treasure (?)
+FLAG 5283: Treasure (?)
+FLAG 5284: Treasure (?)
+FLAG 5285: Treasure (?)
+FLAG 5286: Locked Treasure (
+  Summon Giga Disc x1
+  Make-or-Break EM Blade x1
+) (66, 105)
+FLAG 5287: Treasure (?)
+FLAG 5288: Treasure (?)
+FLAG 5289: Treasure (?)
+FLAG 5290: Treasure (?)
+FLAG 5291: Treasure (?)
+FLAG 5292: Treasure (?)
+FLAG 5293: Treasure (?)
+FLAG 5294: Locked Treasure (
+  Plague Doctor Mask x2
+  Ninja Palm x1
+  Mist Piercer x1
+  Illegal LAN-Connected Yakuza Gun x1
+) (52, 52)
+FLAG 5295: Treasure (?)
+FLAG 5296: Treasure (?)
+FLAG 5297: Treasure (?)
+FLAG 5298: Treasure (?)
+FLAG 5299: Treasure (?)
 
 > Battleground of the Unforgiven 1F Relay Circles and Shortcuts
 
