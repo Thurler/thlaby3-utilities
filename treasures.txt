@@ -562,6 +562,34 @@
 (Dream of Hunting x1) (46, 85)
 
 =======================================================================
+===== Battleground of the Unforgiven - 3F =====
+=======================================================================
+
+[Locked-3] (
+  Love Machine 3322 x1
+  Huscarl's Round Shield x1
+  Phoenix's Arm x2
+  Summon Giga Disc x1
+  Battle Dress x1
+) (86, 78)
+(Dragon's Breath x1) (34, 37)
+(Blue Moonstone x1) (70, 37)
+(Book of Guidance x1) (105, 38)
+(Sword, Sorcery & Smokepowder Barrel x1) (96, 44)
+(Extra Atelier Tools x1) (47, 50)
+(Potion of Healing x1) (64, 67)
+(Sublime Cap x1) (76, 67)
+(Lockbox Key x1) (54, 68)
+(Mist Piercer x1) (34, 73)
+(Sea Hunter x2) (106, 73)
+(Dream Soul of the Unforgiven x1) (64, 79)
+(Immortal Salamander Scale x1) (35, 89)
+(Star Sunstone x1) (105, 89)
+(Phoenix's Arm x1) (47, 96)
+(Thief Gloves x3) (93, 96)
+(Battle Dress x1) (70, 109)
+
+=======================================================================
 ===== Prison of the Solitary - 1F =====
 =======================================================================
 

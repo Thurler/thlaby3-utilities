@@ -827,6 +827,7 @@ FLAG 6199: Treasure before Kasen (?)
 > Battleground of the Unforgiven 3F Relay Circles and Shortcuts
 
 FLAG 6200: 3F Relay unlock
+FLAG 6201: 3F Inner Relay unlock
 
 > Battleground of the Unforgiven 3F Event Flags
 
@@ -834,6 +835,32 @@ FLAG 6210: First visit cutscene (set to 1 after 6010)
 FLAG 6211: ??? (set to 1 after 6010)
 FLAG 6212: ??? (set to 1 after 6010)
 FLAG 6213: ??? (set to 1 after 6010)
+
+> Battleground of the Unforgiven 3F Treasure Flags
+
+FLAG 6283: Treasure (?)
+FLAG 6284: Treasure (?)
+FLAG 6285: Treasure (?)
+FLAG 6286: Treasure (?)
+FLAG 6287: Treasure (?)
+FLAG 6288: Treasure (?)
+FLAG 6289: Treasure (?)
+FLAG 6290: Treasure (?)
+FLAG 6291: Locked Treasure (
+  Love Machine 3322 x1
+  Huscarl's Round Shield x1
+  Phoenix's Arm x2
+  Summon Giga Disc x1
+  Battle Dress x1
+) (86, 78)
+FLAG 6292: Treasure (?)
+FLAG 6293: Treasure (?)
+FLAG 6294: Treasure (?)
+FLAG 6295: Treasure (?)
+FLAG 6296: Treasure (?)
+FLAG 6297: Treasure (?)
+FLAG 6298: Treasure (?)
+FLAG 6299: Treasure (?)
 
 > Prison of the Solitary 1F Event Flags
 

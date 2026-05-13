@@ -1284,8 +1284,78 @@ class Unforgiven2F(Floor):
 
 class Unforgiven3F(Floor):
   tiles = [
+    MovableTileCell(36, 39),
+    MovableTileCell(56, 40),
+    MovableTileCell(51, 46),
+    MovableTileCell(86, 46),
+    MovableTileCell(60, 48),
+    MovableTileCell(80, 48),
+    MovableTileCell(98, 53),
+    MovableTileCell(54, 54),
+    MovableTileCell(92, 54),
+    MovableTileCell(100, 54),
+    MovableTileCell(52, 55),
+    MovableTileCell(94, 55),
+    MovableTileCell(70, 57),
+    MovableTileCell(89, 57),
+    MovableTileCell(103, 57),
+    MovableTileCell(40, 58),
+    MovableTileCell(48, 58),
+    MovableTileCell(44, 62),
+    MovableTileCell(96, 62),
+    MovableTileCell(42, 65),
+    MovableTileCell(98, 65),
+    MovableTileCell(38, 66),
+    MovableTileCell(50, 66),
+    MovableTileCell(90, 66),
+    MovableTileCell(102, 66),
+    MovableTileCell(46, 67),
+    MovableTileCell(94, 67),
+    MovableTileCell(44, 69),
+    MovableTileCell(96, 69),
+    MovableTileCell(47, 76),
+    MovableTileCell(54, 81),
+    MovableTileCell(36, 83),
+    MovableTileCell(43, 83),
+    MovableTileCell(86, 83),
+    MovableTileCell(97, 83),
+    MovableTileCell(104, 83),
+    MovableTileCell(70, 88),
+    MovableTileCell(45, 89),
+    MovableTileCell(62, 89),
+    MovableTileCell(78, 89),
+    MovableTileCell(95, 89),
+    MovableTileCell(60, 91),
+    MovableTileCell(80, 91),
+    MovableTileCell(54, 99),
+    MovableTileCell(86, 99),
+    MovableTileCell(59, 109),
+    MovableTileCell(81, 109),
     StairsDownCell(70, 102),
     RelayCircleCell(70, 96),
+    MiniBossCell(70, 90, ""),
+    ArrowCell(70, 77, "Up"),
+    RelayCircleCell(76, 73),
+    BossCell(70, 73, ""),
+    RockCell(66, 73),
+    EventCell(64, 73, ""),
+    LockedTreasureCell(86, 78, ""),
+    TreasureCell(34, 37, ""),
+    TreasureCell(70, 37, ""),
+    TreasureCell(105, 38, ""),
+    TreasureCell(96, 44, ""),
+    TreasureCell(47, 50, ""),
+    TreasureCell(64, 67, ""),
+    TreasureCell(76, 67, ""),
+    TreasureCell(54, 68, ""),
+    TreasureCell(34, 73, ""),
+    TreasureCell(106, 73, ""),
+    TreasureCell(64, 79, ""),
+    TreasureCell(35, 89, ""),
+    TreasureCell(105, 89, ""),
+    TreasureCell(47, 96, ""),
+    TreasureCell(93, 96, ""),
+    TreasureCell(70, 109, ""),
   ]
 
   def __init__(self):
@@ -1461,8 +1531,8 @@ pixels = map_img.load()
 # floor = Fragile2F()
 # floor = Fragile3F()
 # floor = Unforgiven1F()
-floor = Unforgiven2F()
-# floor = Unforgiven3F()
+# floor = Unforgiven2F()
+floor = Unforgiven3F()
 # floor = Solitary1F()
 # floor = Solitary2F()
 # floor = Solitary3F()
