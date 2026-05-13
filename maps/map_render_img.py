@@ -193,21 +193,35 @@ class GreenOrbCell(IconCell):
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
 
-# A cell that houses a green orb
+# A cell that houses a blue orb
 class BlueOrbCell(IconCell):
   icon = Image.open("./assets/blueorb.png")
 
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
 
-# A cell that houses a green orb
+# A cell that houses a red orb
 class RedOrbCell(IconCell):
   icon = Image.open("./assets/redorb.png")
 
   def __init__(self, x, y):
     super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
 
-# A cell that houses a 3F green orb
+# A cell that houses an orange orb
+class OrangeOrbCell(IconCell):
+  icon = Image.open("./assets/orangeorb.png")
+
+  def __init__(self, x, y):
+    super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
+
+# A cell that houses a yellow orb
+class YellowOrbCell(IconCell):
+  icon = Image.open("./assets/yelloworb.png")
+
+  def __init__(self, x, y):
+    super().__init__(x, y, self.icon, (cell_size * 2.5, cell_size * 2.5))
+
+# A cell that houses a one-way arrow cell
 class ArrowCell(IconCell):
   icon_up = Image.open("./assets/arrowup.png")
   icon_down = Image.open("./assets/arrowdown.png")
@@ -1226,6 +1240,22 @@ class Unforgiven2F(Floor):
     TreasureCell(67, 114, ""),
     TreasureCell(84, 115, ""),
     TreasureCell(67, 116, ""),
+    OrangeOrbCell(34, 43),
+    YellowOrbCell(41, 36),
+    RockCell(38, 44),
+    RockCell(38, 42),
+    StairsUpCell(33, 35),
+    LockedTreasureCell(41, 66, ""),
+    TreasureCell(68, 33, ""),
+    TreasureCell(78, 33, ""),
+    TreasureCell(56, 36, ""),
+    TreasureCell(64, 43, ""),
+    TreasureCell(83, 48, ""),
+    TreasureCell(30, 54, ""),
+    TreasureCell(85, 57, ""),
+    TreasureCell(27, 75, ""),
+    TreasureCell(31, 75, ""),
+    TreasureCell(46, 85, ""),
   ]
 
   def __init__(self):
@@ -1254,10 +1284,33 @@ class Unforgiven2F(Floor):
 
 class Unforgiven3F(Floor):
   tiles = [
+    StairsDownCell(70, 102),
+    RelayCircleCell(70, 96),
   ]
 
   def __init__(self):
-    super().__init__(6, 3, self.tiles)
+    super().__init__(6, 3, self.tiles, {
+      "5": (0, 0, 0),
+      "6": (127, 127, 127),
+      "7": (127, 127, 127),
+      "8": (127, 127, 127),
+      "9": (127, 127, 127),
+      "10": (127, 127, 127),
+      "11": (127, 127, 127),
+      "12": (127, 127, 127),
+      "13": (127, 127, 127),
+      "14": (127, 127, 127),
+      "15": (127, 127, 127),
+      "16": (127, 127, 127),
+      "17": (127, 127, 127),
+      "18": (127, 127, 127),
+      "19": (127, 127, 127),
+      "20": (127, 127, 127),
+      "21": (127, 127, 127),
+      "22": (127, 127, 127),
+      "23": (127, 127, 127),
+      "26": (0, 0, 0),
+    }, True)
 
 class Solitary1F(Floor):
   tiles = [
@@ -1406,9 +1459,9 @@ pixels = map_img.load()
 # floor = Anguish3F()
 # floor = Fragile1F()
 # floor = Fragile2F()
-floor = Fragile3F()
+# floor = Fragile3F()
 # floor = Unforgiven1F()
-# floor = Unforgiven2F()
+floor = Unforgiven2F()
 # floor = Unforgiven3F()
 # floor = Solitary1F()
 # floor = Solitary2F()

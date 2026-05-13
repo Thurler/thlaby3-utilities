@@ -546,6 +546,21 @@
 
 > Post-Kasen
 
+[Locked-3] (
+  Temple Shooter Card x1
+  Whirlwind Mixer Blade x1
+) (41, 66)
+(Lucky Horseshoe x1) (68, 33)
+(Sword, Sorcery & Smokepowder Barrel x1) (78, 33)
+(Blood-Soaked Scoria x1) (56, 36)
+(Lockbox Key x1) (64, 43)
+(Dragon's Breath x1) (83, 48)
+(2400 Sen) (30, 54)
+(Make-or-Break EM Blade x1) (85, 57)
+(Dragon's Breath x1) (27, 75)
+(Love Machine 3322 x1) (31, 75)
+(Dream of Hunting x1) (46, 85)
+
 =======================================================================
 ===== Prison of the Solitary - 1F =====
 =======================================================================

@@ -783,11 +783,27 @@ FLAG 6109: Shortcut before Satori (102, 105)
 
 FLAG 6011: Satori recruit cutscene (set to 1 after 6010) (likely was originally in 1F) (106, 105)
 FLAG 6110: First visit cutscene (set to 1 after 6010)
-FLAG 6111: ??? (set to 1 after 6010)
+FLAG 6111: Kasen boss fight (set to 1 after 6010) (70, 72)
+FLAG 6112: Orange/Yellow Orb pressed status (set to 1 after interacting) (which of the 2?)
+FLAG 6113: Orange/Yellow Orb pressed status (set to 1 after interacting) (which of the 2?)
 
 > Battleground of the Unforgiven 2F Treasure Flags
 
+FLAG 6173: Treasure after Kasen (?)
 FLAG 6174: Treasure before Kasen (?)
+FLAG 6175: Treasure after Kasen (?)
+FLAG 6176: Treasure after Kasen (?)
+FLAG 6177: Treasure after Kasen (?)
+FLAG 6178: Treasure after Kasen (?)
+FLAG 6179: Treasure after Kasen (?)
+FLAG 6180: Locked Treasure after Kasen (
+  Temple Shooter Card x1
+  Whirlwind Mixer Blade x1
+) (41, 66)
+FLAG 6181: Treasure after Kasen (?)
+FLAG 6182: Treasure after Kasen (?)
+FLAG 6183: Treasure after Kasen (?)
+FLAG 6184: Treasure after Kasen (?)
 FLAG 6185: Treasure before Kasen (?)
 FLAG 6187: Treasure before Kasen (?)
 FLAG 6188: Treasure before Kasen (?)
@@ -808,9 +824,13 @@ FLAG 6197: Treasure before Kasen (?)
 FLAG 6198: Treasure before Kasen (?)
 FLAG 6199: Treasure before Kasen (?)
 
+> Battleground of the Unforgiven 3F Relay Circles and Shortcuts
+
+FLAG 6200: 3F Relay unlock
+
 > Battleground of the Unforgiven 3F Event Flags
 
-FLAG 6210: ??? (set to 1 after 6010)
+FLAG 6210: First visit cutscene (set to 1 after 6010)
 FLAG 6211: ??? (set to 1 after 6010)
 FLAG 6212: ??? (set to 1 after 6010)
 FLAG 6213: ??? (set to 1 after 6010)
