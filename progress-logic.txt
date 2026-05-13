@@ -1176,11 +1176,12 @@ Improved Infinites (Mat):
 - 012 Star Sunstone [Battlefield Band 28.8% -> 50.4%]
 - 047 Soft Sealife Scale [Lava Swallower 14.4% -> 17.2%]
 - 049 Strange Metal Fragment [Blood-Sucking Blade 12.6% -> 14.4%]
-- 058 Great Nightmare Weapon [Nightmare Premonition 4.3% -> 5%]
 - 060 Kedama Gem [Blazing Kedama 4.3% -> 5.1%]
 - 071 Determination Polycrystal [Battlefield Team 45% -> 54%]
 (no longer requires Kogasa shortcut miniboss)
 - 015 Blue Moonstone [Slaughter Avenger 16.2% -> 28.8%]
+(no longer requires Reimu shortcut miniboss)
+- 058 Great Nightmare Weapon [Nightmare Premonition 4.3% -> 5%]
 (Requires Kogasa shortcut miniboss)
 - 002 Tamahane Ingot [Frost Golem 14.4% -> 17.2%]
 - 003 Damascus Steel Ingot [Sapphire Elemental 8.6% -> 12.9%]
